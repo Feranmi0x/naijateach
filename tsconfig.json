@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(marketing)/header.tsx", "app/supportEngine/Avatar.js", "app/supportEngine/styles.js", "app/supportEngine/index.js", "app/supportEngine/SupportWindow/index.js", "app/supportEngine/SupportWindow/EmailForm.js", "app/dictionary/page.tsx"],
   "exclude": ["node_modules"]
 }
