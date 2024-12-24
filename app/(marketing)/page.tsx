@@ -24,7 +24,7 @@ export default function Home() {
         mode="modal"
         fallbackRedirectUrl="/learn"
         signUpFallbackRedirectUrl="/learn">
-          <Button size="lg" variant="primaryOutline" className="mt-1 w-96 tracking-wide">Alreay Have an Account</Button>
+          <Button size="lg" variant="primaryOutline" className="mt-1 w-96 tracking-wide">Already Have an Account</Button>
         </SignInButton>
       </SignedOut>
       <SignedIn>

@@ -5,7 +5,7 @@ return (
 <List>
   <Datagrid rowClick="edit">
   <TextField source="id" />
-  <TextField source="imageSrc" />
+  <TextField source="animation" />
   <TextField source="question" />
   <SelectField 
   source="type" 

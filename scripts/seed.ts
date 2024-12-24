@@ -96,7 +96,7 @@ await db.insert(schema.challenges).values([
    type: "ASSIST", 
    order: 2,
    question: '"the man"?',
-   imageSrc: "statemachine.riv"
+   animation: "statemachine.riv"
    },
    {
    id: 3,

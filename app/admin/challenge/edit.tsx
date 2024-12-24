@@ -5,7 +5,7 @@ return (
   <Edit>
     <SimpleForm>
         <TextInput 
-        source="imageSrc"
+        source="animation"
         label="Image URL"
         />
         <TextInput 

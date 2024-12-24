@@ -219,7 +219,7 @@ if (!challenge) {
                 <div className="h-[100px]">
                 {challenge.type === "ASSIST" && (
                     <QuestionBubble 
-                    AnimationSrc={challenge.imageSrc}
+                    AnimationSrc={challenge.animation}
                     question={challenge.question} 
                    />
                 )}

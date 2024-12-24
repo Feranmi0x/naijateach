@@ -191,7 +191,7 @@ export const challenges = pgTable("challenges", {
 id: serial("id").primaryKey(),
 lessonId: integer("lesson_id").references(() => lessons.id, { onDelete: "cascade" }).notNull(),
 type: challengesEnum("type").notNull(),
-imageSrc: text("image_src"),
+animation: text("animation"),
 question: text("question").notNull(), 
 order: integer("order").notNull(),
 });

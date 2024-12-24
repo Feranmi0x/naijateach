@@ -37,7 +37,7 @@ export const createStripeUrl = async () => {
     price_data: {
     currency: "USD",
     product_data: {
-    name: "NaijaTeach Pro", 
+    name: "Naijateach Pro", 
     description: "Unlimited Hearts",
     }, 
      unit_amount: 2000,

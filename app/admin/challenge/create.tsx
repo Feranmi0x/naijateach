@@ -5,7 +5,7 @@ return (
   <Create>
     <SimpleForm>
         <TextInput 
-        source="imageSrc"
+        source="animation"
         label="Rive URL"
         />
         <TextInput 
