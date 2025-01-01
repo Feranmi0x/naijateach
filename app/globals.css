@@ -16,7 +16,7 @@ body,
 @media (prefers-color-scheme: light) {
   :root {
     --background: #ffffff;
-    --foreground: #ededed;
+    --foreground: #000000;
   }
 }
 

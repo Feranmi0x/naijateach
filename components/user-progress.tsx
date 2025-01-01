@@ -26,7 +26,7 @@ export const UserProgress = ({
             </Link>
             <Link href="/shop">
                <Button variant="ghost" className="text-sky-400 font-extrabold ">
-                <Image src="/gem2.png" alt="gems" height={50} width={30} className="rounded-md" />
+                <Image src="/gem2.PNG" alt="gems" height={50} width={30} className="rounded-md" />
                 {points}
                </Button>
             </Link>
