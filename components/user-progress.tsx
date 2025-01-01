@@ -20,13 +20,13 @@ export const UserProgress = ({
     return (
         <div className="flex items-center justify-between gap-x-2 w-full">
             <Link href="/courses">
-               <Button variant="ghost" className="mt-[-10px]">
-                <Image src={activeCourse.imageSrc} alt={activeCourse.title} height={38} width={38} className="rounded-md" />
+               <Button variant="ghost">
+                <Image src={activeCourse.imageSrc} alt={activeCourse.title} height={40} width={40} className="rounded-md" />
                </Button>
             </Link>
             <Link href="/shop">
                <Button variant="ghost" className="text-sky-400 font-extrabold ">
-                <Image src="/gem.png" alt="gems" height={25} width={30} className="rounded-md mt-[-10px]" />
+                <Image src="/gem2.png" alt="gems" height={50} width={30} className="rounded-md" />
                 {points}
                </Button>
             </Link>

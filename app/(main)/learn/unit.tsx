@@ -1,6 +1,10 @@
 import { lessons, units } from "@/db/schema";
 import { UnitBanner } from "./unit-banner";
 import { LessonButton } from "./lesson-button";
+import { getUserProgress, getUserSubscription } from "@/db/queries";
+import { redirect } from "next/navigation";
+import { UserProgress } from "@/components/user-progress";
+
 
 type Props = {
 id: number;
@@ -16,7 +20,7 @@ unit: typeof units.$inferSelect;
 activeLessonPercentage: number;
 };
 
-export const Unit = ({
+export const Unit = async ({
      
     title, 
     description, 
@@ -24,8 +28,31 @@ export const Unit = ({
     activeLesson, 
     activeLessonPercentage,
 }: Props) => {
+    const userProgressData = getUserProgress();
+      const userSubscriptionData = getUserSubscription();
+    
+      const [
+       userProgress,
+       useSubscription,
+      ] = await Promise.all([
+        userProgressData,
+        userSubscriptionData
+      ]);
+    
+      if (!userProgress || !userProgress.activeCourse) {
+        redirect("/courses");
+      }
+      
     return (
-    <>    
+    <>
+    <div className="lg:hidden">
+      <UserProgress
+            activeCourse={userProgress.activeCourse} 
+            hearts={userProgress.hearts} 
+            points={userProgress.points} 
+            hasActiveSubscription={!!useSubscription?.isActive}
+      />
+      </div>  
     <UnitBanner 
     title={title} 
     description={description} 

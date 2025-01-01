@@ -10,7 +10,6 @@ import { getCourseProgress,
 import { Unit } from "./unit";
 import { Promo } from "@/components/promo";
 import { Quests } from "@/components/quest";
-import SupportEngine from "@/app/supportEngine";
 import GMStreakButton from "@/app/gmstreak/page";
 import WordOfTheWeek from "@/app/wotw/page";
 import TestimonialSlider from "@/app/testi/page";
@@ -78,7 +77,7 @@ const isPro = !!userSubscription?.isActive;
                   </div>
                 ))}
             </FeedWrapper>
-            <SupportEngine />
+            
             
         </div>
     );

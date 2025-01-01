@@ -40,7 +40,7 @@ export const QuestionBubble = ({ question, AnimationSrc }: Props) => {
   }, [rive]);
 
   return (
-    <section className="h-full flex items-center gap-x-4 mb-6">
+    <section className="h-[full] flex items-center gap-x-4 mb-6">
       {AnimationSrc && (
         <div className="relative aspect-square mb-4 max-h-[100px] lg:max-h-[250px] w-[100px]">
           <RiveComponent />
