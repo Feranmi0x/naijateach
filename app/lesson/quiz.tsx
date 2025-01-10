@@ -167,8 +167,8 @@ if (!challenge) {
       tweenDuration={10000}
     />
     <div className="flex flex-col gap-y-4 max-w-lg mx-auto
-    text-center items-center justify-center h-full">
-            <div className="w-[400px] h-[200px] absolute top-6">
+    text-center items-center justify-center h-full w-full">
+            <div className="w-[400px] h-[400px] absolute top-6">
                 <Rive
                     src="bba.riv"
                 />
