@@ -12,7 +12,7 @@ type Props = {
 };
 
 const playAudio = (audioPath: string): void => {
-  const audio = new Audio(`/${audioPath}`);
+  const audio = new Audio(`/hs-pronouns/${audioPath}`);
   audio.play(); // Play the audio when clicked
 };
 

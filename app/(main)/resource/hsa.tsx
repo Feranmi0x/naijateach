@@ -1,38 +1,42 @@
 "use client"
 export const HausaAlphabet = () => {
   const alphabet = [
-    { letter: "A", audio: "a.mp3" },
-    { letter: "B", audio: "b.mp3" },
-    { letter: "C", audio: "c.mp3" },
-    { letter: "D", audio: "d.mp3" },
-    { letter: "E", audio: "e.mp3" },
-    { letter: "F", audio: "f.mp3" },
-    { letter: "G", audio: "g.mp3" },
-    { letter: "H", audio: "h.mp3" },
-    { letter: "I", audio: "i.mp3" },
-    { letter: "J", audio: "j.mp3" },
-    { letter: "K", audio: "k.mp3" },
-    { letter: "L", audio: "l.mp3" },
-    { letter: "M", audio: "m.mp3" },
-    { letter: "N", audio: "n.mp3" },
-    { letter: "R", audio: "r.mp3" },
-    { letter: "S", audio: "s.mp3" },
-    { letter: "T", audio: "t.mp3" },
-    { letter: "U", audio: "u.mp3" },
-    { letter: "W", audio: "w.mp3" },
-    { letter: "Y", audio: "y.mp3" },
-    { letter: "Z", audio: "z.mp3" },
+      { letter: "A", audio: "a.mp3" },
+      { letter: "B", audio: "b.mp3" },
+      { letter: "C", audio: "c.mp3" },
+      { letter: "D", audio: "d.mp3" },
+      { letter: "Ɗ", audio: "ɗ.mp3" },
+      { letter: "E", audio: "e.mp3" },
+      { letter: "F", audio: "f.mp3" },
+      { letter: "G", audio: "g.mp3" },
+      { letter: "H", audio: "h.mp3" },
+      { letter: "I", audio: "i.mp3" },
+      { letter: "J", audio: "j.mp3" },
+      { letter: "K", audio: "k.mp3" },
+      { letter: "Ƙ", audio: "ƙ.mp3" },
+      { letter: "L", audio: "l.mp3" },
+      { letter: "M", audio: "m.mp3" },
+      { letter: "N", audio: "n.mp3" },
+      { letter: "R", audio: "r.mp3" },
+      { letter: "S", audio: "s.mp3" },
+      { letter: "Sh", audio: "sh.mp3" },
+      { letter: "T", audio: "t.mp3" },
+      { letter: "Ts", audio: "ts.mp3" },
+      { letter: "U", audio: "u.mp3" },
+      { letter: "W", audio: "w.mp3" },
+      { letter: "Y", audio: "yy.mp3" },
+      { letter: "Z", audio: "z.mp3" },
   ];
 
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/${audioPath}`);
+    const audio = new Audio(`/hs-alphabet/${audioPath}`);
     audio.play();
   };
 
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-yelloww border-b-2 border-yelloww pb-2">
-        Alphabet with Audio Pronunciation
+        Hausa Alphabet with Audio
       </h2>
       <table className="w-full mt-4 border-collapse border border-gray-300">
         <thead>
@@ -48,7 +52,7 @@ export const HausaAlphabet = () => {
               <td className="py-2 px-4 border border-gray-300">
                 <button
                   onClick={() => playAudio(item.audio)}
-                  className="bg-yelloww text-white px-4 py-1 rounded hover:bg-yelloww focus:outline-none focus:ring focus:ring-yelloww"
+                  className="bg-yelloww text-white px-4 py-1 rounded hover:bg-yelloww focus:outline-none focus:ring focus:ring-yelloww border-b-4 border-yellow-700 border-[1px]"
                 >
                   Play
                 </button>

@@ -13,14 +13,14 @@ type Props = {
 
 export const YorubaNumbers = ({ numbers }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/${audioPath}`);
+    const audio = new Audio(`/yr-numbers/${audioPath}`);
     audio.play();
   };
 
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-green-700 border-b-2 border-green-700 pb-2">
-        Numbers
+        Yoruba Numbers
       </h2>
       <table className="w-full mt-4 border-collapse border border-gray-300">
         <thead>
@@ -38,7 +38,7 @@ export const YorubaNumbers = ({ numbers }: Props) => {
               <td className="py-2 px-4 border border-gray-300">
                 <button
                   onClick={() => playAudio(num.audioPath)}
-                  className="text-green-700 underline hover:text-green-500"
+                  className="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-800 focus:outline-none focus:ring focus:ring-green-300 border-b-4 border-green-700 border-[1.5px]"
                 >
                   Play
                 </button>

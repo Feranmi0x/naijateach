@@ -2,50 +2,50 @@
 
 export const IgboAlphabet = () => {
   const alphabet = [
-    { letter: "A", audio: "iga.mp3" },
-    { letter: "B", audio: "igb.mp3" },
-    { letter: "Ch", audio: "igch.mp3" },
-    { letter: "D", audio: "igd.mp3" },
-    { letter: "E", audio: "ige.mp3" },
-    { letter: "F", audio: "igf.mp3" },
-    { letter: "G", audio: "igg.mp3" },
-    { letter: "Gb", audio: "iggb.mp3" },
-    { letter: "Gh", audio: "iggh.mp3" },
-    { letter: "H", audio: "igh.mp3" },
-    { letter: "I", audio: "igi.mp3" },
-    { letter: "Ị", audio: "igị.mp3" },
-    { letter: "J", audio: "igj.mp3" },
-    { letter: "K", audio: "igk.mp3" },
-    { letter: "Kp", audio: "igkp.mp3" },
-    { letter: "L", audio: "igl.mp3" },
-    { letter: "M", audio: "igm.mp3" },
-    { letter: "N", audio: "ign.mp3" },
-    { letter: "Ṅ", audio: "igṅ.mp3" },
-    { letter: "Ny", audio: "igny.mp3" },
-    { letter: "O", audio: "igo.mp3" },
-    { letter: "Ọ", audio: "igọ.mp3" },
-    { letter: "P", audio: "igp.mp3" },
-    { letter: "R", audio: "igr.mp3" },
-    { letter: "S", audio: "igs.mp3" },
-    { letter: "Sh", audio: "igsh.mp3" },
-    { letter: "T", audio: "igt.mp3" },
-    { letter: "U", audio: "igu.mp3" },
-    { letter: "Ụ", audio: "igụ.mp3" },
-    { letter: "V", audio: "igv.mp3" },
-    { letter: "W", audio: "igw.mp3" },
-    { letter: "Y", audio: "igy.mp3" },
-    { letter: "Z", audio: "igz.mp3" },
+      { letter: "A", audio: "a.mp3" },
+      { letter: "B", audio: "b.mp3" },
+      { letter: "Ch", audio: "ch.mp3" },
+      { letter: "D", audio: "d.mp3" },
+      { letter: "E", audio: "e.mp3" },
+      { letter: "F", audio: "f.mp3" },
+      { letter: "G", audio: "g.mp3" },
+      { letter: "Gb", audio: "gb.mp3" },
+      { letter: "Gh", audio: "gh.mp3" },
+      { letter: "H", audio: "h.mp3" },
+      { letter: "I", audio: "i.mp3" },
+      { letter: "Ị", audio: "ii.mp3" },
+      { letter: "J", audio: "j.mp3" },
+      { letter: "K", audio: "k.mp3" },
+      { letter: "Kp", audio: "kp.mp3" },
+      { letter: "L", audio: "l.mp3" },
+      { letter: "M", audio: "m.mp3" },
+      { letter: "N", audio: "n.mp3" },
+      { letter: "Ṅ", audio: "nn.mp3" },
+      { letter: "Ny", audio: "ny.mp3" },
+      { letter: "O", audio: "o.mp3" },
+      { letter: "Ọ", audio: "oo.mp3" },
+      { letter: "P", audio: "p.mp3" },
+      { letter: "R", audio: "r.mp3" },
+      { letter: "S", audio: "s.mp3" },
+      { letter: "Sh", audio: "sh.mp3" },
+      { letter: "T", audio: "t.mp3" },
+      { letter: "U", audio: "u.mp3" },
+      { letter: "Ụ", audio: "uu.mp3" },
+      { letter: "V", audio: "v.mp3" },
+      { letter: "W", audio: "w.mp3" },
+      { letter: "Y", audio: "y.mp3" },
+      { letter: "Z", audio: "z.mp3" },
   ];
 
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/${audioPath}`);
+    const audio = new Audio(`/ig-alphabet/${audioPath}`);
     audio.play();
   };
 
   return (
     <section className="mb-10">
       <h2 className="text-2xl font-bold text-bluee border-b-2 border-bluee pb-2">
-        Alphabet with Audio Pronunciation
+        Igbo Alphabet with Audio
       </h2>
       <table className="w-full mt-4 border-collapse border border-gray-300">
         <thead>
@@ -61,7 +61,7 @@ export const IgboAlphabet = () => {
               <td className="py-2 px-4 border border-gray-300">
                 <button
                   onClick={() => playAudio(item.audio)}
-                  className="bg-bluee text-white px-4 py-1 rounded hover:bg-bluee focus:outline-none focus:ring focus:ring-bluee"
+                  className="bg-bluee text-white px-4 py-1 rounded hover:bg-bluee focus:outline-none focus:ring focus:ring-bluee border-b-4 border-sky-700 border-[1px]"
                 >
                   Play
                 </button>

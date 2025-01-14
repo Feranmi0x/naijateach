@@ -4,7 +4,7 @@ import { neon } from "@neondatabase/serverless";
 
 import * as schema from "../db/schema";
 
-const sql = neon (process.env.DATABASE_URL! );
+const sql = neon(process.env.DATABASE_URL! );
 
 const db = drizzle(sql, { schema });
 
@@ -1235,7 +1235,7 @@ await db.insert(schema.challenges).values([
 {id: 670, lessonId: 46, type: "SELECT", order: 670, question: "How are you?"},
 {id: 671, lessonId: 46, type: "SELECT", order: 671, question: "I am okay."},
 {id: 672, lessonId: 46, type: "SELECT", order: 672, question: "What is your name?"},
-{id: 673, lessonId: 46, type: "SELECT", order: 673, question: "My name is Mustafa."},
+{id: 673, lessonId: 46, type: "SELECT", order: 673, question: "My name is Ejiro."},
 {id: 674, lessonId: 46, type: "SELECT", order: 674, question: "I am from Nigeria."},
 {id: 675, lessonId: 46, type: "SELECT", order: 675, question: "What about you?"},
 {id: 676, lessonId: 46, type: "SELECT", order: 676, question: "No."},
@@ -1247,6 +1247,230 @@ await db.insert(schema.challenges).values([
 {id: 682, lessonId: 46, type: "SELECT", order: 682, question: "Tell me."},
 {id: 683, lessonId: 46, type: "SELECT", order: 683, question: "Sorry."},
 {id: 684, lessonId: 46, type: "SELECT", order: 684, question: "Thank you so much."},
+
+{id: 685, lessonId: 47, type: "SELECT", order: 685, question: "Do you speak Hausa?"},
+{id: 686, lessonId: 47, type: "SELECT", order: 686, question: "Just a little"},
+{id: 687, lessonId: 47, type: "SELECT", order: 687, question: "I like Hausa"},
+{id: 688, lessonId: 47, type: "SELECT", order: 688, question: "Can I practice with you?"},
+{id: 689, lessonId: 47, type: "SELECT", order: 689, question: "How old are you?"},
+{id: 690, lessonId: 47, type: "SELECT", order: 690, question: "I am thirty five years old"},
+{id: 691, lessonId: 47, type: "SELECT", order: 691, question: "I am talking to you"},
+{id: 692, lessonId: 47, type: "SELECT", order: 692, question: "What is this?"},
+{id: 693, lessonId: 47, type: "SELECT", order: 693, question: "What does that mean?"},
+{id: 694, lessonId: 47, type: "SELECT", order: 694, question: "Where are you?"},
+{id: 695, lessonId: 47, type: "SELECT", order: 695, question: "I love you"},
+{id: 696, lessonId: 47, type: "SELECT", order: 696, question: "Where do you live?"},
+{id: 697, lessonId: 47, type: "SELECT", order: 697, question: "That's beautiful"},
+{id: 698, lessonId: 47, type: "SELECT", order: 698, question: "She is beautiful"},
+{id: 699, lessonId: 47, type: "SELECT", order: 699, question: "I live in the USA"},
+
+{id: 700, lessonId: 48, type: "SELECT", order: 700, question: "They are dancing"},
+{id: 701, lessonId: 48, type: "SELECT", order: 701, question: "What do you mean?"},
+{id: 702, lessonId: 48, type: "SELECT", order: 702, question: "Speak to me"},
+{id: 703, lessonId: 48, type: "SELECT", order: 703, question: "I love you too"},
+{id: 704, lessonId: 48, type: "SELECT", order: 704, question: "It is not like that"},
+{id: 705, lessonId: 48, type: "SELECT", order: 705, question: "Where are you going?"},
+{id: 706, lessonId: 48, type: "SELECT", order: 706, question: "Come back here"},
+{id: 707, lessonId: 48, type: "SELECT", order: 707, question: "Are you alone?"},
+{id: 708, lessonId: 48, type: "SELECT", order: 708, question: "Let us go"},
+{id: 709, lessonId: 48, type: "SELECT", order: 709, question: "I know"},
+{id: 710, lessonId: 48, type: "SELECT", order: 710, question: "Exactly"},
+{id: 711, lessonId: 48, type: "SELECT", order: 711, question: "You are correct"},
+{id: 712, lessonId: 48, type: "SELECT", order: 712, question: "You are not correct"},
+{id: 713, lessonId: 48, type: "SELECT", order: 713, question: "That's beautiful"},
+{id: 714, lessonId: 48, type: "SELECT", order: 714, question: "Do you know?"},
+
+{id: 715, lessonId: 49, type: "SELECT", order: 715, question: "I want to buy"},
+{id: 716, lessonId: 49, type: "SELECT", order: 716, question: "What do you want to buy?"},
+{id: 717, lessonId: 49, type: "SELECT", order: 717, question: "Yam"},
+{id: 718, lessonId: 49, type: "SELECT", order: 718, question: "How much?"},
+{id: 719, lessonId: 49, type: "SELECT", order: 719, question: "1000 worth of yam"},
+{id: 720, lessonId: 49, type: "SELECT", order: 720, question: "I am coming"},
+{id: 721, lessonId: 49, type: "SELECT", order: 721, question: "I am sorry"},
+{id: 722, lessonId: 49, type: "SELECT", order: 722, question: "It's not available"},
+{id: 723, lessonId: 49, type: "SELECT", order: 723, question: "Come back"},
+{id: 724, lessonId: 49, type: "SELECT", order: 724, question: "I have heard you"},
+{id: 725, lessonId: 49, type: "SELECT", order: 725, question: "At what time?"},
+{id: 726, lessonId: 49, type: "SELECT", order: 726, question: "In the Afternoon"},
+{id: 727, lessonId: 49, type: "SELECT", order: 727, question: "I will come"},
+{id: 728, lessonId: 49, type: "SELECT", order: 728, question: "I am going"},
+{id: 729, lessonId: 49, type: "SELECT", order: 729, question: "What do you say?"},
+
+{id: 730, lessonId: 50, type: "SELECT", order: 730, question: "Where are you going?"},
+{id: 731, lessonId: 50, type: "SELECT", order: 731, question: "I am going to nicon town"},
+{id: 732, lessonId: 50, type: "SELECT", order: 732, question: "Come inside"},
+{id: 733, lessonId: 50, type: "SELECT", order: 733, question: "Sit at the back"},
+{id: 734, lessonId: 50, type: "SELECT", order: 734, question: "Where are they?"},
+{id: 735, lessonId: 50, type: "SELECT", order: 735, question: "Alright here"},
+{id: 736, lessonId: 50, type: "SELECT", order: 736, question: "Is this the place?"},
+{id: 737, lessonId: 50, type: "SELECT", order: 737, question: "Collect your money"},
+{id: 738, lessonId: 50, type: "SELECT", order: 738, question: "Good afternoon"},
+{id: 739, lessonId: 50, type: "SELECT", order: 739, question: "Welcome"},
+{id: 740, lessonId: 50, type: "SELECT", order: 740, question: "Switch on the light"},
+{id: 741, lessonId: 50, type: "SELECT", order: 741, question: "What do you want to eat?"},
+{id: 742, lessonId: 50, type: "SELECT", order: 742, question: "Do you have water?"},
+{id: 743, lessonId: 50, type: "SELECT", order: 743, question: "Thank you"},
+{id: 744, lessonId: 50, type: "SELECT", order: 744, question: "Goodbye"},
+
+{id: 745, lessonId: 51, type: "SELECT", order: 745, question: "Thank you very much, Marci"},
+{id: 746, lessonId: 51, type: "SELECT", order: 746, question: "Morning"},
+{id: 747, lessonId: 51, type: "SELECT", order: 747, question: "Good morning"},
+{id: 748, lessonId: 51, type: "SELECT", order: 748, question: "Good afternoon"},
+{id: 749, lessonId: 51, type: "SELECT", order: 749, question: "Welcome"},
+{id: 750, lessonId: 51, type: "SELECT", order: 750, question: "See"},
+{id: 751, lessonId: 51, type: "SELECT", order: 751, question: "Very good"},
+{id: 752, lessonId: 51, type: "SELECT", order: 752, question: "Hello/hi"},
+{id: 753, lessonId: 51, type: "SELECT", order: 753, question: "Bye"},
+{id: 754, lessonId: 51, type: "SELECT", order: 754, question: "How are you doing?"},
+{id: 755, lessonId: 51, type: "SELECT", order: 755, question: "Have a good day."},
+{id: 756, lessonId: 51, type: "SELECT", order: 756, question: "Good night"},
+{id: 757, lessonId: 51, type: "SELECT", order: 757, question: "Goodbye see you tomorrow"},
+{id: 758, lessonId: 51, type: "SELECT", order: 758, question: "goodbye"},
+{id: 759, lessonId: 51, type: "SELECT", order: 759, question: "Have a good night rest"},
+
+{id: 760, lessonId: 52, type: "SELECT", order: 760, question: "Good evening, Paul"},
+{id: 761, lessonId: 52, type: "SELECT", order: 761, question: "Good morning"},
+{id: 762, lessonId: 52, type: "SELECT", order: 762, question: "Afternoon"},
+{id: 763, lessonId: 52, type: "SELECT", order: 763, question: "Goodnight"},
+{id: 764, lessonId: 52, type: "SELECT", order: 764, question: "See you tomorrow"},
+{id: 765, lessonId: 52, type: "SELECT", order: 765, question: "Goodbye"},
+{id: 766, lessonId: 52, type: "SELECT", order: 766, question: "You are welcome"},
+{id: 767, lessonId: 52, type: "SELECT", order: 767, question: "How are you?"},
+{id: 768, lessonId: 52, type: "SELECT", order: 768, question: "Well done"},
+{id: 769, lessonId: 52, type: "SELECT", order: 769, question: "Goodbye"},
+{id: 770, lessonId: 52, type: "SELECT", order: 770, question: "Welcome"},
+{id: 771, lessonId: 52, type: "SELECT", order: 771, question: "You?"},
+{id: 772, lessonId: 52, type: "SELECT", order: 772, question: "Thank you"},
+{id: 773, lessonId: 52, type: "SELECT", order: 773, question: "Tomorrow"},
+{id: 774, lessonId: 52, type: "SELECT", order: 774, question: "Sleep"},
+
+{id: 775, lessonId: 53, type: "SELECT", order: 775, question: "Good morning Paul"},
+{id: 776, lessonId: 53, type: "SELECT", order: 776, question: "Alright, see you tomorrow"},
+{id: 777, lessonId: 53, type: "SELECT", order: 777, question: "See you soon"},
+{id: 778, lessonId: 53, type: "SELECT", order: 778, question: "Goodbye, see you tomorrow"},
+{id: 779, lessonId: 53, type: "SELECT", order: 779, question: "Hello"},
+{id: 780, lessonId: 53, type: "SELECT", order: 780, question: "How are you doing?"},
+{id: 781, lessonId: 53, type: "SELECT", order: 781, question: "Good afternoon"},
+{id: 782, lessonId: 53, type: "SELECT", order: 782, question: "Thank you"},
+{id: 783, lessonId: 53, type: "SELECT", order: 783, question: "Did you sleep well?"},
+{id: 784, lessonId: 53, type: "SELECT", order: 784, question: "Good night"},
+{id: 785, lessonId: 53, type: "SELECT", order: 785, question: "I am doing very well"},
+{id: 786, lessonId: 53, type: "SELECT", order: 786, question: "Yes"},
+{id: 787, lessonId: 53, type: "SELECT", order: 787, question: "Hello Paul, how are you?"},
+{id: 788, lessonId: 53, type: "SELECT", order: 788, question: "Yes, thank you."},
+{id: 789, lessonId: 53, type: "SELECT", order: 789, question: "Did you sleep well?"},
+
+{id: 790, lessonId: 54, type: "SELECT", order: 790, question: "Hello Paul, how are you?"},
+{id: 791, lessonId: 54, type: "SELECT", order: 791, question: "Good"},
+{id: 792, lessonId: 54, type: "SELECT", order: 792, question: "Good morning, how are you doing?"},
+{id: 793, lessonId: 54, type: "SELECT", order: 793, question: "I am doing very well, and you?"},
+{id: 794, lessonId: 54, type: "SELECT", order: 794, question: "Good evening how are you doing?"},
+{id: 795, lessonId: 54, type: "SELECT", order: 795, question: "I am Paul, and you are?"},
+{id: 796, lessonId: 54, type: "SELECT", order: 796, question: "Hi, how are you?"},
+{id: 797, lessonId: 54, type: "SELECT", order: 797, question: "I am doing very well, thank you"},
+{id: 798, lessonId: 54, type: "SELECT", order: 798, question: "I’m doing very well"},
+{id: 799, lessonId: 54, type: "SELECT", order: 799, question: "How are you"},
+{id: 800, lessonId: 54, type: "SELECT", order: 800, question: "Good evening, I missed you"},
+{id: 801, lessonId: 54, type: "SELECT", order: 801, question: "Good"},
+{id: 802, lessonId: 54, type: "SELECT", order: 802, question: "I am your friend"},
+{id: 803, lessonId: 54, type: "SELECT", order: 803, question: "Goodbye"},
+{id: 804, lessonId: 54, type: "SELECT", order: 804, question: "I am Paul"},
+
+{id: 805, lessonId: 55, type: "SELECT", order: 805, question: "Have a good evening."},
+{id: 806, lessonId: 55, type: "SELECT", order: 806, question: "Yes, I am very well"},
+{id: 807, lessonId: 55, type: "SELECT", order: 807, question: "Yes, and you"},
+{id: 808, lessonId: 55, type: "SELECT", order: 808, question: "Did you sleep well?"},
+{id: 809, lessonId: 55, type: "SELECT", order: 809, question: "Are you awake?"},
+{id: 810, lessonId: 55, type: "SELECT", order: 810, question: "Your are welcome"},
+{id: 811, lessonId: 55, type: "SELECT", order: 811, question: "See you soon"},
+{id: 812, lessonId: 55, type: "SELECT", order: 812, question: "Yes, I will travel by air"},
+{id: 813, lessonId: 55, type: "SELECT", order: 813, question: "Did you just wake up"},
+{id: 814, lessonId: 55, type: "SELECT", order: 814, question: "I am sorry"},
+{id: 815, lessonId: 55, type: "SELECT", order: 815, question: "I am waiting for you"},
+{id: 816, lessonId: 55, type: "SELECT", order: 816, question: "Have a good night rest"},
+{id: 817, lessonId: 55, type: "SELECT", order: 817, question: "I am driving the car"},
+{id: 818, lessonId: 55, type: "SELECT", order: 818, question: "How is your day going?"},
+{id: 819, lessonId: 55, type: "SELECT", order: 819, question: "We thank God"},
+
+{id: 820, lessonId: 56, type: "SELECT", order: 820, question: "I speak Pidgin"},
+{id: 821, lessonId: 56, type: "SELECT", order: 821, question: "Excuse me dibyou speak pidgin"},
+{id: 822, lessonId: 56, type: "SELECT", order: 822, question: "No, I am from Delta"},
+{id: 823, lessonId: 56, type: "SELECT", order: 823, question: "I need a cab"},
+{id: 824, lessonId: 56, type: "SELECT", order: 824, question: "Where does one get a cab?"},
+{id: 825, lessonId: 56, type: "SELECT", order: 825, question: "I am a Nigerian"},
+{id: 826, lessonId: 56, type: "SELECT", order: 826, question: "What is your name"},
+{id: 827, lessonId: 56, type: "SELECT", order: 827, question: "Her name is Cari"},
+{id: 828, lessonId: 56, type: "SELECT", order: 828, question: "Are you from Delta"},
+{id: 829, lessonId: 56, type: "SELECT", order: 829, question: "My name is Ejiro"},
+{id: 830, lessonId: 56, type: "SELECT", order: 830, question: "No, I am from Delta"},
+{id: 831, lessonId: 56, type: "SELECT", order: 831, question: "I am visiting Nigeria"},
+{id: 832, lessonId: 56, type: "SELECT", order: 832, question: "I will be staying for a week"},
+{id: 833, lessonId: 56, type: "SELECT", order: 833, question: "I am staying at the hotel"},
+{id: 834, lessonId: 56, type: "SELECT", order: 834, question: "I am alone"},
+
+{id: 835, lessonId: 57, type: "SELECT", order: 835, question: "What do you do for a living"},
+{id: 836, lessonId: 57, type: "SELECT", order: 836, question: "Where are you from?"},
+{id: 837, lessonId: 57, type: "SELECT", order: 837, question: "Do you have children?"},
+{id: 838, lessonId: 57, type: "SELECT", order: 838, question: "Have you been to Nigeria"},
+{id: 839, lessonId: 57, type: "SELECT", order: 839, question: "I am enjoying my visit"},
+{id: 840, lessonId: 57, type: "SELECT", order: 840, question: "I want to see the beach"},
+{id: 841, lessonId: 57, type: "SELECT", order: 841, question: "Come to my house"},
+{id: 842, lessonId: 57, type: "SELECT", order: 842, question: "My wife is Nigerian"},
+{id: 843, lessonId: 57, type: "SELECT", order: 843, question: "Greet your family"},
+{id: 844, lessonId: 57, type: "SELECT", order: 844, question: "I want to visit the market"},
+{id: 845, lessonId: 57, type: "SELECT", order: 845, question: "Where is the cinema"},
+{id: 846, lessonId: 57, type: "SELECT", order: 846, question: "Excuse me"},
+{id: 847, lessonId: 57, type: "SELECT", order: 847, question: "Come let us eat"},
+{id: 848, lessonId: 57, type: "SELECT", order: 848, question: "I am tired"},
+{id: 849, lessonId: 57, type: "SELECT", order: 849, question: "I am happy to be here"},
+
+{id: 850, lessonId: 58, type: "SELECT", order: 850, question: "Aunty is at Church"},
+{id: 851, lessonId: 58, type: "SELECT", order: 851, question: "I went to market"},
+{id: 852, lessonId: 58, type: "SELECT", order: 852, question: "I speak Pidgin and Isoko"},
+{id: 853, lessonId: 58, type: "SELECT", order: 853, question: "Incredible! My name is Akpos"},
+{id: 854, lessonId: 58, type: "SELECT", order: 854, question: "Caro speaks pidgin and isoko"},
+{id: 855, lessonId: 58, type: "SELECT", order: 855, question: "You speak Pidgin"},
+{id: 856, lessonId: 58, type: "SELECT", order: 856, question: "They speak Pidgin"},
+{id: 857, lessonId: 58, type: "SELECT", order: 857, question: "He is from Delta"},
+{id: 858, lessonId: 58, type: "SELECT", order: 858, question: "She is from Delta"},
+{id: 859, lessonId: 58, type: "SELECT", order: 859, question: "My husband is out"},
+{id: 860, lessonId: 58, type: "SELECT", order: 860, question: "Her daughter is a teacher"},
+{id: 861, lessonId: 58, type: "SELECT", order: 861, question: "His son is a policeman"},
+{id: 862, lessonId: 58, type: "SELECT", order: 862, question: "My name is Eloho"},
+{id: 863, lessonId: 58, type: "SELECT", order: 863, question: "I speak pidgin and Isoko"},
+{id: 864, lessonId: 58, type: "SELECT", order: 864, question: "Greet your family"},
+
+{id: 865, lessonId: 59, type: "SELECT", order: 865, question: "It is my house"},
+{id: 866, lessonId: 59, type: "SELECT", order: 866, question: "Speak to my son"},
+{id: 867, lessonId: 59, type: "SELECT", order: 867, question: "Speak to my daughter"},
+{id: 868, lessonId: 59, type: "SELECT", order: 868, question: "They"},
+{id: 869, lessonId: 59, type: "SELECT", order: 869, question: "They are many"},
+{id: 870, lessonId: 59, type: "SELECT", order: 870, question: "He"},
+{id: 871, lessonId: 59, type: "SELECT", order: 871, question: "He is tall"},
+{id: 872, lessonId: 59, type: "SELECT", order: 872, question: "She"},
+{id: 873, lessonId: 59, type: "SELECT", order: 873, question: "She can cook"},
+{id: 874, lessonId: 59, type: "SELECT", order: 874, question: "His"},
+{id: 875, lessonId: 59, type: "SELECT", order: 875, question: "His brother is handsome"},
+{id: 876, lessonId: 59, type: "SELECT", order: 876, question: "Her"},
+{id: 877, lessonId: 59, type: "SELECT", order: 877, question: "Her sister is beautiful"},
+{id: 878, lessonId: 59, type: "SELECT", order: 878, question: "My"},
+{id: 879, lessonId: 59, type: "SELECT", order: 879, question: "My book"},
+
+{id: 880, lessonId: 60, type: "SELECT", order: 880, question: "We"},
+{id: 881, lessonId: 60, type: "SELECT", order: 881, question: "We are back"},
+{id: 882, lessonId: 60, type: "SELECT", order: 882, question: "Us"},
+{id: 883, lessonId: 60, type: "SELECT", order: 883, question: "Come and join us"},
+{id: 884, lessonId: 60, type: "SELECT", order: 884, question: "Meet my friend"},
+{id: 885, lessonId: 60, type: "SELECT", order: 885, question: "You"},
+{id: 886, lessonId: 60, type: "SELECT", order: 886, question: "Who are you?"},
+{id: 887, lessonId: 60, type: "SELECT", order: 887, question: "They"},
+{id: 888, lessonId: 60, type: "SELECT", order: 888, question: "Who are they"},
+{id: 889, lessonId: 60, type: "SELECT", order: 889, question: "It is mine"},
+{id: 890, lessonId: 60, type: "SELECT", order: 890, question: "They are mine"},
+{id: 891, lessonId: 60, type: "SELECT", order: 891, question: "Me"},
+{id: 892, lessonId: 60, type: "SELECT", order: 892, question: "Talk to me"},
+{id: 893, lessonId: 60, type: "SELECT", order: 893, question: "You and I"},
+{id: 894, lessonId: 60, type: "SELECT", order: 894, question: "You and I forever"},
 
  ]);
 
@@ -4054,6 +4278,847 @@ await db.insert(schema.challenges).values([
 {id: 2051, challengeId: 684, correct: false, text: "You do well"},
 {id: 2052, challengeId: 684, correct: true, text: "You do well oooooo", audioSrc: "m1-l1-q15-pg.mp3"},
 
+{id: 2053, challengeId: 685, correct: false, text: "Small"},
+{id: 2054, challengeId: 685, correct: false, text: "I like pidgin oooo"},
+{id: 2055, challengeId: 685, correct: true, text: "You sabi speak pidgin", audioSrc: "m2-l2-q1-pg.mp3"},
+
+{id: 2056, challengeId: 686, correct: false, text: "I like pidgin"},
+{id: 2057, challengeId: 686, correct: true, text: "Na small ooo", audioSrc: "m2-l2-q2-pg.mp3"},
+{id: 2058, challengeId: 686, correct: false, text: "I dey 35yrs"},
+
+{id: 2059, challengeId: 687, correct: true, text: "I like pidgin", audioSrc: "m2-l2-q3-pg.mp3"},
+{id: 2060, challengeId: 687, correct: false, text: "Na small ooo"},
+{id: 2061, challengeId: 687, correct: false, text: "I dey talk to you oooo"},
+
+{id: 2062, challengeId: 688, correct: true, text: "How many years you dey", audioSrc: "m2-l2-q5-pg.mp3"},
+{id: 2063, challengeId: 688, correct: false, text: "I be 35yrs oooo"},
+{id: 2064, challengeId: 688, correct: false, text: "I like you ooo"},
+
+{id: 2065, challengeId: 689, correct: true, text: "Abi 35yrs", audioSrc: "m2-l2-q6-pg.mp3"},
+{id: 2066, challengeId: 689, correct: false, text: "I like you oooo"},
+{id: 2067, challengeId: 689, correct: false, text: "I dey stay USA"},
+
+{id: 2068, challengeId: 690, correct: true, text: "I dey talk to you ooo", audioSrc: "m2-l2-q7-pg.mp3"},
+{id: 2069, challengeId: 690, correct: false, text: "Where you dey stay"},
+{id: 2070, challengeId: 690, correct: false, text: "Wetin be dis"},
+
+{id: 2071, challengeId: 691, correct: false, text: "Abi 35yrs ooo"},
+{id: 2072, challengeId: 691, correct: false, text: "No be you i dey talk to"},
+{id: 2073, challengeId: 691, correct: true, text: "Wetin be dis", audioSrc: "m2-l2-q8-pg.mp3"},
+
+{id: 2074, challengeId: 692, correct: true, text: "Wetin that one mean", audioSrc: "m2-l2-q9-pg.mp3"},
+{id: 2075, challengeId: 692, correct: false, text: "Abi 35yrs ooo"},
+{id: 2076, challengeId: 692, correct: false, text: "Dis tin fine well well"},
+
+{id: 2077, challengeId: 693, correct: true, text: "Where you dey na", audioSrc: "m2-l2-q10-pg.mp3"},
+{id: 2078, challengeId: 693, correct: false, text: "Where you dey stay self"},
+{id: 2079, challengeId: 693, correct: false, text: "Abi 35yrs"},
+
+{id: 2080, challengeId: 694, correct: true, text: "I like you oooo", audioSrc: "m2-l2-q11-pg.mp3"},
+{id: 2081, challengeId: 694, correct: false, text: "I dey stay USA"},
+{id: 2082, challengeId: 694, correct: false, text: "Dis tin fine well well"},
+
+{id: 2083, challengeId: 695, correct: false, text: "I like you oooo"},
+{id: 2084, challengeId: 695, correct: true, text: "Dis tin fine ooooo", audioSrc: "m2-l2-q12-pg.mp3"},
+{id: 2085, challengeId: 695, correct: false, text: "I dey stay for USA"},
+
+{id: 2086, challengeId: 696, correct: false, text: "Dis tin fine well well"},
+{id: 2087, challengeId: 696, correct: false, text: "I like you ooo"},
+{id: 2088, challengeId: 696, correct: true, text: "Where you dey stay", audioSrc: "m2-l2-q13-pg.mp3"},
+
+{id: 2089, challengeId: 697, correct: false, text: "Dis tin fine ooo"},
+{id: 2090, challengeId: 697, correct: true, text: "She fine ooo", audioSrc: "m2-l2-q14-pg.mp3"},
+{id: 2091, challengeId: 697, correct: false, text: "Where you dey stay"},
+
+{id: 2092, challengeId: 698, correct: true, text: "I dey stay for inside USA", audioSrc: "m2-l2-q15-pg.mp3"},
+{id: 2093, challengeId: 698, correct: false, text: "I dey stay Nigeria"},
+{id: 2094, challengeId: 698, correct: false, text: "Dis tin fine oooo"},
+
+{id: 2095, challengeId: 699, correct: true, text: "I dey stay for inside USA", audioSrc: "m2-l2-q15-pg.mp3"},
+{id: 2096, challengeId: 699, correct: false, text: "I dey stay Nigeria"},
+{id: 2097, challengeId: 699, correct: false, text: "Dis tin fine oooo"},
+
+{id: 2098, challengeId: 700, correct: false, text: "You dey correct"},
+{id: 2099, challengeId: 700, correct: true, text: "Wetin you mean", audioSrc: "m3-l3-q2-pg.mp3"},
+{id: 2100, challengeId: 700, correct: false, text: "I know"},
+
+{id: 2101, challengeId: 701, correct: false, text: "Me self like you"},
+{id: 2102, challengeId: 701, correct: true, text: "Talk to me", audioSrc: "m3-l3-q3-pg.mp3"},
+{id: 2103, challengeId: 701, correct: false, text: "No be so he be ooo"},
+
+{id: 2104, challengeId: 702, correct: false, text: "I know"},
+{id: 2105, challengeId: 702, correct: true, text: "Me self like you", audioSrc: "m3-l3-q4-pg.mp3"},
+{id: 2106, challengeId: 702, correct: false, text: "Where you dey go"},
+
+{id: 2107, challengeId: 703, correct: true, text: "No be like that", audioSrc: "m3-l3-q5-pg.mp3"},
+{id: 2108, challengeId: 703, correct: false, text: "Na the same tin"},
+{id: 2109, challengeId: 703, correct: false, text: "Where you dey go self"},
+
+{id: 2110, challengeId: 704, correct: true, text: "Make we dey go ooo", audioSrc: "m3-l3-q6-pg.mp3"},
+{id: 2111, challengeId: 704, correct: false, text: "Where you dey go"},
+{id: 2112, challengeId: 704, correct: false, text: "You no dey correct"},
+
+{id: 2113, challengeId: 705, correct: true, text: "Turn come back here now", audioSrc: "m3-l3-q7-pg.mp3"},
+{id: 2114, challengeId: 705, correct: false, text: "Where you dey go oooo"},
+{id: 2115, challengeId: 705, correct: false, text: "I know na"},
+
+{id: 2116, challengeId: 706, correct: true, text: "You dey alone", audioSrc: "m3-l3-q8-pg.mp3"},
+{id: 2117, challengeId: 706, correct: false, text: "Yes ooo"},
+{id: 2118, challengeId: 706, correct: false, text: "No oooo"},
+
+{id: 2119, challengeId: 707, correct: true, text: "Make we dey go", audioSrc: "m3-l3-q9-pg.mp3"},
+{id: 2120, challengeId: 707, correct: false, text: "Turn back cum here now"},
+{id: 2121, challengeId: 707, correct: false, text: "You no correct ooooo"},
+
+{id: 2122, challengeId: 708, correct: false, text: "Na the same tin"},
+{id: 2123, challengeId: 708, correct: true, text: "I know", audioSrc: "m3-l3-q10-pg.mp3"},
+{id: 2124, challengeId: 708, correct: false, text: "Where you dey go self"},
+
+{id: 2125, challengeId: 709, correct: true, text: "Na the same tin", audioSrc: "m3-l3-q11-pg.mp3"},
+{id: 2126, challengeId: 709, correct: false, text: "I know"},
+{id: 2127, challengeId: 709, correct: false, text: "You no correct"},
+
+{id: 2128, challengeId: 710, correct: true, text: "You dey correct", audioSrc: "m3-l3-q12-pg.mp3"},
+{id: 2129, challengeId: 710, correct: false, text: "Dis tin fine well well"},
+{id: 2130, challengeId: 710, correct: false, text: "Me self like you oooo"},
+
+{id: 2131, challengeId: 711, correct: false, text: "Dis tin fine ooooo"},
+{id: 2132, challengeId: 711, correct: true, text: "You dey correct", audioSrc: "m3-l3-q13-pg.mp3"},
+{id: 2133, challengeId: 711, correct: false, text: "You no dey correct"},
+
+{id: 2134, challengeId: 712, correct: false, text: "I know"},
+{id: 2135, challengeId: 712, correct: true, text: "This tin fine well well oo", audioSrc: "m3-l3-q14-pg.mp3"},
+{id: 2136, challengeId: 712, correct: false, text: "Where you dey go ooo"},
+
+{id: 2137, challengeId: 713, correct: false, text: "You no dey correct"},
+{id: 2138, challengeId: 713, correct: true, text: "You know", audioSrc: "m3-l3-q15-pg.mp3"},
+{id: 2139, challengeId: 713, correct: false, text: "Na the same tin"},
+
+{id: 2140, challengeId: 714, correct: false, text: "Wetin you wan buy"},
+{id: 2141, challengeId: 714, correct: true, text: "I won buy", audioSrc: "m4-l4-q1-pg.mp3"},
+{id: 2142, challengeId: 714, correct: false, text: "Yam 1000"},
+
+{id: 2143, challengeId: 715, correct: false, text: "Yam 1000"},
+{id: 2144, challengeId: 715, correct: false, text: "I won buy"},
+{id: 2145, challengeId: 715, correct: true, text: "Wetin you won buy", audioSrc: "m4-l4-q2-pg.mp3"},
+
+{id: 2146, challengeId: 716, correct: true, text: "How you dey sell", audioSrc: "m4-l4-q3-pg.mp3"},
+{id: 2147, challengeId: 716, correct: false, text: "Yam"},
+{id: 2148, challengeId: 716, correct: false, text: "Wetin you wan buy"},
+
+{id: 2149, challengeId: 717, correct: false, text: "Yam 1000"},
+{id: 2150, challengeId: 717, correct: true, text: "How you dey sell", audioSrc: "m4-l4-q4-pg.mp3"},
+{id: 2151, challengeId: 717, correct: false, text: "Wetin you talk"},
+
+{id: 2152, challengeId: 718, correct: true, text: "How you dey sell", audioSrc: "m4-l4-q5-pg.mp3"},
+{id: 2153, challengeId: 718, correct: false, text: "I dey sorry ooo"},
+{id: 2154, challengeId: 718, correct: false, text: "Yam 1000"},
+
+{id: 2155, challengeId: 719, correct: false, text: "Come back na"},
+{id: 2156, challengeId: 719, correct: false, text: "Do ooooo"},
+{id: 2157, challengeId: 719, correct: true, text: "I dey come", audioSrc: "m4-l4-q6-pg.mp3"},
+
+{id: 2158, challengeId: 720, correct: true, text: "I dey sorry o", audioSrc: "m4-l4-q7-pg.mp3"},
+{id: 2159, challengeId: 720, correct: false, text: "Do ooooo"},
+{id: 2160, challengeId: 720, correct: false, text: "Wetin you talk"},
+
+{id: 2161, challengeId: 721, correct: false, text: "I don hear you"},
+{id: 2162, challengeId: 721, correct: true, text: "He no dey at all", audioSrc: "m4-l4-q8-pg.mp3"},
+{id: 2163, challengeId: 721, correct: false, text: "Come back na"},
+
+{id: 2164, challengeId: 722, correct: false, text: "I don hear you"},
+{id: 2165, challengeId: 722, correct: true, text: "Come back na", audioSrc: "m4-l4-q9-pg.mp3"},
+{id: 2166, challengeId: 722, correct: false, text: "Do oooo"},
+
+{id: 2167, challengeId: 723, correct: true, text: "I don hear you", audioSrc: "m4-l4-q10-pg.mp3"},
+{id: 2168, challengeId: 723, correct: false, text: "Come back na"},
+{id: 2169, challengeId: 723, correct: false, text: "Which time self"},
+
+{id: 2170, challengeId: 724, correct: true, text: "I don hear you", audioSrc: "m4-l4-q10-pg.mp3"},
+{id: 2171, challengeId: 724, correct: false, text: "Come back na"},
+{id: 2172, challengeId: 724, correct: false, text: "Which time self"},
+
+{id: 2173, challengeId: 725, correct: true, text: "Which time oooo", audioSrc: "m4-l4-q11-pg.mp3"},
+{id: 2174, challengeId: 725, correct: false, text: "For afternoon"},
+{id: 2175, challengeId: 725, correct: false, text: "For evening"},
+
+{id: 2176, challengeId: 726, correct: false, text: "Na which time"},
+{id: 2177, challengeId: 726, correct: true, text: "For afternoon", audioSrc: "m4-l4-q12-pg.mp3"},
+{id: 2178, challengeId: 726, correct: false, text: "For evening"},
+
+{id: 2179, challengeId: 727, correct: true, text: "I go come", audioSrc: "m4-l4-q13-pg.mp3"},
+{id: 2180, challengeId: 727, correct: false, text: "I dey go"},
+{id: 2181, challengeId: 727, correct: false, text: "Wetin you talk"},
+
+{id: 2182, challengeId: 728, correct: false, text: "I go come"},
+{id: 2183, challengeId: 728, correct: true, text: "I dey go", audioSrc: "m4-l4-q14-pg.mp3"},
+{id: 2184, challengeId: 728, correct: false, text: "I dey come"},
+
+{id: 2185, challengeId: 729, correct: true, text: "Wetin you talk", audioSrc: "m4-l4-q15-pg.mp3"},
+{id: 2186, challengeId: 729, correct: false, text: "I dey come"},
+{id: 2187, challengeId: 729, correct: false, text: "Do oooo"},
+
+{id: 2188, challengeId: 730, correct: true, text: "Where you dey go", audioSrc: "m5-l5-q1-pg.mp3"},
+{id: 2189, challengeId: 730, correct: false, text: "I dey go Nicon Town"},
+{id: 2190, challengeId: 730, correct: false, text: "Seea down for back"},
+
+{id: 2191, challengeId: 731, correct: true, text: "I dey go Nicon Town", audioSrc: "m5-l5-q2-pg.mp3"},
+{id: 2192, challengeId: 731, correct: false, text: "Where you dey go"},
+{id: 2193, challengeId: 731, correct: false, text: "Enter inside"},
+
+{id: 2194, challengeId: 732, correct: true, text: "Enter inside", audioSrc: "m5-l5-q3-pg.mp3"},
+{id: 2195, challengeId: 732, correct: false, text: "Come down for here"},
+{id: 2196, challengeId: 732, correct: false, text: "We dey hear"},
+
+{id: 2197, challengeId: 733, correct: true, text: "Seea down for back", audioSrc: "m5-l5-q4-pg.mp3"},
+{id: 2198, challengeId: 733, correct: false, text: "Enter inside"},
+{id: 2199, challengeId: 733, correct: false, text: "Good afternoon oooo"},
+
+{id: 2200, challengeId: 734, correct: true, text: "Where dem dey", audioSrc: "m5-l5-q5-pg.mp3"},
+{id: 2201, challengeId: 734, correct: false, text: "Where you dey go"},
+{id: 2202, challengeId: 734, correct: false, text: "On the light"},
+
+{id: 2203, challengeId: 735, correct: false, text: "Good afternoon oooo"},
+{id: 2204, challengeId: 735, correct: true, text: "Come down for here", audioSrc: "m5-l5-q6-pg.mp3"},
+{id: 2205, challengeId: 735, correct: false, text: "Welcome oooo"},
+
+{id: 2206, challengeId: 736, correct: false, text: "Where you dey go"},
+{id: 2207, challengeId: 736, correct: true, text: "Na the place be dis", audioSrc: "m5-l5-q7-pg.mp3"},
+{id: 2208, challengeId: 736, correct: false, text: "We dey there ooo"},
+
+{id: 2209, challengeId: 737, correct: true, text: "Take your money", audioSrc: "m5-l5-q8-pg.mp3"},
+{id: 2210, challengeId: 737, correct: false, text: "You do well oooo"},
+{id: 2211, challengeId: 737, correct: false, text: "Wetin you won eat"},
+
+{id: 2212, challengeId: 738, correct: true, text: "Good afternoon oooo", audioSrc: "m5-l5-q9-pg.mp3"},
+{id: 2213, challengeId: 738, correct: false, text: "Wetin you talk"},
+{id: 2214, challengeId: 738, correct: false, text: "Welcome oooo"},
+
+{id: 2215, challengeId: 739, correct: false, text: "You do well"},
+{id: 2216, challengeId: 739, correct: true, text: "Welcome ooo", audioSrc: "m5-l5-q10-pg.mp3"},
+{id: 2217, challengeId: 739, correct: false, text: "Bye bye ooo"},
+
+{id: 2218, challengeId: 740, correct: true, text: "On the light", audioSrc: "m5-l5-q11-pg.mp3"},
+{id: 2219, challengeId: 740, correct: false, text: "Wetin you won eat"},
+{id: 2220, challengeId: 740, correct: false, text: "You get water"},
+
+{id: 2221, challengeId: 741, correct: true, text: "Wetin you won eat", audioSrc: "m5-l5-q12-pg.mp3"},
+{id: 2222, challengeId: 741, correct: false, text: "You get water"},
+{id: 2223, challengeId: 741, correct: false, text: "On the light"},
+
+{id: 2224, challengeId: 742, correct: true, text: "U do well ooo", audioSrc: "m5-l5-q13-pg.mp3"},
+{id: 2225, challengeId: 742, correct: false, text: "Wetin you won eat"},
+{id: 2226, challengeId: 742, correct: false, text: "You get water"},
+
+{id: 2227, challengeId: 743, correct: true, text: "You do well", audioSrc: "m5-l5-q14-pg.mp3"},
+{id: 2228, challengeId: 743, correct: false, text: "Bye bye ooo"},
+{id: 2229, challengeId: 743, correct: false, text: "Welcome ooo"},
+
+{id: 2230, challengeId: 744, correct: true, text: "Bye bye ooo", audioSrc: "m5-l5-q15-pg.mp3"},
+{id: 2231, challengeId: 744, correct: false, text: "You do well ooo"},
+{id: 2232, challengeId: 744, correct: false, text: "Welcome oooo"},
+
+{id: 2233, challengeId: 745, correct: false, text: "Good morning oooo"},
+{id: 2234, challengeId: 745, correct: true, text: "Thank you wel well ooo", audioSrc: "m2-l1-q1-pg.mp3"},
+{id: 2235, challengeId: 745, correct: false, text: "See ooo"},
+
+{id: 2236, challengeId: 746, correct: false, text: "Thank you well well ooo"},
+{id: 2237, challengeId: 746, correct: false, text: "Welcome oooo"},
+{id: 2238, challengeId: 746, correct: true, text: "Good morning oooo", audioSrc: "m2-l1-q2-pg.mp3"},
+
+{id: 2239, challengeId: 747, correct: false, text: "See oooo"},
+{id: 2240, challengeId: 747, correct: false, text: "How far"},
+{id: 2241, challengeId: 747, correct: true, text: "Good morning oooo", audioSrc: "m2-l1-q3-pg.mp3"},
+
+{id: 2242, challengeId: 748, correct: false, text: "Welcome oooo"},
+{id: 2243, challengeId: 748, correct: true, text: "Good afternoon oooo", audioSrc: "m2-l1-q4-pg.mp3"},
+{id: 2244, challengeId: 748, correct: false, text: "Good night oooo"},
+
+{id: 2245, challengeId: 749, correct: false, text: "Thank you well well ooo"},
+{id: 2246, challengeId: 749, correct: false, text: "Morning oooo"},
+{id: 2247, challengeId: 749, correct: true, text: "Welcome oooo", audioSrc: "m2-l1-q5-pg.mp3"},
+
+{id: 2248, challengeId: 750, correct: true, text: "See oooo", audioSrc: "m2-l1-q6-pg.mp3"},
+{id: 2249, challengeId: 750, correct: false, text: "Good night oooo"},
+{id: 2250, challengeId: 750, correct: false, text: "How far na"},
+
+{id: 2251, challengeId: 751, correct: false, text: "Morning oooo"},
+{id: 2252, challengeId: 751, correct: true, text: "Better wel wel", audioSrc: "m2-l1-q7-pg.mp3"},
+{id: 2253, challengeId: 751, correct: false, text: "Make your day better ooo"},
+
+{id: 2254, challengeId: 752, correct: false, text: "How you dey"},
+{id: 2255, challengeId: 752, correct: false, text: "Bye"},
+{id: 2256, challengeId: 752, correct: true, text: "How far", audioSrc: "m2-l1-q8-pg.mp3"},
+
+{id: 2257, challengeId: 753, correct: false, text: "Better night rest oooo"},
+{id: 2258, challengeId: 753, correct: true, text: "Bye bye", audioSrc: "m2-l1-q9-pg.mp3"},
+{id: 2259, challengeId: 753, correct: false, text: "How far"},
+
+{id: 2260, challengeId: 754, correct: false, text: "See oooo"},
+{id: 2261, challengeId: 754, correct: false, text: "Thank you well well"},
+{id: 2262, challengeId: 754, correct: true, text: "How you dey na", audioSrc: "m2-l1-q10-pg.mp3"},
+
+{id: 2263, challengeId: 755, correct: true, text: "Make your day better oooo", audioSrc: "m2-l1-q11-pg.mp3"},
+{id: 2264, challengeId: 755, correct: false, text: "Good morning oooo"},
+{id: 2265, challengeId: 755, correct: false, text: "Welcome oooo"},
+
+{id: 2266, challengeId: 756, correct: false, text: "Morning oooo"},
+{id: 2267, challengeId: 756, correct: false, text: "Bye bye we go see tomorrow"},
+{id: 2268, challengeId: 756, correct: true, text: "Good night oooo", audioSrc: "m2-l1-q12-pg.mp3"},
+
+{id: 2269, challengeId: 757, correct: true, text: "Bye bye we go see tomorrow", audioSrc: "m2-l1-q13-pg.mp3"},
+{id: 2270, challengeId: 757, correct: false, text: "Bye bye ooo"},
+{id: 2271, challengeId: 757, correct: false, text: "How far"},
+
+{id: 2272, challengeId: 758, correct: false, text: "Welcome oooo"},
+{id: 2273, challengeId: 758, correct: false, text: "Make your day better"},
+{id: 2274, challengeId: 758, correct: true, text: "Bye bye", audioSrc: "m2-l1-q14-pg.mp3"},
+
+{id: 2275, challengeId: 759, correct: true, text: "Better night rest oooo", audioSrc: "m2-l1-q15-pg.mp3"},
+{id: 2276, challengeId: 759, correct: false, text: "Thank you well well"},
+{id: 2277, challengeId: 759, correct: false, text: "Good morning oooo"},
+
+{id: 2278, challengeId: 760, correct: true, text: "Oga Paul, good evening oooo", audioSrc: "m2-l2-q1-pg.mp3"},
+{id: 2279, challengeId: 760, correct: false, text: "Good morning oooo"},
+{id: 2280, challengeId: 760, correct: false, text: "I go see you tomorrow"},
+
+{id: 2281, challengeId: 761, correct: false, text: "Bye bye"},
+{id: 2282, challengeId: 761, correct: true, text: "Good morning oooo", audioSrc: "m2-l2-q2-pg.mp3"},
+{id: 2283, challengeId: 761, correct: false, text: "Tomorrow na"},
+
+{id: 2284, challengeId: 762, correct: true, text: "Afternoon oooo", audioSrc: "m2-l2-q3-pg.mp3"},
+{id: 2285, challengeId: 762, correct: false, text: "Paul good evening, oooo"},
+{id: 2286, challengeId: 762, correct: false, text: "Good morning oooo"},
+
+{id: 2287, challengeId: 763, correct: false, text: "Welcome, oooo"},
+{id: 2288, challengeId: 763, correct: false, text: "Afternoon oooo"},
+{id: 2289, challengeId: 763, correct: true, text: "Better Night", audioSrc: "m2-l2-q4-pg.mp3"},
+
+{id: 2290, challengeId: 764, correct: false, text: "You do wel"},
+{id: 2291, challengeId: 764, correct: true, text: "We go see tomorrow", audioSrc: "m2-l2-q5-pg.mp3"},
+{id: 2292, challengeId: 764, correct: false, text: "How you dey"},
+
+{id: 2293, challengeId: 765, correct: false, text: "Goodnight ooo"},
+{id: 2294, challengeId: 765, correct: false, text: "How you dey"},
+{id: 2295, challengeId: 765, correct: true, text: "Bye bye", audioSrc: "m2-l2-q6-pg.mp3"},
+
+{id: 2296, challengeId: 766, correct: false, text: "Welcome oooo"},
+{id: 2297, challengeId: 766, correct: true, text: "You dey welcome", audioSrc: "m2-l2-q7-pg.mp3"},
+{id: 2298, challengeId: 766, correct: false, text: "Tomorrow na"},
+
+{id: 2299, challengeId: 767, correct: true, text: "How you dey", audioSrc: "m2-l2-q8-pg.mp3"},
+{id: 2300, challengeId: 767, correct: false, text: "Good morning oooo"},
+{id: 2301, challengeId: 767, correct: false, text: "You dey welcome oooo"},
+
+{id: 2302, challengeId: 768, correct: false, text: "Tomorrow na"},
+{id: 2303, challengeId: 768, correct: false, text: "Na you ?"},
+{id: 2304, challengeId: 768, correct: true, text: "You do well", audioSrc: "m2-l2-q9-pg.mp3"},
+
+{id: 2305, challengeId: 769, correct: true, text: "Bye bye", audioSrc: "m2-l2-q10-pg.mp3"},
+{id: 2306, challengeId: 769, correct: false, text: "Sleep oooo"},
+{id: 2307, challengeId: 769, correct: false, text: "You do wel"},
+
+{id: 2308, challengeId: 770, correct: false, text: "Tomorrow na"},
+{id: 2309, challengeId: 770, correct: true, text: "Welcome ooo", audioSrc: "m2-l2-q11-pg.mp3"},
+{id: 2310, challengeId: 770, correct: false, text: "You do wel"},
+
+{id: 2311, challengeId: 771, correct: false, text: "Night oooo"},
+{id: 2312, challengeId: 771, correct: true, text: "Na you?", audioSrc: "m2-l2-q12-pg.mp3"},
+{id: 2313, challengeId: 771, correct: false, text: "Bye bye"},
+
+{id: 2314, challengeId: 772, correct: false, text: "Welcome oooo"},
+{id: 2315, challengeId: 772, correct: false, text: "Sleep ooo"},
+{id: 2316, challengeId: 772, correct: true, text: "You do well", audioSrc: "m2-l2-q13-pg.mp3"},
+
+{id: 2317, challengeId: 773, correct: false, text: "Welcome oooo"},
+{id: 2318, challengeId: 773, correct: true, text: "Tomorrow oooo", audioSrc: "m2-l2-q14-pg.mp3"},
+{id: 2319, challengeId: 773, correct: false, text: "You do wel"},
+
+{id: 2320, challengeId: 774, correct: true, text: "Sleep oooo", audioSrc: "m2-l2-q15-pg.mp3"},
+{id: 2321, challengeId: 774, correct: false, text: "Paul, Good evening oooo"},
+{id: 2322, challengeId: 774, correct: false, text: "You oooo"},
+
+{id: 2323, challengeId: 775, correct: true, text: "Paul, good morning ooo", audioSrc: "m2-l3-q1-pg.mp3"},
+{id: 2324, challengeId: 775, correct: false, text: "How far Paul, how you dey?"},
+{id: 2325, challengeId: 775, correct: false, text: "I go see you soon"},
+
+{id: 2326, challengeId: 776, correct: false, text: "I dey fine wel wel oooo"},
+{id: 2327, challengeId: 776, correct: true, text: "ok na, we go see tomorrow", audioSrc: "m2-l3-q2-pg.mp3"},
+{id: 2328, challengeId: 776, correct: false, text: "Na so, you do wel"},
+
+{id: 2329, challengeId: 777, correct: true, text: "I go see you soon", audioSrc: "m2-l3-q3-pg.mp3"},
+{id: 2330, challengeId: 777, correct: false, text: "You sleep well?"},
+{id: 2331, challengeId: 777, correct: false, text: "Good afternoon oooo"},
+
+{id: 2332, challengeId: 778, correct: true, text: "Bye bye, see you tomorrow", audioSrc: "m2-l3-q4-pg.mp3"},
+{id: 2333, challengeId: 778, correct: false, text: "I dey fine wel wel"},
+{id: 2334, challengeId: 778, correct: false, text: "Good afternoon oooo"},
+
+{id: 2335, challengeId: 779, correct: false, text: "Good afternoon oooo"},
+{id: 2336, challengeId: 779, correct: false, text: "Na so, you do well"},
+{id: 2337, challengeId: 779, correct: true, text: "How far", audioSrc: "m2-l3-q5-pg.mp3"},
+
+{id: 2338, challengeId: 780, correct: true, text: "How you dey na", audioSrc: "m2-l3-q6-pg.mp3"},
+{id: 2339, challengeId: 780, correct: false, text: "You sleep wel"},
+{id: 2340, challengeId: 780, correct: false, text: "How far Paul, how you dey ?"},
+
+{id: 2341, challengeId: 781, correct: true, text: "Good afternoon oooo", audioSrc: "m2-l3-q7-pg.mp3"},
+{id: 2342, challengeId: 781, correct: false, text: "Good night oooo"},
+{id: 2343, challengeId: 781, correct: false, text: "I go see you soon"},
+
+{id: 2344, challengeId: 782, correct: false, text: "Na so"},
+{id: 2345, challengeId: 782, correct: true, text: "You do wel", audioSrc: "m2-l3-q8-pg.mp3"},
+{id: 2346, challengeId: 782, correct: false, text: "ok na, I go see you tomorrow"},
+
+{id: 2347, challengeId: 783, correct: false, text: "How you dey"},
+{id: 2348, challengeId: 783, correct: true, text: "You sleep wel?", audioSrc: "m2-l3-q9-pg.mp3"},
+{id: 2349, challengeId: 783, correct: false, text: "How far Paul, how you dey?"},
+
+{id: 2350, challengeId: 784, correct: false, text: "ok na, I go see you tomorrow"},
+{id: 2351, challengeId: 784, correct: true, text: "Goodnight ooo", audioSrc: "m2-l3-q10-pg.mp3"},
+{id: 2352, challengeId: 784, correct: false, text: "I go see you soon"},
+
+{id: 2353, challengeId: 785, correct: true, text: "I dey fine oooo", audioSrc: "m2-l3-q11-pg.mp3"},
+{id: 2354, challengeId: 785, correct: false, text: "You do wel"},
+{id: 2355, challengeId: 785, correct: false, text: "How you dey?"},
+
+{id: 2356, challengeId: 786, correct: false, text: "Na so, you do wel"},
+{id: 2357, challengeId: 786, correct: true, text: "Na so", audioSrc: "m2-l3-q12-pg.mp3"},
+{id: 2358, challengeId: 786, correct: false, text: "I go see you soon"},
+
+{id: 2359, challengeId: 787, correct: true, text: "How far Paul, how you dey?", audioSrc: "m2-l3-q13-pg.mp3"},
+{id: 2360, challengeId: 787, correct: false, text: "How you dey na?"},
+{id: 2361, challengeId: 787, correct: false, text: "You sleep wel?"},
+
+{id: 2362, challengeId: 788, correct: false, text: "Good afternoon oooo"},
+{id: 2363, challengeId: 788, correct: true, text: "Na so, you do wel", audioSrc: "m2-l3-q14-pg.mp3"},
+{id: 2364, challengeId: 788, correct: false, text: "I dey fine ooo"},
+
+{id: 2365, challengeId: 789, correct: true, text: "You sleep well?", audioSrc: "m2-l3-q15-pg.mp3"},
+{id: 2366, challengeId: 789, correct: false, text: "How you dey na?"},
+{id: 2367, challengeId: 789, correct: false, text: "Goodnight oooo"},
+
+{id: 2368, challengeId: 790, correct: true, text: "How far Paul, how you dey?", audioSrc: "m2-l4-q1-pg.mp3"},
+{id: 2369, challengeId: 790, correct: false, text: "Good morning oooo, how you dey?"},
+{id: 2370, challengeId: 790, correct: false, text: "Good evening, ooo. How you dey oooo?"},
+
+{id: 2371, challengeId: 791, correct: true, text: "Dey ok", audioSrc: "m2-l4-q2-pg.mp3"},
+{id: 2372, challengeId: 791, correct: false, text: "Abi Paul, you nko?"},
+{id: 2373, challengeId: 791, correct: false, text: "You do wel"},
+
+{id: 2374, challengeId: 792, correct: true, text: "Good morning ooo. How you dey na?", audioSrc: "m2-l4-q3-pg.mp3"},
+{id: 2375, challengeId: 792, correct: false, text: "I dey fine wel wel"},
+{id: 2376, challengeId: 792, correct: false, text: "Abi Paul, you nko?"},
+
+{id: 2377, challengeId: 793, correct: true, text: "I dey fine ooo, you nko?", audioSrc: "m2-l4-q4-pg.mp3"},
+{id: 2378, challengeId: 793, correct: false, text: "I dey fine wel wel ooo, you do wel"},
+{id: 2379, challengeId: 793, correct: false, text: "Good evening oooo. How you dey?"},
+
+{id: 2380, challengeId: 794, correct: true, text: "Good evening oooo. How you dey", audioSrc: "m2-l4-q5-pg.mp3"},
+{id: 2381, challengeId: 794, correct: false, text: "How far, how u dey?"},
+{id: 2382, challengeId: 794, correct: false, text: "Bye bye"},
+
+{id: 2383, challengeId: 795, correct: true, text: "Abi Paul, you nko?", audioSrc: "m2-l4-q6-pg.mp3"},
+{id: 2384, challengeId: 795, correct: false, text: "Abi Paul"},
+{id: 2385, challengeId: 795, correct: false, text: "Good morning oooo. How you dey?"},
+
+{id: 2386, challengeId: 796, correct: true, text: "How far, how you dey", audioSrc: "m2-l4-q7-pg.mp3"},
+{id: 2387, challengeId: 796, correct: false, text: "Dey ok"},
+{id: 2388, challengeId: 796, correct: false, text: "I dey fine oooo"},
+
+{id: 2389, challengeId: 797, correct: true, text: "I dey fine, you do wel", audioSrc: "m2-l4-q8-pg.mp3"},
+{id: 2390, challengeId: 797, correct: false, text: "Abi Paul you nko?"},
+{id: 2391, challengeId: 797, correct: false, text: "I dey fine, wel wel"},
+
+{id: 2392, challengeId: 798, correct: true, text: "I dey fine wel wel", audioSrc: "m2-l4-q9-pg.mp3"},
+{id: 2393, challengeId: 798, correct: false, text: "Abi Paul"},
+{id: 2394, challengeId: 798, correct: false, text: "Dey ok"},
+
+{id: 2395, challengeId: 799, correct: true, text: "How you dey", audioSrc: "m2-l4-q10-pg.mp3"},
+{id: 2396, challengeId: 799, correct: false, text: "Dey ok"},
+{id: 2397, challengeId: 799, correct: false, text: "You do wel"},
+
+{id: 2398, challengeId: 800, correct: true, text: "Good evening ooo, I mis you, ooo", audioSrc: "m2-l4-q11-pg.mp3"},
+{id: 2399, challengeId: 800, correct: false, text: "Good evening, how you dey"},
+{id: 2400, challengeId: 800, correct: false, text: "Good afternoon"},
+
+{id: 2401, challengeId: 801, correct: true, text: "Dey, ok", audioSrc: "m2-l4-q12-pg.mp3"},
+{id: 2402, challengeId: 801, correct: false, text: "Bye bye"},
+{id: 2403, challengeId: 801, correct: false, text: "Good evening. I mis you"},
+
+{id: 2404, challengeId: 802, correct: true, text: "Abi your friend", audioSrc: "m2-l4-q13-pg.mp3"},
+{id: 2405, challengeId: 802, correct: false, text: "Abi Paul"},
+{id: 2406, challengeId: 802, correct: false, text: "Bye bye"},
+
+{id: 2407, challengeId: 803, correct: true, text: "Bye bye", audioSrc: "m2-l4-q14-pg.mp3"},
+{id: 2408, challengeId: 803, correct: false, text: "You do wel"},
+{id: 2409, challengeId: 803, correct: false, text: "Dey ok"},
+
+{id: 2410, challengeId: 804, correct: true, text: "Abi Paul", audioSrc: "m2-l4-q15-pg.mp3"},
+{id: 2411, challengeId: 804, correct: false, text: "Abi your friend"},
+{id: 2412, challengeId: 804, correct: false, text: "Abi Paul, who you be?"},
+
+{id: 2413, challengeId: 805, correct: true, text: "Better evening ooo", audioSrc: "m2-l5-q1-pg.mp3"},
+{id: 2414, challengeId: 805, correct: false, text: "Na so, you nko"},
+{id: 2415, challengeId: 805, correct: false, text: "You don wake?"},
+
+{id: 2416, challengeId: 806, correct: false, text: "Na so, you nko?"},
+{id: 2417, challengeId: 806, correct: true, text: "Na so, I dey fine", audioSrc: "m2-l5-q2-pg.mp3"},
+{id: 2418, challengeId: 806, correct: false, text: "Na so, I go travel with plane"},
+
+{id: 2419, challengeId: 807, correct: true, text: "Na so, you nko", audioSrc: "m2-l5-q3-pg.mp3"},
+{id: 2420, challengeId: 807, correct: false, text: "You don wake"},
+{id: 2421, challengeId: 807, correct: false, text: "Welcome oooo"},
+
+{id: 2422, challengeId: 808, correct: false, text: "I go see you soon"},
+{id: 2423, challengeId: 808, correct: false, text: "Welcome oooo"},
+{id: 2424, challengeId: 808, correct: true, text: "You sleep wel", audioSrc: "m2-l5-q4-pg.mp3"},
+
+{id: 2425, challengeId: 809, correct: true, text: "You don wake", audioSrc: "m2-l5-q5-pg.mp3"},
+{id: 2426, challengeId: 809, correct: false, text: "How your day dey go now"},
+{id: 2427, challengeId: 809, correct: false, text: "You sleep well"},
+
+{id: 2428, challengeId: 810, correct: true, text: "Welcome oooo", audioSrc: "m2-l5-q6-pg.mp3"},
+{id: 2429, challengeId: 810, correct: false, text: "Thank God oooo"},
+{id: 2430, challengeId: 810, correct: false, text: "I dey drive motor"},
+
+{id: 2431, challengeId: 811, correct: true, text: "We go see soon", audioSrc: "m2-l5-q7-pg.mp3"},
+{id: 2432, challengeId: 811, correct: false, text: "Na so, I gi travel with plane"},
+{id: 2433, challengeId: 811, correct: false, text: "Enjoy your night oooo"},
+
+
+{id: 2434, challengeId: 812, correct: false, text: "I dey drive motor"},
+{id: 2435, challengeId: 812, correct: true, text: "Na so, I go travel with plane", audioSrc: "m2-l5-q8-pg.mp3"},
+{id: 2436, challengeId: 812, correct: false, text: "Thank God ooo"},
+
+
+{id: 2437, challengeId: 813, correct: false, text: "How your day dey go na"},
+{id: 2438, challengeId: 813, correct: false, text: "Wnjoy your sleep ooo"},
+{id: 2439, challengeId: 813, correct: true, text: "You just dey wake", audioSrc: "m2-l5-q9-pg.mp3"},
+
+{id: 2440, challengeId: 814, correct: true, text: "I dey sorry", audioSrc: "m2-l5-q10-pg.mp3"},
+{id: 2441, challengeId: 814, correct: false, text: "We go see soon"},
+{id: 2442, challengeId: 814, correct: false, text: "Thank God ooo"},
+
+{id: 2443, challengeId: 815, correct: true, text: "I dey wait for you ooo", audioSrc: "m2-l5-q11-pg.mp3"},
+{id: 2444, challengeId: 815, correct: false, text: "Enjoy your sleep, ooo"},
+{id: 2445, challengeId: 815, correct: false, text: "I dey drive motor"},
+
+{id: 2446, challengeId: 816, correct: false, text: "Na so, welcome oooo"},
+{id: 2447, challengeId: 816, correct: false, text: "Na so, I go travel with plane"},
+{id: 2448, challengeId: 816, correct: true, text: "Enjoy your sleep ooo", audioSrc: "m2-l5-q12-pg.mp3"},
+
+{id: 2449, challengeId: 817, correct: true, text: "I dey drive motor", audioSrc: "m2-l5-q13-pg.mp3"},
+{id: 2450, challengeId: 817, correct: false, text: "Make your evening sweet ooo"},
+{id: 2451, challengeId: 817, correct: false, text: "You do wake"},
+
+{id: 2452, challengeId: 818, correct: true, text: "How your day dey go", audioSrc: "m2-l5-q14-pg.mp3"},
+{id: 2453, challengeId: 818, correct: false, text: "You don wake"},
+{id: 2454, challengeId: 818, correct: false, text: "You sleep wel"},
+
+{id: 2455, challengeId: 819, correct: false, text: "Better evening ooo"},
+{id: 2456, challengeId: 819, correct: false, text: "We go see soon"},
+{id: 2457, challengeId: 819, correct: true, text: "Thank God oooo", audioSrc: "m2-l5-q15-pg.mp3"},
+
+{id: 2458, challengeId: 820, correct: true, text: "I sabi speak pidgin", audioSrc: "m3-l1-q1-pg.mp3"},
+{id: 2459, challengeId: 820, correct: false, text: "Abeg ooo you sabi speak pidgin"},
+{id: 2460, challengeId: 820, correct: false, text: "You be Delta person"},
+
+{id: 2461, challengeId: 821, correct: false, text: "You be Delta person"},
+{id: 2462, challengeId: 821, correct: false, text: "I sabi speak pidgin"},
+{id: 2463, challengeId: 821, correct: true, text: "Abeg ooo you sabi speak pidgin", audioSrc: "m3-l1-q2-pg.mp3"},
+
+{id: 2464, challengeId: 822, correct: false, text: "You be Delta person"},
+{id: 2465, challengeId: 822, correct: false, text: "I be Nigerian ooo"},
+{id: 2466, challengeId: 822, correct: true, text: "No ooo i be Delta person", audioSrc: "m3-l1-q3-pg.mp3"},
+
+{id: 2467, challengeId: 823, correct: false, text: "Wetin be your name"},
+{id: 2468, challengeId: 823, correct: false, text: "Where i fit get cab"},
+{id: 2469, challengeId: 823, correct: true, text: "I need cab ooo", audioSrc: "m3-l1-q4-pg.mp3"},
+
+{id: 2470, challengeId: 824, correct: true, text: "Where i fit get cab", audioSrc: "m3-l1-q5-pg.mp3"},
+{id: 2471, challengeId: 824, correct: false, text: "I need cab ooo"},
+{id: 2472, challengeId: 824, correct: false, text: "I dey stay for that hotel"},
+
+{id: 2473, challengeId: 825, correct: true, text: "I be Nigerian ooo", audioSrc: "m3-l1-q6-pg.mp3"},
+{id: 2474, challengeId: 825, correct: false, text: "I go stay one week"},
+{id: 2475, challengeId: 825, correct: false, text: "I dey alone"},
+
+{id: 2476, challengeId: 826, correct: true, text: "Wetin be your name", audioSrc: "m3-l1-q7-pg.mp3"},
+{id: 2477, challengeId: 826, correct: false, text: "You be Delta person"},
+{id: 2478, challengeId: 826, correct: false, text: "My name na Ejiro"},
+
+{id: 2479, challengeId: 827, correct: true, text: "Na Caro be her name", audioSrc: "m3-l1-q8-pg.mp3"},
+{id: 2480, challengeId: 827, correct: false, text: "Na me and my family come ooo"},
+{id: 2481, challengeId: 827, correct: false, text: "I won go stay Nigeria small"},
+
+{id: 2482, challengeId: 828, correct: true, text: "You be Delta person", audioSrc: "m3-l1-q9-pg.mp3"},
+{id: 2483, challengeId: 828, correct: false, text: "No abi Delta person"},
+{id: 2484, challengeId: 828, correct: false, text: "Abi Nigerian"},
+
+{id: 2485, challengeId: 829, correct: true, text: "My name na Ejiro", audioSrc: "m3-l1-q10-pg.mp3"},
+{id: 2486, challengeId: 829, correct: false, text: "Wetin be your name"},
+{id: 2487, challengeId: 829, correct: false, text: "I go stay one week"},
+
+{id: 2488, challengeId: 830, correct: true, text: "No abi Delta person", audioSrc: "m3-l1-q11-pg.mp3"},
+{id: 2489, challengeId: 830, correct: false, text: "Abi Nigerian"},
+{id: 2490, challengeId: 830, correct: false, text: "You be Delta p3"},
+
+{id: 2491, challengeId: 831, correct: true, text: "I won go stay Nigeria small", audioSrc: "m3-l1-q12-pg.mp3"},
+{id: 2492, challengeId: 831, correct: false, text: "Na me and my family come ooo"},
+{id: 2493, challengeId: 831, correct: false, text: "I dey alone"},
+
+{id: 2494, challengeId: 832, correct: true, text: "I go stay one week", audioSrc: "m3-l1-q13-pg.mp3"},
+{id: 2495, challengeId: 832, correct: false, text: "Wetin be your name"},
+{id: 2496, challengeId: 832, correct: false, text: "I need cab ooo"},
+
+{id: 2497, challengeId: 833, correct: true, text: "Na hotel i dey stay", audioSrc: "m3-l1-q14-pg.mp3"},
+{id: 2498, challengeId: 833, correct: false, text: "I dey alone"},
+{id: 2499, challengeId: 833, correct: false, text: "I won go stay Nigeria small"},
+
+{id: 2500, challengeId: 834, correct: true, text: "I dey alone", audioSrc: "m3-l1-q15-pg.mp3"},
+{id: 2501, challengeId: 834, correct: false, text: "Na me and my family come ooo"},
+{id: 2502, challengeId: 834, correct: false, text: "I won go stay Nigeria small"},
+
+{id: 2503, challengeId: 835, correct: true, text: "Which kind work you dey do self", audioSrc: "m3-l2-q1-pg.mp3"},
+{id: 2504, challengeId: 835, correct: false, text: "You get pikin"},
+{id: 2505, challengeId: 835, correct: false, text: "I dey enjoy this travel ooo"},
+
+{id: 2506, challengeId: 836, correct: false, text: "I dey abi say i dey here"},
+{id: 2507, challengeId: 836, correct: false, text: "Where be the film house"},
+{id: 2508, challengeId: 836, correct: true, text: "Where you come from", audioSrc: "m3-l2-q2-pg.mp3"},
+
+{id: 2509, challengeId: 837, correct: true, text: "You get pikin", audioSrc: "m3-l2-q3-pg.mp3"},
+{id: 2510, challengeId: 837, correct: false, text: "Come make we chop"},
+{id: 2511, challengeId: 837, correct: false, text: "You don travel to Nigeria before"},
+
+{id: 2512, challengeId: 838, correct: true, text: "You don travel to Nigeria before", audioSrc: "m3-l2-q4-pg.mp3"},
+{id: 2513, challengeId: 838, correct: false, text: "I won go see beach ooo"},
+{id: 2514, challengeId: 838, correct: false, text: "Come make we chop"},
+
+{id: 2515, challengeId: 839, correct: true, text: "I dey enjoy this travel ooo", audioSrc: "m3-l2-q5-pg.mp3"},
+{id: 2516, challengeId: 839, correct: false, text: "Abeg come my house"},
+{id: 2517, challengeId: 839, correct: false, text: "You get pikin"},
+
+{id: 2518, challengeId: 840, correct: true, text: "I won go see beach ooo", audioSrc: "m3-l2-q6-pg.mp3"},
+{id: 2519, challengeId: 840, correct: false, text: "Come make we chop"},
+{id: 2520, challengeId: 840, correct: false, text: "You don travel to Nigeria before"},
+
+{id: 2521, challengeId: 841, correct: true, text: "Abeg come my house", audioSrc: "m3-l2-q7-pg.mp3"},
+{id: 2522, challengeId: 841, correct: false, text: "My wife na Nigerian"},
+{id: 2523, challengeId: 841, correct: false, text: "Abeg greet your family ooo"},
+
+{id: 2524, challengeId: 842, correct: true, text: "My wife na Nigerian", audioSrc: "m3-l2-q8-pg.mp3"},
+{id: 2525, challengeId: 842, correct: false, text: "Abeg come my house"},
+{id: 2526, challengeId: 842, correct: false, text: "Abeg greet your family ooo"},
+
+{id: 2527, challengeId: 843, correct: true, text: "Abeg greet your family ooo", audioSrc: "m3-l2-q9-pg.mp3"},
+{id: 2528, challengeId: 843, correct: false, text: "Abeg make i see you ooo"},
+{id: 2529, challengeId: 843, correct: false, text: "Come make we chop"},
+
+{id: 2530, challengeId: 844, correct: true, text: "I won go see una market", audioSrc: "m3-l2-q10-pg.mp3"},
+{id: 2531, challengeId: 844, correct: false, text: "Abeg greet your family ooo"},
+{id: 2532, challengeId: 844, correct: false, text: "Come make we chop"},
+
+{id: 2533, challengeId: 845, correct: true, text: "Where be the film house", audioSrc: "m3-l2-q11-pg.mp3"},
+{id: 2534, challengeId: 845, correct: false, text: "I dey tire ooo"},
+{id: 2535, challengeId: 845, correct: false, text: "I dey happy to come here"},
+
+{id: 2536, challengeId: 846, correct: true, text: "Abeg make i see you", audioSrc: "m3-l2-q12-pg.mp3"},
+{id: 2537, challengeId: 846, correct: false, text: "Abeg greet your family ooo"},
+{id: 2538, challengeId: 846, correct: false, text: "Come make we chop"},
+
+{id: 2539, challengeId: 847, correct: true, text: "Come make we chop", audioSrc: "m3-l2-q13-pg.mp3"},
+{id: 2540, challengeId: 847, correct: false, text: "I won go see una market"},
+{id: 2541, challengeId: 847, correct: false, text: "Abeg greet your family ooo"},
+
+{id: 2542, challengeId: 848, correct: true, text: "I dey tire ooo", audioSrc: "m3-l2-q14-pg.mp3"},
+{id: 2543, challengeId: 848, correct: false, text: "Where be the film house"},
+{id: 2544, challengeId: 848, correct: false, text: "I dey happy say i dey here"},
+
+{id: 2545, challengeId: 849, correct: true, text: "I dey happy say i dey here", audioSrc: "m3-l2-q15-pg.mp3"},
+{id: 2546, challengeId: 849, correct: false, text: "Abeg make i see you ooo"},
+{id: 2547, challengeId: 849, correct: false, text: "Abeg come my house"},
+
+{id: 2548, challengeId: 850, correct: true, text: "Aunty dey church", audioSrc: "m3-l3-q1-pg.mp3"},
+{id: 2549, challengeId: 850, correct: false, text: "Na wa ooo my name na Akpos"},
+{id: 2550, challengeId: 850, correct: false, text: "I dey speak pidgin and isoko"},
+
+{id: 2551, challengeId: 851, correct: true, text: "I go market", audioSrc: "m3-l3-q2-pg.mp3"},
+{id: 2552, challengeId: 851, correct: false, text: "Caro dey speak pidgin and isoko"},
+{id: 2553, challengeId: 851, correct: false, text: "My husband don comot"},
+
+{id: 2554, challengeId: 852, correct: true, text: "I dey speak pidgin and isoko", audioSrc: "m3-l3-q3-pg.mp3"},
+{id: 2555, challengeId: 852, correct: false, text: "You dey speak pidgin"},
+{id: 2556, challengeId: 852, correct: false, text: "My husband don comot"},
+
+{id: 2557, challengeId: 853, correct: true, text: "Na wa ooo my name na Akpos", audioSrc: "m3-l3-q4-pg.mp3"},
+{id: 2558, challengeId: 853, correct: false, text: "My girl pikin na teacher"},
+{id: 2559, challengeId: 853, correct: false, text: "Him boy pikin na police ooo"},
+
+{id: 2560, challengeId: 854, correct: true, text: "Caro dey speak Pidgin and Isoko", audioSrc: "m3-l3-q5-pg.mp3"},
+{id: 2561, challengeId: 854, correct: false, text: "You sabi speak pidgin"},
+{id: 2562, challengeId: 854, correct: false, text: "My husband don comot"},
+
+{id: 2563, challengeId: 855, correct: true, text: "You sabi speak pidgin", audioSrc: "m3-l3-q6-pg.mp3"},
+{id: 2564, challengeId: 855, correct: false, text: "She be Delta person"},
+{id: 2565, challengeId: 855, correct: false, text: "Him be Delta person"},
+
+{id: 2566, challengeId: 856, correct: true, text: "Dem dey speak pidgin", audioSrc: "m3-l3-q7-pg.mp3"},
+{id: 2567, challengeId: 856, correct: false, text: "My husband don comot"},
+{id: 2568, challengeId: 856, correct: false, text: "She be Delta person"},
+
+{id: 2569, challengeId: 857, correct: true, text: "Him be Delta person", audioSrc: "m3-l3-q8-pg.mp3"},
+{id: 2570, challengeId: 857, correct: false, text: "She be Delta person"},
+{id: 2571, challengeId: 857, correct: false, text: "You sabi speak pidgin"},
+
+{id: 2572, challengeId: 858, correct: true, text: "She be Delta person", audioSrc: "m3-l3-q9-pg.mp3"},
+{id: 2573, challengeId: 858, correct: false, text: "Him na Delta person"},
+{id: 2574, challengeId: 858, correct: false, text: "You sabi speak pidgin"},
+
+{id: 2575, challengeId: 859, correct: true, text: "My husband don comot", audioSrc: "m3-l3-q10-pg.mp3"},
+{id: 2576, challengeId: 859, correct: false, text: "I sabi speak pidgin and isoko"},
+{id: 2577, challengeId: 859, correct: false, text: "You sabi speak pidgin"},
+
+{id: 2578, challengeId: 860, correct: true, text: "Her girl pikin na teacher", audioSrc: "m3-l3-q11-pg.mp3"},
+{id: 2579, challengeId: 860, correct: false, text: "Abeg greet your family ooo"},
+{id: 2580, challengeId: 860, correct: false, text: "Him boy pikin na police ooo"},
+
+{id: 2581, challengeId: 861, correct: true, text: "Him boy pikin na police ooo", audioSrc: "m3-l3-q12-pg.mp3"},
+{id: 2582, challengeId: 861, correct: false, text: "Abeg greet your family ooo"},
+{id: 2583, challengeId: 861, correct: false, text: "Her girl pikin na teacher"},
+
+{id: 2584, challengeId: 862, correct: true, text: "My name na Eloho", audioSrc: "m3-l3-q13-pg.mp3"},
+{id: 2585, challengeId: 862, correct: false, text: "She be Delta"},
+{id: 2586, challengeId: 862, correct: false, text: "Dem dey speak pidgin"},
+
+{id: 2587, challengeId: 863, correct: true, text: "I sabi speak pidgin and isoko", audioSrc: "m3-l3-q14-pg.mp3"},
+{id: 2588, challengeId: 863, correct: false, text: "You sabi speak pidgin"},
+{id: 2589, challengeId: 863, correct: false, text: "Dem dey speak pidgin"},
+
+{id: 2590, challengeId: 864, correct: true, text: "Abeg greet your family ooo", audioSrc: "m3-l3-q15-pg.mp3"},
+{id: 2591, challengeId: 864, correct: false, text: "Her girl pikin na teacher"},
+{id: 2592, challengeId: 864, correct: false, text: "Him boy pikin na police ooo"},
+
+{id: 2593, challengeId: 865, correct: true, text: "Na my house", audioSrc: "m3-l4-q1-pg.mp3"},
+{id: 2594, challengeId: 865, correct: false, text: "Abeg talk to my girl pikin"},
+{id: 2595, challengeId: 865, correct: false, text: "Dem many ooo"},
+
+{id: 2596, challengeId: 866, correct: true, text: "Abeg talk to my boy pikin", audioSrc: "m3-l4-q2-pg.mp3"},
+{id: 2597, challengeId: 866, correct: false, text: "Dem"},
+{id: 2598, challengeId: 866, correct: false, text: "Abeg talk to my girl pikin"},
+
+{id: 2599, challengeId: 867, correct: true, text: "Abeg talk to my girl pikin", audioSrc: "m3-l4-q3-pg.mp3"},
+{id: 2600, challengeId: 867, correct: false, text: "Abeg talk to my boy pikin"},
+{id: 2601, challengeId: 867, correct: false, text: "Dem"},
+
+{id: 2602, challengeId: 868, correct: true, text: "Dem", audioSrc: "m3-l4-q4-pg.mp3"},
+{id: 2603, challengeId: 868, correct: false, text: "Dem many ooo"},
+{id: 2604, challengeId: 868, correct: false, text: "Him tall ooo"},
+
+{id: 2605, challengeId: 869, correct: true, text: "Dem many ooo", audioSrc: "m3-l4-q5-pg.mp3"},
+{id: 2606, challengeId: 869, correct: false, text: "She sabi cook"},
+{id: 2607, challengeId: 869, correct: false, text: "She"},
+
+{id: 2608, challengeId: 870, correct: true, text: "He", audioSrc: "m3-l4-q6-pg.mp3"},
+{id: 2609, challengeId: 870, correct: false, text: "She"},
+{id: 2610, challengeId: 870, correct: false, text: "Dem"},
+
+{id: 2611, challengeId: 871, correct: true, text: "Him tall ooo", audioSrc: "m3-l4-q7-pg.mp3"},
+{id: 2612, challengeId: 871, correct: false, text: "He"},
+{id: 2613, challengeId: 871, correct: false, text: "Him brother fine wel wel ooo"},
+
+{id: 2614, challengeId: 872, correct: true, text: "She", audioSrc: "m3-l4-q8-pg.mp3"},
+{id: 2615, challengeId: 872, correct: false, text: "He"},
+{id: 2616, challengeId: 872, correct: false, text: "Dem"},
+
+{id: 2617, challengeId: 873, correct: true, text: "She sabi cook", audioSrc: "m3-l4-q9-pg.mp3"},
+{id: 2618, challengeId: 873, correct: false, text: "Na my book"},
+{id: 2619, challengeId: 873, correct: false, text: "Her sister fine wel wel ooo"},
+
+{id: 2620, challengeId: 874, correct: true, text: "Him", audioSrc: "m3-l4-q10-pg.mp3"},
+{id: 2621, challengeId: 874, correct: false, text: "My"},
+{id: 2622, challengeId: 874, correct: false, text: "Her"},
+
+{id: 2623, challengeId: 875, correct: true, text: "Him brother fine wel wel ooo", audioSrc: "m3-l4-q11-pg.mp3"},
+{id: 2624, challengeId: 875, correct: false, text: "Her"},
+{id: 2625, challengeId: 875, correct: false, text: "Her sister fine wel wel ooo"},
+
+{id: 2626, challengeId: 876, correct: true, text: "Her", audioSrc: "m3-l4-q12-pg.mp3"},
+{id: 2627, challengeId: 876, correct: false, text: "My"},
+{id: 2628, challengeId: 876, correct: false, text: "Him"},
+
+{id: 2629, challengeId: 877, correct: true, text: "Her sister fine wel wel ooo", audioSrc: "m3-l4-q13-pg.mp3"},
+{id: 2630, challengeId: 877, correct: false, text: "Her"},
+{id: 2631, challengeId: 877, correct: false, text: "Him brother fine wel wel ooo"},
+
+{id: 2632, challengeId: 878, correct: true, text: "My", audioSrc: "m3-l4-q14-pg.mp3"},
+{id: 2633, challengeId: 878, correct: false, text: "Him"},
+{id: 2634, challengeId: 878, correct: false, text: "Her"},
+
+{id: 2635, challengeId: 879, correct: true, text: "Na my book", audioSrc: "m3-l4-q15-pg.mp3"},
+{id: 2636, challengeId: 879, correct: false, text: "Her sister fine wel wel ooo"},
+{id: 2637, challengeId: 879, correct: false, text: "She sabi cook"},
+
+{id: 2638, challengeId: 880, correct: true, text: "We ooo", audioSrc: "m3-l5-q1-pg.mp3"},
+{id: 2639, challengeId: 880, correct: false, text: "We don come back"},
+{id: 2640, challengeId: 880, correct: false, text: "See my friend ooo"},
+
+{id: 2641, challengeId: 881, correct: true, text: "We don come back", audioSrc: "m3-l5-q2-pg.mp3"},
+{id: 2642, challengeId: 881, correct: false, text: "We ooo"},
+{id: 2643, challengeId: 881, correct: false, text: "See my friend ooo"},
+
+{id: 2644, challengeId: 882, correct: true, text: "Us", audioSrc: "m3-l5-q3-pg.mp3"},
+{id: 2645, challengeId: 882, correct: false, text: "Come join us ooo"},
+{id: 2646, challengeId: 882, correct: false, text: "Abeg talk to me"},
+
+{id: 2647, challengeId: 883, correct: true, text: "Come join us ooo", audioSrc: "m3-l5-q4-pg.mp3"},
+{id: 2648, challengeId: 883, correct: false, text: "Wetin you be"},
+{id: 2649, challengeId: 883, correct: false, text: "Abeg talk to me"},
+
+{id: 2650, challengeId: 884, correct: true, text: "See my friend", audioSrc: "m3-l5-q5-pg.mp3"},
+{id: 2651, challengeId: 884, correct: false, text: "You and me"},
+{id: 2652, challengeId: 884, correct: false, text: "You and me for live"},
+
+{id: 2653, challengeId: 885, correct: true, text: "You", audioSrc: "m3-l5-q6-pg.mp3"},
+{id: 2654, challengeId: 885, correct: false, text: "Na me get dem ooo"},
+{id: 2655, challengeId: 885, correct: false, text: "Who you be"},
+
+{id: 2656, challengeId: 886, correct: true, text: "Who you be", audioSrc: "m3-l5-q7-pg.mp3"},
+{id: 2657, challengeId: 886, correct: false, text: "You and me"},
+{id: 2658, challengeId: 886, correct: false, text: "You and me for live"},
+
+{id: 2659, challengeId: 887, correct: true, text: "Dem", audioSrc: "m3-l5-q8-pg.mp3"},
+{id: 2660, challengeId: 887, correct: false, text: "Na me get dem ooo"},
+{id: 2661, challengeId: 887, correct: false, text: "Na my own"},
+
+{id: 2662, challengeId: 888, correct: true, text: "Who dem be", audioSrc: "m3-l5-q9-pg.mp3"},
+{id: 2663, challengeId: 888, correct: false, text: "Wetin you be"},
+{id: 2664, challengeId: 888, correct: false, text: "Who you be"},
+
+{id: 2665, challengeId: 889, correct: true, text: "Na my own", audioSrc: "m3-l5-q10-pg.mp3"},
+{id: 2666, challengeId: 889, correct: false, text: "Na me get dem ooo"},
+{id: 2667, challengeId: 889, correct: false, text: "Dem"},
+
+{id: 2668, challengeId: 890, correct: true, text: "Na me get dem ooo", audioSrc: "m3-l5-q11-pg.mp3"},
+{id: 2669, challengeId: 890, correct: false, text: "Dem"},
+{id: 2670, challengeId: 890, correct: false, text: "Na my own"},
+
+{id: 2671, challengeId: 891, correct: true, text: "Me", audioSrc: "m3-l5-q12-pg.mp3"},
+{id: 2672, challengeId: 891, correct: false, text: "Come join us na"},
+{id: 2673, challengeId: 891, correct: false, text: "Talk to me na"},
+
+{id: 2674, challengeId: 892, correct: true, text: "Talk to me na", audioSrc: "m3-l5-q13-pg.mp3"},
+{id: 2675, challengeId: 892, correct: false, text: "Me"},
+{id: 2676, challengeId: 892, correct: false, text: "We don come back"},
+
+{id: 2677, challengeId: 893, correct: true, text: "You and me", audioSrc: "m3-l5-q14-pg.mp3"},
+{id: 2678, challengeId: 893, correct: false, text: "You and me for live"},
+{id: 2679, challengeId: 893, correct: false, text: "See my friend"},
+
+{id: 2680, challengeId: 894, correct: true, text: "You and me for life", audioSrc: "m3-l5-q15-pg.mp3"},
+{id: 2681, challengeId: 894, correct: false, text: "You and me"},
+{id: 2682, challengeId: 894, correct: false, text: "Come stay with us"},
  ]);
 
  

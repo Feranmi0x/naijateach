@@ -13,7 +13,7 @@ type Props = {
 
 export const HausaSlangs = ({ slangs }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/${audioPath}`);
+    const audio = new Audio(`/hs-slangs/${audioPath}`);
     audio.play();
   };
 
