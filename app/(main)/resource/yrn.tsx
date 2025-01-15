@@ -31,8 +31,12 @@ export const YorubaNumbers = ({ numbers }: Props) => {
         <tbody>
           {numbers.map((num, index) => (
             <tr key={num.id} className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}>
-              <td className="py-2 px-4 border border-gray-300 truncate">{num.english}</td>
-              <td className="py-2 px-4 border border-gray-300 truncate">{num.yoruba}</td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {num.english}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {num.yoruba}
+              </td>
               <td className="py-2 px-4 border border-gray-300">
                 <button
                   onClick={() => playAudio(num.audioPath)}
