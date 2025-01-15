@@ -1,5 +1,3 @@
-// components/igbocommonExp.tsx
-
 "use client";
 
 type Props = {
@@ -12,36 +10,39 @@ type Props = {
 };
 
 const playAudio = (audioPath: string): void => {
-  const audio = new Audio(`/${audioPath}`);
+  const audio = new Audio(`/ig-commonExp/${audioPath}`);
   audio.play(); // Play the audio when clicked
 };
 
 export const IgboCommonExp = ({ commonExp }: Props) => {
   return (
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold text-bluee border-b-2 border-bluee pb-2">
-        Igbo Common Expression
+    <section className="mb-10 px-4">
+      <h2 className="text-2xl font-bold text-bluee border-b-2 border-bluee pb-2 mb-4">
+        Igbo Common Expressions
       </h2>
-      <table className="w-full mt-4 border-collapse border border-gray-300">
+      <table className="w-full border-collapse border border-gray-300 shadow-lg rounded-lg">
         <thead>
           <tr className="bg-bluee text-white">
-            <th className="py-2 px-4 border border-gray-300">English</th>
-            <th className="py-2 px-4 border border-gray-300">Igbo</th>
-            <th className="py-2 px-4 border border-gray-300">Audio</th>
+            <th className="py-3 px-5 border border-gray-300 text-left">English</th>
+            <th className="py-3 px-5 border border-gray-300 text-left">Igbo</th>
+            <th className="py-3 px-5 border border-gray-300 text-center">Audio</th>
           </tr>
         </thead>
         <tbody>
-          {commonExp.map((pronoun, index) => (
-            <tr key={pronoun.id} className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}>
-              <td className="py-2 px-4 border border-gray-300">{pronoun.english}</td>
-              <td className="py-2 px-4 border border-gray-300">{pronoun.igbo}</td>
-              <td className="py-2 px-4 border border-gray-300">
+          {commonExp.map((expression, index) => (
+            <tr
+              key={expression.id}
+              className={`${index % 2 === 0 ? "bg-gray-100" : "bg-white"}`}
+            >
+              <td className="py-3 px-5 border border-gray-300">{expression.english}</td>
+              <td className="py-3 px-5 border border-gray-300">{expression.igbo}</td>
+              <td className="py-3 px-5 border border-gray-300 text-center">
                 {/* Play audio when pronunciation is clicked */}
                 <button
-                  onClick={() => playAudio(pronoun.audioPath)}
+                  onClick={() => playAudio(expression.audioPath)}
                   className="text-blue-600 hover:underline"
                 >
-                  Listen
+                  play
                 </button>
               </td>
             </tr>

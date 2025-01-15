@@ -1,5 +1,3 @@
-// components/HausaNumbers.tsx
-
 "use client";
 
 type Props = {
@@ -13,32 +11,36 @@ type Props = {
 
 export const HausaNumbers = ({ numbers }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/hs-numbers/${audioPath}`);
+    const audio = new Audio(`/ha-numbers/${audioPath}`);
     audio.play();
   };
 
   return (
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold text-yelloww border-b-2 border-yelloww pb-2">
-        Numbers
+    <section className="mb-10 overflow-x-auto">
+      <h2 className="text-2xl font-bold text-blue-700 border-b-2 border-blue-700 pb-2">
+        Hausa Numbers
       </h2>
-      <table className="w-full mt-4 border-collapse border border-gray-300">
+      <table className="w-full mt-4 border-collapse border border-gray-300 table-fixed">
         <thead>
-          <tr className="bg-yelloww text-white">
-            <th className="py-2 px-4 border border-gray-300">English</th>
-            <th className="py-2 px-4 border border-gray-300">Hausa</th>
-            <th className="py-2 px-4 border border-gray-300">Audio</th>
+          <tr className="bg-blue-700 text-white">
+            <th className="py-2 px-4 border border-gray-300 w-1/3">English</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Hausa</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Audio</th>
           </tr>
         </thead>
         <tbody>
           {numbers.map((num, index) => (
             <tr key={num.id} className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}>
-              <td className="py-2 px-4 border border-gray-300">{num.english}</td>
-              <td className="py-2 px-4 border border-gray-300">{num.hausa}</td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {num.english}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {num.hausa}
+              </td>
               <td className="py-2 px-4 border border-gray-300">
                 <button
                   onClick={() => playAudio(num.audioPath)}
-                  className="text-yelloww underline hover:text-yelloww"
+                  className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-300 border-b-4 border-blue-700 border-[1.5px]"
                 >
                   Play
                 </button>

@@ -5,41 +5,44 @@ type Props = {
     id: number;
     english: string;
     yoruba: string;
-    audioPath: string; // The path to the audio file
+    audioPath: string;
   }[];
 };
 
-const playAudio = (audioPath: string): void => {
-  const audio = new Audio(`/${audioPath}`);
-  audio.play(); // Play the audio when clicked
-};
-
 export const YorubaGender = ({ genders }: Props) => {
+  const playAudio = (audioPath: string): void => {
+    const audio = new Audio(`/yr-local/${audioPath}`);
+    audio.play();
+  };
+
   return (
-    <section className="mb-10">
+    <section className="mb-10 overflow-x-auto">
       <h2 className="text-2xl font-bold text-green-700 border-b-2 border-green-700 pb-2">
         Local Items/Food
       </h2>
-      <table className="w-full mt-4 border-collapse border border-gray-300">
+      <table className="w-full mt-4 border-collapse border border-gray-300 table-fixed">
         <thead>
           <tr className="bg-green-700 text-white">
-            <th className="py-2 px-4 border border-gray-300">English</th>
-            <th className="py-2 px-4 border border-gray-300">Yoruba</th>
-            <th className="py-2 px-4 border border-gray-300">Audio</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">English</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Yoruba</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Audio</th>
           </tr>
         </thead>
         <tbody>
           {genders.map((gender, index) => (
             <tr key={gender.id} className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}>
-              <td className="py-2 px-4 border border-gray-300">{gender.english}</td>
-              <td className="py-2 px-4 border border-gray-300">{gender.yoruba}</td>
-              <td className="py-2 px-4 border border-gray-300">
-                {/* Play audio when pronunciation is clicked */}
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {gender.english}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {gender.yoruba}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 text-center">
                 <button
                   onClick={() => playAudio(gender.audioPath)}
-                  className="text-blue-600 hover:underline"
+                  className="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-800 focus:outline-none focus:ring focus:ring-green-300 border-b-4 border-green-700 border-[1.5px]"
                 >
-                  Listen
+                  Play
                 </button>
               </td>
             </tr>

@@ -1,5 +1,3 @@
-// components/Hausaslangs.tsx
-
 "use client";
 
 type Props = {
@@ -7,38 +5,42 @@ type Props = {
     id: number;
     english: string;
     hausa: string;
-    audioPath: string;
+    audioPath: string; // Path to audio file
   }[];
 };
 
-export const HausaSlangs = ({ slangs }: Props) => {
-  const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/hs-slangs/${audioPath}`);
-    audio.play();
-  };
+const playAudio = (audioPath: string): void => {
+  const audio = new Audio(`/hs-slang/${audioPath}`);
+  audio.play();
+};
 
+export const HausaSlangs = ({ slangs }: Props) => {
   return (
-    <section className="mb-10">
+    <section className="mb-10 overflow-x-auto">
       <h2 className="text-2xl font-bold text-yelloww border-b-2 border-yelloww pb-2">
         Hausa Slangs
       </h2>
-      <table className="w-full mt-4 border-collapse border border-gray-300">
+      <table className="w-full mt-4 border-collapse border border-gray-300 table-fixed">
         <thead>
           <tr className="bg-yelloww text-white">
-            <th className="py-2 px-4 border border-gray-300">English</th>
-            <th className="py-2 px-4 border border-gray-300">Hausa</th>
-            <th className="py-2 px-4 border border-gray-300">Audio</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">English</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Hausa</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Audio</th>
           </tr>
         </thead>
         <tbody>
-          {slangs.map((num, index) => (
-            <tr key={num.id} className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}>
-              <td className="py-2 px-4 border border-gray-300">{num.english}</td>
-              <td className="py-2 px-4 border border-gray-300">{num.hausa}</td>
+          {slangs.map((slang, index) => (
+            <tr key={slang.id} className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {slang.english}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {slang.hausa}
+              </td>
               <td className="py-2 px-4 border border-gray-300">
                 <button
-                  onClick={() => playAudio(num.audioPath)}
-                  className="text-yelloww underline hover:text-yellow-500"
+                  onClick={() => playAudio(slang.audioPath)}
+                  className="bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-800 focus:outline-none focus:ring focus:ring-yellow-300 border-b-4 border-yellow-700 border-[1.5px]"
                 >
                   Play
                 </button>
