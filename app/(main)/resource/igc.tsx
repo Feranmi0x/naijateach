@@ -5,44 +5,47 @@ type Props = {
     id: number;
     english: string;
     igbo: string;
-    audioPath: string; // The path to the audio file
+    audioPath: string;
   }[];
 };
 
-const playAudio = (audioPath: string): void => {
-  const audio = new Audio(`/ig-commonExp/${audioPath}`);
-  audio.play(); // Play the audio when clicked
-};
-
 export const IgboCommonExp = ({ commonExp }: Props) => {
+  const playAudio = (audioPath: string): void => {
+    const audio = new Audio(`/ig_commonExp/${audioPath}`);
+    audio.play();
+  };
+
   return (
-    <section className="mb-10 px-4">
-      <h2 className="text-2xl font-bold text-bluee border-b-2 border-bluee pb-2 mb-4">
+    <section className="mb-10 overflow-x-auto">
+      <h2 className="text-2xl font-bold text-blue-700 border-b-2 border-blue-700 pb-2">
         Igbo Common Expressions
       </h2>
-      <table className="w-full border-collapse border border-gray-300 shadow-lg rounded-lg">
+      <table className="w-full mt-4 border-collapse border border-gray-300 table-fixed">
         <thead>
-          <tr className="bg-bluee text-white">
-            <th className="py-3 px-5 border border-gray-300 text-left">English</th>
-            <th className="py-3 px-5 border border-gray-300 text-left">Igbo</th>
-            <th className="py-3 px-5 border border-gray-300 text-center">Audio</th>
+          <tr className="bg-blue-700 text-white">
+            <th className="py-2 px-4 border border-gray-300 w-1/3">English</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Igbo</th>
+            <th className="py-2 px-4 border border-gray-300 w-1/3">Audio</th>
           </tr>
         </thead>
         <tbody>
-          {commonExp.map((expression, index) => (
+          {commonExp.map((exp, index) => (
             <tr
-              key={expression.id}
-              className={`${index % 2 === 0 ? "bg-gray-100" : "bg-white"}`}
+              key={exp.id}
+              className={`${index % 2 === 0 ? "bg-gray-100" : ""}`}
             >
-              <td className="py-3 px-5 border border-gray-300">{expression.english}</td>
-              <td className="py-3 px-5 border border-gray-300">{expression.igbo}</td>
-              <td className="py-3 px-5 border border-gray-300 text-center">
-                {/* Play audio when pronunciation is clicked */}
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {exp.english}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 whitespace-normal break-words">
+                {exp.igbo}
+              </td>
+              <td className="py-2 px-4 border border-gray-300 text-center">
                 <button
-                  onClick={() => playAudio(expression.audioPath)}
-                  className="text-blue-600 hover:underline"
+                  onClick={() => playAudio(exp.audioPath)}
+                  className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-300 border-b-4 border-blue-700 border-[1.5px]"
                 >
-                  play
+                  Play
                 </button>
               </td>
             </tr>
@@ -52,3 +55,4 @@ export const IgboCommonExp = ({ commonExp }: Props) => {
     </section>
   );
 };
+

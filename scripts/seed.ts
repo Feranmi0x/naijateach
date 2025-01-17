@@ -768,6 +768,7 @@ await db.insert(schema.challenges).values([
 { id: 233, lessonId: 1, type: "SELECT", order: 233, question: "You are welcome" },
 { id: 234, lessonId: 1, type: "SELECT", order: 234, question: "Sorry" },
 { id: 235, lessonId: 1, type: "SELECT", order: 235, question: "Thank you very much" },
+
 { id: 236, lessonId: 2, type: "SELECT", order: 236, question: "Do you speak Igbo?" },
 { id: 237, lessonId: 2, type: "SELECT", order: 237, question: "Just a little" },
 { id: 238, lessonId: 2, type: "SELECT", order: 238, question: "A hụrụ m Igbo n'anya" },
@@ -800,7 +801,7 @@ await db.insert(schema.challenges).values([
 { id: 265, lessonId: 3, type: "SELECT", order: 265, question: "Do you know?" },
 { id: 266, lessonId: 4, type: "SELECT", order: 266, question: "I want to buy" },
 { id: 267, lessonId: 4, type: "SELECT", order: 267, question: "What do you want to buy?" },
-{ id: 268, lessonId: 4, type: "SELECT", order: 268, question: "Yan" },
+{ id: 268, lessonId: 4, type: "SELECT", order: 268, question: "Yam" },
 { id: 269, lessonId: 4, type: "SELECT", order: 269, question: "How much?" },
 { id: 270, lessonId: 4, type: "SELECT", order: 270, question: "1000 naira worth of yam" },
 { id: 271, lessonId: 4, type: "SELECT", order: 271, question: "I am coming" },
@@ -1501,9 +1502,9 @@ await db.insert(schema.challenges).values([
    { id: 15, challengeId: 5, correct: true, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3" },
 
    // Q6: What about you?
-   { id: 16, challengeId: 6, correct: true, text: "Kí ni orúkọ rẹ?", audioSrc: "m1-l1-q3-yr.mp3" }, // Reuse audio
+   { id: 16, challengeId: 6, correct: false, text: "Kí ni orúkọ rẹ?", audioSrc: "m1-l1-q3-yr.mp3" }, // Reuse audio
    { id: 17, challengeId: 6, correct: false, text: "Béèni" },
-   { id: 18, challengeId: 6, correct: false, text: "Ǹjẹ́ ìwọ n kò?" },
+   { id: 18, challengeId: 6, correct: true, text: "Ǹjẹ́ ìwọ n kò?", audioSrc: "m1-l1-q3-yr.mp3" },
 
    // Q7: No.
    { id: 19, challengeId: 7, correct: true, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3" },
@@ -1561,9 +1562,9 @@ await db.insert(schema.challenges).values([
   { id: 51, challengeId: 17, correct: false, text: "Mo nífẹ̀ẹ́ rẹ" },
 
   // Q6: I am thirty-five years old. - Yoruba
-  { id: 52, challengeId: 18, correct: false, text: "Ọmọ ọdún mẹ́tàlélógún ni mi" },
+  { id: 52, challengeId: 18, correct: true, text: "Ọmọ ọdún mẹ́tàlélógún ni mi", audioSrc: "m1-l2-q6-yr.mp3" },
   { id: 53, challengeId: 18, correct: false, text: "Mo nífẹ̀ẹ́ rẹ" },
-  { id: 54, challengeId: 18, correct: true, text: "Mo ń gbé ní Amẹ́ríkà", audioSrc: "m1-l2-q6-yr.mp3" },
+  { id: 54, challengeId: 18, correct: false, text: "Mo ń gbé ní Amẹ́ríkà"},
 
   // Q7: I am talking to you. - Yoruba
   { id: 55, challengeId: 19, correct: true, text: "Mo ń bá ẹ sọ̀rọ̀", audioSrc: "m1-l2-q7-yr.mp3" },
@@ -1609,6 +1610,7 @@ await db.insert(schema.challenges).values([
   { id: 79, challengeId: 27, correct: true, text: "Mo ń gbé ní Amẹ́ríkà", audioSrc: "m1-l2-q15-yr.mp3" },
   { id: 80, challengeId: 27, correct: false, text: "Mo ń gbé ní Nàìjíríà" },
   { id: 81, challengeId: 27, correct: false, text: "Ó lẹwà púpọ̀" },
+  
     // Q1: They are dancing.
     { id: 82, challengeId: 28, correct: false, text: "Kí ni ìtumọ̀ rẹ?" },
     { id: 83, challengeId: 28, correct: false, text: "Bá mi sọ̀rọ̀" },
@@ -2403,299 +2405,304 @@ await db.insert(schema.challenges).values([
                      { id: 662, challengeId: 221, correct: false, text: "Ìwọ àti èmi" },
                      { id: 663, challengeId: 221, correct: false, text: "Ẹ wá kó bá wa darapọ̀" },
    //igbo starts here
-                        { id: 664, challengeId: 222, correct: false, text: "Ndo" },
-                        { id: 665, challengeId: 222, correct: false, text: "Daalụ" },
-                        { id: 666, challengeId: 222, correct: true, text: "Kedu ka I mere", audioSrc: "m1-l1-q1-ig.mp3" },
-                      
-                        { id: 667, challengeId: 223, correct: false, text: "Ndo" },
-                        { id: 668, challengeId: 223, correct: false, text: "Daalụ" },
-                        { id: 669, challengeId: 223, correct: true, text: "Adị mma mma", audioSrc: "m1-l1-q2-ig.mp3" },
-                      
-                        { id: 670, challengeId: 224, correct: true, text: "Gịnị bụ aha gị", audioSrc: "m1-l1-q3-ig.mp3" },
-                        { id: 671, challengeId: 224, correct: false, text: "A bụ m onye Nigeria" },
-                        { id: 672, challengeId: 224, correct: false, text: "Nnọọ" },
-                      
-                        { id: 673, challengeId: 225, correct: false, text: "Kedu maka gị?" },
-                        { id: 674, challengeId: 225, correct: false, text: "A dị m mma" },
-                        { id: 675, challengeId: 225, correct: true, text: "Aha m bụ Ebere", audioSrc: "m1-l1-q4-ig.mp3" },
-                      
-                        { id: 676, challengeId: 226, correct: false, text: "Aha m bụ Ebere" },
-                        { id: 677, challengeId: 226, correct: false, text: "Daalụ" },
-                        { id: 678, challengeId: 226, correct: true, text: "E si m Nigeria", audioSrc: "m1-l1-q5-ig.mp3" },
-                      
-                        { id: 679, challengeId: 227, correct: false, text: "Gịnị bụ aha gị" },
-                        { id: 680, challengeId: 227, correct: false, text: "Eee" },
-                        { id: 681, challengeId: 227, correct: true, text: "Kedu maka gị", audioSrc: "m1-l1-q6-ig.mp3" },
-                      
-                        { id: 682, challengeId: 228, correct: true, text: "Mba", audioSrc: "m1-l1-q7-ig.mp3" },
-                        { id: 683, challengeId: 228, correct: false, text: "A bụ m onye Nigeria" },
-                        { id: 684, challengeId: 228, correct: false, text: "Eee" },
-                      
-                        { id: 685, challengeId: 229, correct: false, text: "Daalụ" },
-                        { id: 686, challengeId: 229, correct: false, text: "Kedu maka gị" },
-                        { id: 687, challengeId: 229, correct: true, text: "Gịnị ka I kwuru", audioSrc: "m1-l1-q8-ig.mp3" },
-                      
-                        { id: 688, challengeId: 230, correct: true, text: "Kwuo ya ozo", audioSrc: "m1-l1-q9-ig.mp3" },
-                        { id: 689, challengeId: 230, correct: false, text: "Gịnị ka I kwuru" },
-                        { id: 690, challengeId: 230, correct: false, text: "Ndo" },
-                      
-                        { id: 691, challengeId: 231, correct: true, text: "Eee", audioSrc: "m1-l1-q10-ig.mp3" },
-                        { id: 692, challengeId: 231, correct: false, text: "Daalụ" },
-                        { id: 693, challengeId: 231, correct: false, text: "Mba" },
-                      
-                        { id: 694, challengeId: 232, correct: false, text: "A dị m mma" },
-                        { id: 695, challengeId: 232, correct: true, text: "Daalụ", audioSrc: "m1-l1-q11-ig.mp3" },
-                        { id: 696, challengeId: 232, correct: false, text: "A bụ m onye Nigeria" },
-                      
-                        { id: 697, challengeId: 233, correct: false, text: "Ndo" },
-                        { id: 698, challengeId: 233, correct: false, text: "Kedu maka gị" },
-                        { id: 699, challengeId: 233, correct: true, text: "Nnọọ", audioSrc: "m1-l1-q12-ig.mp3" },
-                      
-                        { id: 700, challengeId: 234, correct: false, text: "Gịnị bụ aha gị" },
-                        { id: 701, challengeId: 234, correct: false, text: "Daalụ" },
-                        { id: 702, challengeId: 234, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m1-l1-q13-ig.mp3" },
-                      
-                        { id: 703, challengeId: 235, correct: false, text: "Obere obere" },
-                        { id: 704, challengeId: 235, correct: false, text: "A hụrụ m Igbo n'anya" },
-                        { id: 705, challengeId: 235, correct: true, text: "I na su Igbo", audioSrc: "m1-l2-q1-ig.mp3" },
-                      
-                        { id: 706, challengeId: 236, correct: false, text: "A hụrụ m Igbo n'anya" },
-                        { id: 707, challengeId: 236, correct: true, text: "Obere obere", audioSrc: "m1-l2-q2-ig.mp3" },
-                        { id: 708, challengeId: 236, correct: false, text: "Adị m afo iri atọ na ise" },
-                      
-                        { id: 709, challengeId: 237, correct: true, text: "A hụrụ m Igbo n'anya", audioSrc: "m1-l2-q3-ig.mp3" },
-                        { id: 710, challengeId: 237, correct: false, text: "Obere" },
-                        { id: 711, challengeId: 237, correct: false, text: "A na m agwa gị okwu" },
-                      
-                        { id: 712, challengeId: 238, correct: true, text: "E nwere m ike iso gị mee", audioSrc: "m1-l2-q4-ig.mp3" },
-                        { id: 713, challengeId: 238, correct: false, text: "Gịnị bụ ihe a?" },
-                        { id: 714, challengeId: 238, correct: false, text: "Adị m afọ iri atọ na ise" },
-                      
-                        { id: 715, challengeId: 239, correct: true, text: "Ị dị afọ ole?", audioSrc: "m1-l2-q5-ig.mp3" },
-                        { id: 716, challengeId: 239, correct: false, text: "Adị m afọ iri atọ na ise" },
-                        { id: 717, challengeId: 239, correct: false, text: "A hụrụ m gị n'anya" },
-                      
-                        { id: 718, challengeId: 240, correct: true, text: "A dị m afọ iri atọ na ise", audioSrc: "m1-l2-q6-ig.mp3" },
-                        { id: 719, challengeId: 240, correct: false, text: "A hụrụ m gị n'anya" },
-                        { id: 720, challengeId: 240, correct: false, text: "E bi m na USA" },
-                      
-                        { id: 721, challengeId: 241, correct: true, text: "A na m agwa gị okwu", audioSrc: "m1-l2-q7-ig.mp3" },
-                        { id: 722, challengeId: 241, correct: false, text: "Kedu ebe I bi?" },
-                        { id: 723, challengeId: 241, correct: false, text: "Gịnị bụ ihe a?" },
-                      
-                        { id: 724, challengeId: 242, correct: true, text: "Gịnị bụ ihe a?", audioSrc: "m1-l2-q8-ig.mp3" },
-                        { id: 725, challengeId: 242, correct: false, text: "A na m agwa gị okwu" },
-                        { id: 726, challengeId: 242, correct: false, text: "A dị m afọ iri atọ na ise" },
-                      
-                        { id: 727, challengeId: 243, correct: true, text: "Kedu ihe ihe ahụ pụtara?", audioSrc: "m1-l2-q9-ig.mp3" },
-                        { id: 728, challengeId: 243, correct: false, text: "A dị m afọ iri atọ na ise" },
-                        { id: 729, challengeId: 243, correct: false, text: "Ọ dị mma" },
-                      
-                        { id: 730, challengeId: 244, correct: true, text: "Kedu ebe ị nọ?", audioSrc: "m1-l2-q10-ig.mp3" },
-                        { id: 731, challengeId: 244, correct: false, text: "Kedu ebe i bi?" },
-                        { id: 732, challengeId: 244, correct: false, text: "A dị m afọ iri atọ na ise" },
-                      
-                        { id: 733, challengeId: 245, correct: true, text: "A hụrụ m gị n'anya", audioSrc: "m1-l2-q11-ig.mp3" },
-                        { id: 734, challengeId: 245, correct: false, text: "E bi m na USA" },
-                        { id: 735, challengeId: 245, correct: false, text: "Ọ dị mma" },
-                      
-                        { id: 736, challengeId: 246, correct: true, text: "Kedu ebe I bi?", audioSrc: "m1-l2-q12-ig.mp3" },
-                        { id: 737, challengeId: 246, correct: false, text: "A hụrụ m gị n'anya" },
-                        { id: 738, challengeId: 246, correct: false, text: "Ọ dị mma" },
-                      
-                        { id: 739, challengeId: 247, correct: true, text: "Ọ dị mma", audioSrc: "m1-l2-q13-ig.mp3" },
-                        { id: 740, challengeId: 247, correct: false, text: "A hụrụ m gị n'anya" },
-                        { id: 741, challengeId: 247, correct: false, text: "Kedu ebe i bi?" },
-                      
-                        { id: 742, challengeId: 248, correct: true, text: "Ọ mara mma", audioSrc: "m1-l2-q14-ig.mp3" },
-                        { id: 743, challengeId: 248, correct: false, text: "Ọ dị mma" },
-                        { id: 744, challengeId: 248, correct: false, text: "Kedu ebe i bi?" },
-                      
-                        { id: 745, challengeId: 249, correct: true, text: "E bi m na USA", audioSrc: "m1-l2-q15-ig.mp3" },
-                        { id: 746, challengeId: 249, correct: false, text: "E bi m na Nigeria" },
-                        { id: 747, challengeId: 249, correct: false, text: "Ọ dị mma" },
-                        
-   { id: 748, challengeId: 250, correct: true, text: "Ha na-agba egwu", "audioSrc": "m1-l3-q1-ig.mp3" },
-     { id: 749, challengeId: 250, correct: false, text: "Kedu ihe I kwuru pụtara?" },
-     { id: 750, challengeId: 250, correct: false, text: "Gwa m okwu" },
-                         
-   { id: 751, challengeId: 251, correct: true, text: "Kedu ihe I kwuru pụtara?", "audioSrc": "m1-l3-q2-ig.mp3" },
-     { id: 752, challengeId: 251, correct: false, text: "I nwetara ya" },
-     { id: 753, challengeId: 251, correct: false, text: "A ma m" },
-                         
-   { id: 754, challengeId: 252, correct: true, text: "Gwa m okwu", "audioSrc": "m1-l3-q3-ig.mp3" },
-     { id: 755, challengeId: 252, correct: false, text: "A hụkwara m gị n'anya" },
-     { id: 756, challengeId: 252, correct: false, text: "Ọ bụghị etu ahụ" },
-                         
-   { id: 757, challengeId: 253, correct: true, text: "A hụkwara m gị n'anya", "audioSrc": "m1-l3-q4-ig.mp3" },
-     { id: 758, challengeId: 253, correct: false, text: "A ma m" },
-     { id: 759, challengeId: 253, correct: false, text: "Kedu ebe ị na-aga?" },
-                         
-   { id: 760, challengeId: 254, correct: true, text: "Ọ bụghị etu ahụ", "audioSrc": "m1-l3-q5-ig.mp3" },
-     { id: 761, challengeId: 254, correct: false, text: "Kpọm kwem" },
-     { id: 762, challengeId: 254, correct: false, text: "Kedu ebe Ị na-aga?" },
-                         
-   { id: 763, challengeId: 255, correct: true, text: "Kedu ebe Ị na-aga?", "audioSrc": "m1-l3-q6-ig.mp3" },
-     { id: 764, challengeId: 255, correct: false, text: "Ka anyi jee" },
-     { id: 765, challengeId: 255, correct: false, text: "I metaghị ya" },
-                         
-   { id: 766, challengeId: 256, correct: true, text: "Bịaghachi ebe a", "audioSrc": "m1-l3-q7-ig.mp3" },
-     { id: 767, challengeId: 256, correct: false, text: "Kedu ebe Ị na-aga?" },
-     { id: 768, challengeId: 256, correct: false, text: "A ma m" },
-                         
-   { id: 769, challengeId: 257, correct: true, text: "Ọ sọ gị nọ?", "audioSrc": "m1-l3-q8-ig.mp3" },
-     { id: 770, challengeId: 257, correct: false, text: "Eee" },
-     { id: 771, challengeId: 257, correct: false, text: "Mba" },
-                         
-   { id: 772, challengeId: 258, correct: true, text: "Ka anyị laa", "audioSrc": "m1-l3-q9-ig.mp3" },
-     { id: 773, challengeId: 258, correct: false, text: "Bịaghachi ebe a" },
-     { id: 774, challengeId: 258, correct: false, text: "I nwetara ya" },
-                         
-   { id: 775, challengeId: 259, correct: true, text: "A ma m", "audioSrc": "m1-l3-q10-ig.mp3" },
-     { id: 776, challengeId: 259, correct: false, text: "Kpọm kwem" },
-     { id: 777, challengeId: 259, correct: false, text: "Kedu ebe ị na-aga?" },
-                         
-   { id: 778, challengeId: 260, correct: true, text: "Kpọm kwem", "audioSrc": "m1-l3-q11-ig.mp3" },
-     { id: 779, challengeId: 260, correct: false, text: "A ma m" },
-     { id: 780, challengeId: 260, correct: false, text: "I nwetara ya" },
-                         
-   { id: 781, challengeId: 261, correct: true, text: "I nwetara ya", "audioSrc": "m1-l3-q12-ig.mp3" },
-     { id: 782, challengeId: 261, correct: false, text: "Ọ dị mma" },
-     { id: 783, challengeId: 261, correct: false, text: "A hụkwara m gị n'anya" },
-                         
-   { id: 784, challengeId: 262, correct: true, text: "I nwetaghị ya", "audioSrc": "m1-l3-q13-ig.mp3" },
-     { id: 785, challengeId: 262, correct: false, text: "Ọ dị mma" },
-     { id: 786, challengeId: 262, correct: false, text: "I nwetara ya" },
-                         
-   { id: 787, challengeId: 263, correct: true, text: "Ọ dị mma", "audioSrc": "m1-l3-q14-ig.mp3" },
-     { id: 788, challengeId: 263, correct: false, text: "A ma m" },
-     { id: 789, challengeId: 263, correct: false, text: "Kedu ebe ị na-aga?" },
-                         
-   { id: 790, challengeId: 264, correct: true, text: "Ị ma?", "audioSrc": "m1-l3-q15-ig.mp3" },
-     { id: 791, challengeId: 264, correct: false, text: "I nwetara ya" },
-     { id: 792, challengeId: 264, correct: false, text: "Kpọm kwem" },
-                         
-   { id: 793, challengeId: 265, correct: true, text: "A chọrọ m i go", "audioSrc": "m1-l4-q1-ig.mp3" },
-     { id: 794, challengeId: 265, correct: false, text: "Kedu ihe ị chọrọ i go" },
-     { id: 795, challengeId: 265, correct: false, text: "Ji ruru otu puku naịra" },
-                         
-   { id: 796, challengeId: 266, correct: true, text: "Kedu ihe ị chọrọ i go?", "audioSrc": "m1-l4-q2-ig.mp3" },
-     { id: 797, challengeId: 266, correct: false, text: "Ji ruru otu puku naịra" },
-     { id: 798, challengeId: 266, correct: false, text: "A chọrọ m i go" },
-                         
-   { id: 799, challengeId: 267, correct: true, text: "Ji", "audioSrc": "m1-l4-q3-ig.mp3" },
-     { id: 800, challengeId: 267, correct: false, text: "Ego ole?" },
-     { id: 801, challengeId: 267, correct: false, text: "Kedu ihe ị chọrọ i go?" },
-                         
-   { id: 802, challengeId: 268, correct: true, text: "Ego ole?", "audioSrc": "m1-l4-q4-ig.mp3" },
-     { id: 803, challengeId: 268, correct: false, text: "Ji ruru otu puku naịra" },
-     { id: 804, challengeId: 268, correct: false, text: "Kedu ihe i kwuru?" },
-                         
-   { id: 805, challengeId: 269, correct: true, text: "Ji ruru otu puku naịra", "audioSrc": "m1-l4-q5-ig.mp3" },
-     { id: 806, challengeId: 269, correct: false, text: "Ego ole?" },
-     { id: 807, challengeId: 269, correct: false, text: "Biko gbaghara m" },
-                         
-   { id: 808, challengeId: 270, correct: true, text: "A na m abịa", "audioSrc": "m1-l4-q6-ig.mp3" },
-     { id: 809, challengeId: 270, correct: false, text: "Bịaghachi" },
-     { id: 810, challengeId: 270, correct: false, text: "Biko gbaghara m" },
-                         
-   { id: 811, challengeId: 271, correct: true, text: "Biko gbaghara m", "audioSrc": "m1-l4-q7-ig.mp3" },
-     { id: 812, challengeId: 271, correct: false, text: "Bịaghachi" },
-     { id: 813, challengeId: 271, correct: false, text: "Kedu ihe i kwuru?" },
-                         
-   { id: 814, challengeId: 272, correct: true, text: "Ọ dịghị", "audioSrc": "m1-l4-q8-ig.mp3" },
-     { id: 815, challengeId: 272, correct: false, text: "A nugo m gị" },
-     { id: 816, challengeId: 272, correct: false, text: "Bịaghachi" },
-                         
-   { id: 817, challengeId: 273, correct: true, text: "Bịaghachi", "audioSrc": "m1-l4-q9-ig.mp3" },
-     { id: 818, challengeId: 273, correct: false, text: "A nugo m gị" },
-     { id: 819, challengeId: 273, correct: false, text: "Biko gbaghara m" },
-                         
-   { id: 820, challengeId: 274, correct: true, text: "A nugo m gị", "audioSrc": "m1-l4-q10-ig.mp3" },
-     { id: 821, challengeId: 274, correct: false, text: "Bịaghachi" },
-     { id: 822, challengeId: 274, correct: false, text: "N'oge ole" },
-                         
-   { id: 823, challengeId: 275, correct: true, text: "N'oge ole?", "audioSrc": "m1-l4-q11-ig.mp3" },
-     { id: 824, challengeId: 275, correct: false, text: "N'ehihie" },
-     { id: 825, challengeId: 275, correct: false, text: "N'ụtụtụ" },
-                         
-   { id: 826, challengeId: 276, correct: true, text: "N'ehihie", "audioSrc": "m1-l4-q12-ig.mp3" },
-     { id: 827, challengeId: 276, correct: false, text: "N'oge ole?" },
-     { id: 828, challengeId: 276, correct: false, text: "Na mgbede" },
-                         
-   { id: 829, challengeId: 277, correct: true, text: "A ga m abịa", "audioSrc": "m1-l4-q13-ig.mp3" },
-     { id: 830, challengeId: 277, correct: false, text: "Alawala m" },
-     { id: 831, challengeId: 277, correct: false, text: "Ị sị gịnị?" },
-                         
-   { id: 832, challengeId: 278, correct: true, text: "Alawala m", "audioSrc": "m1-l4-q14-ig.mp3" },
-     { id: 833, challengeId: 278, correct: false, text: "A ga m abịa" },
-     { id: 834, challengeId: 278, correct: false, text: "A na m abịa" },
-                         
-   { id: 835, challengeId: 279, correct: true, text: "Ị sị gịnị?", "audioSrc": "m1-l4-q15-ig.mp3" },
-     { id: 836, challengeId: 279, correct: false, text: "A na m abịa" },
-     { id: 837, challengeId: 279, correct: false, text: "Biko gbaghara m" },
-                         
-   { id: 838, challengeId: 280, correct: true, text: "Kedu ebe ị na-aga?", "audioSrc": "m1-l5-q1-ig.mp3" },
-     { id: 839, challengeId: 280, correct: false, text: "A na m aga Enugu" },
-     { id: 840, challengeId: 280, correct: false, text: "Nọrọ ọdụ n'azụ" },
-                         
-   { id: 841, challengeId: 281, correct: true, text: "A na m aga Enugu", "audioSrc": "m1-l5-q2-ig.mp3" },
-     { id: 842, challengeId: 281, correct: false, text: "Kedu ebe ị na-aga" },
-     { id: 843, challengeId: 281, correct: false, text: "Bata n'ime" },
-                         
-   { id: 844, challengeId: 282, correct: true, text: "Bata n'ime", "audioSrc": "m1-l5-q3-ig.mp3" },
-     { id: 845, challengeId: 282, correct: false, text: "Rituo ebe a" },
-     { id: 846, challengeId: 282, correct: false, text: "Kedu ebe ị nọ?" },
-                         
-   { id: 847, challengeId: 283, correct: true, text: "Nọrọ ọdụ n'azụ", "audioSrc": "m1-l5-q4-ig.mp3" },
-     { id: 848, challengeId: 283, correct: false, text: "Bata n'ime" },
-     { id: 849, challengeId: 283, correct: false, text: "Ehihie ọma" },
-                         
-   { id: 850, challengeId: 284, correct: true, text: "Ebe ka ha nọ?", "audioSrc": "m1-l5-q5-ig.mp3" },
-     { id: 851, challengeId: 284, correct: false, text: "Kedu ebe ị na-aga?" },
-     { id: 852, challengeId: 284, correct: false, text: "Gbanye ọkụ" },
-                         
-   { id: 853, challengeId: 285, correct: true, text: "Ehihie ọma", "audioSrc": "m1-l5-q6-ig.mp3" },
-     { id: 854, challengeId: 285, correct: false, text: "Rituo ebe a" },
-     { id: 855, challengeId: 285, correct: false, text: "Nnọọ" },
-                         
-   { id: 856, challengeId: 286, correct: true, text: "Rituo ebe a", "audioSrc": "m1-l5-q7-ig.mp3" },
-     { id: 857, challengeId: 286, correct: false, text: "Nnọọ" },
-     { id: 858, challengeId: 286, correct: false, text: "Kedu ihe ị chọrọ iri?" },
-                         
-   { id: 859, challengeId: 287, correct: true, text: "Were ego gị", "audioSrc": "m1-l5-q8-ig.mp3" },
-     { id: 860, challengeId: 287, correct: false, text: "Daalụ" },
-     { id: 861, challengeId: 287, correct: false, text: "Kedu ihe ị chọrọ iri?" },
-                         
-   { id: 862, challengeId: 288, correct: true, text: "Ehihie ọma", "audioSrc": "m1-l5-q9-ig.mp3" },
-     { id: 863, challengeId: 288, correct: false, text: "Kedu ihe ikwuru?" },
-     { id: 864, challengeId: 288, correct: false, text: "Nnọọ" },
-                         
-   { id: 865, challengeId: 289, correct: true, text: "Nnọọ", "audioSrc": "m1-l5-q10-ig.mp3" },
-     { id: 866, challengeId: 289, correct: false, text: "Daalụ" },
-     { id: 867, challengeId: 289, correct: false, text: "Ka ọ dị" },
-                         
-   { id: 868, challengeId: 290, correct: true, text: "Gbanye ọkụ", "audioSrc": "m1-l5-q11-ig.mp3" },
-     { id: 869, challengeId: 290, correct: false, text: "Kedu ihe ị chọrọ iri?" },
-     { id: 870, challengeId: 290, correct: false, text: "I nwere mmiri?" },
-                         
-   { id: 871, challengeId: 291, correct: true, text: "Kedu ihe ị chọrọ iri?", "audioSrc": "m1-l5-q12-ig.mp3" },
-     { id: 872, challengeId: 291, correct: false, text: "I nwere mmiri?" },
-     { id: 873, challengeId: 291, correct: false, text: "Gbanye ọkụ" },
-                         
-   { id: 874, challengeId: 292, correct: true, text: "I nwere mmiri?", "audioSrc": "m1-l5-q13-ig.mp3" },
-     { id: 875, challengeId: 292, correct: false, text: "Daalụ" },
-     { id: 876, challengeId: 292, correct: false, text: "Biko gbaghara m" },
-                         
-   { id: 877, challengeId: 293, correct: true, text: "Daalụ", "audioSrc": "m1-l5-q14-ig.mp3" },
-     { id: 878, challengeId: 293, correct: false, text: "Ka ọ dị" },
-     { id: 879, challengeId: 293, correct: false, text: "Nnọọ" },
-                         
-   { id: 880, challengeId: 294, correct: true, text: "Ka ọ dị", "audioSrc": "m1-l5-q15-ig.mp3" },
-     { id: 881, challengeId: 294, correct: false, text: "Daalụ" },
-     { id: 882, challengeId: 294, correct: false, text: "Nnọọ" },
+   { id: 664, challengeId: 222, correct: false, text: "Ndo" },
+   { id: 665, challengeId: 222, correct: false, text: "Daalụ" },
+   { id: 666, challengeId: 222, correct: true, text: "Kedu ka I mere", audioSrc: "m1-l1-q1-ig.mp3" },
+   
+   { id: 667, challengeId: 223, correct: false, text: "Ndo" },
+   { id: 668, challengeId: 223, correct: false, text: "Daalụ" },
+   { id: 669, challengeId: 223, correct: true, text: "Adị mma mma", audioSrc: "m1-l1-q2-ig.mp3" },
+   
+   { id: 670, challengeId: 224, correct: true, text: "Gịnị bụ aha gị", audioSrc: "m1-l1-q3-ig.mp3" },
+   { id: 671, challengeId: 224, correct: false, text: "A bụ m onye Nigeria" },
+   { id: 672, challengeId: 224, correct: false, text: "Nnọọ" },
+   
+   { id: 673, challengeId: 225, correct: false, text: "Kedu maka gị?" },
+   { id: 674, challengeId: 225, correct: false, text: "A dị m mma" },
+   { id: 675, challengeId: 225, correct: true, text: "Aha m bụ Ebere", audioSrc: "m1-l1-q4-ig.mp3" },
+   
+   { id: 676, challengeId: 226, correct: false, text: "Aha m bụ Ebere" },
+   { id: 677, challengeId: 226, correct: false, text: "Daalụ" },
+   { id: 678, challengeId: 226, correct: true, text: " A bụ m onye Nigeria", audioSrc: "m1-l1-q5-ig.mp3" },
+   
+   { id: 679, challengeId: 227, correct: false, text: "Gịnị bụ aha gị" },
+   { id: 680, challengeId: 227, correct: false, text: "Eee" },
+   { id: 681, challengeId: 227, correct: true, text: "Kedu maka gị", audioSrc: "m1-l1-q6-ig.mp3" },
+   
+   { id: 682, challengeId: 228, correct: true, text: "Mba", audioSrc: "m1-l1-q7-ig.mp3" },
+   { id: 683, challengeId: 228, correct: false, text: "A bụ m onye Nigeria" },
+   { id: 684, challengeId: 228, correct: false, text: "Eee" },
+   
+   { id: 685, challengeId: 229, correct: false, text: "Daalụ" },
+   { id: 686, challengeId: 229, correct: false, text: "Kedu maka gị" },
+   { id: 687, challengeId: 229, correct: true, text: "Gịnị ka I kwuru", audioSrc: "m1-l1-q8-ig.mp3" },
+   
+   { id: 688, challengeId: 230, correct: true, text: "Kwuo ya ozo", audioSrc: "m1-l1-q9-ig.mp3" },
+   { id: 689, challengeId: 230, correct: false, text: "Gịnị ka I kwuru" },
+   { id: 690, challengeId: 230, correct: false, text: "Ndo" },
+   
+   { id: 691, challengeId: 231, correct: true, text: "Eee", audioSrc: "m1-l1-q10-ig.mp3" },
+   { id: 692, challengeId: 231, correct: false, text: "Daalụ" },
+   { id: 693, challengeId: 231, correct: false, text: "Mba" },
+   
+   { id: 694, challengeId: 232, correct: false, text: "A dị m mma" },
+   { id: 695, challengeId: 232, correct: true, text: "Daalụ", audioSrc: "m1-l1-q11-ig.mp3" },
+   { id: 696, challengeId: 232, correct: false, text: "A bụ m onye Nigeria" },
+   
+   { id: 697, challengeId: 233, correct: false, text: "Ndo" },
+   { id: 698, challengeId: 233, correct: false, text: "Kedu maka gị" },
+   { id: 699, challengeId: 233, correct: true, text: "Nnọọ", audioSrc: "m1-l1-q12-ig.mp3" },
+   
+   { id: 700, challengeId: 234, correct: true, text: "Ndo", audioSrc: "m1-l1-q13-ig.mp3" },
+   { id: 701, challengeId: 234, correct: false, text: "Nnọọ" },
+   { id: 702, challengeId: 234, correct: false, text: "Daalụ nke ukwuu" },
+   
+   { id: 703, challengeId: 235, correct: false, text: "Gịnị bụ aha gị" },
+   { id: 704, challengeId: 235, correct: false, text: "Daalụ" },
+   { id: 705, challengeId: 235, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m1-l1-q14-ig.mp3" },
+
+   //LESSON 2 STARTS
+
+   { id: 706, challengeId: 236, correct: false, text: "Obere obere" },
+   { id: 707, challengeId: 236, correct: false, text: "A hụrụ m Igbo n'anya" },
+   { id: 708, challengeId: 236, correct: true, text: "I na su Igbo", audioSrc: "m1-l2-q1-ig.mp3" },
+   
+   { id: 709, challengeId: 237, correct: false, text: "A hụrụ m Igbo n'anya" },
+   { id: 710, challengeId: 237, correct: true, text: "Obere obere", audioSrc: "m1-l2-q2-ig.mp3" },
+   { id: 711, challengeId: 237, correct: false, text: "Adị m afo iri atọ na ise" },
+   
+   { id: 712, challengeId: 238, correct: true, text: "A hụrụ m Igbo n'anya", audioSrc: "m1-l2-q3-ig.mp3" },
+   { id: 713, challengeId: 238, correct: false, text: "Obere" },
+   { id: 714, challengeId: 238, correct: false, text: "A na m agwa gị okwu" },
+   
+   { id: 715, challengeId: 239, correct: false, text: "Gịnị bụ ihe a?" },
+   { id: 716, challengeId: 239, correct: true, text: "E nwere m ike iso gị mee?", audioSrc: "m1-l2-q4-ig.mp3" },
+   { id: 717, challengeId: 239, correct: false, text: "Adị m afọ iri atọ na ise" },
+   
+   { id: 718, challengeId: 240, correct: true, text: "Ị dị afọ ole?", audioSrc: "m1-l2-q5-ig.mp3" },
+   { id: 719, challengeId: 240, correct: false, text: "Adị m afọ iri atọ na ise" },
+   { id: 720, challengeId: 240, correct: false, text: "A hụrụ m gị n'anya" },
+   
+   { id: 721, challengeId: 241, correct: true, text: "A dị m afọ iri atọ na ise", audioSrc: "m1-l2-q6-ig.mp3" },
+   { id: 722, challengeId: 241, correct: false, text: "A hụrụ m gị n'anya" },
+   { id: 723, challengeId: 241, correct: false, text: "E bi m na USA" },
+   
+   { id: 724, challengeId: 242, correct: true, text: "A na m agwa gị okwu", audioSrc: "m1-l2-q7-ig.mp3" },
+   { id: 725, challengeId: 242, correct: false, text: "Kedu ebe I bi?" },
+   { id: 726, challengeId: 242, correct: false, text: "Gịnị bụ ihe a?" },
+   
+   { id: 727, challengeId: 243, correct: false, text: "A na m agwa gị okwu" },
+   { id: 728, challengeId: 243, correct: false, text: "A dị m afọ iri atọ na ise" },
+   { id: 729, challengeId: 243, correct: true, text: "Gịnị bụ ihe a?", audioSrc: "m1-l2-q8-ig.mp3" },
+   
+   { id: 730, challengeId: 244, correct: true, text: "Kedu ihe ihe ahụ pụtara?", audioSrc: "m1-l2-q9-ig.mp3" },
+   { id: 731, challengeId: 244, correct: false, text: "A dị m afọ iri atọ na ise" },
+   { id: 732, challengeId: 244, correct: false, text: "Ọ dị mma" },
+   
+   { id: 733, challengeId: 245, correct: true, text: "Kedu ebe ị nọ?", audioSrc: "m1-l2-q10-ig.mp3" },
+   { id: 734, challengeId: 245, correct: false, text: "Kedu ebe i bi?" },
+   { id: 735, challengeId: 245, correct: false, text: "A dị m afọ iri atọ na ise" },
+   
+   { id: 736, challengeId: 246, correct: true, text: "A hụrụ m gị n'anya", audioSrc: "m1-l2-q11-ig.mp3" },
+   { id: 737, challengeId: 246, correct: false, text: "E bi m na USA" },
+   { id: 738, challengeId: 246, correct: false, text: "Ọ dị mma" },
+   
+   { id: 739, challengeId: 247, correct: false, text: "A hụrụ m gị n'anya" },
+   { id: 740, challengeId: 247, correct: false, text: "Ọ dị mma" },
+   { id: 741, challengeId: 247, correct: true, text: "Kedu ebe I bi?", audioSrc: "m1-l2-q12-ig.mp3" },
+   
+   { id: 742, challengeId: 248, correct: true, text: "Ọ dị mma", audioSrc: "m1-l2-q13-ig.mp3" },
+   { id: 743, challengeId: 248, correct: false, text: "A hụrụ m gị n'anya" },
+   { id: 744, challengeId: 248, correct: false, text: "Kedu ebe i bi?" },
+   
+   { id: 745, challengeId: 249, correct: false, text: "Ọ dị mma" },
+   { id: 746, challengeId: 249, correct: true, text: "Ọ mara mma", audioSrc: "m1-l2-q14-ig.mp3" },
+   { id: 747, challengeId: 249, correct: false, text: "Kedu ebe i bi?" },
+   
+   { id: 748, challengeId: 250, correct: true, text: "E bi m na USA", audioSrc: "m1-l2-q15-ig.mp3" },
+   { id: 749, challengeId: 250, correct: false, text: "E bi m na Nigeria" },
+   { id: 750, challengeId: 250, correct: false, text: "Ọ dị mma" },
+
+   // LESSON 3 STARTS
+   
+{ id: 751, challengeId: 251, correct: false, text: "Kedu ihe I kwuru pụtara?" },
+{ id: 752, challengeId: 251, correct: false, text: "Gwa m okwu" },
+{ id: 753, challengeId: 251, correct: true, text: "Ha na-agba egwu", audioSrc: "m1-l3-q1-ig.mp3" },
+
+{ id: 754, challengeId: 252, correct: false, text: "I nwetara ya" },
+{ id: 755, challengeId: 252, correct: true, text: "Kedu ihe I kwuru pụtara?", audioSrc: "m1-l3-q2-ig.mp3" },
+{ id: 756, challengeId: 252, correct: false, text: "A ma m" },
+
+{ id: 757, challengeId: 253, correct: false, text: "A hụkwara m gị n'anya" },
+{ id: 758, challengeId: 253, correct: true, text: "Gwa m okwu", audioSrc: "m1-l3-q3-ig.mp3" },
+{ id: 759, challengeId: 253, correct: false, text: "Ọ bụghị etu ahụ" },
+
+{ id: 760, challengeId: 254, correct: false, text: "A ma m" },
+{ id: 761, challengeId: 254, correct: true, text: "A hụkwara m gị n'anya", audioSrc: "m1-l3-q4-ig.mp3" },
+{ id: 762, challengeId: 254, correct: false, text: "Kedu ebe ị na-aga?" },
+
+{ id: 763, challengeId: 255, correct: true, text: "Ọ bụghị etu ahụ", audioSrc: "m1-l3-q5-ig.mp3" },
+{ id: 764, challengeId: 255, correct: false, text: "Kpọm kwem" },
+{ id: 765, challengeId: 255, correct: false, text: "Kedu ebe Ị na-aga?" },
+
+{ id: 766, challengeId: 256, correct: false, text: "Ka anyi jee" },
+{ id: 767, challengeId: 256, correct: true, text: "Kedu ebe Ị na-aga?", audioSrc: "m1-l3-q6-ig.mp3" },
+{ id: 768, challengeId: 256, correct: false, text: "I metaghị ya" },
+
+{ id: 769, challengeId: 257, correct: true, text: "Bịaghachi ebe a", audioSrc: "m1-l3-q7-ig.mp3" },
+{ id: 770, challengeId: 257, correct: false, text: "Kedu ebe Ị na-aga?" },
+{ id: 771, challengeId: 257, correct: false, text: "A ma m" },
+
+{ id: 772, challengeId: 258, correct: true, text: "Ọ sọ gị nọ?", audioSrc: "m1-l3-q8-ig.mp3" },
+{ id: 773, challengeId: 258, correct: false, text: "Eee" },
+{ id: 774, challengeId: 258, correct: false, text: "Mba" },
+
+{ id: 775, challengeId: 259, correct: true, text: "Ka anyị laa", audioSrc: "m1-l3-q9-ig.mp3" },
+{ id: 776, challengeId: 259, correct: false, text: "Bịaghachi ebe a" },
+{ id: 777, challengeId: 259, correct: false, text: "I nwetara ya" },
+
+{ id: 778, challengeId: 260, correct: false, text: "Kpọm kwem" },
+{ id: 779, challengeId: 260, correct: true, text: "A ma m", audioSrc: "m1-l3-q10-ig.mp3" },
+{ id: 780, challengeId: 260, correct: false, text: "Kedu ebe ị na-aga?" },
+
+{ id: 781, challengeId: 261, correct: true, text: "Kpọm kwem", audioSrc: "m1-l3-q11-ig.mp3" },
+{ id: 782, challengeId: 261, correct: false, text: "A ma m" },
+{ id: 783, challengeId: 261, correct: false, text: "I nwetara ya" },
+
+{ id: 784, challengeId: 262, correct: true, text: "I nwetara ya", audioSrc: "m1-l3-q12-ig.mp3" },
+{ id: 785, challengeId: 262, correct: false, text: "Ọ dị mma" },
+{ id: 786, challengeId: 262, correct: false, text: "A hụkwara m gị n'anya" },
+
+{ id: 787, challengeId: 263, correct: false, text: "Ọ dị mma" },
+{ id: 788, challengeId: 263, correct: false, text: "I nwetara ya" },
+{ id: 789, challengeId: 263, correct: true, text: "I nwetaghị ya", audioSrc: "m1-l3-q13-ig.mp3" },
+
+{ id: 790, challengeId: 264, correct: false, text: "A ma m" },
+{ id: 791, challengeId: 264, correct: true, text: "Ọ dị mma", audioSrc: "m1-l3-q14-ig.mp3" },
+{ id: 792, challengeId: 264, correct: false, text: "Kedu ebe ị na-aga?" },
+
+{ id: 793, challengeId: 265, correct: false, text: "I nwetaghị ya" },
+{ id: 794, challengeId: 265, correct: true, text: "Ị ma?", audioSrc: "m1-l3-q15-ig.mp3" },
+{ id: 795, challengeId: 265, correct: false, text: "Kpọm kwem" },
+
+{ id: 796, challengeId: 266, correct: true, text: "A chọrọ m i go", audioSrc: "m1-l4-q1-ig.mp3" },
+{ id: 797, challengeId: 266, correct: false, text: "Kedu ihe ị chọrọ i go" },
+{ id: 798, challengeId: 266, correct: false, text: "Ji ruru otu puku naịra" },
+
+{ id: 799, challengeId: 267, correct: false, text: "Ji ruru otu puku naịra" },
+{ id: 800, challengeId: 267, correct: false, text: "A chọrọ m i go" },
+{ id: 801, challengeId: 267, correct: true, text: "Kedu ihe ị chọrọ i go?", audioSrc: "m1-l4-q2-ig.mp3" },
+
+{ id: 802, challengeId: 268, correct: false, text: "Ego ole?" },
+{ id: 803, challengeId: 268, correct: true, text: "Ji", audioSrc: "m1-l4-q3-ig.mp3" },
+{ id: 804, challengeId: 268, correct: false, text: "Kedu ihe ị chọrọ i go?" },
+
+{ id: 805, challengeId: 269, correct: false, text: "Ji ruru otu puku naịra" },
+{ id: 806, challengeId: 269, correct: true, text: "Ego ole?", audioSrc: "m1-l4-q4-ig.mp3" },
+{ id: 807, challengeId: 269, correct: false, text: "Kedu ihe i kwuru?" },
+
+{ id: 808, challengeId: 270, correct: false, text: "Ego ole?" },
+{ id: 809, challengeId: 270, correct: false, text: "Biko gbaghara m" },
+{ id: 810, challengeId: 270, correct: true, text: "Ji ruru otu puku naịra", audioSrc: "m1-l4-q5-ig.mp3" },
+
+{ id: 811, challengeId: 271, correct: false, text: "Bịaghachi" },
+{ id: 812, challengeId: 271, correct: false, text: "Biko gbaghara m" },
+{ id: 813, challengeId: 271, correct: true, text: "A na m abịa", audioSrc: "m1-l4-q6-ig.mp3" },
+
+{ id: 814, challengeId: 272, correct: false, text: "Bịaghachi" },
+{ id: 815, challengeId: 272, correct: true, text: "Biko gbaghara m", audioSrc: "m1-l4-q7-ig.mp3" },
+{ id: 816, challengeId: 272, correct: false, text: "Kedu ihe i kwuru?" },
+
+{ id: 817, challengeId: 273, correct: false, text: "A nugo m gị" },
+{ id: 818, challengeId: 273, correct: true, text: "Ọ dịghị", audioSrc: "m1-l4-q8-ig.mp3" },
+{ id: 819, challengeId: 273, correct: false, text: "Bịaghachi" },
+
+{ id: 820, challengeId: 274, correct: false, text: "A nugo m gị" },
+{ id: 821, challengeId: 274, correct: true, text: "Bịaghachi", audioSrc: "m1-l4-q9-ig.mp3" },
+{ id: 822, challengeId: 274, correct: false, text: "Biko gbaghara m" },
+
+{ id: 823, challengeId: 275, correct: true, text: "A nugo m gị", audioSrc: "m1-l4-q10-ig.mp3" },
+{ id: 824, challengeId: 275, correct: false, text: "Bịaghachi" },
+{ id: 825, challengeId: 275, correct: false, text: "N'oge ole" },
+
+{ id: 826, challengeId: 276, correct: true, text: "N'oge ole?", audioSrc: "m1-l4-q11-ig.mp3" },
+{ id: 827, challengeId: 276, correct: false, text: "N'ehihie" },
+{ id: 828, challengeId: 276, correct: false, text: "N'ụtụtụ" },
+
+{ id: 829, challengeId: 277, correct: false, text: "N'oge ole?" },
+{ id: 830, challengeId: 277, correct: true, text: "N'ehihie", audioSrc: "m1-l4-q12-ig.mp3" },
+{ id: 831, challengeId: 277, correct: false, text: "Na mgbede" },
+
+{ id: 832, challengeId: 278, correct: true, text: "A ga m abịa", audioSrc: "m1-l4-q13-ig.mp3" },
+{ id: 833, challengeId: 278, correct: false, text: "Alawala m" },
+{ id: 834, challengeId: 278, correct: false, text: "Ị sị gịnị?" },
+
+{ id: 835, challengeId: 279, correct: false, text: "A ga m abịa" },
+{ id: 836, challengeId: 279, correct: true, text: "Alawala m", audioSrc: "m1-l4-q14-ig.mp3" },
+{ id: 837, challengeId: 279, correct: false, text: "A na m abịa" },
+
+{ id: 838, challengeId: 280, correct: true, text: "Ị sị gịnị?", audioSrc: "m1-l4-q15-ig.mp3" },
+{ id: 839, challengeId: 280, correct: false, text: "A na m abịa" },
+{ id: 840, challengeId: 280, correct: false, text: "Biko gbaghara m" },
+
+{ id: 841, challengeId: 281, correct: false, text: "A na m aga Enugu" },
+{ id: 842, challengeId: 281, correct: true, text: "Kedu ebe ị na-aga?", audioSrc: "m1-l5-q1-ig.mp3" },
+{ id: 843, challengeId: 281, correct: false, text: "Nọrọ ọdụ n'azụ" },
+
+{ id: 844, challengeId: 282, correct: true, text: "A na m aga Enugu", audioSrc: "m1-l5-q2-ig.mp3" },
+{ id: 845, challengeId: 282, correct: false, text: "Kedu ebe ị na aga" },
+{ id: 846, challengeId: 282, correct: false, text: "Bata n'ime" },
+
+{ id: 847, challengeId: 283, correct: false, text: "Rituo ebe" },
+{ id: 848, challengeId: 283, correct: false, text: "Kedu ebe ị nọ?" },
+{ id: 849, challengeId: 283, correct: true, text: "Bata n'ime", audioSrc: "m1-l5-q3-ig.mp3" },
+
+{ id: 850, challengeId: 284, correct: true, text: "Nọrọ ọdụ n'azụ", audioSrc: "m1-l5-q4-ig.mp3" },
+{ id: 851, challengeId: 284, correct: false, text: "Bata n'ime" },
+{ id: 852, challengeId: 284, correct: false, text: "Ehihie ọma" },
+
+{ id: 853, challengeId: 285, correct: true, text: "Ebe ka ha nọ?", audioSrc: "m1-l5-q5-ig.mp3" },
+{ id: 854, challengeId: 285, correct: false, text: "Kedu ebe ị na-aga?" },
+{ id: 855, challengeId: 285, correct: false, text: "Gbanye ọkụ" },
+
+{ id: 856, challengeId: 286, correct: false, text: "Ehihie ọma" },
+{ id: 857, challengeId: 286, correct: true, text: "Rituo ebe a", audioSrc: "m1-l5-q6-ig.mp3" },
+{ id: 858, challengeId: 286, correct: false, text: "Nnọọ" },
+
+{ id: 859, challengeId: 287, correct: true, text: "Were ego gị", audioSrc: "m1-l5-q7-ig.mp3" },
+{ id: 860, challengeId: 287, correct: false, text: "Daalụ" },
+{ id: 861, challengeId: 287, correct: false, text: "Kedu ihe ị chọrọ iri?" },
+
+{ id: 862, challengeId: 288, correct: true, text: "Ehihie ọma", audioSrc: "m1-l5-q8-ig.mp3" },
+{ id: 863, challengeId: 288, correct: false, text: "Kedu ihe ikwuru?" },
+{ id: 864, challengeId: 288, correct: false, text: "Nnọọ" },
+
+{ id: 865, challengeId: 289, correct: false, text: "Daalụ" },
+{ id: 866, challengeId: 289, correct: true, text: "Nnọọ", audioSrc: "m1-l5-q9-ig.mp3" },
+{ id: 867, challengeId: 289, correct: false, text: "Ka ọ dị" },
+
+{ id: 868, challengeId: 290, correct: true, text: "Gbanye ọkụ", audioSrc: "m1-l5-q10-ig.mp3" },
+{ id: 869, challengeId: 290, correct: false, text: "Kedu ihe ị chọrọ i ri?" },
+{ id: 870, challengeId: 290, correct: false, text: "I nwere mmiri?" },
+
+{ id: 871, challengeId: 291, correct: true, text: "Kedu ihe ị chọrọ i ri?", audioSrc: "m1-l5-q11-ig.mp3" },
+{ id: 872, challengeId: 291, correct: false, text: "I nwere mmiri?" },
+{ id: 873, challengeId: 291, correct: false, text: "Gbanye ọkụ" },
+
+{ id: 874, challengeId: 292, correct: false, text: "Daalụ" },
+{ id: 875, challengeId: 292, correct: false, text: "Ị chọrọ iri nri?" },
+{ id: 876, challengeId: 292, correct: true, text: "I nwere mmiri?", audioSrc: "m1-l5-q12-ig.mp3" },
+
+{ id: 877, challengeId: 293, correct: true, text: "Daalụ", audioSrc: "m1-l5-q13-ig.mp3" },
+{ id: 878, challengeId: 293, correct: false, text: "Ka ọ dị" },
+{ id: 879, challengeId: 293, correct: false, text: "Nnọọ" },
+
+{ id: 880, challengeId: 294, correct: true, text: "Ka ọ dị", audioSrc: "m1-l5-q14-ig.mp3" },
+{ id: 881, challengeId: 294, correct: false, text: "Daalụ" },
+{ id: 882, challengeId: 294, correct: false, text: "Nnọọ" },
 
 // Igbo Module 2 Lesson 1
+
 {id: 883, challengeId: 295, correct: false, text: "Ụtụtụ ọma", audioSrc: "m2-l1-q1-ig.mp3" },
 {id: 884, challengeId: 295, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m2-l1-q1-ig.mp3" },
 {id: 885, challengeId: 295, correct: false, text: "Lee" },
