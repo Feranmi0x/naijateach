@@ -271,7 +271,7 @@ await db.insert(schema.yrgenders).values([
         { id: 26, english: "Butter", yoruba: "Bọtọ", audioPath: "bot.mp3" },
         { id: 27, english: "Fruit", yoruba: "Eso", audioPath: "eso.mp3" },
         { id: 28, english: "Chicken", yoruba: "Adìẹ", audioPath: "adi.mp3" },
-        { id: 29, english: "Shrimp", yoruba: "Ẹlẹsẹ́ mejì", audioPath: "ejae.mp3" },   
+        { id: 29, english: "Shrimp", yoruba: "Ẹ̀jẹ Ẹ̀dẹ̀", audioPath: "ejae.mp3" },   
 ]);
 
 await db.insert(schema.slangs).values([
@@ -306,6 +306,27 @@ await db.insert(schema.igslangs).values([
         { id: 15, english: "Over sabi", igbo: "Ọkachamara", audioPath: "oka.mp3" },
         { id: 16, english: "How far?", igbo: "Kedu ihe na-eme", audioPath: "ked.mp3" },
         { id: 17, english: "Flex", igbo: "Mmachagharị", audioPath: "mma.mp3" }, 
+]);
+
+await db.insert(schema.yrslangs).values([
+        { id: 1, english: "Wahala", yoruba: "Wàhàlà", audioPath: "wah.mp3" },
+        { id: 2, english: "Omo", yoruba: "Ómò", audioPath: "omo.mp3" },
+        { id: 3, english: "Japa", yoruba: "Jàpà", audioPath: "jap.mp3" },
+        { id: 4, english: "Abeg", yoruba: "Jọ̀ o", audioPath: "jor.mp3" },
+        { id: 5, english: "Sapa", yoruba: "Ènùgbè", audioPath: "enu.mp3" },
+        { id: 6, english: "No VEX", yoruba: "Mabinu", audioPath: "mab.mp3" },
+        { id: 7, english: "Zazu", yoruba: "Zàzù", audioPath: "zaz.mp3" },
+        { id: 8, english: "Ginger", yoruba: "Pàkúrúmò", audioPath: "pak.mp3" },
+        { id: 9, english: "Baba", yoruba: "Bàbà", audioPath: "bab.mp3" },
+        { id: 10, english: "Wetin you Yarn", yoruba: "Kílósò", audioPath: "kil.mp3" },
+        { id: 11, english: "Pele", yoruba: "Pèlè", audioPath: "pel.mp3" },
+        { id: 12, english: "Gbas gobs", yoruba: "Gbàs gbos", audioPath: "gba.mp3" },
+        { id: 13, english: "Lamba", yoruba: "Mùlè", audioPath: "mul.mp3" },
+        { id: 14, english: "Shine your eye", yoruba: "Lá ojú ẹ", audioPath: "lao.mp3" },
+        { id: 15, english: "Carry me dey go", yoruba: "Gbémídébé", audioPath: "gbe.mp3" },
+        { id: 16, english: "Over sabi", yoruba: "Àlàmọ́jù", audioPath: "ala.mp3" },
+        { id: 17, english: "How far", yoruba: "Kílòwà", audioPath: "kilo.mp3" },
+        { id: 18, english: "Flex", yoruba: "Jáiyè Jàiyè", audioPath: "jai.mp3" },    
 ]);
               
 
@@ -364,6 +385,16 @@ await db.insert(schema.pronouns).values([
         { id: 3, english: "We", hausa: "Mu", audioPath: "mu.mp3" },
         { id: 4, english: "Me", hausa: "Ni", audioPath: "ni.mp3" },
         { id: 5, english: "I", hausa: "Ni", audioPath: "ni.mp3" },     
+]);
+
+await db.insert(schema.yrpronouns).values([
+        { id: 1, english: "She", yoruba: "Ó, Ẹ̀", audioPath: "o.mp3" },
+        { id: 2, english: "He", yoruba: "Ó, Ẹ̀", audioPath: "e.mp3" },
+        { id: 3, english: "We", yoruba: "Àwa", audioPath: "awa.mp3" },
+        { id: 4, english: "Me", yoruba: "Èmí", audioPath: "emi.mp3" },
+        { id: 5, english: "I", yoruba: "Èmí", audioPath: "emi.mp3" },
+        { id: 6, english: "You", yoruba: "Ìwọ", audioPath: "iwo.mp3" },
+        { id: 7, english: "They", yoruba: "Àwọn", audioPath: "awo.mp3" },          
 ]);
 
 await db.insert(schema.igpronouns).values([

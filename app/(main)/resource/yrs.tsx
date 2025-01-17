@@ -11,7 +11,7 @@ type Props = {
 
 export const YorubaSlangs = ({ slangs }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/yoruba_slangs/${audioPath}`);
+    const audio = new Audio(`/yr-slang/${audioPath}`);
     audio.play();
   };
 

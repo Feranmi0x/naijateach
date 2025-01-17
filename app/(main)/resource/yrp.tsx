@@ -11,7 +11,7 @@ type Props = {
 
 export const YorubaPronouns = ({ pronouns }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/yoruba_pronouns/${audioPath}`);
+    const audio = new Audio(`/yr-pronouns/${audioPath}`);
     audio.play();
   };
 

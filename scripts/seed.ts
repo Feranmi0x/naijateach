@@ -771,7 +771,7 @@ await db.insert(schema.challenges).values([
 
 { id: 236, lessonId: 2, type: "SELECT", order: 236, question: "Do you speak Igbo?" },
 { id: 237, lessonId: 2, type: "SELECT", order: 237, question: "Just a little" },
-{ id: 238, lessonId: 2, type: "SELECT", order: 238, question: "A hụrụ m Igbo n'anya" },
+{ id: 238, lessonId: 2, type: "SELECT", order: 238, question: "I love Igbo" },
 { id: 239, lessonId: 2, type: "SELECT", order: 239, question: "Can I practice with you?" },
 { id: 240, lessonId: 2, type: "SELECT", order: 240, question: "How old are you?" },
 { id: 241, lessonId: 2, type: "SELECT", order: 241, question: "I am thirty-five years old" },
@@ -1504,7 +1504,7 @@ await db.insert(schema.challenges).values([
    // Q6: What about you?
    { id: 16, challengeId: 6, correct: false, text: "Kí ni orúkọ rẹ?", audioSrc: "m1-l1-q3-yr.mp3" }, // Reuse audio
    { id: 17, challengeId: 6, correct: false, text: "Béèni" },
-   { id: 18, challengeId: 6, correct: true, text: "Ǹjẹ́ ìwọ n kò?", audioSrc: "m1-l1-q3-yr.mp3" },
+   { id: 18, challengeId: 6, correct: true, text: "Ǹjẹ́ ìwọ n kò?", audioSrc: "m1-l1-q6-yr.mp3" },
 
    // Q7: No.
    { id: 19, challengeId: 7, correct: true, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3" },
@@ -1512,19 +1512,19 @@ await db.insert(schema.challenges).values([
    { id: 21, challengeId: 7, correct: false, text: "Béèni" },
 
    // Q8: Yes.
-   { id: 22, challengeId: 8, correct: true, text: "Béèni", audioSrc: "m1-l1-q8-yr.mp3" },
+   { id: 22, challengeId: 8, correct: true, text: "Béèni", audioSrc: "m1-l1-q10-yr.mp3" },
    { id: 23, challengeId: 8, correct: false, text: "E ṣeun" },
    { id: 24, challengeId: 8, correct: false, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3" }, // Reuse audio
 
    // Q9: Thank you.
    { id: 25, challengeId: 9, correct: false, text: "Mo wa dáadáa", audioSrc: "m1-l1-q2-yr.mp3" }, // Reuse audio
-   { id: 26, challengeId: 9, correct: true, text: "E ṣeun", audioSrc: "m1-l1-q9-yr.mp3" },
+   { id: 26, challengeId: 9, correct: true, text: "E ṣeun", audioSrc: "m1-l1-q11-yr.mp3" },
    { id: 27, challengeId: 9, correct: false, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3" }, // Reuse audio
 
    // Q10: You’re welcome.
    { id: 28, challengeId: 10, correct: false, text: "Má bínú", audioSrc: "m1-l1-q11-yr.mp3" }, // Reuse audio
    { id: 29, challengeId: 10, correct: false, text: "Ǹjẹ́ ìwọ n kò?" },
-   { id: 30, challengeId: 10, correct: true, text: "Ẹ káàbọ̀", audioSrc: "m1-l1-q10-yr.mp3" },
+   { id: 30, challengeId: 10, correct: true, text: "Ẹ káàbọ̀", audioSrc: "m1-l1-q12-yr.mp3" },
 
    // Q11: Sorry.
    { id: 31, challengeId: 11, correct: true, text: "Má bínú", audioSrc: "m1-l1-q11-yr.mp3" },
@@ -1687,119 +1687,119 @@ await db.insert(schema.challenges).values([
     { id: 126, challengeId: 42, correct: false, text: "Gẹ́gẹ́ bẹ́ẹ̀" },
       // Yoruba Lesson 4
   { id: 127, challengeId: 43, correct: false, text: "Kí ni o fẹ́ ra?" },
-  { id: 128, challengeId: 43, correct: true, text: "Mo fẹ́ ra", audioSrc: "m4-l4-q1-yr.mp3" },
+  { id: 128, challengeId: 43, correct: true, text: "Mo fẹ́ ra", audioSrc: "m1-l4-q1-yr.mp3" },
   { id: 129, challengeId: 43, correct: false, text: "Isu Ẹgbẹ̀rún kan" },
 
-  { id: 130, challengeId: 44, correct: true, text: "Kí ni o fẹ́ ra?", audioSrc: "m4-l4-q2-yr.mp3" },
+  { id: 130, challengeId: 44, correct: true, text: "Kí ni o fẹ́ ra?", audioSrc: "m1-l4-q2-yr.mp3" },
   { id: 131, challengeId: 44, correct: false, text: "Isu Ẹgbẹ̀rún kan" },
   { id: 132, challengeId: 44, correct: false, text: "Mo fẹ́ ra" },
 
-  { id: 133, challengeId: 45, correct: true, text: "Ìṣu", audioSrc: "m4-l4-q3-yr.mp3" },
+  { id: 133, challengeId: 45, correct: true, text: "Ìṣu", audioSrc: "m1-l4-q3-yr.mp3" },
   { id: 134, challengeId: 45, correct: false, text: "Èló ni?" },
   { id: 135, challengeId: 45, correct: false, text: "Kí ni o fẹ́ ra?" },
 
   { id: 136, challengeId: 46, correct: false, text: "Isu Ẹgbẹ̀rún kan" },
-  { id: 137, challengeId: 46, correct: true, text: "Èló ni?", audioSrc: "m4-l4-q4-yr.mp3" },
+  { id: 137, challengeId: 46, correct: true, text: "Èló ni?", audioSrc: "m1-l4-q4-yr.mp3" },
   { id: 138, challengeId: 46, correct: false, text: "Kí ló sọ?" },
 
-  { id: 139, challengeId: 47, correct: true, text: "Isu Ẹgbẹ̀rún kan", audioSrc: "m4-l4-q5-yr.mp3" },
+  { id: 139, challengeId: 47, correct: true, text: "Isu Ẹgbẹ̀rún kan", audioSrc: "m1-l4-q5-yr.mp3" },
   { id: 140, challengeId: 47, correct: false, text: "Èló ni?" },
   { id: 141, challengeId: 47, correct: false, text: "Má bínú" },
 
-  { id: 142, challengeId: 48, correct: true, text: "Mo ń bọ̀", audioSrc: "m4-l4-q6-yr.mp3" },
+  { id: 142, challengeId: 48, correct: true, text: "Mo ń bọ̀", audioSrc: "m1-l4-q6-yr.mp3" },
   { id: 143, challengeId: 48, correct: false, text: "Padà wá" },
   { id: 144, challengeId: 48, correct: false, text: "Má bínú" },
 
-  { id: 145, challengeId: 49, correct: true, text: "Má bínú", audioSrc: "m4-l4-q7-yr.mp3" },
+  { id: 145, challengeId: 49, correct: true, text: "Má bínú", audioSrc: "m1-l4-q7-yr.mp3" },
   { id: 146, challengeId: 49, correct: false, text: "Kí ló sọ?" },
   { id: 147, challengeId: 49, correct: false, text: "Padà wá" },
 
-  { id: 148, challengeId: 50, correct: true, text: "Kò sí", audioSrc: "m4-l4-q8-yr.mp3" },
+  { id: 148, challengeId: 50, correct: true, text: "Kò sí", audioSrc: "m1-l4-q8-yr.mp3" },
   { id: 149, challengeId: 50, correct: false, text: "Mo ti gbọ́ ọ" },
   { id: 150, challengeId: 50, correct: false, text: "Padà wá" },
 
-  { id: 151, challengeId: 51, correct: true, text: "Padà wá", audioSrc: "m4-l4-q9-yr.mp3" },
+  { id: 151, challengeId: 51, correct: true, text: "Padà wá", audioSrc: "m1-l4-q9-yr.mp3" },
   { id: 152, challengeId: 51, correct: false, text: "Mo ti gbọ́ ọ" },
   { id: 153, challengeId: 51, correct: false, text: "Má bínú" },
 
-  { id: 154, challengeId: 52, correct: true, text: "Mo ti gbọ́ ọ", audioSrc: "m4-l4-q10-yr.mp3" },
+  { id: 154, challengeId: 52, correct: true, text: "Mo ti gbọ́ ọ", audioSrc: "m1-l4-q10-yr.mp3" },
   { id: 155, challengeId: 52, correct: false, text: "Má bínú" },
   { id: 156, challengeId: 52, correct: false, text: "Padà wá" },
 
-  { id: 157, challengeId: 53, correct: true, text: "Ní àkókò wo?", audioSrc: "m4-l4-q11-yr.mp3" },
+  { id: 157, challengeId: 53, correct: true, text: "Ní àkókò wo?", audioSrc: "m1-l4-q11-yr.mp3" },
   { id: 158, challengeId: 53, correct: false, text: "Ní òwúrọ̀" },
   { id: 159, challengeId: 53, correct: false, text: "Ní ọ̀sán" },
 
-  { id: 160, challengeId: 54, correct: true, text: "Ní ọ̀sán", audioSrc: "m4-l4-q12-yr.mp3" },
+  { id: 160, challengeId: 54, correct: true, text: "Ní ọ̀sán", audioSrc: "m1-l4-q12-yr.mp3" },
   { id: 161, challengeId: 54, correct: false, text: "Ní àkókò wo?" },
   { id: 162, challengeId: 54, correct: false, text: "Ní ìrọ̀lẹ́" },
 
-  { id: 163, challengeId: 55, correct: true, text: "Maa wa", audioSrc: "m4-l4-q13-yr.mp3" },
+  { id: 163, challengeId: 55, correct: true, text: "Maa wa", audioSrc: "m1-l4-q13-yr.mp3" },
   { id: 164, challengeId: 55, correct: false, text: "Mo ń bọ̀" },
   { id: 165, challengeId: 55, correct: false, text: "Kí ló sọ?" },
 
-  { id: 166, challengeId: 56, correct: true, text: "Mo ń lọ", audioSrc: "m4-l4-q14-yr.mp3" },
+  { id: 166, challengeId: 56, correct: true, text: "Mo ń lọ", audioSrc: "m1-l4-q14-yr.mp3" },
   { id: 167, challengeId: 56, correct: false, text: "Maa wa" },
   { id: 168, challengeId: 56, correct: false, text: "Mo ń bọ̀" },
 
-  { id: 169, challengeId: 57, correct: true, text: "Kí ló sọ?", audioSrc: "m4-l4-q15-yr.mp3" },
+  { id: 169, challengeId: 57, correct: true, text: "Kí ló sọ?", audioSrc: "m1-l4-q15-yr.mp3" },
   { id: 170, challengeId: 57, correct: false, text: "Mo ń bọ̀" },
   { id: 171, challengeId: 57, correct: false, text: "Má bínú" },
 
   // Yoruba Lesson 5
-  { id: 172, challengeId: 58, correct: true, text: "Nibo ni o ń lọ?", audioSrc: "m5-l5-q1-yr.mp3" },
+  { id: 172, challengeId: 58, correct: true, text: "Nibo ni o ń lọ?", audioSrc: "m1-l5-q1-yr.mp3" },
   { id: 173, challengeId: 58, correct: false, text: "Mo ń lọ sí Nicon Town" },
   { id: 174, challengeId: 58, correct: false, text: "Jóko ní ẹ̀yìn" },
 
-  { id: 175, challengeId: 59, correct: true, text: "Mo ń lọ sí Nicon Town", audioSrc: "m5-l5-q2-yr.mp3" },
+  { id: 175, challengeId: 59, correct: true, text: "Mo ń lọ sí Nicon Town", audioSrc: "m1-l5-q2-yr.mp3" },
   { id: 176, challengeId: 59, correct: false, text: "Nibo ni o ń lọ?" },
   { id: 177, challengeId: 59, correct: false, text: "Wọlé" },
 
-  { id: 178, challengeId: 60, correct: true, text: "Wọlé", audioSrc: "m5-l5-q3-yr.mp3" },
+  { id: 178, challengeId: 60, correct: true, text: "Wọlé", audioSrc: "m1-l5-q3-yr.mp3" },
   { id: 179, challengeId: 60, correct: false, text: "Sọkalẹ̀ níbí" },
   { id: 180, challengeId: 60, correct: false, text: "Nibo ni wọ́n wà?" },
 
-  { id: 181, challengeId: 61, correct: true, text: "Jóko ní ẹ̀yìn", audioSrc: "m5-l5-q4-yr.mp3" },
+  { id: 181, challengeId: 61, correct: true, text: "Jóko ní ẹ̀yìn", audioSrc: "m1-l5-q4-yr.mp3" },
   { id: 182, challengeId: 61, correct: false, text: "Wọlé" },
   { id: 183, challengeId: 61, correct: false, text: "Ẹ káàsán" },
 
-  { id: 184, challengeId: 62, correct: true, text: "Nibo ni wọ́n wà?", audioSrc: "m5-l5-q5-yr.mp3" },
+  { id: 184, challengeId: 62, correct: true, text: "Nibo ni wọ́n wà?", audioSrc: "m1-l5-q5-yr.mp3" },
   { id: 185, challengeId: 62, correct: false, text: "Nibo ni o ń lọ?" },
   { id: 186, challengeId: 62, correct: false, text: "Tan ina" },
 
-  { id: 187, challengeId: 63, correct: true, text: "Ẹ káàsán", audioSrc: "m5-l5-q6-yr.mp3" },
+  { id: 187, challengeId: 63, correct: true, text: "Ẹ káàsán", audioSrc: "m1-l5-q6-yr.mp3" },
   { id: 188, challengeId: 63, correct: false, text: "Sọkalẹ̀ níbí" },
   { id: 189, challengeId: 63, correct: false, text: "Ẹ kú abọ̀" },
 
-  { id: 190, challengeId: 64, correct: true, text: "Gbà owó rẹ", audioSrc: "m5-l5-q7-yr.mp3" },
+  { id: 190, challengeId: 64, correct: true, text: "Gbà owó rẹ", audioSrc: "m1-l5-q7-yr.mp3" },
   { id: 191, challengeId: 64, correct: false, text: "E ṣeun" },
   { id: 192, challengeId: 64, correct: false, text: "Kí ni o fẹ́ jẹ?" },
 
-  { id: 193, challengeId: 65, correct: true, text: "Ẹ káàsán", audioSrc: "m5-l5-q8-yr.mp3" },
+  { id: 193, challengeId: 65, correct: true, text: "Ẹ káàsán", audioSrc: "m1-l5-q8-yr.mp3" },
   { id: 194, challengeId: 65, correct: false, text: "Kí ló sọ?" },
   { id: 195, challengeId: 65, correct: false, text: "Ẹ kú abọ̀" },
 
-  { id: 196, challengeId: 66, correct: true, text: "Ẹ kú abọ̀", audioSrc: "m5-l5-q9-yr.mp3" },
+  { id: 196, challengeId: 66, correct: true, text: "Ẹ kú abọ̀", audioSrc: "m1-l5-q9-yr.mp3" },
   { id: 197, challengeId: 66, correct: false, text: "O dàbọ̀" },
   { id: 198, challengeId: 66, correct: false, text: "E ṣeun" },
 
-  { id: 199, challengeId: 67, correct: true, text: "Tan ina", audioSrc: "m5-l5-q10-yr.mp3" },
+  { id: 199, challengeId: 67, correct: true, text: "Tan ina", audioSrc: "m1-l5-q10-yr.mp3" },
   { id: 200, challengeId: 67, correct: false, text: "Kí ni o fẹ́ jẹ?" },
   { id: 201, challengeId: 67, correct: false, text: "Ṣé o ní omi?" },
 
-  { id: 202, challengeId: 68, correct: true, text: "Kí ni o fẹ́ jẹ?", audioSrc: "m5-l5-q11-yr.mp3" },
+  { id: 202, challengeId: 68, correct: true, text: "Kí ni o fẹ́ jẹ?", audioSrc: "m1-l5-q11-yr.mp3" },
   { id: 203, challengeId: 68, correct: false, text: "Ṣé o ní omi?" },
   { id: 204, challengeId: 68, correct: false, text: "Tan ina" },
 
-  { id: 205, challengeId: 69, correct: true, text: "Ṣé o ní omi?", audioSrc: "m5-l5-q12-yr.mp3" },
+  { id: 205, challengeId: 69, correct: true, text: "Ṣé o ní omi?", audioSrc: "m1-l5-q12-yr.mp3" },
   { id: 206, challengeId: 69, correct: false, text: "E ṣeun" },
   { id: 207, challengeId: 69, correct: false, text: "Kí ni o fẹ́ jẹ?" },
 
-  { id: 208, challengeId: 70, correct: true, text: "E ṣeun", audioSrc: "m5-l5-q13-yr.mp3" },
+  { id: 208, challengeId: 70, correct: true, text: "E ṣeun", audioSrc: "m1-l5-q13-yr.mp3" },
   { id: 209, challengeId: 70, correct: false, text: "O dàbọ̀" },
   { id: 210, challengeId: 70, correct: false, text: "Ẹ kú abọ̀" },
 
-  { id: 211, challengeId: 71, correct: true, text: "O dàbọ̀", audioSrc: "m5-l5-q14-yr.mp3" },
+  { id: 211, challengeId: 71, correct: true, text: "O dàbọ̀", audioSrc: "m1-l5-q14-yr.mp3" },
   { id: 212, challengeId: 71, correct: false, text: "E ṣeun" },
   { id: 213, challengeId: 71, correct: false, text: "Ẹ kú abọ̀" },
   { id: 214, challengeId: 72, correct: false, text: "Ẹ káárọ̀" },
@@ -2453,13 +2453,13 @@ await db.insert(schema.challenges).values([
    { id: 698, challengeId: 233, correct: false, text: "Kedu maka gị" },
    { id: 699, challengeId: 233, correct: true, text: "Nnọọ", audioSrc: "m1-l1-q12-ig.mp3" },
    
-   { id: 700, challengeId: 234, correct: true, text: "Ndo", audioSrc: "m1-l1-q13-ig.mp3" },
+   { id: 700, challengeId: 234, correct: true, text: "Ndo", audioSrc: "m1-l1-q14-ig.mp3" },
    { id: 701, challengeId: 234, correct: false, text: "Nnọọ" },
    { id: 702, challengeId: 234, correct: false, text: "Daalụ nke ukwuu" },
    
    { id: 703, challengeId: 235, correct: false, text: "Gịnị bụ aha gị" },
    { id: 704, challengeId: 235, correct: false, text: "Daalụ" },
-   { id: 705, challengeId: 235, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m1-l1-q14-ig.mp3" },
+   { id: 705, challengeId: 235, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m1-l1-q13-ig.mp3" },
 
    //LESSON 2 STARTS
 
@@ -2503,20 +2503,20 @@ await db.insert(schema.challenges).values([
    { id: 734, challengeId: 245, correct: false, text: "Kedu ebe i bi?" },
    { id: 735, challengeId: 245, correct: false, text: "A dị m afọ iri atọ na ise" },
    
-   { id: 736, challengeId: 246, correct: true, text: "A hụrụ m gị n'anya", audioSrc: "m1-l2-q11-ig.mp3" },
+   { id: 736, challengeId: 246, correct: true, text: "A hụrụ m gị n'anya"},
    { id: 737, challengeId: 246, correct: false, text: "E bi m na USA" },
    { id: 738, challengeId: 246, correct: false, text: "Ọ dị mma" },
    
    { id: 739, challengeId: 247, correct: false, text: "A hụrụ m gị n'anya" },
    { id: 740, challengeId: 247, correct: false, text: "Ọ dị mma" },
-   { id: 741, challengeId: 247, correct: true, text: "Kedu ebe I bi?", audioSrc: "m1-l2-q12-ig.mp3" },
+   { id: 741, challengeId: 247, correct: true, text: "Kedu ebe I bi?", audioSrc: "m1-l2-q11-ig.mp3" },
    
-   { id: 742, challengeId: 248, correct: true, text: "Ọ dị mma", audioSrc: "m1-l2-q13-ig.mp3" },
+   { id: 742, challengeId: 248, correct: true, text: "Ọ dị mma", audioSrc: "m1-l2-q12-ig.mp3" },
    { id: 743, challengeId: 248, correct: false, text: "A hụrụ m gị n'anya" },
    { id: 744, challengeId: 248, correct: false, text: "Kedu ebe i bi?" },
    
    { id: 745, challengeId: 249, correct: false, text: "Ọ dị mma" },
-   { id: 746, challengeId: 249, correct: true, text: "Ọ mara mma", audioSrc: "m1-l2-q14-ig.mp3" },
+   { id: 746, challengeId: 249, correct: true, text: "Ọ mara mma", audioSrc: "m1-l2-q13-ig.mp3" },
    { id: 747, challengeId: 249, correct: false, text: "Kedu ebe i bi?" },
    
    { id: 748, challengeId: 250, correct: true, text: "E bi m na USA", audioSrc: "m1-l2-q15-ig.mp3" },
