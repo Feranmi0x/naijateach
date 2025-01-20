@@ -818,7 +818,7 @@ await db.insert(schema.challenges).values([
 { id: 282, lessonId: 5, type: "SELECT", order: 282, question: "I am going to Enugu" },
 { id: 283, lessonId: 5, type: "SELECT", order: 283, question: "Come inside" },
 { id: 284, lessonId: 5, type: "SELECT", order: 284, question: "Sit at the back" },
-{ id: 285, lessonId: 5, type: "SELECT", order: 285, question: "Where are we?" },
+{ id: 285, lessonId: 5, type: "SELECT", order: 285, question: "Where are they?" },
 { id: 286, lessonId: 5, type: "SELECT", order: 286, question: "Alight here" },
 { id: 287, lessonId: 5, type: "SELECT", order: 287, question: "Collect your money" },
 { id: 288, lessonId: 5, type: "SELECT", order: 288, question: "Good Afternoon" },
@@ -867,7 +867,7 @@ await db.insert(schema.challenges).values([
 { id: 331, lessonId: 8, type: "SELECT", order: 331, question: "Good afternoon" },
 { id: 332, lessonId: 8, type: "SELECT", order: 332, question: "Thank you" },
 { id: 333, lessonId: 8, type: "SELECT", order: 333, question: "Did you sleep well?" },
-{ id: 334, lessonId: 8, type: "SELECT", order: 334, question: "Goodnight" },
+{ id: 334, lessonId: 8, type: "SELECT", order: 334, question: "Good night" },
 { id: 335, lessonId: 8, type: "SELECT", order: 335, question: "I am doing very well" },
 { id: 336, lessonId: 8, type: "SELECT", order: 336, question: "Yes" },
 { id: 337, lessonId: 8, type: "SELECT", order: 337, question: "Hello Emeka, how are you?" },
@@ -911,7 +911,7 @@ await db.insert(schema.challenges).values([
 {id: 374, lessonId: 11, type: "SELECT", order: 374, question: "Where does one get a cab?"},
 {id: 375, lessonId: 11, type: "SELECT", order: 375, question: "I am a Nigerian"},
 {id: 376, lessonId: 11, type: "SELECT", order: 376, question: "What is your name?"},
-{id: 377, lessonId: 11, type: "SELECT", order: 377, question: "My name is Okeke"},
+{id: 377, lessonId: 11, type: "SELECT", order: 377, question: "His name is Okeke"},
 {id: 378, lessonId: 11, type: "SELECT", order: 378, question: "Are you Igbo?"},
 {id: 379, lessonId: 11, type: "SELECT", order: 379, question: "My name is David"},
 {id: 380, lessonId: 11, type: "SELECT", order: 380, question: "No, I am Igbo"},
@@ -942,7 +942,7 @@ await db.insert(schema.challenges).values([
 {id: 401, lessonId: 13, type: "SELECT", order: 401, question: "I went to market"},
 {id: 402, lessonId: 13, type: "SELECT", order: 402, question: "I speak Yoruba and Igbo"},
 {id: 403, lessonId: 13, type: "SELECT", order: 403, question: "Incredible, my name is Sari"},
-{id: 404, lessonId: 13, type: "SELECT", order: 404, question: "Nkechi speaks Igbo and Yoruba"},
+{id: 404, lessonId: 13, type: "SELECT", order: 404, question: "Feranmi speaks Igbo and Yoruba"},
 {id: 405, lessonId: 13, type: "SELECT", order: 405, question: "Do you speak Yoruba?"},
 {id: 406, lessonId: 13, type: "SELECT", order: 406, question: "They speak Hausa"},
 {id: 407, lessonId: 13, type: "SELECT", order: 407, question: "He is Yoruba"},
@@ -966,9 +966,9 @@ await db.insert(schema.challenges).values([
 {id: 423, lessonId: 14, type: "SELECT", order: 423, question: "She can cook"},
 {id: 424, lessonId: 14, type: "SELECT", order: 424, question: "His"},
 {id: 425, lessonId: 14, type: "SELECT", order: 425, question: "His brother is handsome"},
-{id: 426, lessonId: 14, type: "SELECT", order: 426, question: "Ya"},
+{id: 426, lessonId: 14, type: "SELECT", order: 426, question: "His"},
 {id: 427, lessonId: 14, type: "SELECT", order: 427, question: "Her sister is beautiful"},
-{id: 428, lessonId: 14, type: "SELECT", order: 428, question: "My"},
+{id: 428, lessonId: 14, type: "SELECT", order: 428, question: "Mine"},
 {id: 429, lessonId: 14, type: "SELECT", order: 429, question: "My book"},
 
 // Igbo Module 3 Lesson 5
@@ -1084,21 +1084,21 @@ await db.insert(schema.challenges).values([
 {id: 533, lessonId: 21, type: "SELECT", order: 533, question: "good bye"},
 {id: 534, lessonId: 21, type: "SELECT", order: 534, question: "Have a good night rest"},
 
-{id: 535, lessonId: 22, type: "SELECT", order: 535, question: "Thank you very much"},
-{id: 536, lessonId: 22, type: "SELECT", order: 536, question: "morning"},
-{id: 537, lessonId: 22, type: "SELECT", order: 537, question: "Good morning"},
-{id: 538, lessonId: 22, type: "SELECT", order: 538, question: "Good afternoon"},
-{id: 539, lessonId: 22, type: "SELECT", order: 539, question: "welcome"},
-{id: 540, lessonId: 22, type: "SELECT", order: 540, question: "See"},
-{id: 541, lessonId: 22, type: "SELECT", order: 541, question: "Very good"},
-{id: 542, lessonId: 22, type: "SELECT", order: 542, question: "Hello/ Hi"},
-{id: 543, lessonId: 22, type: "SELECT", order: 543, question: "Bye"},
-{id: 544, lessonId: 22, type: "SELECT", order: 544, question: "How are you doing?"},
-{id: 545, lessonId: 22, type: "SELECT", order: 545, question: "Have a good day"},
-{id: 546, lessonId: 22, type: "SELECT", order: 546, question: "Good night"},
-{id: 547, lessonId: 22, type: "SELECT", order: 547, question: "Good bye see you tomorrow"},
-{id: 548, lessonId: 22, type: "SELECT", order: 548, question: "good bye"},
-{id: 549, lessonId: 22, type: "SELECT", order: 549, question: "Have a good night rest"},
+{id: 535, lessonId: 22, type: "SELECT", order: 535, question: "Good evening Haruna"},
+{id: 536, lessonId: 22, type: "SELECT", order: 536, question: "Good morning"},
+{id: 537, lessonId: 22, type: "SELECT", order: 537, question: "After noon"},
+{id: 538, lessonId: 22, type: "SELECT", order: 538, question: "Night"},
+{id: 539, lessonId: 22, type: "SELECT", order: 539, question: "See you tomorrow"},
+{id: 540, lessonId: 22, type: "SELECT", order: 540, question: "Good bye"},
+{id: 541, lessonId: 22, type: "SELECT", order: 541, question: "You are welcome"},
+{id: 542, lessonId: 22, type: "SELECT", order: 542, question: "How are you?"},
+{id: 543, lessonId: 22, type: "SELECT", order: 543, question: "well-done"},
+{id: 544, lessonId: 22, type: "SELECT", order: 544, question: "Good bye"},
+{id: 545, lessonId: 22, type: "SELECT", order: 545, question: "welcome"},
+{id: 546, lessonId: 22, type: "SELECT", order: 546, question: "You"},
+{id: 547, lessonId: 22, type: "SELECT", order: 547, question: "Thank you"},
+{id: 548, lessonId: 22, type: "SELECT", order: 548, question: "Tomorrow"},
+{id: 549, lessonId: 22, type: "SELECT", order: 549, question: "Sleep"},
 
 {id: 550, lessonId: 23, type: "SELECT", order: 550, question: "Good morning Haruna"},
 {id: 551, lessonId: 23, type: "SELECT", order: 551, question: "Alright see you tomorrow"},
@@ -1212,7 +1212,7 @@ await db.insert(schema.challenges).values([
 {id: 650, lessonId: 29, type: "SELECT", order: 650, question: "His brother is handsome"},
 {id: 651, lessonId: 29, type: "SELECT", order: 651, question: "Her"},
 {id: 652, lessonId: 29, type: "SELECT", order: 652, question: "Her sister is beautiful"},
-{id: 653, lessonId: 29, type: "SELECT", order: 653, question: "My"},
+{id: 653, lessonId: 29, type: "SELECT", order: 653, question: "Mine"},
 {id: 654, lessonId: 29, type: "SELECT", order: 654, question: "My book"},
 
 // Hausa Module 3 Lesson 5
@@ -1394,7 +1394,7 @@ await db.insert(schema.challenges).values([
 {id: 819, lessonId: 55, type: "SELECT", order: 819, question: "We thank God"},
 
 {id: 820, lessonId: 56, type: "SELECT", order: 820, question: "I speak Pidgin"},
-{id: 821, lessonId: 56, type: "SELECT", order: 821, question: "Excuse me dibyou speak pidgin"},
+{id: 821, lessonId: 56, type: "SELECT", order: 821, question: "Excuse me do you speak pidgin"},
 {id: 822, lessonId: 56, type: "SELECT", order: 822, question: "No, I am from Delta"},
 {id: 823, lessonId: 56, type: "SELECT", order: 823, question: "I need a cab"},
 {id: 824, lessonId: 56, type: "SELECT", order: 824, question: "Where does one get a cab?"},
@@ -2107,12 +2107,12 @@ await db.insert(schema.challenges).values([
             { id: 440, challengeId: 147, correct: false, text: "Ẹ jọwọ, ṣé ẹ sọ Yoruba?" },
             { id: 441, challengeId: 147, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
           
-            { id: 442, challengeId: 148, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba/Ibo/Hausa/Pidgin?" },
-            { id: 443, challengeId: 148, correct: true, text: "Ẹ jọwọ, ṣé ẹ le sọ Yoruba/Ibo/Hausa/Pidgin?", audioSrc: "m3-l1-q2-yr.mp3" },
-            { id: 444, challengeId: 148, correct: false, text: "Mo sọ Yoruba/Ibo/Hausa/Pidgin" },
+            { id: 442, challengeId: 148, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
+            { id: 443, challengeId: 148, correct: true, text: "Ẹ jọwọ, ṣé ẹ le sọ", audioSrc: "m3-l1-q2-yr.mp3" },
+            { id: 444, challengeId: 148, correct: false, text: "Mo sọ Yoruba" },
           
-            { id: 445, challengeId: 149, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba/Ibo/Hausa/Pidgin?" },
-            { id: 446, challengeId: 149, correct: true, text: "Rárá, ọmọ Yoruba ni mi/Ibo/Hausa/Pidgin ni mí, mo sọ Yoruba/Ibo/Pidgin/Hausa", audioSrc: "m3-l1-q3-yr.mp3" },
+            { id: 445, challengeId: 149, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
+            { id: 446, challengeId: 149, correct: true, text: "Rárá, ọmọ Yoruba ni mi ni mí, mo sọ Yoruba/Ibo/Pidgin/Hausa", audioSrc: "m3-l1-q3-yr.mp3" },
             { id: 447, challengeId: 149, correct: false, text: "Mo jẹ́ ọmọ Naijiria" },
           
             { id: 448, challengeId: 150, correct: true, text: "Mo fẹ́ takisi", audioSrc: "m3-l1-q4-yr.mp3" },
@@ -2128,7 +2128,7 @@ await db.insert(schema.challenges).values([
             { id: 456, challengeId: 152, correct: true, text: "Mo jẹ́ ọmọ Naijiria", audioSrc: "m3-l1-q6-yr.mp3" },
           
             { id: 457, challengeId: 153, correct: true, text: "Kí ni orúkọ rẹ?", audioSrc: "m3-l1-q7-yr.mp3" },
-            { id: 458, challengeId: 153, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba/Ibo/Hausa/Pidgin?" },
+            { id: 458, challengeId: 153, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
             { id: 459, challengeId: 153, correct: false, text: "Orúkọ mi ni David" },
           
             { id: 460, challengeId: 154, correct: true, text: "Orúkọ rẹ̀ ni Feranmi", audioSrc: "m3-l1-q8-yr.mp3" },
@@ -2137,7 +2137,7 @@ await db.insert(schema.challenges).values([
           
             { id: 463, challengeId: 155, correct: true, text: "Rárá, ọmọ Yoruba ni mí", audioSrc: "m3-l1-q9-yr.mp3" },
             { id: 464, challengeId: 155, correct: false, text: "Mo jẹ́ ọmọ Naijiria" },
-            { id: 465, challengeId: 155, correct: false, text: "Ṣé Yoruba ni e/Ibo/Hausa/Pidgin?" },
+            { id: 465, challengeId: 155, correct: false, text: "Ṣé Yoruba ni e?" },
           
             { id: 466, challengeId: 156, correct: true, text: "Orúkọ mi ni David", audioSrc: "m3-l1-q10-yr.mp3" },
             { id: 467, challengeId: 156, correct: false, text: "Kí ni orúkọ rẹ?" },
@@ -2145,7 +2145,7 @@ await db.insert(schema.challenges).values([
           
             { id: 469, challengeId: 157, correct: true, text: "Rárá, ọmọ Yoruba ni mí", audioSrc: "m3-l1-q11-yr.mp3" },
             { id: 470, challengeId: 157, correct: false, text: "Mo jẹ́ ọmọ Naijiria" },
-            { id: 471, challengeId: 157, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba/Ibo/Hausa/Pidgin?" },
+            { id: 471, challengeId: 157, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
           
             { id: 472, challengeId: 158, correct: true, text: "Mo ń ṣàbẹ̀wò sí Naijiria", audioSrc: "m3-l1-q12-yr.mp3" },
             { id: 473, challengeId: 158, correct: false, text: "Mo wá pẹ̀lú ẹbí mi" },
@@ -2411,7 +2411,7 @@ await db.insert(schema.challenges).values([
    
    { id: 667, challengeId: 223, correct: false, text: "Ndo" },
    { id: 668, challengeId: 223, correct: false, text: "Daalụ" },
-   { id: 669, challengeId: 223, correct: true, text: "Adị mma mma", audioSrc: "m1-l1-q2-ig.mp3" },
+   { id: 669, challengeId: 223, correct: true, text: "Adị mm mma", audioSrc: "m1-l1-q2-ig.mp3" },
    
    { id: 670, challengeId: 224, correct: true, text: "Gịnị bụ aha gị", audioSrc: "m1-l1-q3-ig.mp3" },
    { id: 671, challengeId: 224, correct: false, text: "A bụ m onye Nigeria" },
@@ -2459,7 +2459,7 @@ await db.insert(schema.challenges).values([
    
    { id: 703, challengeId: 235, correct: false, text: "Gịnị bụ aha gị" },
    { id: 704, challengeId: 235, correct: false, text: "Daalụ" },
-   { id: 705, challengeId: 235, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m1-l1-q13-ig.mp3" },
+   { id: 705, challengeId: 235, correct: true, text: "Daalụ nke ukwuu", audioSrc: "m2-l1-q1-ig.mp3" },
 
    //LESSON 2 STARTS
 
@@ -2503,7 +2503,7 @@ await db.insert(schema.challenges).values([
    { id: 734, challengeId: 245, correct: false, text: "Kedu ebe i bi?" },
    { id: 735, challengeId: 245, correct: false, text: "A dị m afọ iri atọ na ise" },
    
-   { id: 736, challengeId: 246, correct: true, text: "A hụrụ m gị n'anya"},
+   { id: 736, challengeId: 246, correct: true, text: "A hụrụ m gị n'anya", audioSrc: "m1-l2-q14-ig.mp3"},
    { id: 737, challengeId: 246, correct: false, text: "E bi m na USA" },
    { id: 738, challengeId: 246, correct: false, text: "Ọ dị mma" },
    
@@ -2661,43 +2661,43 @@ await db.insert(schema.challenges).values([
 { id: 851, challengeId: 284, correct: false, text: "Bata n'ime" },
 { id: 852, challengeId: 284, correct: false, text: "Ehihie ọma" },
 
-{ id: 853, challengeId: 285, correct: true, text: "Ebe ka ha nọ?", audioSrc: "m1-l5-q5-ig.mp3" },
+{ id: 853, challengeId: 285, correct: true, text: "Ebe ka ha nọ?", audioSrc: "m1-l5-q6-ig.mp3" },
 { id: 854, challengeId: 285, correct: false, text: "Kedu ebe ị na-aga?" },
 { id: 855, challengeId: 285, correct: false, text: "Gbanye ọkụ" },
 
 { id: 856, challengeId: 286, correct: false, text: "Ehihie ọma" },
-{ id: 857, challengeId: 286, correct: true, text: "Rituo ebe a", audioSrc: "m1-l5-q6-ig.mp3" },
+{ id: 857, challengeId: 286, correct: true, text: "Rituo ebe a", audioSrc: "m1-l5-q7-ig.mp3" },
 { id: 858, challengeId: 286, correct: false, text: "Nnọọ" },
 
-{ id: 859, challengeId: 287, correct: true, text: "Were ego gị", audioSrc: "m1-l5-q7-ig.mp3" },
+{ id: 859, challengeId: 287, correct: true, text: "Were ego gị", audioSrc: "m1-l5-q8-ig.mp3" },
 { id: 860, challengeId: 287, correct: false, text: "Daalụ" },
 { id: 861, challengeId: 287, correct: false, text: "Kedu ihe ị chọrọ iri?" },
 
-{ id: 862, challengeId: 288, correct: true, text: "Ehihie ọma", audioSrc: "m1-l5-q8-ig.mp3" },
+{ id: 862, challengeId: 288, correct: true, text: "Ehihie ọma", audioSrc: "m1-l5-q9-ig.mp3" },
 { id: 863, challengeId: 288, correct: false, text: "Kedu ihe ikwuru?" },
 { id: 864, challengeId: 288, correct: false, text: "Nnọọ" },
 
 { id: 865, challengeId: 289, correct: false, text: "Daalụ" },
-{ id: 866, challengeId: 289, correct: true, text: "Nnọọ", audioSrc: "m1-l5-q9-ig.mp3" },
+{ id: 866, challengeId: 289, correct: true, text: "Nnọọ", audioSrc: "m1-l5-q10-ig.mp3" },
 { id: 867, challengeId: 289, correct: false, text: "Ka ọ dị" },
 
-{ id: 868, challengeId: 290, correct: true, text: "Gbanye ọkụ", audioSrc: "m1-l5-q10-ig.mp3" },
+{ id: 868, challengeId: 290, correct: true, text: "Gbanye ọkụ", audioSrc: "m1-l5-q11-ig.mp3" },
 { id: 869, challengeId: 290, correct: false, text: "Kedu ihe ị chọrọ i ri?" },
 { id: 870, challengeId: 290, correct: false, text: "I nwere mmiri?" },
 
-{ id: 871, challengeId: 291, correct: true, text: "Kedu ihe ị chọrọ i ri?", audioSrc: "m1-l5-q11-ig.mp3" },
+{ id: 871, challengeId: 291, correct: true, text: "Kedu ihe ị chọrọ i ri?", audioSrc: "m1-l5-q12-ig.mp3" },
 { id: 872, challengeId: 291, correct: false, text: "I nwere mmiri?" },
 { id: 873, challengeId: 291, correct: false, text: "Gbanye ọkụ" },
 
 { id: 874, challengeId: 292, correct: false, text: "Daalụ" },
 { id: 875, challengeId: 292, correct: false, text: "Ị chọrọ iri nri?" },
-{ id: 876, challengeId: 292, correct: true, text: "I nwere mmiri?", audioSrc: "m1-l5-q12-ig.mp3" },
+{ id: 876, challengeId: 292, correct: true, text: "I nwere mmiri?", audioSrc: "m1-l5-q13-ig.mp3" },
 
-{ id: 877, challengeId: 293, correct: true, text: "Daalụ", audioSrc: "m1-l5-q13-ig.mp3" },
+{ id: 877, challengeId: 293, correct: true, text: "Daalụ", audioSrc: "m1-l5-q14-ig.mp3" },
 { id: 878, challengeId: 293, correct: false, text: "Ka ọ dị" },
 { id: 879, challengeId: 293, correct: false, text: "Nnọọ" },
 
-{ id: 880, challengeId: 294, correct: true, text: "Ka ọ dị", audioSrc: "m1-l5-q14-ig.mp3" },
+{ id: 880, challengeId: 294, correct: true, text: "Ka ọ dị", audioSrc: "m1-l5-q15-ig.mp3" },
 { id: 881, challengeId: 294, correct: false, text: "Daalụ" },
 { id: 882, challengeId: 294, correct: false, text: "Nnọọ" },
 
@@ -2711,9 +2711,9 @@ await db.insert(schema.challenges).values([
 {id: 887, challengeId: 296, correct: false, text: "Nnọọ" },
 {id: 888, challengeId: 296, correct: true, text: "Ụtụtụ", audioSrc: "m2-l1-q2-ig.mp3" },
 
-{id: 889, challengeId: 297, correct: false, text: "Lee", audioSrc: "m2-l1-q3-ig.mp3" },
-{id: 890, challengeId: 297, correct: true, text: "Ndeewo", audioSrc: "m2-l1-q3-ig.mp3" },
-{id: 891, challengeId: 297, correct: false, text: "Ụtụtụ ọma" },
+{id: 889, challengeId: 297, correct: false, text: "Lee"},
+{id: 890, challengeId: 297, correct: false, text: "Ndeewo"},
+{id: 891, challengeId: 297, correct: true, text: "Ụtụtụ ọma", audioSrc: "m2-l1-q3-ig.mp3" },
 
 {id: 892, challengeId: 298, correct: true, text: "Abalị", audioSrc: "m2-l1-q4-ig.mp3" },
 {id: 893, challengeId: 298, correct: false, text: "Nnọọ" },
@@ -2857,8 +2857,8 @@ await db.insert(schema.challenges).values([
 {id: 998, challengeId: 333, correct: false, text: "Ndeewo Emeka, kedu ka i mere" },
 {id: 999, challengeId: 333, correct: true, text: "Ị rahụkwara ọfụma?", audioSrc: "m2-l3-q9-ig.mp3" },
 
-{id: 1000, challengeId: 334, correct: true, text: "Ka ọ dị echi", audioSrc: "m2-l3-q10-ig.mp3" },
-{id: 1001, challengeId: 334, correct: false, text: "Kachifoo" },
+{id: 1000, challengeId: 334, correct: false, text: "Ka ọ dị echi" },
+{id: 1001, challengeId: 334, correct: true, text: "Kachifoo", audioSrc: "m2-l3-q10-ig.mp3" },
 {id: 1002, challengeId: 334, correct: false, text: "Ka ahụ oge adịghị anya" },
 
 {id: 1003, challengeId: 335, correct: true, text: "A na m eme nke ọma", audioSrc: "m2-l3-q11-ig.mp3" },
@@ -2967,7 +2967,7 @@ await db.insert(schema.challenges).values([
 
 {id: 1081, challengeId: 361, correct: true, text: "Ka ahụ gị oge adịghị anya", audioSrc: "m2-l5-q7-ig.mp3" },
 {id: 1082, challengeId: 361, correct: false, text: "Rahụ nke ọma" },
-{id: 1083, challengeId: 361, correct: false, text: "Ka ahụ gị oge adịghị anya" },
+{id: 1083, challengeId: 361, correct: false, text: "Kedu ka ụbọchị gị si aga?" },
 
 {id: 1084, challengeId: 362, correct: true, text: "Eee, aga m eji ụgbọelu ga njem", audioSrc: "m2-l5-q8-ig.mp3" },
 {id: 1085, challengeId: 362, correct: false, text: "A na m anya ụgbọala" },
@@ -3026,7 +3026,7 @@ await db.insert(schema.challenges).values([
 {id: 1125, challengeId: 375, correct: false, text: "Sọ m nọ" },
 
 {id: 1126, challengeId: 376, correct: true, text: "Gịnị bụ aha gị?", audioSrc: "m3-l1-q7-ig.mp3" },
-{id: 1127, challengeId: 376, correct: false, text: "Ị bụ onye Igbo/Yoruba/Pidgin/Hausa?" },
+{id: 1127, challengeId: 376, correct: false, text: "Ị bụ onye Igbo?" },
 {id: 1128, challengeId: 376, correct: false, text: "Aha m bụ David" },
 
 {id: 1129, challengeId: 377, correct: true, text: "Aha ya bụ Okeke", audioSrc: "m3-l1-q8-ig.mp3" },
@@ -3034,7 +3034,7 @@ await db.insert(schema.challenges).values([
 {id: 1131, challengeId: 377, correct: false, text: "A bụ onye ọbịa na Nigeria" },
 
 {id: 1132, challengeId: 378, correct: true, text: "Ị bụ onye Igbo?", audioSrc: "m3-l1-q9-ig.mp3" },
-{id: 1133, challengeId: 378, correct: false, text: "Mba, abụ m onye Yoruba/Igbo/Hausa/Pidgin" },
+{id: 1133, challengeId: 378, correct: false, text: "Mba, abụ m onye Pidgin" },
 {id: 1134, challengeId: 378, correct: false, text: "A bụ m onye Nigeria" },
 
 {id: 1135, challengeId: 379, correct: true, text: "Aha m bụ David", audioSrc: "m3-l1-q10-ig.mp3" },
@@ -3124,7 +3124,7 @@ await db.insert(schema.challenges).values([
 // Igbo Module 3 Lesson 3
 
 {id: 1198, challengeId: 400, correct: false, text: "N'ịtụnanya, aha m bụ Sari", audioSrc: "m3-l3-q1-ig.mp3" },
-{id: 1199, challengeId: 400, correct: true, text: "Nwanne nne m nọ n'ụlọ ụka", audioSrc: "m3-l3-q1-ig.mp3" },
+{id: 1199, challengeId: 400, correct: true, text: "Nwanne nne m nọ n'ụlọ ụka"},
 {id: 1200, challengeId: 400, correct: false, text: "A na m asụ Yoruba na Igbo" },
 
 {id: 1201, challengeId: 401, correct: true, text: "A gara m ahịa", audioSrc: "m3-l3-q2-ig.mp3" },
@@ -3139,7 +3139,7 @@ await db.insert(schema.challenges).values([
 {id: 1208, challengeId: 403, correct: false, text: "Nwa ya nwoke bụ onye uwe ojii" },
 {id: 1209, challengeId: 403, correct: true, text: "N'ịtụnanya, aha m bụ Sari", audioSrc: "m3-l3-q4-ig.mp3" },
 
-{id: 1210, challengeId: 404, correct: true, text: "Nkechi na-asụ Igbo na Yoruba", audioSrc: "m3-l3-q5-ig.mp3" },
+{id: 1210, challengeId: 404, correct: true, text: "Feranmi na-asụ Igbo na Yoruba", audioSrc: "m3-l3-q5-ig.mp3" },
 {id: 1211, challengeId: 404, correct: false, text: "Ị na-asụ Yoruba/Igbo/Pidgin" },
 {id: 1212, challengeId: 404, correct: false, text: "Di m pụrụ apụ" },
 
@@ -3229,16 +3229,16 @@ await db.insert(schema.challenges).values([
 {id: 1274, challengeId: 425, correct: false, text: "Nwanne ya nwaanyị mara mma" },
 {id: 1275, challengeId: 425, correct: false, text: "O toro ogologo" },
 
-{id: 1276, challengeId: 426, correct: true, text: "Nwanne ya nwaanyị mara mma", audioSrc: "m3-l4-q12-ig.mp3" },
-{id: 1277, challengeId: 426, correct: false, text: "Ya" },
+{id: 1276, challengeId: 426, correct: true, text: "Ya", audioSrc: "m3-l4-q12-ig.mp3" },
+{id: 1277, challengeId: 426, correct: false, text: "O toro ogologo" },
 {id: 1278, challengeId: 426, correct: false, text: "Nwanne ya nwoke mara mma" },
 
-{id: 1279, challengeId: 427, correct: true, text: "Mụ", audioSrc: "m3-l4-q13-ig.mp3" },
-{id: 1280, challengeId: 427, correct: false, text: "O" },
-{id: 1281, challengeId: 427, correct: false, text: "Ọ" },
+{id: 1279, challengeId: 427, correct: true, text: "Nwanne ya nwaanyị mara mma", audioSrc: "m3-l4-q13-ig.mp3" },
+{id: 1280, challengeId: 427, correct: false, text: "Nwanne ya nwoke mara mma" },
+{id: 1281, challengeId: 427, correct: false, text: "Ya" },
 
-{id: 1282, challengeId: 428, correct: true, text: "Ọ", audioSrc: "m3-l4-q14-ig.mp3" },
-{id: 1283, challengeId: 428, correct: false, text: "Mụ" },
+{id: 1282, challengeId: 428, correct: false, text: "Ọ" },
+{id: 1283, challengeId: 428, correct: true, text: "Mụ", audioSrc: "m3-l4-q14-ig.mp3" },
 {id: 1284, challengeId: 428, correct: false, text: "Ya" },
 
 {id: 1285, challengeId: 429, correct: true, text: "Akwụkwọ m", audioSrc: "m3-l4-q15-ig.mp3" },
@@ -3283,7 +3283,7 @@ await db.insert(schema.challenges).values([
 {id: 1313, challengeId: 438, correct: false, text: "Gịnị ka ị bụ?" },
 {id: 1314, challengeId: 438, correct: false, text: "Onye ka ị bụ?" },
 
-{id: 1315, challengeId: 439, correct: false, text: "Ọ bụ nke m" },
+{id: 1315, challengeId: 439, correct: false, text: "Anyi alọtala" },
 {id: 1316, challengeId: 439, correct: true, text: "Ọ bụ nke m", audioSrc: "m3-l5-q10-ig.mp3" },
 {id: 1317, challengeId: 439, correct: false, text: "Ha bụ nke m" },
 
@@ -3307,921 +3307,927 @@ await db.insert(schema.challenges).values([
 {id: 1331, challengeId: 444, correct: false, text: "Mụ na gị" },
 {id: 1332, challengeId: 444, correct: false, text: "Bịa soro anyị" },
 
+// Hausa module 1 lesson 1
+
 {id: 1333, challengeId: 445, correct: false, text: "Yi hakuri" },
 {id: 1334, challengeId: 445, correct: false, text: "nagode" },
-{id: 1335, challengeId: 445, correct: true, text: "Yaya kake", audioSrc: "m1-l1-q1-ha.mp3" },
+{id: 1335, challengeId: 445, correct: true, text: "Yaya kake", audioSrc: "m1-l1-q1-hs.mp3" },
 
 {id: 1336, challengeId: 446, correct: false, text: "Yi hakuri" },
 {id: 1337, challengeId: 446, correct: false, text: "nagode" },
-{id: 1338, challengeId: 446, correct: true, text: "Ina lafiya", audioSrc: "m1-l1-q2-ha.mp3" },
+{id: 1338, challengeId: 446, correct: true, text: "Ina lafiya", audioSrc: "m1-l1-q2-hs.mp3" },
 
-{id: 1339, challengeId: 447, correct: true, text: "Yaya sunanka", audioSrc: "m1-l1-q3-ha.mp3" },
+{id: 1339, challengeId: 447, correct: true, text: "Yaya sunanka", audioSrc: "m1-l1-q3-hs.mp3" },
 {id: 1340, challengeId: 447, correct: false, text: "Daga Nigeria nake" },
 {id: 1341, challengeId: 447, correct: false, text: "saunnu da zuwa" },
 
-{id: 1342, challengeId: 448, correct: true, text: "sunana Mustafa", audioSrc: "m1-l1-q4-ha.mp3" },
-{id: 1343, challengeId: 448, correct: false, text: "Kai Kuma fa?" },
-{id: 1344, challengeId: 448, correct: false, text: "Ina lafiya" },
+{id: 1342, challengeId: 448, correct: false, text: "Kai Kuma fa?" },
+{id: 1343, challengeId: 448, correct: false, text: "Ina lafiya" },
+{id: 1344, challengeId: 448, correct: true, text: "sunana Mustafa", audioSrc: "m1-l1-q4-hs.mp3" },
 
-{id: 1345, challengeId: 449, correct: true, text: "Daga Nigeria nake", audioSrc: "m1-l1-q5-ha.mp3" },
-{id: 1346, challengeId: 449, correct: false, text: "sunana ferami" },
-{id: 1347, challengeId: 449, correct: false, text: "nagode" },
+{id: 1345, challengeId: 449, correct: false, text: "sunana ferami" },
+{id: 1346, challengeId: 449, correct: false, text: "nagode" },
+{id: 1347, challengeId: 449, correct: true, text: "Daga Nigeria nake", audioSrc: "m1-l1-q5-hs.mp3" },
 
 {id: 1348, challengeId: 450, correct: false, text: "Yaya sunanka?" },
 {id: 1349, challengeId: 450, correct: false, text: "Eh" },
-{id: 1350, challengeId: 450, correct: true, text: "Kai Kuma fa", audioSrc: "m1-l1-q6-ha.mp3" },
+{id: 1350, challengeId: 450, correct: true, text: "Kai Kuma fa", audioSrc: "m1-l1-q6-hs.mp3" },
 
-{id: 1351, challengeId: 451, correct: true, text: "Aa", audioSrc: "m1-l1-q7-ha.mp3" },
+{id: 1351, challengeId: 451, correct: true, text: "Aa", audioSrc: "m1-l1-q7-hs.mp3" },
 {id: 1352, challengeId: 451, correct: false, text: "Daga Nigeria nake" },
 {id: 1353, challengeId: 451, correct: false, text: "Eh" },
 
 {id: 1354, challengeId: 452, correct: false, text: "Nagode" },
 {id: 1355, challengeId: 452, correct: false, text: "Kai Kuma fa?" },
-{id: 1356, challengeId: 452, correct: true, text: "me kace?", audioSrc: "m1-l1-q8-ha.mp3" },
+{id: 1356, challengeId: 452, correct: true, text: "me kace?", audioSrc: "m1-l1-q8-hs.mp3" },
 
 {id: 1357, challengeId: 453, correct: false, text: "Mai Mai ta/ kara para" },
-{id: 1358, challengeId: 453, correct: true, text: "me kace?", audioSrc: "m1-l1-q9-ha.mp3" },
+{id: 1358, challengeId: 453, correct: true, text: "me kace?", audioSrc: "m1-l1-q9-hs.mp3" },
 {id: 1359, challengeId: 453, correct: false, text: "Yi hakuri" },
 
-{id: 1360, challengeId: 454, correct: true, text: "Eh", audioSrc: "m1-l1-q10-ha.mp3" },
+{id: 1360, challengeId: 454, correct: true, text: "Eh", audioSrc: "m1-l1-q10-hs.mp3" },
 {id: 1361, challengeId: 454, correct: false, text: "nagode" },
 {id: 1362, challengeId: 454, correct: false, text: "A'a" },
 
-{id: 1363, challengeId: 455, correct: true, text: "nagode", audioSrc: "m1-l1-q11-ha.mp3" },
-{id: 1364, challengeId: 455, correct: false, text: "Ina lafiya" },
+{id: 1363, challengeId: 455, correct: false, text: "Ina lafiya" },
+{id: 1364, challengeId: 455, correct: true, text: "nagode", audioSrc: "m1-l1-q11-hs.mp3" },
 {id: 1365, challengeId: 455, correct: false, text: "Daga Nigeria nake" },
 
-{id: 1366, challengeId: 456, correct: true, text: "sannun da zuwa", audioSrc: "m1-l1-q12-ha.mp3" },
-{id: 1367, challengeId: 456, correct: false, text: "Yi hakuri" },
-{id: 1368, challengeId: 456, correct: false, text: "Kai Kuma fa" },
+{id: 1366, challengeId: 456, correct: false, text: "Yi hakuri" },
+{id: 1367, challengeId: 456, correct: false, text: "Kai Kuma fa" },
+{id: 1368, challengeId: 456, correct: true, text: "sannun da zuwa", audioSrc: "m1-l1-q12-hs.mp3" },
 
-{id: 1369, challengeId: 457, correct: true, text: "Fada min", audioSrc: "m1-l1-q13-ha.mp3" },
-{id: 1370, challengeId: 457, correct: false, text: "Kara fada/ Mai Mai ta" },
-{id: 1371, challengeId: 457, correct: false, text: "me kace?" },
+{id: 1369, challengeId: 457, correct: false, text: "Kara fada/ Mai Mai ta" },
+{id: 1370, challengeId: 457, correct: false, text: "me kace?" },
+{id: 1371, challengeId: 457, correct: true, text: "Fada min", audioSrc: "m1-l1-q13-hs.mp3" },
 
-{id: 1372, challengeId: 458, correct: true, text: "Yi hakuri", audioSrc: "m1-l1-q14-ha.mp3" },
-{id: 1373, challengeId: 458, correct: false, text: "sannun da zuwa" },
-{id: 1374, challengeId: 458, correct: false, text: "nagode so sai" },
+{id: 1372, challengeId: 458, correct: false, text: "sannun da zuwa" },
+{id: 1373, challengeId: 458, correct: true, text: "Yi hakuri", audioSrc: "m1-l1-q14-hs.mp3" },
+{id: 1374, challengeId: 458, correct: false, text: "nagode sosai" },
 
-{id: 1375, challengeId: 459, correct: true, text: "Nagode sosai", audioSrc: "m1-l1-q15-ha.mp3" },
-{id: 1376, challengeId: 459, correct: false, text: "Yaya sunanka" },
-{id: 1377, challengeId: 459, correct: false, text: "nagode" },
+{id: 1375, challengeId: 459, correct: false, text: "Yaya sunanka" },
+{id: 1376, challengeId: 459, correct: false, text: "nagode" },
+{id: 1377, challengeId: 459, correct: true, text: "Nagode sosai", audioSrc: "m1-l1-q15-hs.mp3" },
 
-// Hausa Module 1 Lesson 2
-{id: 1378, challengeId: 460, correct: true, text: "kana Jin hausa?", audioSrc: "m1-l2-q1-ha.mp3" },
-{id: 1379, challengeId: 460, correct: false, text: "Dan kadan" },
-{id: 1380, challengeId: 460, correct: false, text: "Ina son hausa" },
+// Hausa module 1 lesson 2
+{id: 1378, challengeId: 460, correct: false, text: "Dan kadan" },
+{id: 1379, challengeId: 460, correct: false, text: "Ina son hausa" },
+{id: 1380, challengeId: 460, correct: true, text: "kana Jin hausa?", audioSrc: "m1-l2-q1-hs.mp3" },
 
-{id: 1381, challengeId: 461, correct: true, text: "Dan kadan", audioSrc: "m1-l2-q2-ha.mp3" },
-{id: 1382, challengeId: 461, correct: false, text: "Ina son hausa" },
+{id: 1381, challengeId: 461, correct: false, text: "Ina son hausa" },
+{id: 1382, challengeId: 461, correct: true, text: "Dan kadan", audioSrc: "m1-l2-q2-hs.mp3" },
 {id: 1383, challengeId: 461, correct: false, text: "shekarana talatin da biyar" },
 
-{id: 1384, challengeId: 462, correct: true, text: "Ina son hausa", audioSrc: "m1-l2-q3-ha.mp3" },
+{id: 1384, challengeId: 462, correct: true, text: "Ina son hausa", audioSrc: "m1-l2-q3-hs.mp3" },
 {id: 1385, challengeId: 462, correct: false, text: "Dan kadan" },
 {id: 1386, challengeId: 462, correct: false, text: "dakai nake magana" },
 
-{id: 1387, challengeId: 463, correct: true, text: "Zan iya gwadawa tare da Kai", audioSrc: "m1-l2-q4-ha.mp3" },
-{id: 1388, challengeId: 463, correct: false, text: "menene wannan" },
+{id: 1387, challengeId: 463, correct: false, text: "menene wannan" },
+{id: 1388, challengeId: 463, correct: true, text: "Zan iya gwadawa tare da Kai", audioSrc: "m1-l2-q4-hs.mp3" },
 {id: 1389, challengeId: 463, correct: false, text: "shekarana talatin da biyar" },
 
-{id: 1390, challengeId: 464, correct: true, text: "shekararka Nawa?", audioSrc: "m1-l2-q5-ha.mp3" },
+{id: 1390, challengeId: 464, correct: true, text: "shekararka Nawa?", audioSrc: "m1-l2-q5-hs.mp3" },
 {id: 1391, challengeId: 464, correct: false, text: "shekarana talatin da biyar" },
 {id: 1392, challengeId: 464, correct: false, text: "Ina son ka" },
 
-{id: 1393, challengeId: 465, correct: true, text: "shekarana talatin da biyar", audioSrc: "m1-l2-q6-ha.mp3" },
+{id: 1393, challengeId: 465, correct: true, text: "shekarana talatin da biyar", audioSrc: "m1-l2-q6-hs.mp3" },
 {id: 1394, challengeId: 465, correct: false, text: "Ina son ka" },
-{id: 1395, challengeId: 465, correct: false, text: "Ina zama  a USA" },
+{id: 1395, challengeId: 465, correct: false, text: "Ina zama a USA" },
 
-{id: 1396, challengeId: 466, correct: true, text: "dakai nake magana", audioSrc: "m1-l2-q7-ha.mp3" },
-{id: 1397, challengeId: 466, correct: false, text: "A  Ina  kake  zama?" },
+{id: 1396, challengeId: 466, correct: true, text: "dakai nake magana", audioSrc: "m1-l2-q7-hs.mp3" },
+{id: 1397, challengeId: 466, correct: false, text: "A Ina kake zama?" },
 {id: 1398, challengeId: 466, correct: false, text: "menene wannan" },
 
-{id: 1399, challengeId: 467, correct: true, text: "menene wannan?", audioSrc: "m1-l2-q8-ha.mp3" },
-{id: 1400, challengeId: 467, correct: false, text: "shekarana talatin da biyar" },
-{id: 1401, challengeId: 467, correct: false, text: "dakai nake magana" },
+{id: 1399, challengeId: 467, correct: false, text: "shekarana talatin da biyar" },
+{id: 1400, challengeId: 467, correct: false, text: "dakai nake magana" },
+{id: 1401, challengeId: 467, correct: true, text: "menene wannan?", audioSrc: "m1-l2-q8-hs.mp3" },
 
-{id: 1402, challengeId: 468, correct: true, text: "me hakan yake nufi?", audioSrc: "m1-l2-q9-ha.mp3" },
+{id: 1402, challengeId: 468, correct: true, text: "me hakan yake nufi?", audioSrc: "m1-l2-q9-hs.mp3" },
 {id: 1403, challengeId: 468, correct: false, text: "shekarana talatin da biyar" },
 {id: 1404, challengeId: 468, correct: false, text: "yayi kyau" },
 
-{id: 1405, challengeId: 469, correct: true, text: "kana Ina  ne?", audioSrc: "m1-l2-q10-ha.mp3" },
+{id: 1405, challengeId: 469, correct: true, text: "kana Ina ne?", audioSrc: "m1-l2-q10-hs.mp3" },
 {id: 1406, challengeId: 469, correct: false, text: "A Ina kake zama?" },
 {id: 1407, challengeId: 469, correct: false, text: "shekarana talatin da biyar" },
 
-{id: 1408, challengeId: 470, correct: true, text: "Ina son ka", audioSrc: "m1-l2-q11-ha.mp3" },
-{id: 1409, challengeId: 470, correct: false, text: "Ina zama.  a. USA" },
+{id: 1408, challengeId: 470, correct: true, text: "Ina son ka", audioSrc: "m1-l2-q11-hs.mp3" },
+{id: 1409, challengeId: 470, correct: false, text: "Ina zama a USA" },
 {id: 1410, challengeId: 470, correct: false, text: "hakan yayi kyau" },
 
-{id: 1411, challengeId: 471, correct: true, text: "Ina zama a USA", audioSrc: "m1-l2-q12-ha.mp3" },
-{id: 1412, challengeId: 471, correct: false, text: "Ina son ka" },
-{id: 1413, challengeId: 471, correct: false, text: "hakan yayi kyau" },
+{id: 1411, challengeId: 471, correct: false, text: "Ina son ka" },
+{id: 1412, challengeId: 471, correct: false, text: "hakan yayi kyau" },
+{id: 1413, challengeId: 471, correct: true, text: "A Ina kake zama?", audioSrc: "m1-l2-q12-hs.mp3" },
 
-{id: 1414, challengeId: 472, correct: true, text: "hakan yayi kyau", audioSrc: "m1-l2-q13-ha.mp3" },
+{id: 1414, challengeId: 472, correct: true, text: "hakan yayi kyau", audioSrc: "m1-l2-q13-hs.mp3" },
 {id: 1415, challengeId: 472, correct: false, text: "Ina son ka" },
-{id: 1416, challengeId: 472, correct: false, text: "A  Ina kake zama" },
+{id: 1416, challengeId: 472, correct: false, text: "A Ina kake zama" },
 
-{id: 1417, challengeId: 473, correct: true, text: "kyakkyawa  ce", audioSrc: "m1-l2-q14-ha.mp3" },
-{id: 1418, challengeId: 473, correct: false, text: "haka yayi kyau" },
-{id: 1419, challengeId: 473, correct: false, text: "A  Ina kake zama" },
+{id: 1417, challengeId: 473, correct: false, text: "haka yayi kyau" },
+{id: 1418, challengeId: 473, correct: true, text: "kyakkyawa ce", audioSrc: "m1-l2-q14-hs.mp3" },
+{id: 1419, challengeId: 473, correct: false, text: "A Ina kake zama" },
 
-{id: 1420, challengeId: 474, correct: true, text: "Ina zama a USA", audioSrc: "m1-l2-q15-ha.mp3" },
-{id: 1421, challengeId: 474, correct: false, text: "Ina zama   a Nigeria" },
+{id: 1420, challengeId: 474, correct: true, text: "Ina zama a USA", audioSrc: "m1-l2-q15-hs.mp3" },
+{id: 1421, challengeId: 474, correct: false, text: "Ina zama a Nigeria" },
 {id: 1422, challengeId: 474, correct: false, text: "hakan yayi kyau" },
+
 
 
 // Hausa Module 1 lesson 3
 
-{id: 1423, challengeId: 475, correct: true, text: "suna yin rawa", audioSrc: "m1-l3-q1-ha.mp3"},
-{id: 1424, challengeId: 475, correct: false, text: "me kake nufi"},
-{id: 1425, challengeId: 475, correct: false, text: "Yimin magana"},
+{id: 1423, challengeId: 475, correct: false, text: "me kake nufi" },
+{id: 1424, challengeId: 475, correct: false, text: "Yimin magana" },
+{id: 1425, challengeId: 475, correct: true, text: "suna yin rawa", audioSrc: "m1-l3-q1-hs.mp3" },
 
-{id: 1426, challengeId: 476, correct: true, text: "me kake nufi?", audioSrc: "m1-l3-q2-ha.mp3"},
-{id: 1427, challengeId: 476, correct: false, text: "kayi dai dai"},
-{id: 1428, challengeId: 476, correct: false, text: "Nasani."},
+{id: 1426, challengeId: 476, correct: false, text: "kayi dai dai" },
+{id: 1427, challengeId: 476, correct: true, text: "me kake nufi?", audioSrc: "m1-l3-q2-hs.mp3" },
+{id: 1428, challengeId: 476, correct: false, text: "Nasani" },
 
-{id: 1429, challengeId: 477, correct: true, text: "Yimin magana", audioSrc: "m1-l3-q3-ha.mp3"},
-{id: 1430, challengeId: 477, correct: false, text: "Ina son ka nima"},
-{id: 1431, challengeId: 477, correct: false, text: "Ba kaka bane"},
+{id: 1429, challengeId: 477, correct: false, text: "Ina son ka nima" },
+{id: 1430, challengeId: 477, correct: true, text: "Yimin magana", audioSrc: "m1-l3-q3-hs.mp3" },
+{id: 1431, challengeId: 477, correct: false, text: "Ba kaka bane" },
 
-{id: 1432, challengeId: 478, correct: true, text: "inasonka nima", audioSrc: "m1-l3-q4-ha.mp3"},
-{id: 1433, challengeId: 478, correct: false, text: "Nasani"},
-{id: 1434, challengeId: 478, correct: false, text: "Ina zaka?"},
+{id: 1432, challengeId: 478, correct: false, text: "Nasani" },
+{id: 1433, challengeId: 478, correct: true, text: "inasonka nima", audioSrc: "m1-l3-q4-hs.mp3" },
+{id: 1434, challengeId: 478, correct: false, text: "Ina zaka?" },
 
-{id: 1435, challengeId: 479, correct: true, text: "Ba haka bane", audioSrc: "m1-l3-q5-ha.mp3"},
-{id: 1436, challengeId: 479, correct: false, text: "kwarai da gaske"},
-{id: 1437, challengeId: 479, correct: false, text: "Ina zaka?"},
+{id: 1435, challengeId: 479, correct: true, text: "Ba haka bane", audioSrc: "m1-l3-q5-hs.mp3" },
+{id: 1436, challengeId: 479, correct: false, text: "kwarai da gaske" },
+{id: 1437, challengeId: 479, correct: false, text: "Ina zaka?" },
 
-{id: 1438, challengeId: 480, correct: true, text: "Ina zaka?", audioSrc: "m1-l3-q6-ha.mp3"},
-{id: 1439, challengeId: 480, correct: false, text: "mutafi mama"},
-{id: 1440, challengeId: 480, correct: false, text: "baka Yi dai dai ba"},
+{id: 1438, challengeId: 480, correct: false, text: "mutafi mama" },
+{id: 1439, challengeId: 480, correct: true, text: "Ina zaka?", audioSrc: "m1-l3-q6-hs.mp3" },
+{id: 1440, challengeId: 480, correct: false, text: "baka Yi dai dai ba" },
 
-{id: 1441, challengeId: 481, correct: true, text: "Dawo nan", audioSrc: "m1-l3-q7-ha.mp3"},
-{id: 1442, challengeId: 481, correct: false, text: "Ina zaka"},
-{id: 1443, challengeId: 481, correct: false, text: "Nasani."},
+{id: 1441, challengeId: 481, correct: true, text: "Dawo nan", audioSrc: "m1-l3-q7-hs.mp3" },
+{id: 1442, challengeId: 481, correct: false, text: "Ina zaka" },
+{id: 1443, challengeId: 481, correct: false, text: "Nasani" },
 
-{id: 1444, challengeId: 482, correct: true, text: "Kai kadai ne ?", audioSrc: "m1-l3-q8-ha.mp3"},
-{id: 1445, challengeId: 482, correct: false, text: "Eh"},
-{id: 1446, challengeId: 482, correct: false, text: "A'a."},
+{id: 1444, challengeId: 482, correct: false, text: "Eh" },
+{id: 1445, challengeId: 482, correct: true, text: "Kai kadai ne?", audioSrc: "m1-l3-q8-hs.mp3" },
+{id: 1446, challengeId: 482, correct: false, text: "A'a" },
 
-{id: 1447, challengeId: 483, correct: true, text: "mutafi mana", audioSrc: "m1-l3-q9-ha.mp3"},
-{id: 1448, challengeId: 483, correct: false, text: "Dawo nan"},
-{id: 1449, challengeId: 483, correct: false, text: "bakayi dai dai ba."},
+{id: 1447, challengeId: 483, correct: true, text: "mutafi mana", audioSrc: "m1-l3-q9-hs.mp3" },
+{id: 1448, challengeId: 483, correct: false, text: "Dawo nan" },
+{id: 1449, challengeId: 483, correct: false, text: "bakayi dai dai ba" },
 
-{id: 1450, challengeId: 484, correct: true, text: "Nasani", audioSrc: "m1-l3-q10-ha.mp3"},
-{id: 1451, challengeId: 484, correct: false, text: "kwarai da gaske"},
-{id: 1452, challengeId: 484, correct: false, text: "Ina zaka?"},
+{id: 1450, challengeId: 484, correct: false, text: "kwarai da gaske" },
+{id: 1451, challengeId: 484, correct: true, text: "Nasani", audioSrc: "m1-l3-q10-hs.mp3" },
+{id: 1452, challengeId: 484, correct: false, text: "Ina zaka?" },
 
-{id: 1453, challengeId: 485, correct: true, text: "kwarai da gaske", audioSrc: "m1-l3-q11-ha.mp3"},
-{id: 1454, challengeId: 485, correct: false, text: "Nasani"},
-{id: 1455, challengeId: 485, correct: false, text: "bakayi dai dai ba."},
+{id: 1453, challengeId: 485, correct: true, text: "kwarai da gaske,", audioSrc: "m1-l3-q11-hs.mp3" },
+{id: 1454, challengeId: 485, correct: false, text: "Nasani" },
+{id: 1455, challengeId: 485, correct: false, text: "bakayi dai dai ba" },
 
-{id: 1456, challengeId: 486, correct: true, text: "kayi dai dai", audioSrc: "m1-l3-q12-ha.mp3"},
-{id: 1457, challengeId: 486, correct: false, text: "yayi kyau"},
-{id: 1458, challengeId: 486, correct: false, text: "inasonka nima."},
+{id: 1456, challengeId: 486, correct: false, text: "yayi kyau" },
+{id: 1457, challengeId: 486, correct: true, text: "kayi dai dai", audioSrc: "m1-l3-q12-hs.mp3" },
+{id: 1458, challengeId: 486, correct: false, text: "inasonka nima" },
 
-{id: 1459, challengeId: 487, correct: true, text: "bakayi dai dai ba", audioSrc: "m1-l3-q13-ha.mp3"},
-{id: 1460, challengeId: 487, correct: false, text: "yayi kyau"},
-{id: 1461, challengeId: 487, correct: false, text: "kayi dai dai"},
+{id: 1459, challengeId: 487, correct: false, text: "yayi kyau" },
+{id: 1460, challengeId: 487, correct: false, text: "kayi dai dai" },
+{id: 1461, challengeId: 487, correct: true, text: "bakayi dai dai ba", audioSrc: "m1-l3-q13-hs.mp3" },
 
-{id: 1462, challengeId: 488, correct: true, text: "Kakan yayi kyau", audioSrc: "m1-l3-q14-ha.mp3"},
-{id: 1463, challengeId: 488, correct: false, text: "Nasani"},
-{id: 1464, challengeId: 488, correct: false, text: "Ina zaka?"},
+{id: 1462, challengeId: 488, correct: false, text: "Nasani" },
+{id: 1463, challengeId: 488, correct: true, text: "Kakan yayi kyau", audioSrc: "m1-l3-q14-hs.mp3" },
+{id: 1464, challengeId: 488, correct: false, text: "Ina zaka?" },
 
-{id: 1465, challengeId: 489, correct: true, text: "shin kasani?", audioSrc: "m1-l3-q15-ha.mp3"},
-{id: 1466, challengeId: 489, correct: false, text: "bakayi dai dai ba"},
-{id: 1467, challengeId: 489, correct: false, text: "kwarai da gaske"},
+{id: 1465, challengeId: 489, correct: false, text: "bakayi dai dai ba" },
+{id: 1466, challengeId: 489, correct: true, text: "shin kasani?", audioSrc: "m1-l3-q15-hs.mp3" },
+{id: 1467, challengeId: 489, correct: false, text: "kwarai da gaske" },
+
 
 // Hausa Module 1 lesson 4
 
-{id: 1468, challengeId: 490, correct: true, text: "inaso na siya", audioSrc: "m1-l4-q1-ha.mp3"},
-{id: 1469, challengeId: 490, correct: false, text: "me kake so kasiya ne?"},
-{id: 1470, challengeId: 490, correct: false, text: "Doyan dubu Daya."},
+{id: 1468, challengeId: 490, correct: false, text: "me kake so kasiya ne?" },
+{id: 1469, challengeId: 490, correct: true, text: "inaso na siya", audioSrc: "m1-l4-q1-hs.mp3" },
+{id: 1470, challengeId: 490, correct: false, text: "Doyan dubu Daya" },
 
-{id: 1471, challengeId: 491, correct: true, text: "me kake so kasiya ne?", audioSrc: "m1-l4-q2-ha.mp3"},
-{id: 1472, challengeId: 491, correct: false, text: "Doya dubu Daya"},
-{id: 1473, challengeId: 491, correct: false, text: "Ina so na siya"},
+{id: 1471, challengeId: 491, correct: false, text: "Doya dubu Daya" },
+{id: 1472, challengeId: 491, correct: false, text: "Ina so na siya" },
+{id: 1473, challengeId: 491, correct: true, text: "me kake so kasiya ne?", audioSrc: "m1-l4-q2-hs.mp3" },
 
-{id: 1474, challengeId: 492, correct: true, text: "Doya", audioSrc: "m1-l4-q3-ha.mp3"},
-{id: 1475, challengeId: 492, correct: false, text: "Nawa?"},
-{id: 1476, challengeId: 492, correct: false, text: "me kake so kasiya ne?"},
+{id: 1474, challengeId: 492, correct: false, text: "Nawa?" },
+{id: 1475, challengeId: 492, correct: true, text: "Doya", audioSrc: "m1-l4-q3-hs.mp3" },
+{id: 1476, challengeId: 492, correct: false, text: "me kake so kasiya ne?" },
 
-{id: 1477, challengeId: 493, correct: true, text: "Nawa?", audioSrc: "m1-l4-q4-ha.mp3"},
-{id: 1478, challengeId: 493, correct: false, text: "Doyan dubu Daya"},
-{id: 1479, challengeId: 493, correct: false, text: "me ka ce."},
+{id: 1477, challengeId: 493, correct: false, text: "Doyan dubu Daya" },
+{id: 1478, challengeId: 493, correct: true, text: "Nawa?", audioSrc: "m1-l4-q4-hs.mp3" },
+{id: 1479, challengeId: 493, correct: false, text: "me ka ce" },
 
-{id: 1480, challengeId: 494, correct: true, text: "Doyan dubu Daya", audioSrc: "m1-l4-q5-ha.mp3"},
-{id: 1481, challengeId: 494, correct: false, text: "Nawa"},
-{id: 1482, challengeId: 494, correct: false, text: "Yi hakuri"},
+{id: 1480, challengeId: 494, correct: false, text: "Nawa" },
+{id: 1481, challengeId: 494, correct: false, text: "Yi hakuri" },
+{id: 1482, challengeId: 494, correct: true, text: "Doyan dubu Daya", audioSrc: "m1-l4-q5-hs.mp3" },
 
-{id: 1483, challengeId: 495, correct: true, text: "Ina zuwa", audioSrc: "m1-l4-q6-ha.mp3"},
-{id: 1484, challengeId: 495, correct: false, text: "Dawo baya"},
-{id: 1485, challengeId: 495, correct: false, text: "Yi hakuri"},
+{id: 1483, challengeId: 495, correct: false, text: "Dawo baya" },
+{id: 1484, challengeId: 495, correct: false, text: "Yi hakuri" },
+{id: 1485, challengeId: 495, correct: true, text: "Ina zuwa", audioSrc: "m1-l4-q6-hs.mp3" },
 
-{id: 1486, challengeId: 496, correct: true, text: "Yi hakuri", audioSrc: "m1-l4-q7-ha.mp3"},
-{id: 1487, challengeId: 496, correct: false, text: "Dawo baya"},
-{id: 1488, challengeId: 496, correct: false, text: "me ka ce."},
+{id: 1486, challengeId: 496, correct: false, text: "Dawo baya" },
+{id: 1487, challengeId: 496, correct: true, text: "Yi hakuri", audioSrc: "m1-l4-q7-hs.mp3" },
+{id: 1488, challengeId: 496, correct: false, text: "me ka ce" },
 
-{id: 1489, challengeId: 497, correct: true, text: "Babu shi", audioSrc: "m1-l4-q8-ha.mp3"},
-{id: 1490, challengeId: 497, correct: false, text: "Na jika"},
-{id: 1491, challengeId: 497, correct: false, text: "Dawo baya"},
+{id: 1489, challengeId: 497, correct: false, text: "Na jika" },
+{id: 1490, challengeId: 497, correct: true, text: "Babu shi", audioSrc: "m1-l4-q8-hs.mp3" },
+{id: 1491, challengeId: 497, correct: false, text: "Dawo baya" },
 
-{id: 1492, challengeId: 498, correct: true, text: "Dawo baya", audioSrc: "m1-l4-q9-ha.mp3"},
-{id: 1493, challengeId: 498, correct: false, text: "Na jika"},
-{id: 1494, challengeId: 498, correct: false, text: "Yi hakuri"},
+{id: 1492, challengeId: 498, correct: false, text: "Na jika" },
+{id: 1493, challengeId: 498, correct: true, text: "Dawo baya", audioSrc: "m1-l4-q9-hs.mp3" },
+{id: 1494, challengeId: 498, correct: false, text: "Yi hakuri" },
 
-{id: 1495, challengeId: 499, correct: true, text: "Na jika", audioSrc: "m1-l4-q10-ha.mp3"},
-{id: 1496, challengeId: 499, correct: false, text: "Dawo baya"},
-{id: 1497, challengeId: 499, correct: false, text: "Da wane lokaci"},
+{id: 1495, challengeId: 499, correct: true, text: "Na jika", audioSrc: "m1-l4-q10-hs.mp3" },
+{id: 1496, challengeId: 499, correct: false, text: "Dawo baya" },
+{id: 1497, challengeId: 499, correct: false, text: "Da wane lokaci" },
 
-{id: 1498, challengeId: 500, correct: true, text: "Da wane lokaci?", audioSrc: "m1-l4-q11-ha.mp3"},
-{id: 1499, challengeId: 500, correct: false, text: "Da rana"},
-{id: 1500, challengeId: 500, correct: false, text: "Da safe"},
+{id: 1498, challengeId: 500, correct: true, text: "Da wane lokaci?", audioSrc: "m1-l4-q11-hs.mp3" },
+{id: 1499, challengeId: 500, correct: false, text: "Da rana" },
+{id: 1500, challengeId: 500, correct: false, text: "Da safe" },
 
-{id: 1501, challengeId: 501, correct: true, text: "Da rana", audioSrc: "m1-l4-q12-ha.mp3"},
-{id: 1502, challengeId: 501, correct: false, text: "Da wane lokaci"},
-{id: 1503, challengeId: 501, correct: false, text: "Da Yamma"},
+{id: 1501, challengeId: 501, correct: false, text: "Da wane lokaci" },
+{id: 1502, challengeId: 501, correct: true, text: "Da rana", audioSrc: "m1-l4-q12-hs.mp3" },
+{id: 1503, challengeId: 501, correct: false, text: "Da Yamma" },
 
-{id: 1504, challengeId: 502, correct: true, text: "Zanzo", audioSrc: "m1-l4-q13-ha.mp3"},
-{id: 1505, challengeId: 502, correct: false, text: "Zan tafi"},
-{id: 1506, challengeId: 502, correct: false, text: "me ka ce"},
+{id: 1504, challengeId: 502, correct: true, text: "Zanzo", audioSrc: "m1-l4-q13-hs.mp3" },
+{id: 1505, challengeId: 502, correct: false, text: "Zan tafi" },
+{id: 1506, challengeId: 502, correct: false, text: "me ka ce" },
 
-{id: 1507, challengeId: 503, correct: true, text: "Zan tafi", audioSrc: "m1-l4-q14-ha.mp3"},
-{id: 1508, challengeId: 503, correct: false, text: "Zanzo"},
-{id: 1509, challengeId: 503, correct: false, text: "Ina zuwa."},
+{id: 1507, challengeId: 503, correct: false, text: "Zanzo" },
+{id: 1508, challengeId: 503, correct: true, text: "Zan tafi", audioSrc: "m1-l4-q14-hs.mp3" },
+{id: 1509, challengeId: 503, correct: false, text: "Ina zuwa" },
 
-{id: 1510, challengeId: 504, correct: true, text: "me kace?", audioSrc: "m1-l4-q15-ha.mp3"},
-{id: 1511, challengeId: 504, correct: false, text: "Ina zuwa"},
-{id: 1512, challengeId: 504, correct: false, text: "Yi hakuri."},
+{id: 1510, challengeId: 504, correct: true, text: "me kace?", audioSrc: "m1-l4-q15-hs.mp3" },
+{id: 1511, challengeId: 504, correct: false, text: "Ina zuwa" },
+{id: 1512, challengeId: 504, correct: false, text: "Yi hakuri" },
 
 // Hausa Module 1 lesson 5
 
-{id: 1513, challengeId: 505, correct: true, text: "Ina zaka tafi?", audioSrc: "m1-l5-q1-ha.mp3"},
-{id: 1514, challengeId: 505, correct: false, text: "Zanje nicon town"},
-{id: 1515, challengeId: 505, correct: false, text: "Zauna a baya"},
+{id: 1513, challengeId: 505, correct: false, text: "Zanje nicon town" },
+{id: 1514, challengeId: 505, correct: true, text: "Ina zaka tafi?", audioSrc: "m1-l5-q1-hs.mp3" },
+{id: 1515, challengeId: 505, correct: false, text: "zauna a baya" },
 
-{id: 1516, challengeId: 506, correct: true, text: "Zanje nicon town", audioSrc: "m1-l5-q2-ha.mp3"},
-{id: 1517, challengeId: 506, correct: false, text: "Ina zaka tafi?"},
-{id: 1518, challengeId: 506, correct: false, text: "Shigo ciki"},
+{id: 1516, challengeId: 506, correct: true, text: "Zanje nicon town", audioSrc: "m1-l5-q2-hs.mp3" },
+{id: 1517, challengeId: 506, correct: false, text: "Ina zaka tafi?" },
+{id: 1518, challengeId: 506, correct: false, text: "shigo ciki" },
 
-{id: 1519, challengeId: 507, correct: true, text: "Shigo ciki", audioSrc: "m1-l5-q3-ha.mp3"},
-{id: 1520, challengeId: 507, correct: false, text: "Nan yayi/sauka a Nan"},
-{id: 1521, challengeId: 507, correct: false, text: "Kana Ina ne?"},
+{id: 1519, challengeId: 507, correct: false, text: "Nan yayi/ sauka a Nan" },
+{id: 1520, challengeId: 507, correct: true, text: "shigo ciki", audioSrc: "m1-l5-q3-hs.mp3" },
+{id: 1521, challengeId: 507, correct: false, text: "kana Ina ne?" },
 
-{id: 1522, challengeId: 508, correct: true, text: "Zauna a baya", audioSrc: "m1-l5-q4-ha.mp3"},
-{id: 1523, challengeId: 508, correct: false, text: "Shigo ciki"},
-{id: 1524, challengeId: 508, correct: false, text: "Ina wuni/barika Rana"},
+{id: 1522, challengeId: 508, correct: true, text: "Zauna a baya", audioSrc: "m1-l5-q4-hs.mp3" },
+{id: 1523, challengeId: 508, correct: false, text: "shigo ciki" },
+{id: 1524, challengeId: 508, correct: false, text: "Ina wuni/ barika Rana" },
 
-{id: 1525, challengeId: 509, correct: true, text: "Suna Ina ne?", audioSrc: "m1-l5-q5-ha.mp3"},
-{id: 1526, challengeId: 509, correct: false, text: "Ina zaka tafi?"},
-{id: 1527, challengeId: 509, correct: false, text: "Kuna haske"},
+{id: 1525, challengeId: 509, correct: false, text: "Ina zaka tafi." },
+{id: 1526, challengeId: 509, correct: false, text: "Kuna haske" },
+{id: 1527, challengeId: 509, correct: true, text: "suna Ina ne?", audioSrc: "m1-l5-q5-hs.mp3" },
 
-{id: 1528, challengeId: 510, correct: true, text: "Nan yayi", audioSrc: "m1-l5-q6-ha.mp3"},
-{id: 1529, challengeId: 510, correct: false, text: "Ina wuni"},
-{id: 1530, challengeId: 510, correct: false, text: "Barka da zuwa"},
+{id: 1528, challengeId: 510, correct: false, text: "Ina wuni" },
+{id: 1529, challengeId: 510, correct: true, text: "Nan yayi", audioSrc: "m1-l5-q6-hs.mp3" },
+{id: 1530, challengeId: 510, correct: false, text: "Barka da zuwa" },
 
-{id: 1531, challengeId: 511, correct: true, text: "Nanne gurin?", audioSrc: "m1-l5-q7-ha.mp3"},
-{id: 1532, challengeId: 511, correct: false, text: "Ina zaka ne?"},
-{id: 1533, challengeId: 511, correct: false, text: "Muna gurin"},
+{id: 1531, challengeId: 511, correct: false, text: "Ina zaka ne?" },
+{id: 1532, challengeId: 511, correct: true, text: "Nanne gurin?", audioSrc: "m1-l5-q7-hs.mp3" },
+{id: 1533, challengeId: 511, correct: false, text: "muna gurin" },
 
-{id: 1534, challengeId: 512, correct: true, text: "Karbi kudinka", audioSrc: "m1-l5-q8-ha.mp3"},
-{id: 1535, challengeId: 512, correct: false, text: "Nagode"},
-{id: 1536, challengeId: 512, correct: false, text: "Me kake son ka ci?"},
+{id: 1534, challengeId: 512, correct: true, text: "karbi kudinka", audioSrc: "m1-l5-q8-hs.mp3" },
+{id: 1535, challengeId: 512, correct: false, text: "Nagode" },
+{id: 1536, challengeId: 512, correct: false, text: "me kake son ka ci?" },
 
-{id: 1537, challengeId: 513, correct: true, text: "Ina wuni", audioSrc: "m1-l5-q9-ha.mp3"},
-{id: 1538, challengeId: 513, correct: false, text: "Me kace?"},
-{id: 1539, challengeId: 513, correct: false, text: "Barka da zuwa"},
+{id: 1537, challengeId: 513, correct: true, text: "Ina wuni", audioSrc: "m1-l5-q9-hs.mp3" },
+{id: 1538, challengeId: 513, correct: false, text: "me kace?" },
+{id: 1539, challengeId: 513, correct: false, text: "Barka da zuwa" },
 
-{id: 1540, challengeId: 514, correct: true, text: "Barka da zuwa", audioSrc: "m1-l5-q10-ha.mp3"},
-{id: 1541, challengeId: 514, correct: false, text: "Nagode"},
-{id: 1542, challengeId: 514, correct: false, text: "Sai gobe"},
+{id: 1540, challengeId: 514, correct: false, text: "Nagode" },
+{id: 1541, challengeId: 514, correct: true, text: "Barka da zuwa", audioSrc: "m1-l5-q10-hs.mp3" },
+{id: 1542, challengeId: 514, correct: false, text: "sai gobe" },
 
-{id: 1543, challengeId: 515, correct: true, text: "Kuna haske", audioSrc: "m1-l5-q11-ha.mp3"},
-{id: 1544, challengeId: 515, correct: false, text: "Me kake son ka ci?"},
-{id: 1545, challengeId: 515, correct: false, text: "Kana da runa ne?"},
+{id: 1543, challengeId: 515, correct: true, text: "Kuna haske", audioSrc: "m1-l5-q11-hs.mp3" },
+{id: 1544, challengeId: 515, correct: false, text: "me kake son ka ci?" },
+{id: 1545, challengeId: 515, correct: false, text: "kana da runa ne ?" },
 
-{id: 1546, challengeId: 516, correct: true, text: "Me kake son ka ci?", audioSrc: "m1-l5-q12-ha.mp3"},
-{id: 1547, challengeId: 516, correct: false, text: "Kana da runa ne?"},
-{id: 1548, challengeId: 516, correct: false, text: "Kunna haske"},
+{id: 1546, challengeId: 516, correct: true, text: "me kake son ka ci", audioSrc: "m1-l5-q12-hs.mp3" },
+{id: 1547, challengeId: 516, correct: false, text: "kana da runa ne?" },
+{id: 1548, challengeId: 516, correct: false, text: "kunna haske" },
 
-{id: 1549, challengeId: 517, correct: true, text: "Kana da runa ne?", audioSrc: "m1-l5-q13-ha.mp3"},
-{id: 1550, challengeId: 517, correct: false, text: "Nagode"},
-{id: 1551, challengeId: 517, correct: false, text: "Me kake son ka ci?"},
+{id: 1549, challengeId: 517, correct: false, text: "Nagode" },
+{id: 1550, challengeId: 517, correct: false, text: "me kake son ka ci?" },
+{id: 1551, challengeId: 517, correct: true, text: "kana da runa ne?", audioSrc: "m1-l5-q13-hs.mp3" },
 
-{id: 1552, challengeId: 518, correct: true, text: "Nagode", audioSrc: "m1-l5-q14-ha.mp3"},
-{id: 1553, challengeId: 518, correct: false, text: "Sai gobe"},
-{id: 1554, challengeId: 518, correct: false, text: "Barka da zuwa/sannun da zuwa"},
+{id: 1552, challengeId: 518, correct: true, text: "Nagode", audioSrc: "m1-l5-q14-hs.mp3" },
+{id: 1553, challengeId: 518, correct: false, text: "sai gobe" },
+{id: 1554, challengeId: 518, correct: false, text: "Barka da zuwa/ sannun da zuwa" },
 
-{id: 1555, challengeId: 519, correct: true, text: "Sai gobe", audioSrc: "m1-l5-q15-ha.mp3"},
-{id: 1556, challengeId: 519, correct: false, text: "Nagode"},
-{id: 1557, challengeId: 519, correct: false, text: "Barka da zuwa"},
+{id: 1555, challengeId: 519, correct: true, text: "sai gobe", audioSrc: "m1-l5-q15-hs.mp3" },
+{id: 1556, challengeId: 519, correct: false, text: "Nagode" },
+{id: 1557, challengeId: 519, correct: false, text: "Barka da zuwa" },
+
 
 // Hausa Module 2, Lesson 1
 {id: 1558, challengeId: 520, correct: false, text: "Ina kwana"},
-{id: 1559, challengeId: 520, correct: true, text: "Nagode sosai", audioSrc: "m2-l1-q1-ha.mp3"},
+{id: 1559, challengeId: 520, correct: true, text: "Nagode sosai", audioSrc: "m2-l1-q1-hs.mp3"},
 {id: 1560, challengeId: 520, correct: false, text: "Duba"},
 
 {id: 1561, challengeId: 521, correct: false, text: "Nagode sosai"},
 {id: 1562, challengeId: 521, correct: false, text: "Barka da zuwa"},
-{id: 1563, challengeId: 521, correct: true, text: "Safiya", audioSrc: "m2-l1-q2-ha.mp3"},
+{id: 1563, challengeId: 521, correct: true, text: "Safiya", audioSrc: "m2-l1-q2-hs.mp3"},
 
 {id: 1564, challengeId: 522, correct: false, text: "Duba"},
 {id: 1565, challengeId: 522, correct: false, text: "Barka"},
-{id: 1566, challengeId: 522, correct: true, text: "Ina kwana", audioSrc: "m2-l1-q3-ha.mp3"},
+{id: 1566, challengeId: 522, correct: true, text: "Ina kwana", audioSrc: "m2-l1-q3-hs.mp3"},
 
 {id: 1567, challengeId: 523, correct: false, text: "Barka da zuwa"},
-{id: 1568, challengeId: 523, correct: true, text: "Ina wuni", audioSrc: "m2-l1-q4-ha.mp3"},
+{id: 1568, challengeId: 523, correct: true, text: "Ina wuni", audioSrc: "m2-l1-q4-hs.mp3"},
 {id: 1569, challengeId: 523, correct: false, text: "Mu kwana lafiya"},
 
 {id: 1570, challengeId: 524, correct: false, text: "Nagode sosai"},
 {id: 1571, challengeId: 524, correct: false, text: "Safiya"},
-{id: 1572, challengeId: 524, correct: true, text: "Barka da zuwa", audioSrc: "m2-l1-q5-ha.mp3"},
+{id: 1572, challengeId: 524, correct: true, text: "Barka da zuwa", audioSrc: "m2-l1-q5-hs.mp3"},
 
-{id: 1573, challengeId: 525, correct: true, text: "Duba", audioSrc: "m2-l1-q6-ha.mp3"},
+{id: 1573, challengeId: 525, correct: true, text: "Duba", audioSrc: "m2-l1-q6-hs.mp3"},
 {id: 1574, challengeId: 525, correct: false, text: "Mu kwana lafiya"},
 {id: 1575, challengeId: 525, correct: false, text: "Barka"},
 
 {id: 1576, challengeId: 526, correct: false, text: "Safiya"},
-{id: 1577, challengeId: 526, correct: true, text: "Yayi kyau sosai", audioSrc: "m2-l1-q7-ha.mp3"},
+{id: 1577, challengeId: 526, correct: true, text: "Yayi kyau sosai", audioSrc: "m2-l1-q7-hs.mp3"},
 {id: 1578, challengeId: 526, correct: false, text: "Mu kwana lafiya"},
 
 {id: 1579, challengeId: 527, correct: false, text: "Yaya kake?"},
 {id: 1580, challengeId: 527, correct: false, text: "Sai gobe"},
-{id: 1581, challengeId: 527, correct: true, text: "Barka", audioSrc: "m2-l1-q8-ha.mp3"},
+{id: 1581, challengeId: 527, correct: true, text: "Barka", audioSrc: "m2-l1-q8-hs.mp3"},
 
 {id: 1582, challengeId: 528, correct: false, text: "Mu kwana lafiya"},
-{id: 1583, challengeId: 528, correct: true, text: "Sai gobe", audioSrc: "m2-l1-q9-ha.mp3"},
+{id: 1583, challengeId: 528, correct: true, text: "Sai gobe", audioSrc: "m2-l1-q9-hs.mp3"},
 {id: 1584, challengeId: 528, correct: false, text: "Mu wuni lafiya"},
 
 {id: 1585, challengeId: 529, correct: false, text: "Duba"},
 {id: 1586, challengeId: 529, correct: false, text: "Nagode sosai"},
-{id: 1587, challengeId: 529, correct: true, text: "Yaya kake?", audioSrc: "m2-l1-q10-ha.mp3"},
+{id: 1587, challengeId: 529, correct: true, text: "Yaya kake?", audioSrc: "m2-l1-q10-hs.mp3"},
 
-{id: 1588, challengeId: 530, correct: true, text: "Mu wuni lafiya", audioSrc: "m2-l1-q11-ha.mp3"},
+{id: 1588, challengeId: 530, correct: true, text: "Mu wuni lafiya", audioSrc: "m2-l1-q11-hs.mp3"},
 {id: 1589, challengeId: 530, correct: false, text: "Ina kwana"},
 {id: 1590, challengeId: 530, correct: false, text: "Barka da zuwa"},
 
 {id: 1591, challengeId: 531, correct: false, text: "Safiya"},
 {id: 1592, challengeId: 531, correct: false, text: "Sai mu hadu gobe"},
-{id: 1593, challengeId: 531, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l1-q12-ha.mp3"},
+{id: 1593, challengeId: 531, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l1-q12-hs.mp3"},
 
-{id: 1594, challengeId: 532, correct: false, text: "Sai mu hadu gobe"},
+{id: 1594, challengeId: 532, correct: true, text: "Sai mu hadu gobe", audioSrc: "m2-l1-q13-hs.mp3"},
 {id: 1595, challengeId: 532, correct: false, text: "Sai gobe"},
-{id: 1596, challengeId: 532, correct: true, text: "Barka", audioSrc: "m2-l1-q13-ha.mp3"},
+{id: 1596, challengeId: 532, correct: false, text: "Barka"},
 
 {id: 1597, challengeId: 533, correct: false, text: "Barka da zuwa"},
 {id: 1598, challengeId: 533, correct: false, text: "Mu wuni lafiya"},
-{id: 1599, challengeId: 533, correct: true, text: "Sai gobe", audioSrc: "m2-l1-q14-ha.mp3"},
+{id: 1599, challengeId: 533, correct: true, text: "Sai gobe", audioSrc: "m2-l1-q14-hs.mp3"},
 
-{id: 1600, challengeId: 534, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l1-q15-ha.mp3"},
+{id: 1600, challengeId: 534, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l1-q15-hs.mp3"},
 {id: 1601, challengeId: 534, correct: false, text: "Nagode sosai"},
 {id: 1602, challengeId: 534, correct: false, text: "Ina kwana"},
 
 // Hausa Module 2, Lesson 2
 {id: 1603, challengeId: 535, correct: false, text: "Ina kwana"},
-{id: 1604, challengeId: 535, correct: true, text: "Ina wuni Haruna", audioSrc: "m2-l2-q1-ha.mp3"},
+{id: 1604, challengeId: 535, correct: true, text: "Ina wuni Haruna", audioSrc: "m2-l2-q1-hs.mp3"},
 {id: 1605, challengeId: 535, correct: false, text: "Sai mu hadu gobe"},
 
 {id: 1606, challengeId: 536, correct: false, text: "Sai gobe"},
-{id: 1607, challengeId: 536, correct: true, text: "Ina kwana", audioSrc: "m2-l2-q2-ha.mp3"},
+{id: 1607, challengeId: 536, correct: true, text: "Ina kwana", audioSrc: "m2-l2-q2-hs.mp3"},
 {id: 1608, challengeId: 536, correct: false, text: "Gobe"},
 
-{id: 1609, challengeId: 537, correct: true, text: "Rana", audioSrc: "m2-l2-q3-ha.mp3"},
+{id: 1609, challengeId: 537, correct: true, text: "Rana", audioSrc: "m2-l2-q3-hs.mp3"},
 {id: 1610, challengeId: 537, correct: false, text: "Ina wuni Haruna"},
 {id: 1611, challengeId: 537, correct: false, text: "Ina kwana"},
 
 {id: 1612, challengeId: 538, correct: false, text: "Barka da zuwa"},
 {id: 1613, challengeId: 538, correct: false, text: "Rana"},
-{id: 1614, challengeId: 538, correct: true, text: "Dare", audioSrc: "m2-l2-q4-ha.mp3"},
+{id: 1614, challengeId: 538, correct: true, text: "Dare", audioSrc: "m2-l2-q4-hs.mp3"},
 
 {id: 1615, challengeId: 539, correct: false, text: "Nagode"},
-{id: 1616, challengeId: 539, correct: true, text: "Sai mu hadu gobe", audioSrc: "m2-l2-q5-ha.mp3"},
+{id: 1616, challengeId: 539, correct: true, text: "Sai mu hadu gobe", audioSrc: "m2-l2-q5-hs.mp3"},
 {id: 1617, challengeId: 539, correct: false, text: "Yaya kake?"},
 
 {id: 1618, challengeId: 540, correct: false, text: "Dare"},
 {id: 1619, challengeId: 540, correct: false, text: "Yaya kake?"},
-{id: 1620, challengeId: 540, correct: true, text: "Sai gobe", audioSrc: "m2-l2-q6-ha.mp3"},
+{id: 1620, challengeId: 540, correct: true, text: "Sai gobe", audioSrc: "m2-l2-q6-hs.mp3"},
 
 {id: 1621, challengeId: 541, correct: false, text: "Barka da zuwa"},
 {id: 1622, challengeId: 541, correct: false, text: "Barka"},
-{id: 1623, challengeId: 541, correct: true, text: "Ka da zuwa", audioSrc: "m2-l2-q7-ha.mp3"},
+{id: 1623, challengeId: 541, correct: true, text: "Barka ka da zuwa", audioSrc: "m2-l2-q7-hs.mp3"},
 
-{id: 1624, challengeId: 542, correct: true, text: "Yaya kake?", audioSrc: "m2-l2-q8-ha.mp3"},
+{id: 1624, challengeId: 542, correct: true, text: "Yaya kake?", audioSrc: "m2-l2-q8-hs.mp3"},
 {id: 1625, challengeId: 542, correct: false, text: "Ina kwana"},
 {id: 1626, challengeId: 542, correct: false, text: "Barka ka da zuwa"},
 
 {id: 1627, challengeId: 543, correct: false, text: "Gobe"},
 {id: 1628, challengeId: 543, correct: false, text: "Kai"},
-{id: 1629, challengeId: 543, correct: true, text: "Yayi sosai", audioSrc: "m2-l2-q9-ha.mp3"},
+{id: 1629, challengeId: 543, correct: true, text: "Yayi sosai", audioSrc: "m2-l2-q9-hs.mp3"},
 
-{id: 1630, challengeId: 544, correct: true, text: "Sai gobe", audioSrc: "m2-l2-q10-ha.mp3"},
+{id: 1630, challengeId: 544, correct: true, text: "Sai gobe", audioSrc: "m2-l2-q10-hs.mp3"},
 {id: 1631, challengeId: 544, correct: false, text: "Barci"},
 {id: 1632, challengeId: 544, correct: false, text: "Nagode"},
 
 {id: 1633, challengeId: 545, correct: false, text: "Gobe"},
-{id: 1634, challengeId: 545, correct: true, text: "Barka da zuwa", audioSrc: "m2-l2-q11-ha.mp3"},
+{id: 1634, challengeId: 545, correct: true, text: "Barka da zuwa", audioSrc: "m2-l2-q11-hs.mp3"},
 {id: 1635, challengeId: 545, correct: false, text: "Nagode"},
 
 {id: 1636, challengeId: 546, correct: false, text: "Dare"},
-{id: 1637, challengeId: 546, correct: true, text: "Kai", audioSrc: "m2-l2-q12-ha.mp3"},
+{id: 1637, challengeId: 546, correct: true, text: "Kai", audioSrc: "m2-l2-q12-hs.mp3"},
 {id: 1638, challengeId: 546, correct: false, text: "Sai gobe"},
 
 {id: 1639, challengeId: 547, correct: false, text: "Barka da zuwa"},
 {id: 1640, challengeId: 547, correct: false, text: "Barci"},
-{id: 1641, challengeId: 547, correct: true, text: "Nagode", audioSrc: "m2-l2-q13-ha.mp3"},
+{id: 1641, challengeId: 547, correct: true, text: "Nagode", audioSrc: "m2-l2-q13-hs.mp3"},
 
 {id: 1642, challengeId: 548, correct: false, text: "Barka ka da zuwa"},
-{id: 1643, challengeId: 548, correct: true, text: "Gobe", audioSrc: "m2-l2-q14-ha.mp3"},
+{id: 1643, challengeId: 548, correct: true, text: "Gobe", audioSrc: "m2-l2-q14-hs.mp3"},
 {id: 1644, challengeId: 548, correct: false, text: "Nagode"},
 
 {id: 1645, challengeId: 549, correct: false, text: "Ina wuni Haruna"},
 {id: 1646, challengeId: 549, correct: false, text: "Kai"},
-{id: 1647, challengeId: 549, correct: true, text: "Barci", audioSrc: "m2-l2-q15-ha.mp3"},
+{id: 1647, challengeId: 549, correct: true, text: "Barci", audioSrc: "m2-l2-q15-hs.mp3"},
 
 // Hausa Module 2, Lesson 3
 {id: 1648, challengeId: 550, correct: false, text: "Barka Haruna Yaya kake?"},
 {id: 1649, challengeId: 550, correct: false, text: "Sai mu hadu"},
-{id: 1650, challengeId: 550, correct: true, text: "Ina kwana Haruna", audioSrc: "m2-l3-q1-ha.mp3"},
+{id: 1650, challengeId: 550, correct: true, text: "Ina kwana Haruna", audioSrc: "m2-l3-q1-hs.mp3"},
 
 {id: 1651, challengeId: 551, correct: false, text: "Ina lafiya"},
-{id: 1652, challengeId: 551, correct: true, text: "Yayi sa mu hadu gobe", audioSrc: "m2-l3-q2-ha.mp3"},
+{id: 1652, challengeId: 551, correct: true, text: "Yayi sa mu hadu gobe", audioSrc: "m2-l3-q2-hs.mp3"},
 {id: 1653, challengeId: 551, correct: false, text: "Eh nagode"},
 
-{id: 1654, challengeId: 552, correct: true, text: "Sai mu hadu", audioSrc: "m2-l3-q3-ha.mp3"},
+{id: 1654, challengeId: 552, correct: true, text: "Sai mu hadu", audioSrc: "m2-l3-q3-hs.mp3"},
 {id: 1655, challengeId: 552, correct: false, text: "Ka kwana lafiya?"},
 {id: 1656, challengeId: 552, correct: false, text: "Ina wuni"},
 
-{id: 1657, challengeId: 553, correct: true, text: "Sai mu hadu gobe", audioSrc: "m2-l3-q4-ha.mp3"},
+{id: 1657, challengeId: 553, correct: true, text: "Sai mu hadu gobe", audioSrc: "m2-l3-q4-hs.mp3"},
 {id: 1658, challengeId: 553, correct: false, text: "Ina lafiya"},
 {id: 1659, challengeId: 553, correct: false, text: "Ina wuni"},
 
 {id: 1660, challengeId: 554, correct: false, text: "Ina wuni"},
 {id: 1661, challengeId: 554, correct: false, text: "Eh, nagode"},
-{id: 1662, challengeId: 554, correct: true, text: "Barka", audioSrc: "m2-l3-q5-ha.mp3"},
+{id: 1662, challengeId: 554, correct: true, text: "Barka", audioSrc: "m2-l3-q5-hs.mp3"},
 
-{id: 1663, challengeId: 555, correct: true, text: "Yaya kake?", audioSrc: "m2-l3-q6-ha.mp3"},
+{id: 1663, challengeId: 555, correct: true, text: "Yaya kake?", audioSrc: "m2-l3-q6-hs.mp3"},
 {id: 1664, challengeId: 555, correct: false, text: "Ka kwana lafiya?"},
 {id: 1665, challengeId: 555, correct: false, text: "Barka Haruna Yaya kake?"},
 
-{id: 1666, challengeId: 556, correct: true, text: "Ina wuni", audioSrc: "m2-l3-q7-ha.mp3"},
+{id: 1666, challengeId: 556, correct: true, text: "Ina wuni", audioSrc: "m2-l3-q7-hs.mp3"},
 {id: 1667, challengeId: 556, correct: false, text: "Mu kwana lafiya"},
 {id: 1668, challengeId: 556, correct: false, text: "Sai mu hadu"},
 
 {id: 1669, challengeId: 557, correct: false, text: "Eh"},
-{id: 1670, challengeId: 557, correct: true, text: "Nagode", audioSrc: "m2-l3-q8-ha.mp3"},
+{id: 1670, challengeId: 557, correct: true, text: "Nagode", audioSrc: "m2-l3-q8-hs.mp3"},
 {id: 1671, challengeId: 557, correct: false, text: "Yayi sa mu hadu gobe"},
 
 {id: 1672, challengeId: 558, correct: false, text: "Yaya kake?"},
 {id: 1673, challengeId: 558, correct: false, text: "Barka Haruna Yaya kake?"},
-{id: 1674, challengeId: 558, correct: true, text: "Ka kwana lafiya?", audioSrc: "m2-l3-q9-ha.mp3"},
+{id: 1674, challengeId: 558, correct: true, text: "Ka kwana lafiya?", audioSrc: "m2-l3-q15-hs.mp3"},
 
 {id: 1675, challengeId: 559, correct: false, text: "Yayi sa mu hadu gobe"},
-{id: 1676, challengeId: 559, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l3-q10-ha.mp3"},
+{id: 1676, challengeId: 559, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l3-q10-hs.mp3"},
 {id: 1677, challengeId: 559, correct: false, text: "Sai mun hadu"},
 
-{id: 1678, challengeId: 560, correct: true, text: "Ina lafiya", audioSrc: "m2-l3-q11-ha.mp3"},
+{id: 1678, challengeId: 560, correct: true, text: "Ina lafiya", audioSrc: "m2-l3-q11-hs.mp3"},
 {id: 1679, challengeId: 560, correct: false, text: "Nagode"},
 {id: 1680, challengeId: 560, correct: false, text: "Yaya kake?"},
 
 {id: 1681, challengeId: 561, correct: false, text: "Eh, nagode"},
-{id: 1682, challengeId: 561, correct: true, text: "Eh", audioSrc: "m2-l3-q12-ha.mp3"},
+{id: 1682, challengeId: 561, correct: true, text: "Eh", audioSrc: "m2-l3-q12-hs.mp3"},
 {id: 1683, challengeId: 561, correct: false, text: "Sai mun hadu"},
 
-{id: 1684, challengeId: 562, correct: true, text: "Barka Haruna Yaya kake", audioSrc: "m2-l3-q13-ha.mp3"},
+{id: 1684, challengeId: 562, correct: true, text: "Barka Haruna Yaya kake", audioSrc: "m2-l3-q13-hs.mp3"},
 {id: 1685, challengeId: 562, correct: false, text: "Yaya kake?"},
 {id: 1686, challengeId: 562, correct: false, text: "Ka kwana lafiya?"},
 
 {id: 1687, challengeId: 563, correct: false, text: "Ina wuni"},
-{id: 1688, challengeId: 563, correct: true, text: "Eh nagode", audioSrc: "m2-l3-q14-ha.mp3"},
+{id: 1688, challengeId: 563, correct: true, text: "Eh nagode", audioSrc: "m2-l3-q14-hs.mp3"},
 {id: 1689, challengeId: 563, correct: false, text: "Ina lafiya"},
 
 {id: 1690, challengeId: 564, correct: false, text: "Yaya kake?"},
 {id: 1691, challengeId: 564, correct: false, text: "Mu kwana lafiya"},
-{id: 1692, challengeId: 564, correct: true, text: "Ka kwana lafiya?", audioSrc: "m2-l3-q15-ha.mp3"},
+{id: 1692, challengeId: 564, correct: true, text: "Ka kwana lafiya?", audioSrc: "m2-l3-q15-hs.mp3"},
 
 // Hausa Module 2, Lesson 4
 {id: 1693, challengeId: 565, correct: false, text: "Ina kwana Yaya kake?"},
-{id: 1694, challengeId: 565, correct: true, text: "Barka Haruna Yaya kake?", audioSrc: "m2-l4-q1-ha.mp3"},
+{id: 1694, challengeId: 565, correct: true, text: "Barka Haruna Yaya kake?", audioSrc: "m2-l4-q1-hs.mp3"},
 {id: 1695, challengeId: 565, correct: false, text: "Ina wuni, Yaya kake?"},
 
 {id: 1696, challengeId: 566, correct: false, text: "Ni ne Haruna, Kai Kuma fa?"},
-{id: 1697, challengeId: 566, correct: true, text: "Da kyau", audioSrc: "m2-l4-q2-ha.mp3"},
+{id: 1697, challengeId: 566, correct: true, text: "Da kyau", audioSrc: "m2-l4-q2-hs.mp3"},
 {id: 1698, challengeId: 566, correct: false, text: "Nagode"},
 
 {id: 1699, challengeId: 567, correct: false, text: "Ina lafiya"},
-{id: 1700, challengeId: 567, correct: true, text: "Ina kwana Yaya kake?", audioSrc: "m2-l4-q3-ha.mp3"},
+{id: 1700, challengeId: 567, correct: true, text: "Ina kwana Yaya kake?", audioSrc: "m2-l4-q3-hs.mp3"},
 {id: 1701, challengeId: 567, correct: false, text: "Ni ne Haruna, Kai Kuma fa?"},
 
-{id: 1702, challengeId: 568, correct: true, text: "Ina lafiya, nagode", audioSrc: "m2-l4-q4-ha.mp3"},
+{id: 1702, challengeId: 568, correct: true, text: "Ina lafiya, nagode", audioSrc: "m2-l4-q4-hs.mp3"},
 {id: 1703, challengeId: 568, correct: false, text: "Ina kwana Yaya kake?"},
 {id: 1704, challengeId: 568, correct: false, text: "Ina lafiya, Kai Kuma fa?"},
 
-{id: 1705, challengeId: 569, correct: true, text: "Ina wuni Yaya kake?", audioSrc: "m2-l4-q5-ha.mp3"},
+{id: 1705, challengeId: 569, correct: true, text: "Ina wuni Yaya kake?", audioSrc: "m2-l4-q5-hs.mp3"},
 {id: 1706, challengeId: 569, correct: false, text: "Barka, Yaya kake?"},
 {id: 1707, challengeId: 569, correct: false, text: "Sai gobe"},
 
 {id: 1708, challengeId: 570, correct: false, text: "Ni ne Haruna"},
-{id: 1709, challengeId: 570, correct: true, text: "Ni ne Haruna Kai Kuma fa?", audioSrc: "m2-l4-q6-ha.mp3"},
+{id: 1709, challengeId: 570, correct: true, text: "Ni ne Haruna Kai Kuma fa?", audioSrc: "m2-l4-q6-hs.mp3"},
 {id: 1710, challengeId: 570, correct: false, text: "Ina kwana Yaya kake"},
 
 {id: 1711, challengeId: 571, correct: false, text: "Da kyau"},
 {id: 1712, challengeId: 571, correct: false, text: "Ina lafiya"},
-{id: 1713, challengeId: 571, correct: true, text: "Barka, Yaya kake?", audioSrc: "m2-l4-q7-ha.mp3"},
+{id: 1713, challengeId: 571, correct: true, text: "Barka, Yaya kake?", audioSrc: "m2-l4-q7-hs.mp3"},
 
 {id: 1714, challengeId: 572, correct: false, text: "Ni ne Haruna, Kai Kuma fa?"},
 {id: 1715, challengeId: 572, correct: false, text: "Ina lafiya"},
-{id: 1716, challengeId: 572, correct: true, text: "Ina lafiya, nagode", audioSrc: "m2-l4-q8-ha.mp3"},
+{id: 1716, challengeId: 572, correct: true, text: "Ina lafiya, nagode", audioSrc: "m2-l4-q8-hs.mp3"},
 
 {id: 1717, challengeId: 573, correct: false, text: "Ni ne Haruna"},
-{id: 1718, challengeId: 573, correct: true, text: "Ina lafiya", audioSrc: "m2-l4-q9-ha.mp3"},
+{id: 1718, challengeId: 573, correct: true, text: "Ina lafiya", audioSrc: "m2-l4-q9-hs.mp3"},
 {id: 1719, challengeId: 573, correct: false, text: "Da kyau"},
 
-{id: 1720, challengeId: 574, correct: true, text: "Yaya kake?", audioSrc: "m2-l4-q10-ha.mp3"},
+{id: 1720, challengeId: 574, correct: true, text: "Yaya kake?", audioSrc: "m2-l4-q10-hs.mp3"},
 {id: 1721, challengeId: 574, correct: false, text: "Da kyau"},
 {id: 1722, challengeId: 574, correct: false, text: "Nagode"},
 
-{id: 1723, challengeId: 575, correct: true, text: "Ina wuni, Ina kewarka", audioSrc: "m2-l4-q11-ha.mp3"},
+{id: 1723, challengeId: 575, correct: true, text: "Ina wuni, Ina kewarka", audioSrc: "m2-l4-q11-hs.mp3"},
 {id: 1724, challengeId: 575, correct: false, text: "Ina wuni, Yaya kake?"},
 {id: 1725, challengeId: 575, correct: false, text: "Ina wuni"},
 
 {id: 1726, challengeId: 576, correct: false, text: "Sai gobe"},
-{id: 1727, challengeId: 576, correct: true, text: "Da kyau", audioSrc: "m2-l4-q12-ha.mp3"},
+{id: 1727, challengeId: 576, correct: true, text: "Da kyau", audioSrc: "m2-l4-q12-hs.mp3"},
 {id: 1728, challengeId: 576, correct: false, text: "Ina wuni, Ina kewarka"},
 
 {id: 1729, challengeId: 577, correct: false, text: "Ni ne Haruna"},
 {id: 1730, challengeId: 577, correct: false, text: "Sai gobe"},
-{id: 1731, challengeId: 577, correct: true, text: "Ni abokinka ne", audioSrc: "m2-l4-q13-ha.mp3"},
+{id: 1731, challengeId: 577, correct: true, text: "Ni abokinka ne", audioSrc: "m2-l4-q13-hs.mp3"},
 
-{id: 1732, challengeId: 578, correct: true, text: "Sai gobe", audioSrc: "m2-l4-q14-ha.mp3"},
+{id: 1732, challengeId: 578, correct: true, text: "Sai gobe", audioSrc: "m2-l4-q14-hs.mp3"},
 {id: 1733, challengeId: 578, correct: false, text: "Nagode"},
 {id: 1734, challengeId: 578, correct: false, text: "Da kyau"},
 
 {id: 1735, challengeId: 579, correct: false, text: "Ni ne Haruna, Kai Kuma fa?"},
 {id: 1736, challengeId: 579, correct: false, text: "Ni abokinka ne"},
-{id: 1737, challengeId: 579, correct: true, text: "Ni ne Haruna", audioSrc: "m2-l4-q15-ha.mp3"},
+{id: 1737, challengeId: 579, correct: true, text: "Ni ne Haruna", audioSrc: "m2-l4-q15-hs.mp3"},
 
 // Hausa Module 2, Lesson 5
 {id: 1738, challengeId: 580, correct: false, text: "Eh, Kai Kuma fa?"},
 {id: 1739, challengeId: 580, correct: false, text: "Ka farka ne?"},
-{id: 1740, challengeId: 580, correct: true, text: "Mu wuni lafiya", audioSrc: "m2-l5-q1-ha.mp3"},
+{id: 1740, challengeId: 580, correct: true, text: "Mu wuni lafiya", audioSrc: "m2-l5-q1-hs.mp3"},
 
 {id: 1741, challengeId: 581, correct: false, text: "Eh, Kai Kuma fa?"},
-{id: 1742, challengeId: 581, correct: true, text: "Eh, Ina lafiya", audioSrc: "m2-l5-q2-ha.mp3"},
+{id: 1742, challengeId: 581, correct: true, text: "Eh, Ina lafiya", audioSrc: "m2-l5-q2-hs.mp3"},
 {id: 1743, challengeId: 581, correct: false, text: "Eh, ta jirgi zanyi tafiya"},
 
 {id: 1744, challengeId: 582, correct: false, text: "Ka farka ne?"},
-{id: 1745, challengeId: 582, correct: true, text: "Eh, Kai Kuma fa?", audioSrc: "m2-l5-q3-ha.mp3"},
+{id: 1745, challengeId: 582, correct: true, text: "Eh, Kai Kuma fa?", audioSrc: "m2-l5-q3-hs.mp3"},
 {id: 1746, challengeId: 582, correct: false, text: "Ina maka barka da zuwa"},
 
 {id: 1747, challengeId: 583, correct: false, text: "Sai mun hadu"},
 {id: 1748, challengeId: 583, correct: false, text: "Ina maka barka da zuwa"},
-{id: 1749, challengeId: 583, correct: true, text: "An tashi lafiya?", audioSrc: "m2-l5-q4-ha.mp3"},
+{id: 1749, challengeId: 583, correct: true, text: "An tashi lafiya?", audioSrc: "m2-l5-q4-hs.mp3"},
 
-{id: 1750, challengeId: 584, correct: true, text: "Ka farka ne?", audioSrc: "m2-l5-q5-ha.mp3"},
+{id: 1750, challengeId: 584, correct: true, text: "Ka farka ne?", audioSrc: "m2-l5-q5-hs.mp3"},
 {id: 1751, challengeId: 584, correct: false, text: "Ya alamura"},
 {id: 1752, challengeId: 584, correct: false, text: "An tashi lafiya?"},
 
 {id: 1753, challengeId: 585, correct: false, text: "Mun gode Allah/ Ubangiji"},
 {id: 1754, challengeId: 585, correct: false, text: "Ina tuki"},
-{id: 1755, challengeId: 585, correct: true, text: "Ina maka barka da zuwa", audioSrc: "m2-l5-q6-ha.mp3"},
+{id: 1755, challengeId: 585, correct: true, text: "Ina maka barka da zuwa", audioSrc: "m2-l5-q6-hs.mp3"},
 
 {id: 1756, challengeId: 586, correct: false, text: "Eh, ta jirgi zanyi tafiya"},
 {id: 1757, challengeId: 586, correct: false, text: "Mu kwana lafiya"},
-{id: 1758, challengeId: 586, correct: true, text: "Sai mun hadu", audioSrc: "m2-l5-q7-ha.mp3"},
+{id: 1758, challengeId: 586, correct: true, text: "Sai mun hadu", audioSrc: "m2-l5-q7-hs.mp3"},
 
 {id: 1759, challengeId: 587, correct: false, text: "Ina tuki"},
-{id: 1760, challengeId: 587, correct: true, text: "Eh, ta jirgi zanyi tafiya", audioSrc: "m2-l5-q8-ha.mp3"},
+{id: 1760, challengeId: 587, correct: true, text: "Eh, ta jirgi zanyi tafiya", audioSrc: "m2-l5-q8-hs.mp3"},
 {id: 1761, challengeId: 587, correct: false, text: "Mun gode Allah"},
 
 {id: 1762, challengeId: 588, correct: false, text: "Ya alamura"},
 {id: 1763, challengeId: 588, correct: false, text: "Mu kwana lafiya"},
-{id: 1764, challengeId: 588, correct: true, text: "Yanzu ka farka?", audioSrc: "m2-l5-q9-ha.mp3"},
+{id: 1764, challengeId: 588, correct: true, text: "Yanzu ka farka?", audioSrc: "m2-l5-q9-hs.mp3"},
 
 {id: 1765, challengeId: 589, correct: false, text: "Sai mu hadu"},
-{id: 1766, challengeId: 589, correct: true, text: "Yi hakuri", audioSrc: "m2-l5-q10-ha.mp3"},
+{id: 1766, challengeId: 589, correct: true, text: "Yi hakuri", audioSrc: "m2-l5-q10-hs.mp3"},
 {id: 1767, challengeId: 589, correct: false, text: "Mun gode Allah"},
 
-{id: 1768, challengeId: 590, correct: true, text: "Ina jiranka", audioSrc: "m2-l5-q11-ha.mp3"},
+{id: 1768, challengeId: 590, correct: true, text: "Ina jiranka", audioSrc: "m2-l5-q11-hs.mp3"},
 {id: 1769, challengeId: 590, correct: false, text: "Mu kwana lafiya"},
 {id: 1770, challengeId: 590, correct: false, text: "Ina tuki"},
 
 {id: 1771, challengeId: 591, correct: false, text: "Eh, ina maka barka da zuwa"},
-{id: 1772, challengeId: 591, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l5-q12-ha.mp3"},
+{id: 1772, challengeId: 591, correct: true, text: "Mu kwana lafiya", audioSrc: "m2-l5-q12-hs.mp3"},
 {id: 1773, challengeId: 591, correct: false, text: "Eh, ta jirgi zanyi tafiya"},
 
 {id: 1774, challengeId: 592, correct: false, text: "Mu wuni lafiya"},
 {id: 1775, challengeId: 592, correct: false, text: "Ka farka?"},
-{id: 1776, challengeId: 592, correct: true, text: "Ina tuki", audioSrc: "m2-l5-q13-ha.mp3"},
+{id: 1776, challengeId: 592, correct: true, text: "Ina tuki", audioSrc: "m2-l5-q13-hs.mp3"},
 
 {id: 1777, challengeId: 593, correct: false, text: "An tashi lafiya?"},
 {id: 1778, challengeId: 593, correct: false, text: "Ka farka ne?"},
-{id: 1779, challengeId: 593, correct: true, text: "Ya alamura", audioSrc: "m2-l5-q14-ha.mp3"},
+{id: 1779, challengeId: 593, correct: true, text: "Ya alamura", audioSrc: "m2-l5-q14-hs.mp3"},
 
 {id: 1780, challengeId: 594, correct: false, text: "Mu wuni lafiya"},
 {id: 1781, challengeId: 594, correct: false, text: "Sai mun hadu"},
-{id: 1782, challengeId: 594, correct: true, text: "Mun gode Allah", audioSrc: "m2-l5-q15-ha.mp3"},
+{id: 1782, challengeId: 594, correct: true, text: "Mun gode Allah", audioSrc: "m2-l5-q15-hs.mp3"},
 
+
+// Hausa module 3, lesson 1
 {id: 1783, challengeId: 595, correct: false, text: "Jimana, shin kana Jin hausa?"},
-{id: 1784, challengeId: 595, correct: true, text: "Ina Jin hausa", audioSrc: "m3-l1-q1-ha.mp3"},
+{id: 1784, challengeId: 595, correct: true, text: "Ina Jin hausa", audioSrc: "m3-l1-q1-hs.mp3"},
 {id: 1785, challengeId: 595, correct: false, text: "Ka bahaushe ne?"},
 
 {id: 1786, challengeId: 596, correct: false, text: "Kai bahaushe ne?"},
 {id: 1787, challengeId: 596, correct: false, text: "Ina Jin hausa"},
-{id: 1788, challengeId: 596, correct: true, text: "Ji mana, shin kana Jin hausa?", audioSrc: "m3-l1-q2-ha.mp3"},
+{id: 1788, challengeId: 596, correct: true, text: "Ji mana, shin kana Jin hausa?", audioSrc: "m3-l1-q2-hs.mp3"},
 
 {id: 1789, challengeId: 597, correct: false, text: "Kai bahaushe ne?"},
-{id: 1790, challengeId: 597, correct: true, text: "A'a, Ni bahaushe ne, Ina Jin Igbo", audioSrc: "m3-l1-q3-ha.mp3"},
+{id: 1790, challengeId: 597, correct: true, text: "A'a, Ni bahaushe ne, Ina Jin Igbo", audioSrc: "m3-l1-q3-hs.mp3"},
 {id: 1791, challengeId: 597, correct: false, text: "Ni Dan Nigeria ne."},
 
 {id: 1792, challengeId: 598, correct: false, text: "A Ina ake iya samun motan haya"},
 {id: 1793, challengeId: 598, correct: false, text: "Mene ne sunanka?"},
-{id: 1794, challengeId: 598, correct: true, text: "Ina bukatan motan haya", audioSrc: "m3-l1-q4-ha.mp3"},
+{id: 1794, challengeId: 598, correct: true, text: "Ina bukatan motan haya", audioSrc: "m3-l1-q4-hs.mp3"},
 
-{id: 1795, challengeId: 599, correct: true, text: "A Ina ake iya samun motan haya?", audioSrc: "m3-l1-q5-ha.mp3"},
+{id: 1795, challengeId: 599, correct: true, text: "A Ina ake iya samun motan haya?", audioSrc: "m3-l1-q5-hs.mp3"},
 {id: 1796, challengeId: 599, correct: false, text: "Ina bukatan motan haya"},
 {id: 1797, challengeId: 599, correct: false, text: "Na sauka a hotel ne"},
 
 {id: 1798, challengeId: 600, correct: false, text: "Zan zauna tsawon sati Daya"},
 {id: 1799, challengeId: 600, correct: false, text: "Ni kadai ne"},
-{id: 1800, challengeId: 600, correct: true, text: "Ni Dan Nigeria ne", audioSrc: "m3-l1-q6-ha.mp3"},
+{id: 1800, challengeId: 600, correct: true, text: "Ni Dan Nigeria ne", audioSrc: "m3-l1-q6-hs.mp3"},
 
-{id: 1801, challengeId: 601, correct: true, text: "Yaya sunanka?", audioSrc: "m3-l1-q7-ha.mp3"},
+{id: 1801, challengeId: 601, correct: true, text: "Yaya sunanka?", audioSrc: "m3-l1-q7-hs.mp3"},
 {id: 1802, challengeId: 601, correct: false, text: "Kai bahaushe ne?"},
 {id: 1803, challengeId: 601, correct: false, text: "Sunana Dauda"},
 
-{id: 1804, challengeId: 602, correct: true, text: "Sunanka Dauda", audioSrc: "m3-l1-q8-ha.mp3"},
+{id: 1804, challengeId: 602, correct: true, text: "Sunanka Dauda", audioSrc: "m3-l1-q8-hs.mp3"},
 {id: 1805, challengeId: 602, correct: false, text: "Na zo tare da Italian"},
 {id: 1806, challengeId: 602, correct: false, text: "Zan ziyarci Nigeria"},
 
 {id: 1807, challengeId: 603, correct: false, text: "A'a Ni bahaushe"},
 {id: 1808, challengeId: 603, correct: false, text: "Ni Dan Nigeria ne"},
-{id: 1809, challengeId: 603, correct: true, text: "Kai bahaushe ne?", audioSrc: "m3-l1-q9-ha.mp3"},
+{id: 1809, challengeId: 603, correct: true, text: "Kai bahaushe ne?", audioSrc: "m3-l1-q9-hs.mp3"},
 
 {id: 1810, challengeId: 604, correct: false, text: "Yaya sunanka?"},
 {id: 1811, challengeId: 604, correct: false, text: "Zan zauna tsawon sati Daya"},
-{id: 1812, challengeId: 604, correct: true, text: "Sunana Dauda", audioSrc: "m3-l1-q10-ha.mp3"},
+{id: 1812, challengeId: 604, correct: true, text: "Sunana Dauda", audioSrc: "m3-l1-q10-hs.mp3"},
 
-{id: 1813, challengeId: 605, correct: true, text: "A'a Ni bahaushe", audioSrc: "m3-l1-q11-ha.mp3"},
+{id: 1813, challengeId: 605, correct: true, text: "A'a Ni bahaushe", audioSrc: "m3-l1-q11-hs.mp3"},
 {id: 1814, challengeId: 605, correct: false, text: "Ni Dan Nigeria ne"},
 {id: 1815, challengeId: 605, correct: false, text: "Kai bahaushe ne?"},
 
 {id: 1816, challengeId: 606, correct: false, text: "Na zo tare da Italian"},
 {id: 1817, challengeId: 606, correct: false, text: "Ni kadai ne"},
-{id: 1818, challengeId: 606, correct: true, text: "Zan ziyarci Nigeria", audioSrc: "m3-l1-q12-ha.mp3"},
+{id: 1818, challengeId: 606, correct: true, text: "Zan ziyarci Nigeria", audioSrc: "m3-l1-q12-hs.mp3"},
 
 {id: 1819, challengeId: 607, correct: false, text: "Mene ne sunanka?"},
-{id: 1820, challengeId: 607, correct: true, text: "Zan zauna tsawon sati Daya", audioSrc: "m3-l1-q13-ha.mp3"},
+{id: 1820, challengeId: 607, correct: true, text: "Zan zauna tsawon sati Daya", audioSrc: "m3-l1-q13-hs.mp3"},
 {id: 1821, challengeId: 607, correct: false, text: "Ina bukatan motan haya"},
 
-{id: 1822, challengeId: 608, correct: true, text: "Na sauka a hotel ne", audioSrc: "m3-l1-q14-ha.mp3"},
+{id: 1822, challengeId: 608, correct: true, text: "Na sauka a hotel ne"},
 {id: 1823, challengeId: 608, correct: false, text: "Ni kadai ne"},
 {id: 1824, challengeId: 608, correct: false, text: "Zan ziyarci Nigeria"},
 
 {id: 1825, challengeId: 609, correct: false, text: "Na zo tare da iyalina"},
-{id: 1826, challengeId: 609, correct: true, text: "Ni kadai ne", audioSrc: "m3-l1-q15-ha.mp3"},
+{id: 1826, challengeId: 609, correct: true, text: "Ni kadai ne"},
 {id: 1827, challengeId: 609, correct: false, text: "Zan ziyarci Nigeria"},
 
 // Hausa Module 3, Lesson 2
 {id: 1828, challengeId: 610, correct: false, text: "Kana da Yara?"},
 {id: 1829, challengeId: 610, correct: false, text: "Ina Jin dadin ziyarar na"},
-{id: 1830, challengeId: 610, correct: true, text: "Menene sanaarka?", audioSrc: "m3-l2-q1-ha.mp3"},
+{id: 1830, challengeId: 610, correct: true, text: "Menene sanaarka?", audioSrc: "m3-l2-q1-hs.mp3"},
 
 {id: 1831, challengeId: 611, correct: false, text: "Ina farincikin kasancewa a nan"},
 {id: 1832, challengeId: 611, correct: false, text: "Ina gidan kalo take?"},
-{id: 1833, challengeId: 611, correct: true, text: "Daga Ina kake?", audioSrc: "m3-l2-q2-ha.mp3"},
+{id: 1833, challengeId: 611, correct: true, text: "Daga Ina kake?", audioSrc: "m3-l2-q2-hs.mp3"},
 
-{id: 1834, challengeId: 612, correct: true, text: "Kana da Yara?", audioSrc: "m3-l2-q3-ha.mp3"},
+{id: 1834, challengeId: 612, correct: true, text: "Kana da Yara?", audioSrc: "m3-l2-q3-hs.mp3"},
 {id: 1835, challengeId: 612, correct: false, text: "Zo muci abinci"},
 {id: 1836, challengeId: 612, correct: false, text: "Ka taba zuwa Nigeria?"},
 
 {id: 1837, challengeId: 613, correct: false, text: "Ina son zuwa bakin teku"},
 {id: 1838, challengeId: 613, correct: false, text: "Zo muci abinci"},
-{id: 1839, challengeId: 613, correct: true, text: "Ka taba zuwa Nigeria?", audioSrc: "m3-l2-q4-ha.mp3"},
+{id: 1839, challengeId: 613, correct: true, text: "Ka taba zuwa Nigeria?", audioSrc: "m3-l2-q4-hs.mp3"},
 
 {id: 1840, challengeId: 614, correct: false, text: "Kazo gidan"},
-{id: 1841, challengeId: 614, correct: true, text: "Ina Jin dadin ziyarar na", audioSrc: "m3-l2-q5-ha.mp3"},
+{id: 1841, challengeId: 614, correct: true, text: "Ina Jin dadin ziyarar na", audioSrc: "m3-l2-q5-hs.mp3"},
 {id: 1842, challengeId: 614, correct: false, text: "Kana da Yara?"},
 
-{id: 1843, challengeId: 615, correct: true, text: "Ina son zuwa bakin teku", audioSrc: "m3-l2-q6-ha.mp3"},
+{id: 1843, challengeId: 615, correct: true, text: "Ina son zuwa bakin teku", audioSrc: "m3-l2-q6-hs.mp3"},
 {id: 1844, challengeId: 615, correct: false, text: "Zo muci abinci"},
 {id: 1845, challengeId: 615, correct: false, text: "Ka taba zuwa Nigeria?"},
 
 {id: 1846, challengeId: 616, correct: false, text: "Matata yar Nigeria ce"},
-{id: 1847, challengeId: 616, correct: true, text: "Kazo gidana", audioSrc: "m3-l2-q7-ha.mp3"},
+{id: 1847, challengeId: 616, correct: true, text: "Kazo gidana", audioSrc: "m3-l2-q7-hs.mp3"},
 {id: 1848, challengeId: 616, correct: false, text: "Ka gaida iyalinka"},
 
-{id: 1849, challengeId: 617, correct: true, text: "Matata yar Nigeria ce", audioSrc: "m3-l2-q8-ha.mp3"},
+{id: 1849, challengeId: 617, correct: true, text: "Matata yar Nigeria ce", audioSrc: "m3-l2-q8-hs.mp3"},
 {id: 1850, challengeId: 617, correct: false, text: "Kazo gidana"},
 {id: 1851, challengeId: 617, correct: false, text: "Ka gaida iyalinka"},
 
 {id: 1852, challengeId: 618, correct: false, text: "Ji mana/ bani hankalinka"},
-{id: 1853, challengeId: 618, correct: true, text: "Ka gaida iyalinka", audioSrc: "m3-l2-q9-ha.mp3"},
+{id: 1853, challengeId: 618, correct: true, text: "Ka gaida iyalinka", audioSrc: "m3-l2-q9-hs.mp3"},
 {id: 1854, challengeId: 618, correct: false, text: "Zo muci abinci"},
 
-{id: 1855, challengeId: 619, correct: true, text: "Ina son zuwa kasuwa", audioSrc: "m3-l2-q10-ha.mp3"},
+{id: 1855, challengeId: 619, correct: true, text: "Ina son zuwa kasuwa", audioSrc: "m3-l2-q10-hs.mp3"},
 {id: 1856, challengeId: 619, correct: false, text: "Ka gaida iyalinka"},
 {id: 1857, challengeId: 619, correct: false, text: "Zo muci abinci"},
 
 {id: 1858, challengeId: 620, correct: false, text: "Na gaji"},
-{id: 1859, challengeId: 620, correct: true, text: "Ina gidan kalo ta ke?", audioSrc: "m3-l2-q11-ha.mp3"},
+{id: 1859, challengeId: 620, correct: true, text: "Ina gidan kalo ta ke?", audioSrc: "m3-l2-q11-hs.mp3"},
 {id: 1860, challengeId: 620, correct: false, text: "Ina farincikin kasancewa a nan"},
 
-{id: 1861, challengeId: 621, correct: true, text: "Ji mana/ bani hankalinka", audioSrc: "m3-l2-q12-ha.mp3"},
+{id: 1861, challengeId: 621, correct: true, text: "Ji mana/ bani hankalinka", audioSrc: "m3-l2-q12-hs.mp3"},
 {id: 1862, challengeId: 621, correct: false, text: "Ka gaida iyalinka"},
 {id: 1863, challengeId: 621, correct: false, text: "Zo muci abinci"},
 
 {id: 1864, challengeId: 622, correct: false, text: "Ina son zuwa kasuwa"},
 {id: 1865, challengeId: 622, correct: false, text: "Ka gaida iyalinka"},
-{id: 1866, challengeId: 622, correct: true, text: "Zo muci abinci", audioSrc: "m3-l2-q13-ha.mp3"},
+{id: 1866, challengeId: 622, correct: true, text: "Zo muci abinci", audioSrc: "m3-l2-q13-hs.mp3"},
 
-{id: 1867, challengeId: 623, correct: true, text: "Na gaji", audioSrc: "m3-l2-q14-ha.mp3"},
+{id: 1867, challengeId: 623, correct: true, text: "Na gaji", audioSrc: "m3-l2-q14-hs.mp3"},
 {id: 1868, challengeId: 623, correct: false, text: "Ina gidan kalo ta ke?"},
 {id: 1869, challengeId: 623, correct: false, text: "Ina farincikin kasancewa a nan"},
 
 {id: 1870, challengeId: 624, correct: false, text: "Ji mana/ bani hankalinka"},
-{id: 1871, challengeId: 624, correct: true, text: "Ina farincikin kasancewa a nan", audioSrc: "m3-l2-q15-ha.mp3"},
+{id: 1871, challengeId: 624, correct: true, text: "Ina farincikin kasancewa a nan", audioSrc: "m3-l2-q15-hs.mp3"},
 {id: 1872, challengeId: 624, correct: false, text: "Kazo gidana"},
 
 // Hausa Module 3, Lesson 3
 {id: 1873, challengeId: 625, correct: false, text: "Wai yo sunana Ladi"},
-{id: 1874, challengeId: 625, correct: true, text: "Anti tana chochi", audioSrc: "m3-l3-q1-ha.mp3"},
+{id: 1874, challengeId: 625, correct: true, text: "Anti tana chochi", audioSrc: "m3-l3-q1-hs.mp3"},
 {id: 1875, challengeId: 625, correct: false, text: "Ina jin Yarbawa da Igbo"},
 
 {id: 1876, challengeId: 626, correct: false, text: "Ladi tana jin Igbo da Yarbawa"},
 {id: 1877, challengeId: 626, correct: false, text: "Kana jin Yarbawa da Igbo"},
-{id: 1878, challengeId: 626, correct: true, text: "Na je kasuwa", audioSrc: "m3-l3-q2-ha.mp3"},
+{id: 1878, challengeId: 626, correct: true, text: "Na je kasuwa", audioSrc: "m3-l3-q2-hs.mp3"},
 
-{id: 1879, challengeId: 627, correct: true, text: "Ina jin Yarbawa da Igbo", audioSrc: "m3-l3-q3-ha.mp3"},
+{id: 1879, challengeId: 627, correct: true, text: "Ina jin Yarbawa da Igbo", audioSrc: "m3-l3-q3-hs.mp3"},
 {id: 1880, challengeId: 627, correct: false, text: "Kana jin Yarbawa da Igbo"},
 {id: 1881, challengeId: 627, correct: false, text: "Mijina ya fita"},
 
 {id: 1882, challengeId: 628, correct: false, text: "Yarta malama ce"},
 {id: 1883, challengeId: 628, correct: false, text: "Dansa dan sanda ne"},
-{id: 1884, challengeId: 628, correct: true, text: "Wai yo sunana Ladi", audioSrc: "m3-l3-q4-ha.mp3"},
+{id: 1884, challengeId: 628, correct: true, text: "Wai yo sunana Ladi", audioSrc: "m3-l3-q4-hs.mp3"},
 
-{id: 1885, challengeId: 629, correct: true, text: "Ladi tana jin Igbo da Yarbawa", audioSrc: "m3-l3-q5-ha.mp3"},
+{id: 1885, challengeId: 629, correct: true, text: "Ladi tana jin Igbo da Yarbawa", audioSrc: "m3-l3-q5-hs.mp3"},
 {id: 1886, challengeId: 629, correct: false, text: "Kana jin Yarbawa da Igbo"},
 {id: 1887, challengeId: 629, correct: false, text: "Mijina ya fita"},
 
 {id: 1888, challengeId: 630, correct: false, text: "Ita Inyamura ce"},
 {id: 1889, challengeId: 630, correct: false, text: "Shi Bayerabe ne"},
-{id: 1890, challengeId: 630, correct: true, text: "Kana jin Yarbawa", audioSrc: "m3-l3-q6-ha.mp3"},
+{id: 1890, challengeId: 630, correct: true, text: "Kana jin Yarbawa", audioSrc: "m3-l3-q6-hs.mp3"},
 
 {id: 1891, challengeId: 631, correct: false, text: "Mijina ya fita"},
 {id: 1892, challengeId: 631, correct: false, text: "Ita Inyamura ce"},
-{id: 1893, challengeId: 631, correct: true, text: "Suna jin Hausa", audioSrc: "m3-l3-q7-ha.mp3"},
+{id: 1893, challengeId: 631, correct: true, text: "Suna jin Hausa", audioSrc: "m3-l3-q7-hs.mp3"},
 
 {id: 1894, challengeId: 632, correct: false, text: "Ita Inyamura ce"},
-{id: 1895, challengeId: 632, correct: true, text: "Shi Bayerabe ne", audioSrc: "m3-l3-q8-ha.mp3"},
+{id: 1895, challengeId: 632, correct: true, text: "Shi Bayerabe ne", audioSrc: "m3-l3-q8-hs.mp3"},
 {id: 1896, challengeId: 632, correct: false, text: "Kana jin Yarbawa"},
 
-{id: 1897, challengeId: 633, correct: true, text: "Ita Inyamura ce", audioSrc: "m3-l3-q9-ha.mp3"},
+{id: 1897, challengeId: 633, correct: true, text: "Ita Inyamura ce", audioSrc: "m3-l3-q9-hs.mp3"},
 {id: 1898, challengeId: 633, correct: false, text: "Shi Bayerabe ne"},
 {id: 1899, challengeId: 633, correct: false, text: "Kana jin Yarbawa"},
 
 {id: 1900, challengeId: 634, correct: false, text: "Ina jin Yarbawa da Igbo"},
 {id: 1901, challengeId: 634, correct: false, text: "Kana jin Yarbawa da Hausa"},
-{id: 1902, challengeId: 634, correct: true, text: "Mijina ya fita", audioSrc: "m3-l3-q10-ha.mp3"},
+{id: 1902, challengeId: 634, correct: true, text: "Mijina ya fita", audioSrc: "m3-l3-q10-hs.mp3"},
 
 {id: 1903, challengeId: 635, correct: false, text: "Ka gaida iyalinka"},
-{id: 1904, challengeId: 635, correct: true, text: "Yarta malama ce", audioSrc: "m3-l3-q11-ha.mp3"},
+{id: 1904, challengeId: 635, correct: true, text: "Yarta malama ce", audioSrc: "m3-l3-q11-hs.mp3"},
 {id: 1905, challengeId: 635, correct: false, text: "Dansa dan sanda ne"},
 
 {id: 1906, challengeId: 636, correct: false, text: "Ka gaida iyalinka"},
 {id: 1907, challengeId: 636, correct: false, text: "Yarta malama ce"},
-{id: 1908, challengeId: 636, correct: true, text: "Dansa dan sanda ne", audioSrc: "m3-l3-q12-ha.mp3"},
+{id: 1908, challengeId: 636, correct: true, text: "Dansa dan sanda ne", audioSrc: "m3-l3-q12-hs.mp3"},
 
-{id: 1909, challengeId: 637, correct: true, text: "Sunana Ladidi", audioSrc: "m3-l3-q13-ha.mp3"},
+{id: 1909, challengeId: 637, correct: true, text: "Sunana Ladidi", audioSrc: "m3-l3-q13-hs.mp3"},
 {id: 1910, challengeId: 637, correct: false, text: "Ita Inyamura ce"},
 {id: 1911, challengeId: 637, correct: false, text: "Suna jin Hausa"},
 
-{id: 1912, challengeId: 638, correct: true, text: "Ina jin Yarbawa da Igbo da Hausa", audioSrc: "m3-l3-q14-ha.mp3"},
+{id: 1912, challengeId: 638, correct: true, text: "Ina jin Yarbawa da Igbo da Hausa", audioSrc: "m3-l3-q14-hs.mp3"},
 {id: 1913, challengeId: 638, correct: false, text: "Kana jin Yarbawa da Hausa"},
 {id: 1914, challengeId: 638, correct: false, text: "Suna jin Hausa"},
 
-{id: 1915, challengeId: 639, correct: true, text: "Ka gaida iyalinka", audioSrc: "m3-l3-q15-ha.mp3"},
+{id: 1915, challengeId: 639, correct: true, text: "Ka gaida iyalinka", audioSrc: "m3-l3-q15-hs.mp3"},
 {id: 1916, challengeId: 639, correct: false, text: "Yarta malama ce"},
 {id: 1917, challengeId: 639, correct: false, text: "Dansa dan sanda ne"},
 
 // Hausa Module 3, Lesson 4
 {id: 1918, challengeId: 640, correct: false, text: "Yi magana da Yaya"},
-{id: 1919, challengeId: 640, correct: true, text: "Gidana", audioSrc: "m3-l4-q1-ha.mp3"},
+{id: 1919, challengeId: 640, correct: true, text: "Gidana", audioSrc: "m3-l4-q1-hs.mp3"},
 {id: 1920, challengeId: 640, correct: false, text: "Suna da yawa"},
 
-{id: 1921, challengeId: 641, correct: true, text: "Yi magana da Dana", audioSrc: "m3-l4-q2-ha.mp3"},
+{id: 1921, challengeId: 641, correct: true, text: "Yi magana da Dana", audioSrc: "m3-l4-q2-hs.mp3"},
 {id: 1922, challengeId: 641, correct: false, text: "Su"},
 {id: 1923, challengeId: 641, correct: false, text: "Yi magana da Yata"},
 
-// Hausa Module 3, Lesson 4
 {id: 1924, challengeId: 642, correct: false, text: "Yi magana da Dana"},
 {id: 1925, challengeId: 642, correct: false, text: "Su"},
-{id: 1926, challengeId: 642, correct: true, text: "Yi magana da Yata", audioSrc: "m3-l4-q3-ha.mp3"},
+{id: 1926, challengeId: 642, correct: true, text: "Yi magana da Yata", audioSrc: "m3-l4-q3-hs.mp3"},
 
 {id: 1927, challengeId: 643, correct: false, text: "Suna da yawa"},
 {id: 1928, challengeId: 643, correct: false, text: "Shi dogo ne"},
-{id: 1929, challengeId: 643, correct: true, text: "Su", audioSrc: "m3-l4-q4-ha.mp3"},
+{id: 1929, challengeId: 643, correct: true, text: "Su", audioSrc: "m3-l4-q4-hs.mp3"},
 
 {id: 1930, challengeId: 644, correct: false, text: "Ta iya girki"},
-{id: 1931, challengeId: 644, correct: true, text: "Suna da yawa", audioSrc: "m3-l4-q5-ha.mp3"},
+{id: 1931, challengeId: 644, correct: true, text: "Suna da yawa", audioSrc: "m3-l4-q5-hs.mp3"},
 {id: 1932, challengeId: 644, correct: false, text: "Ita"},
 
-{id: 1933, challengeId: 645, correct: true, text: "Shi", audioSrc: "m3-l4-q6-ha.mp3"},
+{id: 1933, challengeId: 645, correct: true, text: "Shi", audioSrc: "m3-l4-q6-hs.mp3"},
 {id: 1934, challengeId: 645, correct: false, text: "Ita"},
 {id: 1935, challengeId: 645, correct: false, text: "Su"},
 
 {id: 1936, challengeId: 646, correct: false, text: "Shi"},
 {id: 1937, challengeId: 646, correct: false, text: "Dan uwanshi kyakkyawa ne"},
-{id: 1938, challengeId: 646, correct: true, text: "Shi dogo ne", audioSrc: "m3-l4-q7-ha.mp3"},
+{id: 1938, challengeId: 646, correct: true, text: "Shi dogo ne", audioSrc: "m3-l4-q7-hs.mp3"},
 
 {id: 1939, challengeId: 647, correct: false, text: "Shi"},
-{id: 1940, challengeId: 647, correct: true, text: "Ita", audioSrc: "m3-l4-q8-ha.mp3"},
+{id: 1940, challengeId: 647, correct: true, text: "Ita", audioSrc: "m3-l4-q8-hs.mp3"},
 {id: 1941, challengeId: 647, correct: false, text: "Su"},
 
 {id: 1942, challengeId: 648, correct: false, text: "Littafi na"},
 {id: 1943, challengeId: 648, correct: false, text: "Yar uwatta kyakkyawa ce"},
-{id: 1944, challengeId: 648, correct: true, text: "Ta iya girki", audioSrc: "m3-l4-q9-ha.mp3"},
+{id: 1944, challengeId: 648, correct: true, text: "Ta iya girki", audioSrc: "m3-l4-q9-hs.mp3"},
 
-{id: 1945, challengeId: 649, correct: true, text: "Nashi", audioSrc: "m3-l4-q10-ha.mp3"},
+{id: 1945, challengeId: 649, correct: true, text: "Nashi", audioSrc: "m3-l4-q10-hs.mp3"},
 {id: 1946, challengeId: 649, correct: false, text: "Nawa"},
 {id: 1947, challengeId: 649, correct: false, text: "Nata"},
 
 {id: 1948, challengeId: 650, correct: false, text: "Ita"},
-{id: 1949, challengeId: 650, correct: true, text: "Dan uwanshi kyakkyawa ne", audioSrc: "m3-l4-q11-ha.mp3"},
+{id: 1949, challengeId: 650, correct: true, text: "Dan uwanshi kyakkyawa ne", audioSrc: "m3-l4-q11-hs.mp3"},
 {id: 1950, challengeId: 650, correct: false, text: "Yar uwatta kyakkyawa ce"},
 
 {id: 1951, challengeId: 651, correct: false, text: "Nawa"},
 {id: 1952, challengeId: 651, correct: false, text: "Nashi"},
-{id: 1953, challengeId: 651, correct: true, text: "Nata", audioSrc: "m3-l4-q12-ha.mp3"},
+{id: 1953, challengeId: 651, correct: true, text: "Nata", audioSrc: "m3-l4-q12-hs.mp3"},
 
 {id: 1954, challengeId: 652, correct: false, text: "Nata"},
 {id: 1955, challengeId: 652, correct: false, text: "Dan uwanshi kyakkyawa ne"},
-{id: 1956, challengeId: 652, correct: true, text: "Yar uwatta kyakkyawa ce", audioSrc: "m3-l4-q13-ha.mp3"},
+{id: 1956, challengeId: 652, correct: true, text: "Yar uwatta kyakkyawa ce", audioSrc: "m3-l4-q13-hs.mp3"},
 
-{id: 1957, challengeId: 653, correct: true, text: "Nawa", audioSrc: "m3-l4-q14-ha.mp3"},
+{id: 1957, challengeId: 653, correct: true, text: "Nawa", audioSrc: "m3-l4-q14-hs.mp3"},
 {id: 1958, challengeId: 653, correct: false, text: "Nashi"},
 {id: 1959, challengeId: 653, correct: false, text: "Nata"},
 
-{id: 1960, challengeId: 654, correct: true, text: "Littafi na", audioSrc: "m3-l4-q15-ha.mp3"},
+{id: 1960, challengeId: 654, correct: true, text: "Littafi na", audioSrc: "m3-l4-q15-hs.mp3"},
 {id: 1961, challengeId: 654, correct: false, text: "Yar uwatta kyakkyawa ce"},
 {id: 1962, challengeId: 654, correct: false, text: "Ta iya girki"},
 
 // Hausa Module 3, Lesson 5
-{id: 1963, challengeId: 655, correct: true, text: "Mu", audioSrc: "m3-l5-q1-ha.mp3"},
+{id: 1963, challengeId: 655, correct: true, text: "Mu", audioSrc: "m3-l5-q1-hs.mp3"},
 {id: 1964, challengeId: 655, correct: false, text: "Mu dawo"},
 {id: 1965, challengeId: 655, correct: false, text: "Sami abokina"},
 
 {id: 1966, challengeId: 656, correct: false, text: "Mu"},
-{id: 1967, challengeId: 656, correct: true, text: "Mu dawo", audioSrc: "m3-l5-q2-ha.mp3"},
+{id: 1967, challengeId: 656, correct: true, text: "Mu dawo", audioSrc: "m3-l5-q2-hs.mp3"},
 {id: 1968, challengeId: 656, correct: false, text: "Sami abokina"},
 
-{id: 1969, challengeId: 657, correct: true, text: "Mu", audioSrc: "m3-l5-q3-ha.mp3"},
+{id: 1969, challengeId: 657, correct: true, text: "Mu", audioSrc: "m3-l5-q3-hs.mp3"},
 {id: 1970, challengeId: 657, correct: false, text: "Kazo ka hade da mu"},
 {id: 1971, challengeId: 657, correct: false, text: "Yi min magana"},
 
 {id: 1972, challengeId: 658, correct: false, text: "Wanene kai?"},
-{id: 1973, challengeId: 658, correct: true, text: "Kazo ka hade da mu", audioSrc: "m3-l5-q4-ha.mp3"},
+{id: 1973, challengeId: 658, correct: true, text: "Kazo ka hade da mu", audioSrc: "m3-l5-q4-hs.mp3"},
 {id: 1974, challengeId: 658, correct: false, text: "Yi min magana"},
 
 {id: 1975, challengeId: 659, correct: false, text: "Kai da ni"},
 {id: 1976, challengeId: 659, correct: false, text: "Kai da ni har abada"},
-{id: 1977, challengeId: 659, correct: true, text: "Sami abokina", audioSrc: "m3-l5-q5-ha.mp3"},
+{id: 1977, challengeId: 659, correct: true, text: "Sami abokina", audioSrc: "m3-l5-q5-hs.mp3"},
 
 {id: 1978, challengeId: 660, correct: false, text: "Su nawane"},
-{id: 1979, challengeId: 660, correct: true, text: "Kai", audioSrc: "m3-l5-q6-ha.mp3"},
+{id: 1979, challengeId: 660, correct: true, text: "Kai", audioSrc: "m3-l5-q6-hs.mp3"},
 {id: 1980, challengeId: 660, correct: false, text: "Wanene kai?"},
 
 {id: 1981, challengeId: 661, correct: false, text: "Kai da ni"},
 {id: 1982, challengeId: 661, correct: false, text: "Kai da ni har abada"},
-{id: 1983, challengeId: 661, correct: true, text: "Wanene kai?", audioSrc: "m3-l5-q7-ha.mp3"},
+{id: 1983, challengeId: 661, correct: true, text: "Wanene kai?", audioSrc: "m3-l5-q7-hs.mp3"},
 
 {id: 1984, challengeId: 662, correct: false, text: "Su nawane"},
-{id: 1985, challengeId: 662, correct: true, text: "Su", audioSrc: "m3-l5-q8-ha.mp3"},
+{id: 1985, challengeId: 662, correct: true, text: "Su", audioSrc: "m3-l5-q8-hs.mp3"},
 {id: 1986, challengeId: 662, correct: false, text: "Nawane"},
 
 {id: 1987, challengeId: 663, correct: false, text: "Wanene kai?"},
 {id: 1988, challengeId: 663, correct: false, text: "Menene kai?"},
-{id: 1989, challengeId: 663, correct: true, text: "Su waye ne?", audioSrc: "m3-l5-q9-ha.mp3"},
+{id: 1989, challengeId: 663, correct: true, text: "Su waye ne?", audioSrc: "m3-l5-q9-hs.mp3"},
 
 {id: 1990, challengeId: 664, correct: false, text: "Su nawane"},
 {id: 1991, challengeId: 664, correct: false, text: "Su"},
-{id: 1992, challengeId: 664, correct: true, text: "Nawane", audioSrc: "m3-l5-q10-ha.mp3"},
+{id: 1992, challengeId: 664, correct: true, text: "Nawane", audioSrc: "m3-l5-q10-hs.mp3"},
 
-{id: 1993, challengeId: 665, correct: true, text: "Su nawane", audioSrc: "m3-l5-q11-ha.mp3"},
+{id: 1993, challengeId: 665, correct: true, text: "Su nawane", audioSrc: "m3-l5-q11-hs.mp3"},
 {id: 1994, challengeId: 665, correct: false, text: "Su"},
 {id: 1995, challengeId: 665, correct: false, text: "Nawane"},
 
 {id: 1996, challengeId: 666, correct: false, text: "Kazo ka hade da mu"},
-{id: 1997, challengeId: 666, correct: true, text: "Ni", audioSrc: "m3-l5-q12-ha.mp3"},
+{id: 1997, challengeId: 666, correct: true, text: "Ni", audioSrc: "m3-l5-q12-hs.mp3"},
 {id: 1998, challengeId: 666, correct: false, text: "Yi min magana"},
 
 {id: 1999, challengeId: 667, correct: false, text: "Ni"},
-{id: 2000, challengeId: 667, correct: true, text: "Yi min magana", audioSrc: "m3-l5-q13-ha.mp3"},
+{id: 2000, challengeId: 667, correct: true, text: "Yi min magana", audioSrc: "m3-l5-q13-hs.mp3"},
 {id: 2001, challengeId: 667, correct: false, text: "Mun dawo"},
 
-{id: 2002, challengeId: 668, correct: true, text: "Kai da ni", audioSrc: "m3-l5-q14-ha.mp3"},
+{id: 2002, challengeId: 668, correct: true, text: "Kai da ni", audioSrc: "m3-l5-q15-hs.mp3"},
 {id: 2003, challengeId: 668, correct: false, text: "Kai da ni har abada"},
 {id: 2004, challengeId: 668, correct: false, text: "Sami abokina"},
 
-{id: 2005, challengeId: 669, correct: true, text: "Kai da ni har abada", audioSrc: "m3-l5-q15-ha.mp3"},
+{id: 2005, challengeId: 669, correct: true, text: "Kai da ni har abada", audioSrc: "m3-l5-q14-hs.mp3"},
 {id: 2006, challengeId: 669, correct: false, text: "Kai da ni"},
 {id: 2007, challengeId: 669, correct: false, text: "kazo ka hade da mu"},
 
@@ -4415,17 +4421,17 @@ await db.insert(schema.challenges).values([
 {id: 2147, challengeId: 716, correct: false, text: "I won buy"},
 {id: 2148, challengeId: 716, correct: true, text: "Wetin you won buy", audioSrc: "m1-l4-q2-pg.mp3"},
 
-{id: 2149, challengeId: 717, correct: true, text: "How you dey sell", audioSrc: "m1-l4-q3-pg.mp3"},
-{id: 2150, challengeId: 717, correct: false, text: "Yam"},
+{id: 2149, challengeId: 717, correct: false, text: "How you dey sell"},
+{id: 2150, challengeId: 717, correct: true, text: "Yam", audioSrc: "m1-l4-q3-pg.mp3"},
 {id: 2151, challengeId: 717, correct: false, text: "Wetin you wan buy"},
 
 {id: 2152, challengeId: 718, correct: false, text: "Yam 1000"},
 {id: 2153, challengeId: 718, correct: true, text: "How you dey sell", audioSrc: "m1-l4-q4-pg.mp3"},
 {id: 2154, challengeId: 718, correct: false, text: "Wetin you talk"},
 
-{id: 2155, challengeId: 719, correct: true, text: "How you dey sell", audioSrc: "m1-l4-q5-pg.mp3"},
+{id: 2155, challengeId: 719, correct: false, text: "How you dey sell"},
 {id: 2156, challengeId: 719, correct: false, text: "I dey sorry ooo"},
-{id: 2157, challengeId: 719, correct: false, text: "Yam 1000"},
+{id: 2157, challengeId: 719, correct: true, text: "Yam 1000", audioSrc: "m1-l4-q5-pg.mp3"},
 
 {id: 2158, challengeId: 720, correct: false, text: "Come back na"},
 {id: 2159, challengeId: 720, correct: false, text: "Do ooooo"},

@@ -26,7 +26,7 @@ useEffect (() => setIsClient(true), []);
 
   const onClick = () => {
   close();
-  router.push("/store");
+  router.push("/shop");
   };
 
    if (!isClient) {
@@ -35,7 +35,7 @@ useEffect (() => setIsClient(true), []);
 
   return (
       <Dialog open={isOpen} onOpenChange={close}>
-        <DialogContent className="max-w-[350px] lg:max-w-md h-[230px] lg:h-[310px] bg-white flex flex-col items-center rounded-[20px] lg:rounded-none">
+        <DialogContent className="max-w-[350px] lg:max-w-md h-[270px] lg:h-[310px] bg-white flex flex-col items-center rounded-[20px] lg:rounded-none">
           <DialogHeader>
            <div className="flex items-start w-full justify-center lg:mt-4 drop-shadow-lg">
             <Image src="/sadface.png" alt="Sad" 
@@ -52,7 +52,7 @@ useEffect (() => setIsClient(true), []);
            </DialogDescription>
            </DialogHeader>
            <DialogFooter className="mb-2 lg:mb-4">
-           <div className="flex gap-5 gap-y-3 lg:flex-col">
+           <div className="flex-col gap-5 gap-y-3 lg:flex-col">
              <Button
               variant="primary" 
               className="w-full 
