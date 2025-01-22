@@ -11,7 +11,7 @@ type Props = {
 
 export const IgboCommonExp = ({ commonExp }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/ig_commonExp/${audioPath}`);
+    const audio = new Audio(`/ig-commonExp/${audioPath}`);
     audio.play();
   };
 
