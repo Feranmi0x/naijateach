@@ -633,7 +633,7 @@ await db.insert(schema.challenges).values([
   { id: 100, lessonId: 37, type: "SELECT", order: 100, question: "Tomorrow" },
   { id: 101, lessonId: 37, type: "SELECT", order: 101, question: "Sleep" },
 
-  { id: 102, lessonId: 38, type: "SELECT", order: 102, question: "Good morning, Paul" },
+  { id: 102, lessonId: 38, type: "SELECT", order: 102, question: "Good morning, Feranmi" },
   { id: 103, lessonId: 38, type: "SELECT", order: 103, question: "Alright, see you tomorrow" },
   { id: 104, lessonId: 38, type: "SELECT", order: 104, question: "See you soon" },
   { id: 105, lessonId: 38, type: "SELECT", order: 105, question: "Goodbye, see you tomorrow" },
@@ -645,16 +645,16 @@ await db.insert(schema.challenges).values([
   { id: 111, lessonId: 38, type: "SELECT", order: 111, question: "Good night" },
   { id: 112, lessonId: 38, type: "SELECT", order: 112, question: "I am doing very well" },
   { id: 113, lessonId: 38, type: "SELECT", order: 113, question: "Yes" },
-  { id: 114, lessonId: 38, type: "SELECT", order: 114, question: "Hello Paul, how are you?" },
+  { id: 114, lessonId: 38, type: "SELECT", order: 114, question: "Hello Feranmi, how are you?" },
   { id: 115, lessonId: 38, type: "SELECT", order: 115, question: "Yes, thank you" },
   { id: 116, lessonId: 38, type: "SELECT", order: 116, question: "Did you sleep well?" },
 
-   { id: 117, lessonId: 39, type: "SELECT", order: 117, question: "Hello Paul, how are you?" },
+   { id: 117, lessonId: 39, type: "SELECT", order: 117, question: "Hello Feranmi, how are you?" },
    { id: 118, lessonId: 39, type: "SELECT", order: 118, question: "Good" },
    { id: 119, lessonId: 39, type: "SELECT", order: 119, question: "Good morning, how are you doing?" },
    { id: 120, lessonId: 39, type: "SELECT", order: 120, question: "I am doing very well, and you?" },
    { id: 121, lessonId: 39, type: "SELECT", order: 121, question: "Good evening, how are you doing?" },
-   { id: 122, lessonId: 39, type: "SELECT", order: 122, question: "I am Paul, and you are?" },
+   { id: 122, lessonId: 39, type: "SELECT", order: 122, question: "I am Feranmi, and you are?" },
    { id: 123, lessonId: 39, type: "SELECT", order: 123, question: "Hi, how are you?" },
    { id: 124, lessonId: 39, type: "SELECT", order: 124, question: "I am doing very well, thank you" },
    { id: 125, lessonId: 39, type: "SELECT", order: 125, question: "I’m doing very well" },
@@ -1483,12 +1483,12 @@ await db.insert(schema.challenges).values([
 
  await db.insert(schema.challengeOptions).values([
    // Q1: How are you?
-   { id: 1, challengeId: 1, correct: false, text: "Má bínú" }, // Reuse audio from Q11
+   { id: 1, challengeId: 1, correct: false, text: "Má bínú/Pele" }, // Reuse audio from Q11
    { id: 2, challengeId: 1, correct: false, text: "E ṣeun" },
    { id: 3, challengeId: 1, correct: true, text: "Báwo ni", audioSrc: "m1-l1-q1-yr.mp3" },
 
    // Q2: I am okay.
-   { id: 4, challengeId: 2, correct: false, text: "Má bínú", audioSrc: "m1-l1-q11-yr.mp3" }, // Reuse audio from Q11
+   { id: 4, challengeId: 2, correct: false, text: "Má bínú/Pele", audioSrc: "m1-l1-q11-yr.mp3" }, // Reuse audio from Q11
    { id: 5, challengeId: 2, correct: false, text: "E ṣeun" },
    { id: 6, challengeId: 2, correct: true, text: "Mo wa dáadáa", audioSrc: "m1-l1-q2-yr.mp3" },
 
@@ -1528,12 +1528,12 @@ await db.insert(schema.challenges).values([
    { id: 27, challengeId: 9, correct: false, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3" }, // Reuse audio
 
    // Q10: You’re welcome.
-   { id: 28, challengeId: 10, correct: false, text: "Má bínú", audioSrc: "m1-l1-q14-yr.mp3" }, // Reuse audio
+   { id: 28, challengeId: 10, correct: false, text: "Má bínú/Pele", audioSrc: "m1-l1-q14-yr.mp3" }, // Reuse audio
    { id: 29, challengeId: 10, correct: false, text: "Ǹjẹ́ ìwọ n kò?" },
    { id: 30, challengeId: 10, correct: true, text: "Ẹ káàbọ̀", audioSrc: "m2-l1-q5-yr.mp3" },
 
    // Q11: Sorry.
-   { id: 31, challengeId: 11, correct: true, text: "Má bínú", audioSrc: "m1-l1-q14-yr.mp3" },
+   { id: 31, challengeId: 11, correct: true, text: "Má bínú/Pele", audioSrc: "m1-l1-q14-yr.mp3" },
    { id: 32, challengeId: 11, correct: false, text: "Ẹ káàbọ̀", audioSrc: "m1-l1-q13-yr.mp3" }, // Reuse audio
    { id: 33, challengeId: 11, correct: false, text: "E ṣeun púpọ̀" },
 
@@ -1639,7 +1639,7 @@ await db.insert(schema.challenges).values([
   
     // Q5: It is not like that.
     { id: 94, challengeId: 32, correct: true, text: "Kìí ṣe bẹ́ẹ̀", audioSrc: "m2-l3-q5-yrb.mp3" },
-    { id: 95, challengeId: 32, correct: false, text: "Gẹ́ẹ̀ bẹ́lẹ̀" },
+    { id: 95, challengeId: 32, correct: false, text: "Bí ó ṣe rí ni yẹn." },
     { id: 96, challengeId: 32, correct: false, text: "Nibo ni o ń lọ?" },
   
     // Q6: Where are you going?
@@ -1663,12 +1663,12 @@ await db.insert(schema.challenges).values([
     { id: 108, challengeId: 36, correct: false, text: "O o gba" },
   
     // Q10: I know.
-    { id: 109, challengeId: 37, correct: false, text: "Gẹ́ẹ̀ bẹ́lẹ̀" },
+    { id: 109, challengeId: 37, correct: false, text: "Bo se ri niyen" },
     { id: 110, challengeId: 37, correct: true, text: "Mo mọ̀", audioSrc: "m2-l3-q10-yrb.mp3" },
     { id: 111, challengeId: 37, correct: false, text: "Nibo ni o ń lọ?" },
   
     // Q11: Exactly.
-    { id: 112, challengeId: 38, correct: true, text: "Gẹ́ẹ̀ bẹ́lẹ̀", audioSrc: "m2-l3-q11-yrb.mp3" },
+    { id: 112, challengeId: 38, correct: true, text: "Bí ó ṣe rí ni yẹn.", audioSrc: "m2-l3-q11-yrb.mp3" },
     { id: 113, challengeId: 38, correct: false, text: "Mo mọ̀" },
     { id: 114, challengeId: 38, correct: false, text: "O o gba" },
   
@@ -1690,7 +1690,7 @@ await db.insert(schema.challenges).values([
     // Q15: Do you know?
     { id: 124, challengeId: 42, correct: false, text: "O o gba" },
     { id: 125, challengeId: 42, correct: true, text: "Ṣé o mọ̀?", audioSrc: "m2-l3-q15-yrb.mp3" },
-    { id: 126, challengeId: 42, correct: false, text: "Gẹ́ẹ̀ bẹ́lẹ̀" },
+    { id: 126, challengeId: 42, correct: false, text: "Bí ó ṣe rí ni yẹn." },
       // Yoruba Lesson 4
   { id: 127, challengeId: 43, correct: false, text: "Kí ni o fẹ́ ra?" },
   { id: 128, challengeId: 43, correct: true, text: "Mo fẹ́ ra", audioSrc: "m1-l4-q1-yr.mp3" },
@@ -1710,27 +1710,27 @@ await db.insert(schema.challenges).values([
 
   { id: 139, challengeId: 47, correct: true, text: "Isu Ẹgbẹ̀rún kan", audioSrc: "m1-l4-q5-yr.mp3" },
   { id: 140, challengeId: 47, correct: false, text: "Èló ni?" },
-  { id: 141, challengeId: 47, correct: false, text: "Má bínú" },
+  { id: 141, challengeId: 47, correct: false, text: "Má bínú/Pele" },
 
   { id: 142, challengeId: 48, correct: false, text: "Padà wá" },
   { id: 143, challengeId: 48, correct: true, text: "Mo ń bọ̀", audioSrc: "m1-l4-q6-yr.mp3" },
-  { id: 144, challengeId: 48, correct: false, text: "Má bínú" },
+  { id: 144, challengeId: 48, correct: false, text: "Má bínú/Pele" },
   
   { id: 145, challengeId: 49, correct: false, text: "Kí ló sọ?" },
   { id: 146, challengeId: 49, correct: false, text: "Padà wá" },
-  { id: 147, challengeId: 49, correct: true, text: "Má bínú", audioSrc: "m1-l4-q7-yr.mp3" },
+  { id: 147, challengeId: 49, correct: true, text: "Má bínú/Pele", audioSrc: "m1-l4-q7-yr.mp3" },
   
   { id: 148, challengeId: 50, correct: false, text: "Mo ti gbọ́ e" },
   { id: 149, challengeId: 50, correct: true, text: "Kò sí", audioSrc: "m1-l4-q8-yr.mp3" },
   { id: 150, challengeId: 50, correct: false, text: "Padà wá" },
   
   { id: 151, challengeId: 51, correct: false, text: "Mo ti gbọ́ e" },
-  { id: 152, challengeId: 51, correct: false, text: "Má bínú" },
+  { id: 152, challengeId: 51, correct: false, text: "Má bínú/Pele" },
   { id: 153, challengeId: 51, correct: true, text: "Padà wá", audioSrc: "m1-l4-q9-yr.mp3" },
   
   { id: 154, challengeId: 52, correct: false, text: "Padà wá" },
   { id: 155, challengeId: 52, correct: true, text: "Mo ti gbọ́ e", audioSrc: "m1-l4-q10-yr.mp3" },
-  { id: 156, challengeId: 52, correct: false, text: "Má bínú" },
+  { id: 156, challengeId: 52, correct: false, text: "Má bínú/Pele" },
   
   { id: 157, challengeId: 53, correct: true, text: "Ní àkókò wo?", audioSrc: "m1-l4-q11-yr.mp3" },
   { id: 158, challengeId: 53, correct: false, text: "Ní òwúrọ̀" },
@@ -1749,7 +1749,7 @@ await db.insert(schema.challenges).values([
   { id: 168, challengeId: 56, correct: false, text: "Mo ń bọ̀" },
   
   { id: 169, challengeId: 57, correct: false, text: "Mo ń bọ̀" },
-  { id: 170, challengeId: 57, correct: false, text: "Má bínú" },
+  { id: 170, challengeId: 57, correct: false, text: "Má bínú/Pele" },
   { id: 171, challengeId: 57, correct: true, text: "Kí ló sọ?", audioSrc: "m1-l4-q15-yr.mp3" },
   
 
@@ -1880,7 +1880,7 @@ await db.insert(schema.challenges).values([
   { id: 263, challengeId: 88, correct: true, text: "Ẹ káárọ̀", audioSrc: "m2-l2-q2-yr.mp3" },
   { id: 264, challengeId: 88, correct: false, text: "Ọla" },
 
-  { id: 265, challengeId: 89, correct: true, text: "Ẹ káàsán", audioSrc: "m2-l2-q3-yr.mp3" },
+  { id: 265, challengeId: 89, correct: true, text: "Osán", audioSrc: "m2-l2-q3-yrb.mp3" },
   { id: 266, challengeId: 89, correct: false, text: "Ẹ káalẹ́, Paul" },
   { id: 267, challengeId: 89, correct: false, text: "Ẹ káárọ̀" },
 
@@ -2085,7 +2085,7 @@ await db.insert(schema.challenges).values([
          { id: 417, challengeId: 139, correct: false, text: "A dúpẹ́ lọ́wọ́ Ọlọ́run" },
        
          { id: 418, challengeId: 140, correct: false, text: "Ṣé ọjọ́ rẹ ń lọ dáadáa?" },
-         { id: 419, challengeId: 140, correct: true, text: "Ṣé ose jí ní?", audioSrc: "m2-l5-q9-yr.mp3" },
+         { id: 419, challengeId: 140, correct: true, text: "Ṣé ose jí ní?", audioSrc: "m2-l5-q9-yrb.mp3" },
          { id: 420, challengeId: 140, correct: false, text: "Ẹ ní ìrẹ́pò̩ alẹ́ dáadáa" },
        
          { id: 421, challengeId: 141, correct: false, text: "Máà ri ẹ láìpẹ́" },
@@ -2117,7 +2117,7 @@ await db.insert(schema.challenges).values([
             { id: 441, challengeId: 147, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
           
             { id: 442, challengeId: 148, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
-            { id: 443, challengeId: 148, correct: true, text: "Ẹ jọwọ, ṣé ẹ le sọ", audioSrc: "m3-l1-q2-yr.mp3" },
+            { id: 443, challengeId: 148, correct: true, text: "Ẹ jọwọ, ṣé ẹ le sọ Yoruba", audioSrc: "m3-l1-q2-yr.mp3" },
             { id: 444, challengeId: 148, correct: false, text: "Mo sọ Yoruba" },
           
             { id: 445, challengeId: 149, correct: false, text: "Ṣé ẹ jẹ́ ọmọ Yoruba?" },
@@ -2268,7 +2268,7 @@ await db.insert(schema.challenges).values([
                { id: 554, challengeId: 185, correct: true, text: "Ó jẹ́ ọmọ Igbo", audioSrc: "m3-l3-q9-yr.mp3" },
                { id: 555, challengeId: 185, correct: false, text: "O ń sọ Yoruba" },
                
-               { id: 556, challengeId: 186, correct: false, text: "O ń sọ Yoruba/Ibo/Hausa" },
+               { id: 556, challengeId: 186, correct: false, text: "O ń sọ Yoruba" },
                { id: 557, challengeId: 186, correct: false, text: "Mo sọ Yoruba àti Igbo" },
                { id: 558, challengeId: 186, correct: true, text: "Ọkọ mi wà níta", audioSrc: "m3-l3-q10-yr.mp3" },
                
@@ -2294,7 +2294,7 @@ await db.insert(schema.challenges).values([
 
                { id: 574, challengeId: 192, correct: false, text: "Bà sọrọ pẹ̀lú ọmọbìnrin mi" },
                { id: 575, challengeId: 192, correct: false, text: "Wọ́n pọ̀" },
-               { id: 576, challengeId: 192, correct: true, text: "Ilé mi", audioSrc: "m3-l4-q1-yr.mp3" },
+               { id: 576, challengeId: 192, correct: true, text: "Ilé mi", audioSrc: "m3-l4-q1-yrb.mp3" },
                
                { id: 577, challengeId: 193, correct: false, text: "sọrọ pẹ̀lú ọmọbìnrin mi" },
                { id: 578, challengeId: 193, correct: true, text: "sọrọ pẹ̀lú ọmọkùnrin mi", audioSrc: "m3-l4-q2-yr.mp3" },
