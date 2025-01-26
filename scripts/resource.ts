@@ -190,14 +190,14 @@ await db.insert(schema.genders).values([
   { id: 3, english: "Cassava Meal", hausa: "Tuwon Rogo", audioPath: "tuw.mp3" },
   { id: 4, english: "Breakfast", hausa: "Karin Safe", audioPath: "kar.mp3" },
   { id: 5, english: "Lunch", hausa: "Abinci Rana", audioPath: "abi.mp3" },
-  { id: 6, english: "Dinner", hausa: "Abinci Dare", audioPath: "abic.mp3" },
+  { id: 6, english: "Dinner", hausa: "Abinci Dare", audioPath: "abind.mp3" },
   { id: 7, english: "Apple", hausa: "Tifa", audioPath: "tif.mp3" },
-  { id: 8, english: "Carrots", hausa: "Karas", audioPath: "kar.mp3" },
+  { id: 8, english: "Carrots", hausa: "Karas", audioPath: "car.mp3" },
   { id: 9, english: "Mango", hausa: "Mangoro", audioPath: "man.mp3" },
   { id: 10, english: "Pawpaw", hausa: "Guwanda", audioPath: "guw.mp3" },
   { id: 11, english: "Sugar", hausa: "Sugar", audioPath: "sug.mp3" },
   { id: 12, english: "Salt", hausa: "Gishiri", audioPath: "gis.mp3" },
-  { id: 13, english: "Meat", hausa: "Nama", audioPath: "nam.mp3" },
+  { id: 13, english: "Meat", hausa: "Nama", audioPath: "nor.mp3" },
   { id: 14, english: "Fish", hausa: "Kifi", audioPath: "kif.mp3" },
   { id: 15, english: "Beans", hausa: "Wake", audioPath: "wak.mp3" },
   { id: 16, english: "Soup", hausa: "Miya", audioPath: "miy.mp3" },
@@ -208,7 +208,7 @@ await db.insert(schema.genders).values([
   { id: 21, english: "Popcorn", hausa: "Gugguru", audioPath: "gug.mp3" },
   { id: 22, english: "Salad", hausa: "Salad", audioPath: "sal.mp3" },
   { id: 23, english: "Eggs", hausa: "Kwai", audioPath: "kwa.mp3" },
-  { id: 24, english: "Vegetable", hausa: "Alayaho", audioPath: "ala.mp3" },
+  { id: 24, english: "Vegetable", hausa: "Alayaho", audioPath: "alay.mp3" },
   { id: 25, english: "Fruit", hausa: "'Ya'yan Itace", audioPath: "yay.mp3" },
 ]);
 
@@ -216,9 +216,9 @@ await db.insert(schema.iggenders).values([
         { id: 1, english: "Milk", igbo: "Mmiri ara ehi", audioPath: "mmi.mp3" },
         { id: 2, english: "Banana", igbo: "Unere", audioPath: "une.mp3" },
         { id: 3, english: "Cassava meal", igbo: "Akpụ", audioPath: "akp.mp3" },
-        { id: 4, english: "Breakfast", igbo: "Nri ụtụtụ", audioPath: "nri.mp3" },
+        { id: 4, english: "Breakfast", igbo: "Nri ụtụtụ", audioPath: "bre.mp3" },
         { id: 5, english: "Lunch", igbo: "Nri ehihie", audioPath: "nrie.mp3" },
-        { id: 6, english: "Dinner", igbo: "Nri abalị", audioPath: "nria.mp3" },
+        { id: 6, english: "Dinner", igbo: "Nri abalị", audioPath: "din.mp3" },
         { id: 7, english: "Apple", igbo: "Apụl", audioPath: "apu.mp3" },
         { id: 8, english: "Carrots", igbo: "Karọt", audioPath: "kar.mp3" },
         { id: 9, english: "Mango", igbo: "Mangolo", audioPath: "man.mp3" },
@@ -246,7 +246,7 @@ await db.insert(schema.yrgenders).values([
         { id: 1, english: "Milk", yoruba: "Wara", audioPath: "war.mp3" },
         { id: 2, english: "Banana", yoruba: "Ogede", audioPath: "oge.mp3" },
         { id: 3, english: "Cassava meal", yoruba: "Garri", audioPath: "gar.mp3" },
-        { id: 4, english: "Breakfast", yoruba: "Ounjẹ̀ Owojúmọ́", audioPath: "oun.mp3" },
+        { id: 4, english: "Breakfast", yoruba: "Ounjẹ̀ ọ̀wúrọ̀", audioPath: "oun.mp3" },
         { id: 5, english: "Lunch", yoruba: "Ounjẹ̀ Ọ̀sán", audioPath: "ounje.mp3" },
         { id: 6, english: "Dinner", yoruba: "Ounjẹ̀ Alẹ́", audioPath: "ounj.mp3" },
         { id: 7, english: "Apple", yoruba: "Apusí", audioPath: "apu.mp3" },
@@ -300,7 +300,7 @@ await db.insert(schema.igslangs).values([
         { id: 9, english: "News", igbo: "Akụkọ", audioPath: "aku.mp3" },
         { id: 10, english: "Exactly", igbo: "Ehen", audioPath: "ehe.mp3" },
         { id: 11, english: "Pele", igbo: "Ndo", audioPath: "ndo.mp3" },
-        { id: 12, english: "Lamba", igbo: "Ashị", audioPath: "ash.mp3" },
+        { id: 12, english: "Lamba", igbo: "Ashị", audioPath: "ashi.mp3" },
         { id: 13, english: "Shine your eye", igbo: "Mụrụ anya", audioPath: "mur.mp3" },
         { id: 14, english: "Carry me dey go", igbo: "Ka anyị na-agakwa aga", audioPath: "kaa.mp3" },
         { id: 15, english: "Over sabi", igbo: "Ọkachamara", audioPath: "oka.mp3" },
@@ -353,7 +353,7 @@ await db.insert(schema.igcommonExp).values([
         { id: 4, english: "How are you?", igbo: "Kedu ka I mere?", audioPath: "ked.mp3" },
         { id: 5, english: "I am okay", igbo: "A dị m mma", audioPath: "adi.mp3" },
         { id: 6, english: "What is your name?", igbo: "Gịnị bụ aha gị?", audioPath: "gin.mp3" },
-        { id: 7, english: "My name is", igbo: "Aha m bụ", audioPath: "aha.mp3" },
+        { id: 7, english: "My name is", igbo: "Aha m bụ", audioPath: "ana.mp3" },
         { id: 8, english: "Where are you from?", igbo: "Kedu ebe isi?", audioPath: "ked.mp3" },
         { id: 9, english: "I'm from Bauchi", igbo: "Esi m", audioPath: "esi.mp3" },
         { id: 10, english: "Pleased to meet you", igbo: "Obi dị m ụtọ izute gị", audioPath: "obi.mp3" },
@@ -366,16 +366,16 @@ await db.insert(schema.igcommonExp).values([
 await db.insert(schema.yrcommonExp).values([
         { id: 1, english: "Welcome", yoruba: "Kaabọ", audioPath: "kab.mp3" },
         { id: 2, english: "Hello", yoruba: "Ẹ n lẹ", audioPath: "ele.mp3" },
-        { id: 3, english: "What’s happening", yoruba: "Kí ni ń ṣẹlẹ̀?", audioPath: "kin.mp3" },
+        { id: 3, english: "What’s happening", yoruba: "Kí ni ń ṣẹlẹ̀?", audioPath: "kil.mp3" },
         { id: 4, english: "How are you", yoruba: "Báwo ni?", audioPath: "baw.mp3" },
-        { id: 5, english: "I am okay", yoruba: "Mo wà dáadáa", audioPath: "mow.mp3" },
-        { id: 6, english: "What’s your name?", yoruba: "Kí ni orúkọ rẹ?", audioPath: "kir.mp3" },
+        { id: 5, english: "I am okay", yoruba: "Mo wà pa", audioPath: "mow.mp3" },
+        { id: 6, english: "What’s your name?", yoruba: "Kí ni orúkọ rẹ?", audioPath: "kilo.mp3" },
         { id: 7, english: "My name is", yoruba: "Orúkọ mi ni", audioPath: "oru.mp3" },
         { id: 8, english: "Where are you from?", yoruba: "Níbo ni o ti wá?", audioPath: "nib.mp3" },
-        { id: 9, english: "I’m From", yoruba: "Mo wá láti", audioPath: "mow.mp3" },
+        { id: 9, english: "I’m From", yoruba: "Mo wá láti", audioPath: "mowa.mp3" },
         { id: 10, english: "Pleased to meet you", yoruba: "Inú mi dùn láti mọ ẹ", audioPath: "inu.mp3" },
-        { id: 11, english: "Good morning", yoruba: "Ẹ kú àárọ̀", audioPath: "kar.mp3" },
-        { id: 12, english: "Good Afternoon", yoruba: "Ẹ kú ọ̀sán", audioPath: "kas.mp3" },
+        { id: 11, english: "Good morning", yoruba: "Ẹ kárọ̀", audioPath: "kar.mp3" },
+        { id: 12, english: "Good Afternoon", yoruba: "Ẹ kaasán", audioPath: "kas.mp3" },
         { id: 13, english: "Good Evening", yoruba: "Ẹ kú irọ̀lẹ́", audioPath: "kal.mp3" },      
 ]);
               
@@ -384,7 +384,7 @@ await db.insert(schema.pronouns).values([
         { id: 2, english: "He", hausa: "Shi", audioPath: "shi.mp3" },
         { id: 3, english: "We", hausa: "Mu", audioPath: "mu.mp3" },
         { id: 4, english: "Me", hausa: "Ni", audioPath: "ni.mp3" },
-        { id: 5, english: "I", hausa: "Ni", audioPath: "ni.mp3" },     
+        { id: 5, english: "I", hausa: "Ni", audioPath: "ni.mp3" },         
 ]);
 
 await db.insert(schema.yrpronouns).values([
@@ -402,13 +402,13 @@ await db.insert(schema.igpronouns).values([
                 id: 1,
                 english: "Me, my, I, mine, I'm",
                 igbo: "M, mụ",
-                audioPath: "m_mu.mp3", // Replace with the actual audio file path
+                audioPath: "m,m.mp3", // Replace with the actual audio file path
               },
               {
                 id: 2,
                 english: "You",
                 igbo: "Gị, I, Ị",
-                audioPath: "gi.mp3", // Replace with the actual audio file path
+                audioPath: "gi,i.mp3", // Replace with the actual audio file path
               },
               {
                 id: 3,
@@ -434,6 +434,7 @@ await db.insert(schema.igpronouns).values([
                 igbo: "O/Ọ",
                 audioPath: "o.mp3", // Replace with the actual audio file path
               },
+              
 ]);
               
 
