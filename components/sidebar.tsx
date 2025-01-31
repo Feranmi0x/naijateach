@@ -40,6 +40,7 @@ export const Sidebar = ({ className, onClose }: Props) => {
         <SideBarItem label="Contact" iconSrc="/co.png" href="/contact" onClick={onClose} />
         <SideBarItem label="Resources" iconSrc="/rs.png" href="/resource" onClick={onClose} />
         <SideBarItem label="Dictionary" iconSrc="/dc.png" href="/dictionary" onClick={onClose} />
+        <SideBarItem label="Archive" iconSrc="/arc.png" href="/archive" onClick={onClose} />
       </div>
       <div className="pb-8 pl-8">
         <ClerkLoading>

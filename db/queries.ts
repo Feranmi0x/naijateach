@@ -1,27 +1,33 @@
 import { cache } from "react";
 import db from "./drizzle";
 import { 
+  body,
     challengeProgress,
     challenges,
     commonExp,
     courses, 
     genders, 
+    igbody, 
     igcommonExp, 
     iggenders, 
     ignumbers, 
     igpronouns, 
+    igrelatives, 
     igslangs, 
     lessons, 
     numbers, 
     pronouns, 
+    relatives, 
     slangs, 
     units, 
     userProgress, 
     userSubscription,
+    yrbody,
     yrcommonExp,
     yrgenders,
     yrnumbers,
     yrpronouns,
+    yrrelatives,
     yrslangs} from "@/db/schema";
 import { eq } from "drizzle-orm";
 import { auth } from "@clerk/nextjs/server";
@@ -124,6 +130,12 @@ export const getSlangs = async () => {
 export const getCommonExp = async () => {
   return await db.select().from(commonExp); 
 };
+export const getRelatives = async () => {
+  return await db.select().from(relatives); 
+};
+export const getBody = async () => {
+  return await db.select().from(body); 
+};
 
 export const yrgetNumbers = async () => {
   return await db.select().from(yrnumbers);
@@ -144,6 +156,13 @@ export const yrgetSlangs = async () => {
 export const yrgetcommonExp = async () => {
   return await db.select().from(yrcommonExp); 
 };
+export const yrgetRelatives = async () => {
+  return await db.select().from(yrrelatives); 
+};
+
+export const yrgetBody = async () => {
+  return await db.select().from(yrbody); 
+};
 
 export const iggetNumbers = async () => {
   return await db.select().from(ignumbers);
@@ -162,6 +181,13 @@ export const iggetSlangs = async () => {
 
 export const iggetcommonExp = async () => {
   return await db.select().from(igcommonExp); 
+};
+export const iggetRelatives = async () => {
+  return await db.select().from(igrelatives); 
+};
+
+export const iggetBody = async () => {
+  return await db.select().from(igbody); 
 };
 
 export const getCourses = cache(async () => {

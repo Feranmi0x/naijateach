@@ -19,7 +19,7 @@ const Page = () => {
     if (word.trim() === "") return; // Avoid fetching if no word is entered
     
     const sanitizedWord = word.trim().toLowerCase();
-    const response = await fetch(`http://localhost:3000/api/pidgin/${sanitizedWord}`);
+    const response = await fetch(`https://naijateach.vercel.app/api/pidgin/${sanitizedWord}`);
     const data = await response.json();
 
     if (response.ok) {

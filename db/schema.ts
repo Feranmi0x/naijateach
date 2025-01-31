@@ -35,6 +35,19 @@ export const slangs = pgTable("slangs", {
    hausa: text("hausa").notNull(),
    audioPath: text("audio_path").notNull(), // File path to the audio file
  });
+export const relatives = pgTable("relatives", {
+   id: serial("id").primaryKey(),
+   english: text("english").notNull(),
+   hausa: text("hausa").notNull(),
+   audioPath: text("audio_path").notNull(), // File path to the audio file
+ });
+ 
+ export const body = pgTable("body", {
+   id: serial("id").primaryKey(),
+   english: text("english").notNull(),
+   hausa: text("hausa").notNull(),
+   audioPath: text("audio_path").notNull(), // File path to the audio file
+ });
 
 export const iggenders = pgTable("iggenders", {
   id: serial("id").primaryKey(),
@@ -71,6 +84,20 @@ export const igcommonExp = pgTable("igcommonExp", {
   audioPath: text("audio_path").notNull(), // File path to the audio file
 });
 
+export const igrelatives = pgTable("igrelatives", {
+  id: serial("id").primaryKey(),
+  english: text("english").notNull(),
+  igbo: text("igbo").notNull(),
+  audioPath: text("audio_path").notNull(), // File path to the audio file
+});
+
+export const igbody = pgTable("igbody", {
+  id: serial("id").primaryKey(),
+  english: text("english").notNull(),
+  igbo: text("igbo").notNull(),
+  audioPath: text("audio_path").notNull(), // File path to the audio file
+});
+
 export const yrgenders = pgTable("yrgenders", {
   id: serial("id").primaryKey(),
   english: text("english").notNull(),
@@ -100,6 +127,19 @@ export const yrslangs = pgTable("yrslangs", {
 });
 
 export const yrcommonExp = pgTable("yrcommonExp", {
+  id: serial("id").primaryKey(),
+  english: text("english").notNull(),
+  yoruba: text("yoruba").notNull(),
+  audioPath: text("audio_path").notNull(), // File path to the audio file
+});
+export const yrrelatives = pgTable("yrrelatives", {
+  id: serial("id").primaryKey(),
+  english: text("english").notNull(),
+  yoruba: text("yoruba").notNull(),
+  audioPath: text("audio_path").notNull(), // File path to the audio file
+});
+
+export const yrbody = pgTable("yrbody", {
   id: serial("id").primaryKey(),
   english: text("english").notNull(),
   yoruba: text("yoruba").notNull(),
