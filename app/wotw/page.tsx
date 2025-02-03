@@ -39,6 +39,7 @@ const WordOfTheWeek = () => {
       ) : (
         <p>Loading...</p>
       )}
+      
     </div>
   );
 };

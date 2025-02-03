@@ -1,58 +1,74 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
+import React from 'react';
+
+import { FeedWrapper } from '@/components/feedwrapper';
+import WordOfTheWeek from '@/app/wotw/page';
+import GMStreakButton from '@/app/gmstreak/page';
+import TestimonialSlider from '@/app/testi/page';
+import { StickyWrapper } from '@/components/stickywrapper';
+
 
 const Archive = () => {
-  // State for the word of the week data
-  const [words, setWords] = useState<
-    {
-      language: string;
-      word: string;
-      meaning: string;
-      author: string;
-      source: string;
-    }[]
-  >([]);
-  const bgColors = ["bg-yelloww", "bg-logo", "bg-bluee", "bg-purple-500"]
-  // Fetch word of the week data (simulated for now)
-  useEffect(() => {
-    const fetchedData = [
-      {
-        language: "Yoruba",
-        word: "Kele",
-        meaning: "Babe",
-        author: "Wizkid",
-        source: "Twitter",
-      },
-      {
-        language: "Hausa",
-        word: "Matan Arewa",
-        meaning: "Northern ladies",
-        author: "Ali Nuhu",
-        source: "Facebook",
-      },
-      {
-        language: "Igbo",
-        word: "Nwanyi oma",
-        meaning: "Beautiful lady",
-        author: "Flavour",
-        source: "Instagram",
-      },
-      {
-        language: "Pidgin",
-        word: "Chop life",
-        meaning: "Enjoy life",
-        author: "Burna Boy",
-        source: "YouTube",
-      },
-    ];
 
-    setWords(fetchedData);
-  }, []);
+  const [words, setWords] = useState<
+  {
+    language: string;
+    word: string;
+    meaning: string;
+    author: string;
+    source: string;
+  }[]
+>([]);
+const bgColors = ["bg-yelloww", "bg-logo", "bg-bluee", "bg-purple-500"]
+// Fetch word of the week data (simulated for now)
+useEffect(() => {
+  const fetchedData = [
+    {
+      language: "Yoruba",
+      word: "Kele",
+      meaning: "Babe",
+      author: "Wizkid",
+      source: "Twitter",
+    },
+    {
+      language: "Hausa",
+      word: "Matan Arewa",
+      meaning: "Northern ladies",
+      author: "Ali Nuhu",
+      source: "Facebook",
+    },
+    {
+      language: "Igbo",
+      word: "Nwanyi oma",
+      meaning: "Beautiful lady",
+      author: "Flavour",
+      source: "Instagram",
+    },
+    {
+      language: "Pidgin",
+      word: "Chop life",
+      meaning: "Enjoy life",
+      author: "Burna Boy",
+      source: "YouTube",
+    },
+  ];
+
+  setWords(fetchedData);
+}, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4">
+    <div className="flex flex-row-reverse gap-[48px] px-6">
+      <StickyWrapper>
+        <WordOfTheWeek />
+        <GMStreakButton />
+        <TestimonialSlider />
+      </StickyWrapper>
+      <FeedWrapper>
+      <div className="flex flex-col items-center justify-center min-h-screen px-4">
       {/* Shop Section */}
       <Image src="/ac.png" alt="Shop" height={80} width={80} className="mx-auto" />
       <h1 className="text-center font-bold text-neutral-800 text-2xl mb-6">
@@ -63,7 +79,7 @@ const Archive = () => {
       </p>
 
       {/* Words Section */}
-      <div className="flex flex-col items-center justify-center w-full md:w-3/4 lg:grid lg:grid-cols-2 lg:gap-6">
+      <div className="flex flex-col items-center justify-center w-full md:w-3/4 lg:gap-2">
         {words.length > 0 ? (
           words.map((wordData, index) => (
             <div
@@ -87,6 +103,17 @@ const Archive = () => {
           <p>Loading...</p>
         )}
       </div>
+      <p className="text-gray-700 lg:text-xl text-lg font-extrabold underline lg:mt-[40px]">Continue with previous Word of the Week.</p>
+      <div className="mt-[20px]">
+      <Link href="feb">
+       <div className='bg-white p-[8px] pl-6 rounded-lg border-[1px] border-b-[5px] border-gray-300 hover:bg-gray-100 mb-3 min-w-[380px]'>
+        <div className='text-sm text-green-500'>Febuary 2025</div>
+        <div className='text-base font-bold'>Archive</div>
+       </div> 
+      </Link>
+      </div>
+    </div>
+      </FeedWrapper>
     </div>
   );
 };
