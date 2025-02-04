@@ -104,10 +104,10 @@ useEffect(() => {
         )}
       </div>
       <p className="text-gray-700 lg:text-xl text-lg font-extrabold underline lg:mt-[40px]">Continue with previous Word of the Week.</p>
-      <div className="mt-[20px]">
+      <div className="mt-[20px] w-full max-w-[380px]">
       <Link href="feb">
-       <div className='bg-white p-[8px] pl-6 rounded-lg border-[1px] border-b-[5px] border-gray-300 hover:bg-gray-100 mb-3 min-w-[380px]'>
-        <div className='text-sm text-green-500'>Febuary 2025</div>
+       <div className='bg-white p-[8px] pl-6 rounded-lg border-[1px] border-b-[5px] border-gray-300 hover:bg-gray-100 mb-3'>
+        <div className='text-sm text-green-500'>February 2025</div>
         <div className='text-base font-bold'>Archive</div>
        </div> 
       </Link>
