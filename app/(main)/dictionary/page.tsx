@@ -53,9 +53,9 @@ const Page = () => {
       </button>
       <DictionaryNavigator />
       {/* Conditionally render Heading and Content */}
-      {results && <Heading result={results.word} audioUrl={`/${results.audio}`} />}
+      {results && <Heading result={results.both} audioUrl={`/${results.audio}`} />}
       {results && <Content result={results.meaning} />}
-      {results && <Synonyms result={results.synonyms} />}
+      {results?.synonyms?.length > 0 && <Synonyms result={results.synonyms} />}
 
       {/* Handle case where no results are found */}
       {results === null && word && (

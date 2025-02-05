@@ -25,7 +25,7 @@ const Heading = ({ result, audioUrl }: Props) => {
         >
           <Volume2 className="text-white" />
         </button>
-        <h3 className="font-bold text-2xl">{result}</h3>
+        <h3 className="font-extrabold text-lg">{result}</h3>
       </div>
       <div className="h-[2px] bg-gray-200 w-full"></div>
       {/* Hidden audio element for playing sound */}

@@ -15,7 +15,7 @@ console.log("Seeding dictionary");
 await db.delete(schema.IgboDictionary);
 
 await db.insert(schema.IgboDictionary).values([
-        { id: 1, word: "greed", both: "Akpiri: greed", meaning: "akpiri", synonyms:"", homonyms:"", audio: "akpi.mp3" },
+        { id: 1, word: "greed", both: "Akpiri: greed", meaning: "akpiri", synonyms:null, homonyms:null, audio: "akpi.mp3" },
 ]);
 
 console.log ("Seeding dictionary finished");

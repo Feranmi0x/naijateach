@@ -149,7 +149,7 @@ export const yrbody = pgTable("yrbody", {
 export const YorubaDictionary = pgTable('Yoruba_Dictionary', {
   id: serial('id').primaryKey(),
   word: text('word').notNull(),
-  both: text('word').notNull(),
+  both: text('both').notNull(),
   meaning: text('meaning').notNull(),
   synonyms: text('synonyms'),
   homonyms: text('homonyms'),
@@ -159,7 +159,7 @@ export const YorubaDictionary = pgTable('Yoruba_Dictionary', {
 export const IgboDictionary = pgTable('Igbo_Dictionary', {
   id: serial('id').primaryKey(),
   word: text('word').notNull(),
-  both: text('word').notNull(),
+  both: text('both').notNull(),
   meaning: text('meaning').notNull(),
   synonyms: text('synonyms'),
   homonyms: text('homonyms'),
@@ -169,7 +169,7 @@ export const IgboDictionary = pgTable('Igbo_Dictionary', {
 export const HausaDictionary = pgTable('Hausa_Dictionary', {
   id: serial('id').primaryKey(),
   word: text('word').notNull(),
-  both: text('word').notNull(),
+  both: text('both').notNull(),
   meaning: text('meaning').notNull(),
   synonyms: text('synonyms'),
   homonyms: text('homonyms'),
@@ -179,7 +179,7 @@ export const HausaDictionary = pgTable('Hausa_Dictionary', {
 export const PidginDictionary = pgTable('Pidgin_Dictionary', {
   id: serial('id').primaryKey(),
   word: text('word').notNull(),
-  both: text('word').notNull(),
+  both: text('both').notNull(),
   meaning: text('meaning').notNull(),
   synonyms: text('synonyms'),
   homonyms: text('homonyms'),
