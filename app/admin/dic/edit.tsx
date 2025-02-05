@@ -12,6 +12,10 @@ return (
     validate={[required()]} 
     label="word"/>
     <TextInput 
+        source="both" 
+        validate={[required()]} 
+        label="word"/>
+    <TextInput 
     source="meaning" 
     validate={[required()]} 
     label="meaning"/>

@@ -10,7 +10,7 @@ type Props = {
 };
 
 const playAudio = (audioPath: string): void => {
-  const audio = new Audio(`ig-slang/${audioPath}`);
+  const audio = new Audio(`ig-relatives/${audioPath}`);
   audio.play();
 };
 

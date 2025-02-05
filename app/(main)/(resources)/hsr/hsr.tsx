@@ -10,7 +10,7 @@ type Props = {
 };
 
 const playAudio = (audioPath: string): void => {
-  const audio = new Audio(`/hs-slang/${audioPath}`);
+  const audio = new Audio(`/hs-relatives/${audioPath}`);
   audio.play();
 };
 

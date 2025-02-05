@@ -6,6 +6,7 @@ return (
 <Datagrid rowClick="edit">
 <TextField source="id" />
 <TextField source="word" />
+<TextField source="both" />
 <TextField source="meaning" />
 <TextField source="synonyms" />
 <TextField source="homonyms" />

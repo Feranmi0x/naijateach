@@ -11,7 +11,7 @@ type Props = {
 
 export const YorubaRelatives = ({ relatives }: Props) => {
   const playAudio = (audioPath: string): void => {
-    const audio = new Audio(`/yr-slang/${audioPath}`);
+    const audio = new Audio(`/yr-relatives/${audioPath}`);
     audio.play();
   };
 
