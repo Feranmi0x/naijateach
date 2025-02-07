@@ -518,6 +518,7 @@ await db.insert(schema.igrelatives).values([
         { id: 24, english: "Child", igbo: "Nwa", audioPath: "nwa15.mp3" },  
         { id: 25, english: "In-law", igbo: "Ọgo", audioPath: "ogo.mp3" }          
 ]);
+
 await db.insert(schema.yrrelatives).values([
         { id: 1, english: "Father", yoruba: "Bàbá", audioPath: "babN.mp3" },  
         { id: 2, english: "Mother", yoruba: "Ìyá", audioPath: "iyaN.mp3" },  
@@ -549,6 +550,42 @@ await db.insert(schema.yrrelatives).values([
         { id: 28, english: "Son-in-law", yoruba: "Òkò ọmọ", audioPath: "oko2.mp3" },  
         { id: 29, english: "Daughter-in-law", yoruba: "Ìyàwó ọmọ", audioPath: "iya4.mp3" }  
            
+]);
+
+await db.insert(schema.relatives).values([
+                { id: 1, english: "Father", hausa: "Uba", audioPath: "uba.mp3" },
+                { id: 2, english: "Mother", hausa: "Uwa", audioPath: "uwa.mp3" },
+                { id: 3, english: "Brother", hausa: "Dan’uwa na miji", audioPath: "dan.mp3" },
+                { id: 4, english: "Sister", hausa: "Yar’uwa ta mace", audioPath: "yar.mp3" },
+                { id: 5, english: "Son", hausa: "Da", audioPath: "da.mp3" },
+                { id: 6, english: "Daughter", hausa: "Diya mace", audioPath: "diy.mp3" },
+                { id: 7, english: "First daughter", hausa: "Diya mace ta farko", audioPath: "diy2.mp3" },
+                { id: 8, english: "Second daughter", hausa: "Diya mace ta biyi", audioPath: "diy3.mp3" },
+                { id: 9, english: "First son", hausa: "Dan fari", audioPath: "dan.mp3" },
+                { id: 10, english: "Last son", hausa: "Dan karshe", audioPath: "dan2.mp3" },
+                { id: 11, english: "Twins", hausa: "Yan biyu", audioPath: "yan.mp3" },
+                { id: 12, english: "Senior sibling", hausa: "Wa na miji, Ya ta mace", audioPath: "wan.mp3" },
+                { id: 13, english: "Junior sibling", hausa: "Kane na miji, Kanwa ta mace", audioPath: "kan.mp3" },
+                { id: 14, english: "Grandfather", hausa: "Kaka", audioPath: "kak.mp3" },
+                { id: 15, english: "Grandmother", hausa: "Kaka", audioPath: "kak2.mp3" },
+                { id: 16, english: "Grandchild", hausa: "Jika", audioPath: "jik.mp3" },
+                { id: 17, english: "Uncle", hausa: "Kawa", audioPath: "kaw.mp3" },
+                { id: 18, english: "Aunt", hausa: "Inna", audioPath: "inn.mp3" },
+                { id: 19, english: "Nephew", hausa: "Dan wa, Dan kani, Dan kanwa", audioPath: "dan3.mp3" },
+                { id: 20, english: "Niece", hausa: "Dan kawa", audioPath: "dan4.mp3" },
+                { id: 21, english: "Cousin", hausa: "Dan Uwa", audioPath: "dan5.mp3" },
+                { id: 22, english: "Husband", hausa: "Mai gida", audioPath: "mai.mp3" },
+                { id: 23, english: "Wife", hausa: "Uwar gida", audioPath: "uwa.mp3" },
+                { id: 24, english: "Father in law", hausa: "Suruki", audioPath: "sur.mp3" },
+                { id: 25, english: "Mother in law", hausa: "Suruka", audioPath: "sur1.mp3" },
+                { id: 26, english: "Brother in law", hausa: "Suruki", audioPath: "sur2.mp3" },
+                { id: 27, english: "Sister in law", hausa: "Suruka", audioPath: "sur3.mp3" },
+                { id: 28, english: "Son in law", hausa: "Suruki", audioPath: "sur4.mp3" },
+                { id: 29, english: "Daughter in law", hausa: "Suruka", audioPath: "sur5.mp3" },
+                { id: 30, english: "Step child", hausa: "Agola", audioPath: "ago.mp3" },
+                { id: 31, english: "Bride", hausa: "Amarya", audioPath: "ama.mp3" },
+                { id: 32, english: "Groom", hausa: "Ango", audioPath: "ang.mp3" },
+                { id: 33, english: "Great grand child", hausa: "Tattaba kunne", audioPath: "tat.mp3" }    
 ]);
 
 await db.insert(schema.commonExp).values([

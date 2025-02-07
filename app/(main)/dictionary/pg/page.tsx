@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useState } from 'react'
@@ -37,7 +36,7 @@ const Page = () => {
     <div className="container mx-auto px-10">
       <nav className="my-2 h-14 flex flex-row items-center">
         <h2 className="text-yelloww font-bold text-2xl">
-         Pidgin Dictionary
+          Pidgin Dictionary
         </h2>
       </nav>
       <input
@@ -55,7 +54,7 @@ const Page = () => {
       </button>
       <DictionaryNavigator />
       {/* Conditionally render Heading and Content */}
-      {results && results.audio && <Heading result={results.both} audioUrl={`/${results.audio}`}/>}
+      {results && results.audio && <Heading result={results.both} audioUrl={`/pidgin-dictionary/${results.audio}`}/>}
       {results && <Content result={results.meaning} />}
       {results?.synonyms?.length > 0 && <Synonyms result={results.synonyms} />}
 

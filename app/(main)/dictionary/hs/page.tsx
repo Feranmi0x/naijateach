@@ -11,7 +11,6 @@ import DictionaryNavigator from '@/app/redirect/page';
 
 const Page = () => {
   const [word, setWord] = useState("");
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [results, setResults] = useState<any>(null); // Type state for results
   
 
@@ -55,7 +54,7 @@ const Page = () => {
       </button>
       <DictionaryNavigator />
       {/* Conditionally render Heading and Content */}
-      {results && results.audio && <Heading result={results.both} audioUrl={`/${results.audio}`}/>}
+      {results && results.audio && <Heading result={results.both} audioUrl={`/hausa-dictionary/${results.audio}`}/>}
       {results && <Content result={results.meaning} />}
       {results?.synonyms?.length > 0 && <Synonyms result={results.synonyms} />}
 
