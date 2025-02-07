@@ -31,6 +31,7 @@ const Page = () => {
 
   console.log(results);
 
+
   return (
     <div className="container mx-auto px-10">
       <nav className="my-2 h-14 flex flex-row items-center">
@@ -53,7 +54,7 @@ const Page = () => {
       </button>
       <DictionaryNavigator />
       {/* Conditionally render Heading and Content */}
-      {results && <Heading result={results.both} audioUrl={`/${results.audio}`} />}
+      {results && results.audio && <Heading result={results.both} audioUrl={`/yoruba-dictionary/${results.audio}`}/>}
       {results && <Content result={results.meaning} />}
       {results?.synonyms?.length > 0 && <Synonyms result={results.synonyms} />}
 

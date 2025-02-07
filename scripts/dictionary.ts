@@ -13,6 +13,8 @@ try {
 console.log("Seeding dictionary");
 
 await db.delete(schema.IgboDictionary);
+await db.delete(schema.YorubaDictionary);
+await db.delete(schema.HausaDictionary);
 
 await db.insert(schema.IgboDictionary).values([
                 { id: 1, word: "greed", both: "Akpiri: greed", meaning: "akpiri", synonyms: null, homonyms: null, audio: "akpi.mp3" },
@@ -27,7 +29,7 @@ await db.insert(schema.IgboDictionary).values([
                 { id: 10, word: "blood", both: "Obara: blood", meaning: "obara", synonyms: null, homonyms: null, audio: "obar.mp3" },
                 { id: 11, word: "write", both: "Dee: write", meaning: "dee", synonyms: null, homonyms: null, audio: "dee.mp3" },
                 { id: 12, word: "weep", both: "Bee: weep", meaning: "bee", synonyms: null, homonyms: null, audio: "bee.mp3" },
-                { id: 13, word: "weeping", both: "Bee akwa: weeping", meaning: "bee akwa", synonyms: null, homonyms: null, audio: "bee2.mp3" },
+                { id: 13, word: "weeping", both: "Bee akwa: weeping", meaning: "bee akwa", synonyms: null, homonyms: null, audio: "beea.mp3" },
                 { id: 14, word: "weak", both: "Da amba: weak", meaning: "da amba", synonyms: null, homonyms: null, audio: "daam.mp3" },
                 { id: 15, word: "knife", both: "Mma: knife", meaning: "mma", synonyms: null, homonyms: null, audio: "mma.mp3" },
                 { id: 16, word: "wash clothes", both: "Suo akwa: wash clothes", meaning: "suo akwa", synonyms: null, homonyms: null, audio: "suoa.mp3" },
@@ -35,7 +37,7 @@ await db.insert(schema.IgboDictionary).values([
                 { id: 18, word: "wait for", both: "Cere: wait for", meaning: "cere", synonyms: null, homonyms: null, audio: "cere.mp3" },
                 { id: 19, word: "vomit", both: "Gbuo agboo: vomit", meaning: "gbuo agboo", synonyms: null, homonyms: null, audio: "gbuo.mp3" },
                 { id: 20, word: "visitor", both: "Obia: visitor", meaning: "obia", synonyms: null, homonyms: null, audio: "obia.mp3" },
-                { id: 21, word: "urine", both: "Mma mili: urine", meaning: "mma mili", synonyms: null, homonyms: null, audio: "mma2.mp3" },
+                { id: 21, word: "urine", both: "Mma mili: urine", meaning: "mma mili", synonyms: null, homonyms: null, audio: "mmam.mp3" },
                 { id: 22, word: "urinate", both: "Nyuo mmamiri: urinate", meaning: "nyuo mmamiri", synonyms: null, homonyms: null, audio: "nyuo.mp3" },
                 { id: 23, word: "usefulness", both: "Uru: usefulness", meaning: "uru", synonyms: null, homonyms: null, audio: "uru.mp3" },
                 { id: 24, word: "underneath/underside", both: "Okpuru: underneath/underside", meaning: "okpuru", synonyms: null, homonyms: null, audio: "okpu.mp3" },
@@ -54,8 +56,18 @@ await db.insert(schema.IgboDictionary).values([
                 { id: 37, word: "afraid", both: "Tuo egwu: afraid", meaning: "tuo egwu", synonyms: null, homonyms: null, audio: "tuoe.mp3" },
                 { id: 38, word: "advice", both: "Ndumodu: advice", meaning: "ndumodu", synonyms: null, homonyms: null, audio: "ndum.mp3" },
                 { id: 39, word: "admit", both: "Kwere: admit", meaning: "kwere", synonyms: null, homonyms: null, audio: "kwer.mp3" },
-                { id: 40, word: "above", both: "N’elu: above", meaning: "n’elu", synonyms: null, homonyms: null, audio: "nelu.mp3" }
-              
+                { id: 40, word: "above", both: "N’elu: above", meaning: "n’elu", synonyms: null, homonyms: null, audio: "nelu.mp3" },
+                { id: 41, word: "dry", both: "Kpoo: dry", meaning: "kpoo", synonyms: null, homonyms: null, audio: "kpoo.mp3" },
+                { id: 42, word: "dust-off", both: "Hicaa: dust-off", meaning: "hicaa", synonyms: null, homonyms: null, audio: "hica.mp3" },
+                { id: 43, word: "early", both: "Maa uzo: early", meaning: "maa uzo", synonyms: null, homonyms: null, audio: "mauz.mp3" },
+                { id: 44, word: "errand", both: "Ozi: errand", meaning: "ozi", synonyms: null, homonyms: null, audio: "ozi.mp3" },
+                { id: 45, word: "end", both: "Ikpe azu: end", meaning: "ikpe azu", synonyms: null, homonyms: null, audio: "ikpe.mp3" },
+                { id: 46, word: "evil", both: "Ajo, Ihe ojoo: evil", meaning: "ajo, ihe ojoo", synonyms: null, homonyms: null, audio: "ajo.mp3" },
+                { id: 47, word: "exceed", both: "Karia: exceed", meaning: "karia", synonyms: null, homonyms: null, audio: "kari.mp3" },
+                { id: 48, word: "except", both: "Ewezuga: except", meaning: "ewezuga", synonyms: null, homonyms: null, audio: "ewez.mp3" },
+                { id: 49, word: "get-ready", both: "Jikere: get-ready", meaning: "jikere", synonyms: null, homonyms: null, audio: "jike.mp3" },
+                { id: 50, word: "gospel", both: "Ozioma: gospel", meaning: "ozioma", synonyms: null, homonyms: null, audio: "ozio.mp3" }
+                                      
 ]);
 
 await db.insert(schema.HausaDictionary).values([
@@ -71,7 +83,7 @@ await db.insert(schema.HausaDictionary).values([
         { id: 10, word: "blood", both: "Jini: blood", meaning: "jini", audio: "jini.mp3" },
         { id: 11, word: "write", both: "Rubuta: write", meaning: "rubuta", audio: "rubu.mp3" },
         { id: 12, word: "weep", both: "Kuka: weep", meaning: "kuka", audio: "kuka.mp3" },
-        { id: 13, word: "weeping", both: "Kuka: weeping", meaning: "kuka", audio: "kuka.mp3" },
+        { id: 13, word: "weeping", both: "Kuka: weeping", meaning: "kuka", audio: "kuka2.mp3" },
         { id: 14, word: "weak", both: "Kasala: weak", meaning: "kasala", audio: "kasa.mp3" },
         { id: 15, word: "knife", both: "Wuka: knife", meaning: "wuka", audio: "wuka.mp3" },
         { id: 16, word: "wash cloth", both: "Wake kaya: wash cloth", meaning: "wake kaya", audio: "wake.mp3" },
@@ -88,7 +100,7 @@ await db.insert(schema.HausaDictionary).values([
         { id: 27, word: "truth", both: "Gaskiyar: truth", meaning: "gaskiyar", audio: "gask.mp3" },
         { id: 28, word: "thief", both: "Barawo: thief", meaning: "barawo", audio: "bara.mp3" },
         { id: 29, word: "tear", both: "Yaga: tear", meaning: "yaga", audio: "yaga.mp3" },
-        { id: 30, word: "cry", both: "Kuka: cry", meaning: "kuka", audio: "kuka.mp3" },
+        { id: 30, word: "cry", both: "Kuka: cry", meaning: "kuka", audio: "kuka3.mp3" },
         { id: 31, word: "congratulations", both: "Yaya murna: congratulations", meaning: "yaya murna", audio: "yaya.mp3" },
         { id: 32, word: "complete", both: "Gama: complete", meaning: "gama", audio: "gama.mp3" },
         { id: 33, word: "conceive", both: "Dau ciki: conceive", meaning: "dau ciki", audio: "dauc.mp3" },
@@ -114,20 +126,20 @@ await db.insert(schema.HausaDictionary).values([
 ]);
 
 await db.insert(schema.YorubaDictionary).values([
-        { id: 1, word: "greed", both: "Ojukokoro: greed", meaning: "ojukokoro", audio: "ojuk.mp3" },
+        { id: 51, word: "greed", both: "Ojukokoro: greed", meaning: "ojukokoro", audio: "ojuk.mp3" },
         { id: 2, word: "bring", both: "Mú wá: bring", meaning: "mú wá", audio: "muwa.mp3" },
         { id: 3, word: "find", both: "Wá: find", meaning: "wá", audio: "wa.mp3" },
         { id: 4, word: "wound", both: "Ipalara: wound", meaning: "ipalara", audio: "ipal.mp3" },
         { id: 5, word: "suffer", both: "Jìyà: suffer", meaning: "jìyà", audio: "jiya.mp3" },
         { id: 6, word: "word", both: "Ọ̀rọ̀: word", meaning: "ọ̀rọ̀", audio: "oro.mp3" },
-        { id: 7, word: "university", both: "Yunifásítì: university", meaning: "yunifásítì", audio: "yunif.mp3" },
+        { id: 7, word: "university", both: "Yunifásítì: university", meaning: "yunifásítì", audio: "yuni.mp3" },
         { id: 8, word: "hero", both: "Akikanjú: hero", meaning: "akikanjú", audio: "akik.mp3" },
         { id: 9, word: "heroine", both: "Obìnrin akikanjú: heroine", meaning: "obìnrin akikanjú", audio: "obin.mp3" },
         { id: 10, word: "blood", both: "Ẹ̀jẹ̀: blood", meaning: "ẹ̀jẹ̀", audio: "eje.mp3" },
         { id: 11, word: "write", both: "Kọ: write", meaning: "kọ", audio: "ko.mp3" },
         { id: 12, word: "weep", both: "Sunkún: weep", meaning: "sunkún", audio: "sunk.mp3" },
         { id: 13, word: "weeping", both: "Ìsunkún: weeping", meaning: "ìsunkún", audio: "isun.mp3" },
-        { id: 14, word: "weak", both: "Aláìlàgbára: weak", meaning: "aláìlàgbára", audio: "alail.mp3" },
+        { id: 14, word: "weak", both: "Aláìlàgbára: weak", meaning: "aláìlàgbára", audio: "alai.mp3" },
         { id: 15, word: "knife", both: "Òbẹ̀: knife", meaning: "òbẹ̀", audio: "obe.mp3" },
         { id: 16, word: "wash clothes", both: "Fọ aṣọ: wash clothes", meaning: "fọ aṣọ", audio: "foas.mp3" },
         { id: 17, word: "wake up", both: "Jí: wake up", meaning: "jí", audio: "ji.mp3" },
