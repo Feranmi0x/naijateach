@@ -4,6 +4,7 @@ import db from "@/db/drizzle";
 import { isAdmin } from "@/lib/admin";
 import {eq } from "drizzle-orm";
 import { YorubaDictionary } from "@/db/schema";
+import { revalidatePath } from "next/cache";
 
 
 export const GET = async (
@@ -47,6 +48,8 @@ export const DELETE = async (
 
     const data = await db.delete(YorubaDictionary)
     .where(eq(YorubaDictionary.id, params.dictId)).returning()
-
+     
+    revalidatePath("/dictionary");
+    
     return NextResponse.json(data[0]);
     };

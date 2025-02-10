@@ -9,6 +9,7 @@ import DictionaryNavigator from '@/app/redirect/page';
 
 
 
+
 const Page = () => {
   const [word, setWord] = useState("");
   const [results, setResults] = useState<any>(null); // Type state for results
@@ -18,7 +19,7 @@ const Page = () => {
     if (word.trim() === "") return; // Avoid fetching if no word is entered
     
     const sanitizedWord = word.trim().toLowerCase();
-    const response = await fetch(`https://naijateach.vercel.app/api/yoruba/${sanitizedWord}`);
+    const response = await fetch(`https://naijateach.vercel.app/api/yoruba/${sanitizedWord}`, { cache: "no-store"});
     const data = await response.json();
 
     if (response.ok) {

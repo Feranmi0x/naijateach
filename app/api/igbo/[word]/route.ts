@@ -1,33 +1,50 @@
-// app/api/word/[word]/route.ts
+import { NextResponse } from "next/server";
+import { ilike } from "drizzle-orm";
+import db from "@/db/drizzle";
+import { IgboDictionary } from "@/db/schema";
 
- // Adjust the import as per your project structure
-import { NextResponse } from 'next/server';
-import { ilike } from 'drizzle-orm';  // Assuming you are using Drizzle ORM
-import db from '@/db/drizzle';
-import { IgboDictionary } from '@/db/schema';
-
+// ✅ GET: Fetch word
 export async function GET(request: Request, { params }: { params: { word: string } }) {
   const { word } = params;
-
   const sanitizedWord = word.trim().toLowerCase();
 
   try {
-    // Query the database for the word
     const result = await db
       .select()
       .from(IgboDictionary)
-      .where(ilike(IgboDictionary.word, sanitizedWord));  // Use Drizzle ORM's `eq` to match the word
+      .where(ilike(IgboDictionary.word, sanitizedWord));
 
     if (result.length === 0) {
-      // Return a 404 response if the word is not found
-      return NextResponse.json({ message: 'Word not found' }, { status: 404 });
+      return NextResponse.json({ message: "Word not found" }, { status: 404 });
     }
 
-    // Return the result as JSON if the word is found
-    return NextResponse.json(result[0]);
+    return NextResponse.json(result[0], {
+      headers: { "Cache-Control": "no-store, no-cache, must-revalidate" },
+    });
   } catch (error) {
-    // Handle any errors during the query execution
-    console.error('Database query error:', error);
-    return NextResponse.json({ message: 'Internal server error' }, { status: 500 });
+    console.error("Database query error:", error);
+    return NextResponse.json({ message: "Internal server error" }, { status: 500 });
+  }
+}
+
+// ✅ DELETE: Remove word from database
+export async function DELETE(request: Request, { params }: { params: { word: string } }) {
+  const { word } = params;
+  const sanitizedWord = word.trim().toLowerCase();
+
+  try {
+    const deletedWord = await db
+      .delete(IgboDictionary)
+      .where(ilike(IgboDictionary.word, sanitizedWord))
+      .returning();
+
+    if (deletedWord.length === 0) {
+      return NextResponse.json({ message: "Word not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ message: "Word deleted successfully", deletedWord });
+  } catch (error) {
+    console.error("Database deletion error:", error);
+    return NextResponse.json({ message: "Internal server error" }, { status: 500 });
   }
 }

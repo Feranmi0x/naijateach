@@ -23,17 +23,17 @@ import { ChallengeOptionList } from "./challengeOption/list";
 import { ChallengeOptionCreate } from "./challengeOption/create";
 import { ChallengeOptionEdit } from "./challengeOption/edit";
 
-import { DicCreate } from "./dic/create";
-import { DicEdit } from "./dic/edit";
-import { DicList } from "./dic/list";
+import { DicCreate } from "./yr/create";
+import { DicEdit } from "./yr/edit";
+import { DicList } from "./yr/list";
 
-import { IgDicList } from "./igdic/list";
-import { IgDicCreate } from "./igdic/create";
-import { IgDicEdit } from "./igdic/edit";
+import { IgDicList } from "./ig/list";
+import { IgDicCreate } from "./ig/create";
+import { IgDicEdit } from "./ig/edit";
 
-import { HsDicList } from "./hsdic/list";
-import { HsDicCreate } from "./hsdic/create";
-import { HsDicEdit } from "./hsdic/edit";
+import { HsDicList } from "./hs/list";
+import { HsDicCreate } from "./hs/create";
+import { HsDicEdit } from "./hs/edit";
 
 import { PgDicList } from "./pgdic/list";
 import { PgDicCreate } from "./pgdic/create";

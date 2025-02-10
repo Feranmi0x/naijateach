@@ -13,7 +13,7 @@ import { getBody } from '@/db/queries';
 
 const page = async () => {
   // Force Next.js to fetch fresh data
-  revalidatePath("/hsc"); // Replace with the actual route
+  revalidatePath("/hsb"); // Replace with the actual route
 
   // Fetch fresh data without caching
   const body = await getBody(); 
