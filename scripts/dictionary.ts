@@ -122,7 +122,8 @@ await db.insert(schema.HausaDictionary).values([
         { id: 49, word: "exceed", both: "Shige: exceed", meaning: "shige", audio: "shig.mp3" },
         { id: 50, word: "except for", both: "Banda: except for", meaning: "banda", audio: "band.mp3" },
         { id: 51, word: "get ready", both: "Ka shirya: get ready", meaning: "ka shirya", audio: "kash.mp3" },
-        { id: 52, word: "gospel", both: "Bishara, Linjila: gospel", meaning: "bishara, linjila", audio: "bish.mp3" }           
+        { id: 52, word: "gospel", both: "Bishara, Linjila: gospel", meaning: "bishara, linjila", audio: "bish.mp3" },           
+        { id: 53, word: "gospels", both: "Bishara, Linjila: gospel", meaning: "bishara, linjila", audio: "bish.mp3" }           
 ]);
 
 await db.insert(schema.YorubaDictionary).values([
