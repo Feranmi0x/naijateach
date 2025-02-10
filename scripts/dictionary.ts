@@ -126,7 +126,7 @@ await db.insert(schema.HausaDictionary).values([
 ]);
 
 await db.insert(schema.YorubaDictionary).values([
-        { id: 51, word: "greed", both: "Ojukokoro: greed", meaning: "ojukokoro", audio: "ojuk.mp3" },
+        { id: 1, word: "greed", both: "Ojukokoro: greed", meaning: "ojukokoro", audio: "ojuk.mp3" },
         { id: 2, word: "bring", both: "Mú wá: bring", meaning: "mú wá", audio: "muwa.mp3" },
         { id: 3, word: "find", both: "Wá: find", meaning: "wá", audio: "wa.mp3" },
         { id: 4, word: "wound", both: "Ipalara: wound", meaning: "ipalara", audio: "ipal.mp3" },
