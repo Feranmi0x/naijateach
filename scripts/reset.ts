@@ -13,6 +13,8 @@ try {
 console.log("resetting database");
 
 await db.delete(schema.IgboDictionary);
+await db.delete(schema.YorubaDictionary);
+await db.delete(schema.HausaDictionary);
 
 console. log ("Resetting finished");
 } catch (error) {
