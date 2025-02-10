@@ -5,6 +5,7 @@ const allowedIds = [
 "user_2qd7fyp9lLktBkYxt35ObVNDWNe",
 "user_2rdY2hCXLtGFELEzK1Sn8i4EBdh",
 "user_2rUyaRDwkCQtZVl4wt3HJqvHZ7e",
+"user_2rtn9tE0brEhBy978IpP6FLxqkc",
 ];
 
 export const isAdmin = () => {
