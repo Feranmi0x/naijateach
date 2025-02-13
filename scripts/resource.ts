@@ -478,7 +478,7 @@ await db.insert(schema.igslangs).values([
         { id: 9, english: "News", igbo: "Akụkọ", audioPath: "aku.mp3" },
         { id: 10, english: "Exactly", igbo: "Ehen", audioPath: "ehe.mp3" },
         { id: 11, english: "Pele", igbo: "Ndo", audioPath: "ndo.mp3" },
-        { id: 12, english: "Lamba", igbo: "Ashị", audioPath: "ashi.mp3" },
+        { id: 12, english: "Lamba", igbo: "Ashị", audioPath: "ash.mp3" },
         { id: 13, english: "Shine your eye", igbo: "Mụrụ anya", audioPath: "mur.mp3" },
         { id: 14, english: "Carry me dey go", igbo: "Ka anyị na-agakwa aga", audioPath: "kaa.mp3" },
         { id: 15, english: "Over sabi", igbo: "Ọkachamara", audioPath: "oka.mp3" },
@@ -624,7 +624,7 @@ await db.insert(schema.commonExp).values([
 await db.insert(schema.igcommonExp).values([
         { id: 1, english: "Welcome", igbo: "Nnọọ", audioPath: "nno.mp3" },
         { id: 2, english: "Hello", igbo: "Ndeewo", audioPath: "nde.mp3" },
-        { id: 3, english: "What's happening?", igbo: "Gịnị na-eme?", audioPath: "gin.mp3" },
+        { id: 3, english: "What's happening?", igbo: "Gịnị neme?", audioPath: "gini.mp3" },
         { id: 4, english: "How are you?", igbo: "Kedu ka I mere?", audioPath: "ked.mp3" },
         { id: 5, english: "I am okay", igbo: "A dị m mma", audioPath: "adi.mp3" },
         { id: 6, english: "What is your name?", igbo: "Gịnị bụ aha gị?", audioPath: "gin.mp3" },
