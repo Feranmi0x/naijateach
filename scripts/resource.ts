@@ -195,7 +195,7 @@ await db.insert(schema.numbers).values([
         { id: 70, english: "70", igbo: "Iri Asaa", audioPath: "70.mp3" },
         { id: 80, english: "80", igbo: "Iri Asato", audioPath: "80.mp3" },
         { id: 90, english: "90", igbo: "Iri Itolu", audioPath: "90.mp3" },
-        { id: 100, english: "100", igbo: "Nari", audioPath: "100.mp3" },
+        { id: 100, english: "100", igbo: "Otu Nari", audioPath: "100.mp3" },
         { id: 200, english: "200", igbo: "Nari Abụọ", audioPath: "200.mp3" },
         { id: 300, english: "300", igbo: "Nari Atọ", audioPath: "300.mp3" },
         { id: 400, english: "400", igbo: "Nari Anọ", audioPath: "400.mp3" },

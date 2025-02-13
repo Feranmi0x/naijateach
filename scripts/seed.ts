@@ -1503,9 +1503,9 @@ await db.insert(schema.challenges).values([
    { id: 12, challengeId: 4, correct: true, text: "Orúkọ mi ni Feranmi", audioSrc: "m1-l1-q4-yr.mp3" },
 
    // Q5: I am from Nigeria.
-   { id: 13, challengeId: 5, correct: false, text: "Orúkọ mi ni Feranmi", audioSrc: "m1-l1-q4-yr.mp3" },
-   { id: 14, challengeId: 5, correct: false, text: "E ṣeun" },
-   { id: 15, challengeId: 5, correct: true, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3" },
+   { id: 13, challengeId: 5, correct: false, text: "Orúkọ mi ni Feranmi", audioSrc: "m1-l1-q4-yr.mp3", imageSrc: "/question.jpg" },
+   { id: 14, challengeId: 5, correct: false, text: "E ṣeun", imageSrc: "/thankyou.jpg" },
+   { id: 15, challengeId: 5, correct: true, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3", imageSrc: "/nigeria.jpg" },
 
    // Q6: What about you?
    { id: 16, challengeId: 6, correct: false, text: "Kí ni orúkọ rẹ?", audioSrc: "m1-l1-q3-yr.mp3" }, // Reuse audio
@@ -1790,9 +1790,9 @@ await db.insert(schema.challenges).values([
   { id: 197, challengeId: 66, correct: true, text: "Ẹ kú abọ̀", audioSrc: "m1-l5-q10-yr.mp3" },
   { id: 198, challengeId: 66, correct: false, text: "E ṣeun" },
   
-  { id: 199, challengeId: 67, correct: false, text: "Ṣé o ní omi?" },
-  { id: 200, challengeId: 67, correct: false, text: "Kí ni o fẹ́ jẹ?" },
-  { id: 201, challengeId: 67, correct: true, text: "Tan ina", audioSrc: "m1-l5-q11-yr.mp3" },
+  { id: 199, challengeId: 67, correct: false, text: "Ṣé o ní omi?", imageSrc: "/bottle.jpg" },
+  { id: 200, challengeId: 67, correct: false, text: "Kí ni o fẹ́ jẹ?", imageSrc: "/yam.jpg" },
+  { id: 201, challengeId: 67, correct: true, text: "Tan ina", audioSrc: "m1-l5-q11-yr.mp3", imageSrc: "/bulb.jpg" },
   
   { id: 202, challengeId: 68, correct: false, text: "Tan ina" },
   { id: 203, challengeId: 68, correct: true, text: "Kí ni o fẹ́ jẹ?", audioSrc: "m1-l5-q12-yr.mp3" },
