@@ -509,7 +509,7 @@ await db.insert(schema.yrslangs).values([
               
 
 await db.insert(schema.igrelatives).values([
-        { id: 1, english: "Father", igbo: "Nna", audioPath: "fath.mp3" },  
+        { id: 1, english: "Father", igbo: "Nna", audioPath: "fat.mp3" },  
         { id: 2, english: "Mother", igbo: "Nne", audioPath: "nne.mp3" },  
         { id: 3, english: "Brother", igbo: "Nwanne nwoke", audioPath: "nwa.mp3" },  
         { id: 4, english: "Sister", igbo: "Nwanne nwaanyi", audioPath: "nwa2.mp3" },  
