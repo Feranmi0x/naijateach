@@ -429,7 +429,7 @@ await db.insert(schema.yrbody).values([
         { id: 26, english: "Wrist", yoruba: "orún ọwọ́", audioPath: "oru2.mp3" },  
         { id: 27, english: "Hand", yoruba: "ọwọ́", audioPath: "owoN.mp3" },  
         { id: 28, english: "Fingers", yoruba: "ìka ọwọ́", audioPath: "ika.mp3" },  
-        { id: 29, english: "Thumb", yoruba: "Ìkà ńlá", audioPath: "ikaN.mp3" },  
+        { id: 29, english: "Thumb", yoruba: "Ìkà ńlá", audioPath: "IkaN.mp3" },  
         { id: 30, english: "Fingernails", yoruba: "ekan ọwọ́", audioPath: "eka.mp3" },  
         { id: 31, english: "Waist", yoruba: "Ìdí", audioPath: "idiN.mp3" },  
         { id: 32, english: "Hips", yoruba: "Ìdí", audioPath: "idiN.mp3" },  

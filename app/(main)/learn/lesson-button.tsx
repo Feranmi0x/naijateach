@@ -38,7 +38,7 @@ export const LessonButton = ({
         {current ? (
           <div className="relative">
             {/* Current Lesson Label */}
-            <div className="absolute h-[30px] flex items-center -top-6 left-2.5 px-3 py-2.5 border-2 font-bold uppercase text-sm text-yelloww bg-white animate-bounce tracking-wide z-10">
+            <div className="absolute h-[30px] flex items-center top-[-25px] left-2.5 px-3 py-2.5 border-2 font-bold uppercase text-sm text-yelloww bg-white animate-bounce tracking-wide z-10">
               Begin
               <div className="absolute left-1/2 -bottom-2 w-0 h-0 border-x-8 border-x-transparent border-t-8 transform -translate-x-1/2" />
             </div>

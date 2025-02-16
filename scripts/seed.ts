@@ -1513,19 +1513,19 @@ await db.insert(schema.challenges).values([
    { id: 18, challengeId: 6, correct: true, text: "Ǹjẹ́ ìwọ n kò?", audioSrc: "m1-l1-q6-yr.mp3" },
 
    // Q7: No.
-   { id: 19, challengeId: 7, correct: true, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3" },
-   { id: 20, challengeId: 7, correct: false, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3" }, // Reuse audio
-   { id: 21, challengeId: 7, correct: false, text: "Béèni" },
+   { id: 19, challengeId: 7, correct: true, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3", imageSrc: "/no.jpg" },
+   { id: 20, challengeId: 7, correct: false, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3", imageSrc: "/nigeria.jpg" }, // Reuse audio
+   { id: 21, challengeId: 7, correct: false, text: "Béèni", imageSrc: "/question.jpg" },
 
    // Q8: Yes.
-   { id: 22, challengeId: 8, correct: true, text: "Béèni", audioSrc: "m1-l1-q10-yr.mp3" },
-   { id: 23, challengeId: 8, correct: false, text: "E ṣeun" },
-   { id: 24, challengeId: 8, correct: false, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3" }, // Reuse audio
+   { id: 22, challengeId: 8, correct: true, text: "Béèni", audioSrc: "m1-l1-q10-yr.mp3", imageSrc: "/yes.jpg" },
+   { id: 23, challengeId: 8, correct: false, text: "E ṣeun", imageSrc: "/thankyou.jpg" },
+   { id: 24, challengeId: 8, correct: false, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3", imageSrc: "/no.jpg" }, // Reuse audio
 
    // Q9: Thank you.
-   { id: 25, challengeId: 9, correct: false, text: "Mo wa dáadáa", audioSrc: "m1-l1-q2-yr.mp3" }, // Reuse audio
-   { id: 26, challengeId: 9, correct: true, text: "E ṣeun", audioSrc: "m1-l1-q11-yr.mp3" },
-   { id: 27, challengeId: 9, correct: false, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3" }, // Reuse audio
+   { id: 25, challengeId: 9, correct: false, text: "Mo wa dáadáa", audioSrc: "m1-l1-q2-yr.mp3", imageSrc: "/question.jpg" }, // Reuse audio
+   { id: 26, challengeId: 9, correct: true, text: "E ṣeun", audioSrc: "m1-l1-q11-yr.mp3", imageSrc: "/thankyou.jpg" },
+   { id: 27, challengeId: 9, correct: false, text: "Mo wá láti Nàìjíríà", audioSrc: "m1-l1-q5-yr.mp3", imageSrc: "/nigeria.jpg" }, // Reuse audio
 
    // Q10: You’re welcome.
    { id: 28, challengeId: 10, correct: false, text: "Má bínú/Pele", audioSrc: "m1-l1-q14-yr.mp3" }, // Reuse audio
@@ -1533,14 +1533,14 @@ await db.insert(schema.challenges).values([
    { id: 30, challengeId: 10, correct: true, text: "Ẹ káàbọ̀", audioSrc: "m2-l1-q5-yr.mp3" },
 
    // Q11: Sorry.
-   { id: 31, challengeId: 11, correct: true, text: "Má bínú/Pele", audioSrc: "m1-l1-q14-yr.mp3" },
-   { id: 32, challengeId: 11, correct: false, text: "Ẹ káàbọ̀", audioSrc: "m1-l1-q13-yr.mp3" }, // Reuse audio
-   { id: 33, challengeId: 11, correct: false, text: "E ṣeun púpọ̀" },
+   { id: 31, challengeId: 11, correct: true, text: "Má bínú/Pele", audioSrc: "m1-l1-q14-yr.mp3", imageSrc: "/sorry.jpg" },
+   { id: 32, challengeId: 11, correct: false, text: "Ẹ káàbọ̀", audioSrc: "m1-l1-q13-yr.mp3", imageSrc: "/question.jpg" }, // Reuse audio
+   { id: 33, challengeId: 11, correct: false, text: "E ṣeun púpọ̀", imageSrc: "/thankyou.jpg" },
 
    // Q12: Thank you so much.
-   { id: 34, challengeId: 12, correct: false, text: "Kí ni orúkọ rẹ?", audioSrc: "m1-l1-q3-yr.mp3" }, // Reuse audio
-   { id: 35, challengeId: 12, correct: false, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3" }, // Reuse audio
-   { id: 36, challengeId: 12, correct: true, text: "E ṣeun púpọ̀", audioSrc: "m1-l1-q15-yr.mp3" },
+   { id: 34, challengeId: 12, correct: false, text: "Kí ni orúkọ rẹ?", audioSrc: "m1-l1-q3-yr.mp3", imageSrc: "/question.jpg" }, // Reuse audio
+   { id: 35, challengeId: 12, correct: false, text: "Rárá", audioSrc: "m1-l1-q7-yr.mp3", imageSrc: "/no.jpg" }, // Reuse audio
+   { id: 36, challengeId: 12, correct: true, text: "E ṣeun púpọ̀", audioSrc: "m1-l1-q15-yr.mp3", imageSrc: "/thankyou.jpg" },
 
     // Q1: Do you speak Yoruba? - Yoruba
   { id: 37, challengeId: 13, correct: false, text: "Díẹ̀ díẹ̀" },
@@ -1573,9 +1573,9 @@ await db.insert(schema.challenges).values([
   { id: 54, challengeId: 18, correct: false, text: "Mo ń gbé ní Amẹ́ríkà"},
 
   // Q7: I am talking to you. - Yoruba
-  { id: 55, challengeId: 19, correct: true, text: "Mo ń bá ẹ sọ̀rọ̀", audioSrc: "m1-l2-q7-yr.mp3" },
-  { id: 56, challengeId: 19, correct: false, text: "Nibo ni o ń gbé?" },
-  { id: 57, challengeId: 19, correct: false, text: "Kí ni èyí?" },
+  { id: 55, challengeId: 19, correct: true, text: "Mo ń bá ẹ sọ̀rọ̀", audioSrc: "m1-l2-q7-yr.mp3", imageSrc: "/speak.jpg" },
+  { id: 56, challengeId: 19, correct: false, text: "Nibo ni o ń gbé?", imageSrc: "/question.jpg" },
+  { id: 57, challengeId: 19, correct: false, text: "Kí ni èyí?", imageSrc: "/question.jpg" },
 
   // Q8: What is this? - Yoruba
   { id: 58, challengeId: 20, correct: false, text: "Ọmọ ọdún mẹ́tàlélógún ni mi" },
@@ -1593,9 +1593,9 @@ await db.insert(schema.challenges).values([
   { id: 66, challengeId: 22, correct: false, text: "Ọmọ ọdún mẹ́tàlélógún ni mi" },
 
   // Q11: I love you. - Yoruba
-  { id: 67, challengeId: 23, correct: true, text: "Mo nífẹ̀ẹ́ rẹ", audioSrc: "m1-l2-q11-yr.mp3" },
-  { id: 68, challengeId: 23, correct: false, text: "Mo ń gbé ní Amẹ́ríkà" },
-  { id: 69, challengeId: 23, correct: false, text: "Ó lẹwà púpọ̀" },
+  { id: 67, challengeId: 23, correct: true, text: "Mo nífẹ̀ẹ́ rẹ", audioSrc: "m1-l2-q11-yr.mp3", imageSrc: "/love.jpg" },
+  { id: 68, challengeId: 23, correct: false, text: "Mo ń gbé ní Amẹ́ríkà", imageSrc: "/usa.jpg" },
+  { id: 69, challengeId: 23, correct: false, text: "Ó lẹwà púpọ̀", imageSrc: "/thankyou.jpg" },
 
   // Q12: Where do you live? - Yoruba
   { id: 70, challengeId: 24, correct: false, text: "Mo nífẹ̀ẹ́ rẹ" },
@@ -1603,9 +1603,9 @@ await db.insert(schema.challenges).values([
   { id: 72, challengeId: 24, correct: true, text: "Nibo ni o ń gbé?", audioSrc: "m1-l2-q12-yr.mp3" },
 
   // Q13: That’s beautiful. - Yoruba
-  { id: 73, challengeId: 25, correct: true, text: "Ó lẹwà", audioSrc: "m1-l2-q13-yr.mp3" },
-  { id: 74, challengeId: 25, correct: false, text: "Mo nífẹ̀ẹ́ rẹ" },
-  { id: 75, challengeId: 25, correct: false, text: "Nibo ni o ń gbé?" },
+  { id: 73, challengeId: 25, correct: true, text: "Ó lẹwà", audioSrc: "m1-l2-q13-yr.mp3", imageSrc: "/beautiful.jpg" },
+  { id: 74, challengeId: 25, correct: false, text: "Mo nífẹ̀ẹ́ rẹ", imageSrc: "/love.jpg" },
+  { id: 75, challengeId: 25, correct: false, text: "Nibo ni o ń gbé?", imageSrc: "/question.jpg" },
 
   // Q14: She is beautiful. - Yoruba
   { id: 76, challengeId: 26, correct: false, text: "Ó lẹwà púpọ̀" },
@@ -1613,14 +1613,14 @@ await db.insert(schema.challenges).values([
   { id: 78, challengeId: 26, correct: false, text: "Nibo ni o ń gbé?" },
 
   // Q15: I live in the USA. - Yoruba
-  { id: 79, challengeId: 27, correct: true, text: "Mo ń gbé ní Amẹ́ríkà", audioSrc: "m1-l2-q15-yr.mp3" },
-  { id: 80, challengeId: 27, correct: false, text: "Mo ń gbé ní Nàìjíríà" },
-  { id: 81, challengeId: 27, correct: false, text: "Ó lẹwà púpọ̀" },
+  { id: 79, challengeId: 27, correct: true, text: "Mo ń gbé ní Amẹ́ríkà", audioSrc: "m1-l2-q15-yr.mp3", imageSrc: "/usa.jpg" },
+  { id: 80, challengeId: 27, correct: false, text: "Mo ń gbé ní Nàìjíríà", imageSrc: "/nigeria.jpg" },
+  { id: 81, challengeId: 27, correct: false, text: "Ó lẹwà púpọ̀", imageSrc: "/beautiful.jpg" },
   
     // Q1: They are dancing.
-    { id: 82, challengeId: 28, correct: false, text: "Kí ni ìtumọ̀ rẹ?" },
-    { id: 83, challengeId: 28, correct: false, text: "Bá mi sọ̀rọ̀" },
-    { id: 84, challengeId: 28, correct: true, text: "Wọ́n ń jó", audioSrc: "m2-l3-q1-yrb.mp3" },
+    { id: 82, challengeId: 28, correct: false, text: "Kí ni ìtumọ̀ rẹ?", imageSrc: "/question.jpg" },
+    { id: 83, challengeId: 28, correct: false, text: "Bá mi sọ̀rọ̀", imageSrc: "/speak.jpg" },
+    { id: 84, challengeId: 28, correct: true, text: "Wọ́n ń jó", audioSrc: "m2-l3-q1-yrb.mp3", imageSrc: "/dance.jpg" },
   
     // Q2: What do you mean?
     { id: 85, challengeId: 29, correct: false, text: "O gba" },
@@ -1628,14 +1628,14 @@ await db.insert(schema.challenges).values([
     { id: 87, challengeId: 29, correct: false, text: "Mo mọ̀" },
   
     // Q3: Speak to me.
-    { id: 88, challengeId: 30, correct: false, text: "Èmi náà nífẹ̀ẹ́ rẹ" },
-    { id: 89, challengeId: 30, correct: true, text: "Bá mi sọ̀rọ̀", audioSrc: "m2-l3-q3-yrb.mp3" },
-    { id: 90, challengeId: 30, correct: false, text: "Kìí ṣe bẹ́ẹ̀" },
+    { id: 88, challengeId: 30, correct: false, text: "Èmi náà nífẹ̀ẹ́ rẹ", imageSrc: "/love.jpg" },
+    { id: 89, challengeId: 30, correct: true, text: "Bá mi sọ̀rọ̀", audioSrc: "m2-l3-q3-yrb.mp3", imageSrc: "/speak.jpg" },
+    { id: 90, challengeId: 30, correct: false, text: "Kìí ṣe bẹ́ẹ̀", imageSrc: "/no.jpg" },
   
     // Q4: I love you too.
-    { id: 91, challengeId: 31, correct: false, text: "Mo mọ̀" },
-    { id: 92, challengeId: 31, correct: true, text: "Èmi náà nífẹ̀ẹ́ rẹ", audioSrc: "m2-l3-q4-yrb.mp3" },
-    { id: 93, challengeId: 31, correct: false, text: "Nibo ni o ń lọ?" },
+    { id: 91, challengeId: 31, correct: false, text: "Mo mọ̀", imageSrc: "/yes.jpg" },
+    { id: 92, challengeId: 31, correct: true, text: "Èmi náà nífẹ̀ẹ́ rẹ", audioSrc: "m2-l3-q4-yrb.mp3", imageSrc: "/love.jpg" },
+    { id: 93, challengeId: 31, correct: false, text: "Nibo ni o ń lọ?", imageSrc: "/question.jpg" },
   
     // Q5: It is not like that.
     { id: 94, challengeId: 32, correct: true, text: "Kìí ṣe bẹ́ẹ̀", audioSrc: "m2-l3-q5-yrb.mp3" },
@@ -1673,9 +1673,9 @@ await db.insert(schema.challenges).values([
     { id: 114, challengeId: 38, correct: false, text: "O o gba" },
   
     // Q12: You’re correct.
-    { id: 115, challengeId: 39, correct: true, text: "O gbaa", audioSrc: "m2-l3-q12-yrb.mp3" },
-    { id: 116, challengeId: 39, correct: false, text: "Ó lẹwà púpọ̀" },
-    { id: 117, challengeId: 39, correct: false, text: "Èmi náà nífẹ̀ẹ́ rẹ" },
+    { id: 115, challengeId: 39, correct: true, text: "O gbaa", audioSrc: "m2-l3-q12-yrb.mp3", imageSrc: "/yes.jpg" },
+    { id: 116, challengeId: 39, correct: false, text: "Ó lẹwà púpọ̀", imageSrc: "/beautiful.jpg" },
+    { id: 117, challengeId: 39, correct: false, text: "Èmi náà nífẹ̀ẹ́ rẹ", imageSrc: "/love.jpg" },
   
     // Q13: You’re not correct.
     { id: 118, challengeId: 40, correct: false, text: "Ó lẹwà púpọ̀" },
@@ -2423,9 +2423,9 @@ await db.insert(schema.challenges).values([
    { id: 668, challengeId: 223, correct: false, text: "Daalụ" },
    { id: 669, challengeId: 223, correct: true, text: "Adị mm mma", audioSrc: "m1-l1-q2-ig.mp3" },
    
-   { id: 670, challengeId: 224, correct: true, text: "Gịnị bụ aha gị", audioSrc: "m1-l1-q3-ig.mp3" },
-   { id: 671, challengeId: 224, correct: false, text: "A bụ m onye Nigeria" },
-   { id: 672, challengeId: 224, correct: false, text: "Nnọọ" },
+   { id: 670, challengeId: 224, correct: true, text: "Gịnị bụ aha gị", audioSrc: "m1-l1-q3-ig.mp3", imageSrc: "/question.jpg" },
+   { id: 671, challengeId: 224, correct: false, text: "A bụ m onye Nigeria", imageSrc: "/nigeria.jpg" },
+   { id: 672, challengeId: 224, correct: false, text: "Nnọọ", imageSrc: "/question.jpg" },
    
    { id: 673, challengeId: 225, correct: false, text: "Kedu maka gị?" },
    { id: 674, challengeId: 225, correct: false, text: "A dị m mma" },

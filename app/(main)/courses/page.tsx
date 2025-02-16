@@ -15,7 +15,7 @@ const coursePage = async () => {
 
     return (
         <div className="h-full max-w-[912px] mx-auto px-3">
-            <h1 className="font-bold text-2xl text-neutral-700"> Nigerian Languange Courses</h1>
+            <h1 className="font-bold text-2xl text-neutral-700"> Nigerian Language Courses</h1>
             <List
             courses={courses}
             activeCourseId={userProgress?.activeCourseId}
