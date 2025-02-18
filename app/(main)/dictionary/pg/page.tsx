@@ -39,6 +39,7 @@ const Page = () => {
           Pidgin Dictionary
         </h2>
       </nav>
+      <DictionaryNavigator />
       <input
         type="text"
         value={word}
@@ -52,7 +53,6 @@ const Page = () => {
       >
         <Search className='w-[18px]  text-gray-500'/>
       </button>
-      <DictionaryNavigator />
       {/* Conditionally render Heading and Content */}
       {results && results.audio && <Heading result={results.both} audioUrl={`/pidgin-dictionary/${results.audio}`}/>}
       {results && <Content result={results.meaning} />}

@@ -12,12 +12,12 @@ const DictionaryNavigator = () => {
   };
 
   return (
-    <div className="mt-2 flex center">
+    <div className="mb-2 flex center">
       <select
         onChange={handleChange}
-        className="border-2 border-gray-300 rounded p-2 w-40"
+        className="border-2 border-gray-300 rounded p-[4px] w-[] font-semibold text-lg text-gray-500"
       >
-        <option >Choose</option>
+        <option value="yr">Choose</option>
         <option value="ig">Igbo</option>
         <option value="hs">Hausa</option>
         <option value="yr">Yoruba</option>
