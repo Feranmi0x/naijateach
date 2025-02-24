@@ -5,6 +5,10 @@ return (
   <Create>
     <SimpleForm>
         <TextInput 
+        source="id"
+        validate={[required()]}  
+        /> 
+        <TextInput 
         source="word" 
         validate={[required()]} 
         label="word"/>

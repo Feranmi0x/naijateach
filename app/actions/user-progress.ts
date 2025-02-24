@@ -45,7 +45,7 @@ await db.insert(userProgress).values({
 userId, 
 activeCourseId: courseId,
 userName: user.firstName || "User", 
-userImageSrc: user. imageUrl || " /mascot.svg",
+userImageSrc: user.imageUrl || " /mascot.svg",
  });
 
 revalidatePath("/courses"); 

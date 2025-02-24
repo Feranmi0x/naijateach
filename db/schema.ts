@@ -229,43 +229,64 @@ export const lessonsRelations = relations (lessons, ({ one, many }) => ({
    challenges: many(challenges),
 }));
 
-export const challengesEnum = pgEnum("type", ["SELECT", "ASSIST"]);
+export const challengesEnum = pgEnum("type", ["SELECT", "ASSIST", "FILL_IN_THE_BLANK"]);
 
 export const challenges = pgTable("challenges", {
-id: serial("id").primaryKey(),
-lessonId: integer("lesson_id").references(() => lessons.id, { onDelete: "cascade" }).notNull(),
-type: challengesEnum("type").notNull(),
-animation: text("animation"),
-question: text("question").notNull(), 
-order: integer("order").notNull(),
+  id: serial("id").primaryKey(),
+  lessonId: integer("lesson_id").references(() => lessons.id, { onDelete: "cascade" }).notNull(),
+  type: challengesEnum("type").notNull(),
+  animation: text("animation"),
+  question: text("question").notNull(),
+  order: integer("order").notNull(),
 });
 
-export const challengesRelations = relations (challenges, ({ one, many }) => ({
-   lesson: one(lessons, {
-   fields: [challenges.lessonId], 
-   references: [lessons.id],
-   }), 
-   challengeOptions: many(challengeOptions),
-   challengeProgress: many(challengeProgress),
+export const challengeAnswers = pgTable("challenge_answers", {
+  id: serial("id").primaryKey(),
+  challengeId: integer("challenge_id")
+    .references(() => challenges.id, { onDelete: "cascade" })
+    .notNull(),
+  text: text("text").notNull(), // Correct answer
+  order: integer("order").notNull(), // Order of the blank
+});
+
+// Challenge Relations
+export const challengesRelations = relations(challenges, ({ one, many }) => ({
+  lesson: one(lessons, {
+    fields: [challenges.lessonId],
+    references: [lessons.id],
+  }),
+  challengeOptions: many(challengeOptions), // SELECT & ASSIST
+  challengeAnswers: many(challengeAnswers), // FILL_IN_THE_BLANK
+  challengeProgress: many(challengeProgress),
 }));
 
+// Challenge Options Table (For SELECT and ASSIST)
 export const challengeOptions = pgTable("challenge_options", {
-   id: serial("id").primaryKey(),
-   challengeId: integer("challenge_id").references(() => challenges.id, { 
-   onDelete: "cascade" }).notNull(),
-   text: text("text").notNull(),
-   correct: boolean("correct").notNull(),
-   imageSrc: text("image_src"),
-   audioSrc: text("audio_src"),   
+  id: serial("id").primaryKey(),
+  challengeId: integer("challenge_id")
+    .references(() => challenges.id, { onDelete: "cascade" })
+    .notNull(),
+  text: text("text").notNull(),
+  correct: boolean("correct").notNull(),
+  imageSrc: text("image_src"),
+  audioSrc: text("audio_src"),
 });
 
+// Challenge Options Relations
 export const challengeOptionsRelations = relations(challengeOptions, ({ one }) => ({
-   challenge: one(challenges, {
-   fields: [challengeOptions.challengeId], 
-   references: [challenges.id],
-   }),
+  challenge: one(challenges, {
+    fields: [challengeOptions.challengeId],
+    references: [challenges.id],
+  }),
 }));
 
+// Challenge Answers Table (For FILL_IN_THE_BLANK)
+export const challengeAnswersRelations = relations(challengeAnswers, ({ one }) => ({
+  challenge: one(challenges, {
+    fields: [challengeAnswers.challengeId],
+    references: [challenges.id],
+  }),
+}));
 export const challengeProgress = pgTable("challenge_progress", {
    id: serial("id").primaryKey(), 
    userId: text("user_id"),

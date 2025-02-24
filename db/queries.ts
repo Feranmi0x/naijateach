@@ -258,35 +258,47 @@ export const getLesson = cache(async (id?: number) => {
 
   const lessonId = id || courseProgress?.activeLessonId;
   if (!lessonId) {
-  return null;
+    return null;
   }
 
   const data = await db.query.lessons.findFirst({
     where: eq(lessons.id, lessonId),
     with: {
-     challenges: {
-       orderBy: (challenges, { asc }) => [asc(challenges.order)],
-     with: {
-      challengeOptions: true, 
-       challengeProgress: {
-        where: userId !== null ? eq(challengeProgress.userId, userId) : undefined,
-       },
+      challenges: {
+        orderBy: (challenges, { asc }) => [asc(challenges.order)],
+        with: {
+          challengeOptions: true,
+          challengeAnswers: {
+            orderBy: (challengeAnswers, { asc }) => [asc(challengeAnswers.order)],
+          },
+          challengeProgress: {
+            where: userId !== null ? eq(challengeProgress.userId, userId) : undefined,
+          },
+        },
       },
-     },
     },
   });
 
   if (!data || !data.challenges) {
     return null;
   }
-    const normalizedChallenges = data.challenges.map((challenge) => {
-    const completed = challenge. challengeProgress && challenge. challengeProgress.length > 0 
-    && challenge. challengeProgress.every((progress) => progress. completed)
 
-    return { ...challenge, completed };
-    });
+  // Group answers by order for FILL_IN_THE_BLANK
+  const normalizedChallenges = data.challenges.map((challenge) => {
+    const completed =
+      challenge.challengeProgress &&
+      challenge.challengeProgress.length > 0 &&
+      challenge.challengeProgress.every((progress) => progress.completed);
 
-    return { ...data, challenges: normalizedChallenges }
+    const groupedAnswers =
+      challenge.type === "FILL_IN_THE_BLANK"
+        ? challenge.challengeAnswers.map((answer) => answer.text)
+        : [];
+
+    return { ...challenge, completed, groupedAnswers };
+  });
+
+  return { ...data, challenges: normalizedChallenges };
 });
 
 export const getLessonPercentage = cache (async () => {

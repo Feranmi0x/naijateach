@@ -18,6 +18,7 @@ await db.delete(schema.units);
 await db.delete(schema.lessons);
 await db.delete(schema.challenges);
 await db.delete(schema.challengeOptions); 
+await db.delete(schema.challengeAnswers); 
 await db.delete(schema.challengeProgress);
 await db.delete (schema.userSubscription);
 
@@ -139,9 +140,7 @@ await db.insert(schema.units).values([
    },
 ]);
 
-// Lessons for all languages (15 lessons total for each language)
 await db.insert(schema.lessons).values([
-   // Igbo Lessons (Module 1, 2, 3)
    {
    id: 1,
    unitId: 1, 
@@ -1481,11 +1480,16 @@ await db.insert(schema.challenges).values([
 
  ]);
 
+//  await db.insert(schema.challengeAnswers).values([
+//    { id: 1, challengeId: 1, order: 1, text: "am" }, 
+//  ]);
+
  await db.insert(schema.challengeOptions).values([
-   // Q1: How are you?
-   { id: 1, challengeId: 1, correct: false, text: "Má bínú/Pele" }, // Reuse audio from Q11
+
+   // Q2: I am okay.
+   { id: 1, challengeId: 1, correct: false, text: "Má bínú", audioSrc: "m1-l1-q11-yr.mp3" }, // Reuse audio from Q11
    { id: 2, challengeId: 1, correct: false, text: "E ṣeun" },
-   { id: 3, challengeId: 1, correct: true, text: "Báwo ni", audioSrc: "m1-l1-q1-yr.mp3" },
+   { id: 3, challengeId: 1, correct: true, text: "Bawo ni", audioSrc: "m1-l1-q1-yr.mp3" },
 
    // Q2: I am okay.
    { id: 4, challengeId: 2, correct: false, text: "Má bínú/Pele", audioSrc: "m1-l1-q11-yr.mp3" }, // Reuse audio from Q11

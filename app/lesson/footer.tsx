@@ -19,23 +19,6 @@ export const Footer = ({
     }: Props) => {
         useKey("Enter", onCheck, {}, [onCheck]);
         const isMobile = useMedia("(max-width: 1024px)");
-
-  // Example usage (this could be inside buttons or event handlers in your main page)
-  
-  
-
-        // const Array = ["Nicely done!", "Excellent!", "Perfect!", "Great!"];
-
-        // const mathR = () => {
-        //     const randI = Math.floor(Math.random() * Array.length);
-        //     return randI;
-        // }
-        // const wrongArray = ["Nicely done!", "Excellent!", "Perfect!", "Great!"];
-
-        // const mathR = () => {
-        //     const wronhrandI = Math.floor(Math.random() * wrongArray.length);
-        //     return randI;
-        // }
     return ( 
         <footer className={cn(
             "lg:h-[140px] h-[100px] border-t-2 fixed bottom-0 w-full",
