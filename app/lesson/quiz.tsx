@@ -1,4 +1,3 @@
-"use client";
 
 import { challengeOptions, challenges, userSubscription } from "@/db/schema";
 import { useState, useTransition } from "react";
@@ -16,8 +15,6 @@ import { useRouter } from "next/navigation";
 import { useHeartsModal } from "@/store/use-hearts-modals";
 import { usePracticeModal } from "@/store/use-practice-modals";
 import Rive from "@rive-app/react-canvas";
-import FillInTheBlank from "@/components/FillInTheBlank";
-
 
 type Props = {
   initialPercentage: number;
@@ -41,17 +38,6 @@ export const Quiz = ({
 }: Props) => {
   const { open: openHeartsModal } = useHeartsModal();
   const { open: openPracticeModal } = usePracticeModal();
-  const [message, setMessage] = useState<string>("");
-
-  const handleSubmit = async (userAnswers: string[]) => {
-    const response = await fetch("/api/check-answers", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userAnswers }),
-    });
-    const data = await response.json();
-    setMessage(data.message);
-  };
 
   useMount(() => {
     if (initialPercentage === 100) {
@@ -209,16 +195,6 @@ export const Quiz = ({
           <div className="h-[100px]">
             {challenge.type === "ASSIST" && (
               <QuestionBubble AnimationSrc={challenge.animation} question={challenge.question} />
-            )}
-            {challenge.type === "FILL_IN_THE_BLANK" && (
-              <div>
-                 <FillInTheBlank
-                   sentence="The capital of France is ___ and the capital of Germany is ___."
-                   correctAnswers={["Paris", "Berlin"]}
-                   onSubmit={handleSubmit}
-                 />
-                 {message && <p>{message}</p>}
-              </div>
             )}
             <Challenge
               options={options}

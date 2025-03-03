@@ -268,9 +268,6 @@ export const getLesson = cache(async (id?: number) => {
         orderBy: (challenges, { asc }) => [asc(challenges.order)],
         with: {
           challengeOptions: true,
-          challengeAnswers: {
-            orderBy: (challengeAnswers, { asc }) => [asc(challengeAnswers.order)],
-          },
           challengeProgress: {
             where: userId !== null ? eq(challengeProgress.userId, userId) : undefined,
           },
@@ -283,19 +280,15 @@ export const getLesson = cache(async (id?: number) => {
     return null;
   }
 
-  // Group answers by order for FILL_IN_THE_BLANK
   const normalizedChallenges = data.challenges.map((challenge) => {
     const completed =
       challenge.challengeProgress &&
       challenge.challengeProgress.length > 0 &&
       challenge.challengeProgress.every((progress) => progress.completed);
 
-    const groupedAnswers =
-      challenge.type === "FILL_IN_THE_BLANK"
-        ? challenge.challengeAnswers.map((answer) => answer.text)
-        : [];
+ 
 
-    return { ...challenge, completed, groupedAnswers };
+    return { ...challenge, completed};
   });
 
   return { ...data, challenges: normalizedChallenges };

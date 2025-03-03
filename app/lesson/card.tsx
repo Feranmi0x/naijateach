@@ -32,24 +32,48 @@ export const Card = ({
   const [audio, {}, controls] = useAudio({ src: audioFile || "" });
 
   const handleClick = useCallback(() => {
-    if (disabled || type === "FILL_IN_THE_BLANK") return; // Skip interaction for FILL_IN_THE_BLANK
+    if (disabled) return; // Skip if disabled
+    if (type === "FILL_IN_THE_BLANK") return; // Skip click handling for fill-in-the-blank
     controls.play();
     onClick();
   }, [disabled, onClick, controls, type]);
 
   useKey(shortcut, handleClick, {}, [handleClick]);
 
+  // Determine card styles based on selection and status
+  const cardStyles = cn(
+    "h-full border-[0.5px] border-bluee border-b-2 hover:bg-black/5 p-4 lg:p-4 cursor-pointer active:border-b-2",
+    selected && "border-sky-300 bg-sky-100 hover:bg-sky-100",
+    selected && status === "correct" && "border-green-300 bg-green-100 hover:bg-green-100",
+    selected && status === "wrong" && "border-rose-300 bg-rose-100 hover:bg-rose-100",
+    disabled && "pointer-events-none hover:bg-white",
+    type === "ASSIST" && "lg:p-4 w-full"
+  );
+
+  // Determine text styles based on selection and status
+  const textStyles = cn(
+    "text-neutral-600 text-sm lg:text-base",
+    selected && "text-sky-500",
+    selected && status === "correct" && "text-green-500",
+    selected && status === "wrong" && "text-rose-500"
+  );
+
+  // Determine shortcut styles based on selection and status
+  const shortcutStyles = cn(
+    "lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] border-2 flex items-center justify-center rounded-lg text-neutral-400 lg:text-[15px] text-xs font-semibold",
+    selected && "border-sky-300 text-sky-500",
+    selected && status === "correct" && "border-green-500 text-green-500",
+    selected && status === "wrong" && "border-rose-500 text-rose-500"
+  );
+
   return (
     <div
       onClick={handleClick}
-      className={cn(
-        "h-full border-[0.5px] border-bluee border-b-2 hover:bg-black/5 p-4 lg:p-4 cursor-pointer active:border-b-2",
-        selected && "border-sky-300 bg-sky-100 hover:bg-sky-100",
-        selected && status === "correct" && "border-green-300 bg-green-100 hover:bg-green-100",
-        selected && status === "wrong" && "border-rose-300 bg-rose-100 hover:bg-rose-100",
-        disabled && "pointer-events-none hover:bg-white",
-        type === "ASSIST" && "lg:p-4 w-full"
-      )}
+      className={cardStyles}
+      role="button"
+      aria-label={`Option: ${text}`}
+      aria-disabled={disabled}
+      tabIndex={disabled ? -1 : 0}
     >
       {audio}
       {imageSrc && (
@@ -65,30 +89,12 @@ export const Card = ({
         )}
       >
         {type === "ASSIST" && <div />}
-        {/* Text display for SELECT and ASSIST */}
-        <p
-          className={cn(
-            "text-neutral-600 text-sm lg:text-base",
-            selected && "text-sky-500",
-            selected && status === "correct" && "text-green-500",
-            selected && status === "wrong" && "text-rose-500"
-          )}
-        >
-          {text}
-        </p>
+        {/* Text display for all types */}
+        <p className={textStyles}>{text}</p>
 
-        {/* Shortcut indicator */}
+        {/* Shortcut indicator (hidden for FILL_IN_THE_BLANK) */}
         {type !== "FILL_IN_THE_BLANK" && (
-          <div
-            className={cn(
-              "lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] border-2 flex items-center justify-center rounded-lg text-neutral-400 lg:text-[15px] text-xs font-semibold",
-              selected && "border-sky-300 text-sky-500",
-              selected && status === "correct" && "border-green-500 text-green-500",
-              selected && status === "wrong" && "border-rose-500 text-rose-500"
-            )}
-          >
-            {shortcut}
-          </div>
+          <div className={shortcutStyles}>{shortcut}</div>
         )}
       </div>
     </div>
